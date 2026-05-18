@@ -100,7 +100,7 @@ export default function Header() {
                 >
                   {cat === 'about' ? (
                     <Link
-                      href="/chi-siamo"
+                      href="/WhoWeAre"
                       className="
                         flex min-h-[50px] w-full items-center justify-center
                         px-2 py-3
