@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google"; // Added Go
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import { LanguageProvider } from "./context/LanguageContext";
 
 // Configure Geist Fonts
 const geistSans = Geist({
@@ -49,9 +50,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <Header />
+
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

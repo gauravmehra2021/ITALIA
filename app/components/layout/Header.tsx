@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ChevronDown, Menu, X } from 'lucide-react'
+import { useLanguage } from '../../context/LanguageContext'
 
 const categories = [
   'about',
@@ -17,19 +18,12 @@ const categories = [
   'other',
 ]
 
-const services: Record<string, string[]> = {
-  immigration: ['Work Permit', 'Residence Permit', 'Citizenship'],
-  caf: ['CAF Assistance', 'Tax Support'],
-  training: ['Corporate Training', 'Workshops'],
-  business: ['Business Setup', 'Consulting'],
-  insurance: ['Travel Insurance', 'Health Insurance'],
-  indianConsulate: ['Documentation', 'Passport Services'],
-  visas: ['Student Visa', 'Tourist Visa'],
-  other: ['Additional Services'],
-}
-
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false)
+
+  const { t, language, setLanguage } =
+    useLanguage()
 
   return (
     <header className="sticky top-0 z-50 w-full">
@@ -37,9 +31,7 @@ export default function Header() {
       <div className="bg-[#004a99] text-white">
         <div className="container-custom flex items-center justify-between py-2 text-xs">
           <div className="flex items-center gap-4">
-            <span>
-              We help companies with foreign personnel procedures
-            </span>
+            <span>{t('topBar.story')}</span>
 
             <button
               className="
@@ -50,7 +42,32 @@ export default function Header() {
                 hover:bg-white hover:text-[#004a99]
               "
             >
-              Learn More
+              {t('topBar.more')}
+            </button>
+          </div>
+
+          {/* LANGUAGE SWITCHER */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setLanguage('it')}
+              className={`rounded px-2 py-1 transition ${
+                language === 'it'
+                  ? 'bg-white text-[#004a99]'
+                  : 'bg-transparent text-white'
+              }`}
+            >
+              IT
+            </button>
+
+            <button
+              onClick={() => setLanguage('en')}
+              className={`rounded px-2 py-1 transition ${
+                language === 'en'
+                  ? 'bg-white text-[#004a99]'
+                  : 'bg-transparent text-white'
+              }`}
+            >
+              EN
             </button>
           </div>
         </div>
@@ -93,7 +110,7 @@ export default function Header() {
                         hover:bg-[#004a99] hover:text-white
                       "
                     >
-                      About
+                      {t(`nav.${cat}`)}
                     </Link>
                   ) : (
                     <>
@@ -107,7 +124,7 @@ export default function Header() {
                           hover:bg-[#004a99] hover:text-white
                         "
                       >
-                        {cat}
+                        {t(`nav.${cat}`)}
 
                         <ChevronDown
                           size={12}
@@ -133,7 +150,7 @@ export default function Header() {
                         "
                       >
                         <div className="bg-[#004a99] px-4 py-2 text-xs font-medium text-white">
-                          {cat}
+                          {t(`nav.${cat}`)}
                         </div>
 
                         <ul
@@ -143,24 +160,29 @@ export default function Header() {
                             py-1
                           "
                         >
-                          {services[cat]?.map((item, idx) => (
-                            <li key={idx}>
-                              <a
-                                href="#"
-                                className="
-                                  block border-l-[3px] border-transparent
-                                  px-4 py-2 text-sm text-[#666]
-                                  transition-all duration-200
-                                  hover:border-[#004a99]
-                                  hover:bg-slate-50
-                                  hover:pl-6
-                                  hover:text-[#004a99]
-                                "
-                              >
-                                {item}
-                              </a>
-                            </li>
-                          ))}
+                          {t(`services.${cat}`)?.map(
+                            (
+                              item: string,
+                              idx: number
+                            ) => (
+                              <li key={idx}>
+                                <a
+                                  href="#"
+                                  className="
+                                    block border-l-[3px] border-transparent
+                                    px-4 py-2 text-sm text-[#666]
+                                    transition-all duration-200
+                                    hover:border-[#004a99]
+                                    hover:bg-slate-50
+                                    hover:pl-6
+                                    hover:text-[#004a99]
+                                  "
+                                >
+                                  {item}
+                                </a>
+                              </li>
+                            )
+                          )}
                         </ul>
                       </div>
                     </>
@@ -172,7 +194,9 @@ export default function Header() {
 
           {/* MOBILE MENU BUTTON */}
           <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() =>
+              setMobileMenuOpen(!mobileMenuOpen)
+            }
             className="lg:hidden"
           >
             {mobileMenuOpen ? (
@@ -199,7 +223,7 @@ export default function Header() {
                         block py-4 text-sm font-semibold uppercase
                       "
                     >
-                      About
+                      {t(`nav.${cat}`)}
                     </Link>
                   ) : (
                     <div className="py-4">
@@ -209,25 +233,30 @@ export default function Header() {
                           text-left text-sm font-semibold uppercase
                         "
                       >
-                        {cat}
+                        {t(`nav.${cat}`)}
 
                         <ChevronDown size={16} />
                       </button>
 
                       <div className="mt-3 flex flex-col gap-2 pl-3">
-                        {services[cat]?.map((item, idx) => (
-                          <a
-                            key={idx}
-                            href="#"
-                            className="
-                              text-sm text-slate-600
-                              transition-colors duration-200
-                              hover:text-[#004a99]
-                            "
-                          >
-                            {item}
-                          </a>
-                        ))}
+                        {t(`services.${cat}`)?.map(
+                          (
+                            item: string,
+                            idx: number
+                          ) => (
+                            <a
+                              key={idx}
+                              href="#"
+                              className="
+                                text-sm text-slate-600
+                                transition-colors duration-200
+                                hover:text-[#004a99]
+                              "
+                            >
+                              {item}
+                            </a>
+                          )
+                        )}
                       </div>
                     </div>
                   )}
