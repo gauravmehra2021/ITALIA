@@ -1,13 +1,18 @@
 @import "tailwindcss";
+
+
 :root {
-  --primary: #004a99; /* Deep Professional Blue */
-  --secondary: #F37021; /* Branding Orange */
-  --accent: #D2691E;
+  --primary: #004a99;
+  --secondary: #f37021;
+  --accent: #d2691e;
   --footer-bg: rgb(37, 39, 46);
-  --background: #F8FAFC;
-  --text-main: #1E293B;
-  --text-muted: #64748B;
+
+  --background: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+
   --glass: rgba(255, 255, 255, 0.7);
+
   --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -17,33 +22,67 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--background);
-  color: var(--text-main);
-  line-height: 1.6;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
+body {
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text-main);
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
-/* Glassmorphism utility */
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #004a99;
+  border-radius: 999px;
+}
+
+/* Glass Effect */
 .glass {
   background: var(--glass);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Animations */
@@ -52,6 +91,7 @@ h1, h2, h3, h4 {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -60,4 +100,28 @@ h1, h2, h3, h4 {
 
 .animate-fade-in-up {
   animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Dropdown Smooth Animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-animation {
+  animation: dropdownFade 0.3s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
 }
