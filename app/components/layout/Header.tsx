@@ -65,7 +65,7 @@ const Header = () => {
                 >
                   {cat === 'about' ? (
                     <Link
-                      href="/chi-siamo"
+                      href="/WhoWeAre"
                       className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
                     >
                       {t(`nav.${cat}`)}
