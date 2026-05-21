@@ -4,6 +4,44 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '../../context/LanguageContext'
 
+const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => any }) => {
+  const [open, setOpen] = useState(false)
+  const services = t(`services.${cat}`)
+  const hasDropdown = cat !== 'about' && Array.isArray(services)
+
+  return (
+    <li className="border-b border-gray-100">
+      <div
+        className="flex cursor-pointer items-center justify-between py-3.5 text-sm font-semibold uppercase tracking-wide text-[#444] transition-colors duration-300 hover:text-[#004a99]"
+        onClick={() => hasDropdown && setOpen(!open)}
+      >
+        {cat === 'about' ? (
+          <Link href="/WhoWeAre" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : (
+          <span>{t(`nav.${cat}`)}</span>
+        )}
+        {hasDropdown && (
+          <span className={`text-[10px] transition-transform duration-300 ${open ? 'rotate-180' : ''}`}>▼</span>
+        )}
+      </div>
+      {hasDropdown && (
+        <ul className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-[500px] pb-2' : 'max-h-0'}`}>
+          {services.map((item: string, idx: number) => (
+            <li key={idx}>
+              <a
+                href="#"
+                className="block border-l-[3px] border-[#004a99] bg-gray-50 px-4 py-2 text-[13px] text-[#555] hover:text-[#004a99]"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  )
+}
+
 const Header = () => {
   const { t } = useLanguage()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -24,15 +62,15 @@ const Header = () => {
     <header className="sticky top-0 z-[1000] w-full">
       {/* Top Bar */}
       <div className="bg-[#004a99] py-1.5 text-white">
-        <div className="container flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="text-[12px]">
+        <div className="container flex items-center justify-between px-4">
+          <div className="flex items-center gap-3">
+            <span className="hidden text-[12px] sm:inline">
               {t('topBar.story')}
             </span>
 
             <a
               href="#"
-              className="rounded border border-white/40 px-3 py-1 text-[12px] font-medium transition-all duration-300 hover:bg-white hover:text-[#004a99]"
+              className="rounded border border-white/40 px-3 py-1 text-[11px] font-medium transition-all duration-300 hover:bg-white hover:text-[#004a99] sm:text-[12px]"
             >
               {t('topBar.more')}
             </a>
@@ -42,7 +80,7 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-white shadow-[0_2px_15px_rgba(0,0,0,0.05)]">
-        <div className="container flex items-center justify-between gap-5 py-5">
+        <div className="container flex items-center justify-between gap-4 px-4 py-3 lg:py-5">
           {/* Logo */}
           <Link
             href="/"
@@ -51,7 +89,7 @@ const Header = () => {
             <img
               src="/images/logo.svg"
               alt="AMEI Logo"
-              className="h-[60px] w-auto object-contain"
+              className="h-[44px] w-auto object-contain sm:h-[52px] lg:h-[60px]"
             />
           </Link>
 
@@ -147,23 +185,17 @@ const Header = () => {
         <div
           className={`overflow-hidden bg-white transition-all duration-500 lg:hidden ${
             isMobileMenuOpen
-              ? 'max-h-[1000px] border-t'
+              ? 'max-h-[2000px] border-t'
               : 'max-h-0'
           }`}
         >
-          <ul className="container flex flex-col py-4">
+          <ul className="container flex flex-col px-4 py-2">
             {categories.map((cat) => (
-              <li
+              <MobileMenuItem
                 key={cat}
-                className="border-b border-gray-100"
-              >
-                <a
-                  href="#"
-                  className="flex items-center justify-between py-4 text-sm font-semibold uppercase tracking-wide text-[#444] transition-colors duration-300 hover:text-[#004a99]"
-                >
-                  {t(`nav.${cat}`)}
-                </a>
-              </li>
+                cat={cat}
+                t={t}
+              />
             ))}
           </ul>
         </div>
