@@ -8,7 +8,7 @@ export default function CittadinanzaItaliana() {
       </h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
         <p>Ottenere la <strong>Cittadinanza Italiana</strong> è il coronamento di un percorso di integrazione nel nostro Paese. Esistono diverse vie per acquisirla: per residenza, per matrimonio, per discendenza o per naturalizzazione.</p>
-        <p>Il nostro team specializzato vi assiste in tutto l'iter burocratico, dalla verifica dei requisiti fino alla cerimonia di giuramento.</p>
+        <p>Il nostro team specializzato vi assiste in tu tto l'ite r burocratico, dalla verifica dei requisiti fino alla cerimonia di giuramento.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Percorsi disponibili</h2>
         <ul className="space-y-2">
           {['Cittadinanza per residenza (10 anni per extracomunitari)', 'Cittadinanza per matrimonio con cittadino italiano', 'Cittadinanza per discendenza (iure sanguinis)', 'Verifica e raccolta documentazione', 'Monitoraggio della pratica e supporto fino al giuramento'].map((item, i) => (
