@@ -66,23 +66,22 @@ const Footer = () => {
 
             <ul className="space-y-3">
               {[
-                'Migrants',
-                'Travelers',
-                'Families',
-                'Companies',
-                'Loans and financing',
-                'Other Services',
+                { label: 'Migrants', href: '/migrants' },
+                { label: 'Travelers', href: '/travelers' },
+                { label: 'Families', href: '/families' },
+                { label: 'Companies', href: '/companies' },
+                { label: 'Loans and financing', href: '/loans' },
+                { label: 'Other Services', href: '/other-services' },
               ].map((item) => (
-                <li key={item}>
+                <li key={item.href}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="group flex items-center text-[#b0b0b0] transition-all duration-300 hover:translate-x-[5px] hover:text-white"
                   >
                     <span className="mr-3 font-bold text-[#004a99]">
                       »
                     </span>
-
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
