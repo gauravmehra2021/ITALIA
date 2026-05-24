@@ -6,7 +6,7 @@
     },
     "nav": {
       "about": "Chi Siamo",
-      "immigration": "Servizi per l’Immigrazione",
+      "immigration": "Servizi per l'Immigrazione",
       "caf": "C.A.F. e Patronato",
       "training": "Formazione e Corsi di Lingua",
       "business": "Consulenza Aziendale",
@@ -16,75 +16,24 @@
       "other": "Altri servizi"
     },
     "services": {
-      "immigration": [
-        "Permesso di Soggiorno",
-        "Ricongiungimento familiare",
-        "Decreto Flussi",
-        "Primo Ingresso",
-        "Cittadinanza Italiana",
-        "Compilazione documenti"
-      ],
-      "caf": [
-        "Isee",
-        "730",
-        "Naspi",
-        "Domanda assegno unico",
-        "Invalidità",
-        "Dimissioni",
-        "Red",
-        "Locazioni",
-        "Assegno sociale",
-        "Estratto contributivo",
-        "Cud",
-        "Imu",
-        "Successione",
-        "Domanda di pensione",
-        "Colf e badanti",
-        "Inail",
-        "Disoccupazione agricola",
-        "Attivazione spid",
-        "Send"
-      ],
-      "training": [
-        "Corsi di Lingua",
-        "Qualifiche Professionali",
-        "Settore Socio-Sanitario",
-        "Corso sicurezza sul lavoro"
-      ],
-      "business": [
-        "Apertura Attività",
-        "Documentazione valutazione rischi DVR RSPP RLSS"
-      ],
-      "insurance": [
-        "Assicurazioni sanitarie",
-        "Polizze vita",
-        "Assicurazione casa e macchina",
-        "Assicurazioni aziende"
-      ],
-      "indianConsulate": [
-        "Passaporto Indiano",
-        "E-Visto Indiano",
-        "Carta OCI",
-        "Altri servizi"
-      ],
-      "visas": [
-        "Richiesta visto"
-      ],
-      "other": [
-        "Traduzioni",
-        "Creazione CV",
-        "Interprete"
-      ]
+      "immigration": ["Permesso di Soggiorno","Ricongiungimento familiare","Decreto Flussi","Primo Ingresso","Cittadinanza Italiana","Compilazione documenti"],
+      "caf": ["Isee","730","Naspi","Domanda assegno unico","Invalidità","Dimissioni","Red","Locazioni","Assegno sociale","Estratto contributivo","Cud","Imu","Successione","Domanda di pensione","Colf e badanti","Inail","Disoccupazione agricola","Attivazione spid","Send"],
+      "training": ["Corsi di Lingua","Qualifiche Professionali","Settore Socio-Sanitario","Corso sicurezza sul lavoro"],
+      "business": ["Apertura Attività","Documentazione valutazione rischi DVR RSPP RLSS"],
+      "insurance": ["Assicurazioni sanitarie","Polizze vita","Assicurazione casa e macchina","Assicurazioni aziende"],
+      "indianConsulate": ["Passaporto Indiano","E-Visto Indiano","Carta OCI","Altri servizi"],
+      "visas": ["Richiesta visto"],
+      "other": ["Traduzioni","Creazione CV","Interprete"]
     },
     "about": {
       "title": "CHI SIAMO",
       "subtitle": "QUESTO È AMEI – ASSOCIAZIONE MONDO E ITALIA",
       "welcome": "Benvenuti. Vi invitiamo a scoprire chi siamo.",
-      "p1": "Siamo una realtà solida e dinamica, nata con l’obiettivo di offrire un supporto professionale e altamente qualificato alle sfide di un mondo sempre più interconnesso. In un’epoca di grandi cambiamenti e movimenti globali, AMEI si pone come il punto d'incontro tra le necessità dei cittadini e la complessità della burocrazia italiana.",
+      "p1": "Siamo una realtà solida e dinamica, nata con l'obiettivo di offrire un supporto professionale e altamente qualificato alle sfide di un mondo sempre più interconnesso. In un'epoca di grandi cambiamenti e movimenti globali, AMEI si pone come il punto d'incontro tra le necessità dei cittadini e la complessità della burocrazia italiana.",
       "p2": "Non ci limitiamo a osservare il cambiamento: mettiamo in campo la nostra esperienza e la nostra profonda conoscenza normativa per essere consulenti specializzati. Siamo in grado di offrire soluzioni mirate, assistenza completa e una vasta gamma di servizi dedicati a tutti i cittadini del mondo che hanno scelto l'Italia come casa o come tappa del loro percorso.",
-      "p3": "Siamo un punto di riferimento costruito sull'ascolto e sulla competenza. AMEI è un’organizzazione fatta di persone per le persone, animata dalla determinazione di migliorare la qualità della vita dei nostri assistiti. Ogni nostro servizio riflette questa ambizione: semplificare il presente per costruire un futuro più sereno.",
+      "p3": "Siamo un punto di riferimento costruito sull'ascolto e sulla competenza. AMEI è un'organizzazione fatta di persone per le persone, animata dalla determinazione di migliorare la qualità della vita dei nostri assistiti. Ogni nostro servizio riflette questa ambizione: semplificare il presente per costruire un futuro più sereno.",
       "listTitle": "Per rispondere a ogni vostra esigenza, abbiamo organizzato la nostra attività in aree specialistiche:",
-      "item1": "IMMIGRAZIONE & PERMANENZA Consulenza e assistenza completa per l’ingresso e il soggiorno in Italia, dai permessi alla cittadinanza.",
+      "item1": "IMMIGRAZIONE & PERMANENZA Consulenza e assistenza completa per l'ingresso e il soggiorno in Italia, dai permessi alla cittadinanza.",
       "item2": "SUPPORTO AL CITTADINO (CAF & PATRONATO) Gestione di pratiche fiscali e previdenziali: 730, ISEE, assegni familiari, disoccupazioni e pensioni.",
       "item3": "LAVORO E FAMIGLIA Assistenza per la gestione del personale domestico e supporto nelle tutele lavorative.",
       "item4": "TUTELA LEGALE E DIRITTI Supporto e consulenza per garantire il rispetto dei diritti di ogni individuo di fronte alle istituzioni.",
@@ -110,65 +59,14 @@
       "other": "Other Services"
     },
     "services": {
-      "immigration": [
-        "Residence Permit",
-        "Family Reunification",
-        "Flow Decree",
-        "First Entry",
-        "Italian Citizenship",
-        "Document Filling"
-      ],
-      "caf": [
-        "ISEE",
-        "730 Tax Return",
-        "NASpI Unemployment",
-        "Single Allowance Claim",
-        "Disability",
-        "Resignations",
-        "RED",
-        "Leases",
-        "Social Allowance",
-        "Contribution Statement",
-        "CUD",
-        "IMU Tax",
-        "Succession",
-        "Pension Application",
-        "Domestic Workers",
-        "INAIL",
-        "Agricultural Unemployment",
-        "SPID Activation",
-        "SEND"
-      ],
-      "training": [
-        "Language Courses",
-        "Professional Qualifications",
-        "Socio-Health Sector",
-        "Workplace Safety Course"
-      ],
-      "business": [
-        "Business Startup",
-        "Risk Assessment Document DVR RSPP RLSS"
-      ],
-      "insurance": [
-        "Health Insurance",
-        "Life Policies",
-        "Home and Car Insurance",
-        "Business Insurance"
-      ],
-      "indianConsulate": [
-        "Indian Passport",
-        "Indian E-Visa",
-        "OCI Card",
-        "Other Services"
-      ],
-      "visas": [
-        "Visa Application"
-      ],
-      "other": [
-        "Translations",
-        "CV Creation",
-        "Interpreter"
-      ]
+      "immigration": ["Residence Permit","Family Reunification","Flow Decree","First Entry","Italian Citizenship","Document Filling"],
+      "caf": ["ISEE","730 Tax Return","NASpI Unemployment","Single Allowance Claim","Disability","Resignations","RED","Leases","Social Allowance","Contribution Statement","CUD","IMU Tax","Succession","Pension Application","Domestic Workers","INAIL","Agricultural Unemployment","SPID Activation","SEND"],
+      "training": ["Language Courses","Professional Qualifications","Socio-Health Sector","Workplace Safety Course"],
+      "business": ["Business Startup","Risk Assessment Document DVR RSPP RLSS"],
+      "insurance": ["Health Insurance","Life Policies","Home and Car Insurance","Business Insurance"],
+      "indianConsulate": ["Indian Passport","Indian E-Visa","OCI Card","Other Services"],
+      "visas": ["Visa Application"],
+      "other": ["Translations","CV Creation","Interpreter"]
     },
     "about": {
       "title": "WHO WE ARE",
@@ -185,6 +83,178 @@
       "item5": "INTEGRATION AND ACCESSORY SERVICES: Translations, orientation to local services, and 360-degree bureaucratic assistance.",
       "footer1": "Our network of professionals is available to anyone who must face the necessary requirements to live, work or study in our country. The name Associazione Mondo E Italia (World and Italy Association) encapsulates our essence: we are the bridge that unites your story of origin with your present in Italy.",
       "footer2": "Whatever your life project or bureaucratic need, AMEI is by your side to transform every obstacle into an opportunity!"
+    }
+  },
+  "fr": {
+    "topBar": {
+      "story": "Commencez votre activité avec nous et écrivez votre histoire !",
+      "more": "En savoir plus"
+    },
+    "nav": {
+      "about": "Qui Sommes-Nous",
+      "immigration": "Services d'Immigration",
+      "caf": "C.A.F. et Patronage",
+      "training": "Formation et Cours de Langue",
+      "business": "Conseil aux Entreprises",
+      "insurance": "Assurances",
+      "indianConsulate": "Services du Consulat Indien",
+      "visas": "Visas Internationaux",
+      "other": "Autres Services"
+    },
+    "services": {
+      "immigration": ["Permis de Séjour","Regroupement Familial","Décret Flux","Première Entrée","Citoyenneté Italienne","Remplissage de Documents"],
+      "caf": ["ISEE","Déclaration 730","Chômage NASpI","Demande d'Allocation Unique","Invalidité","Démissions","RED","Locations","Allocation Sociale","Relevé de Cotisations","CUD","Taxe IMU","Succession","Demande de Retraite","Employés Domestiques","INAIL","Chômage Agricole","Activation SPID","SEND"],
+      "training": ["Cours de Langue","Qualifications Professionnelles","Secteur Socio-Sanitaire","Cours de Sécurité au Travail"],
+      "business": ["Création d'Entreprise","Document d'Évaluation des Risques DVR RSPP RLSS"],
+      "insurance": ["Assurance Santé","Polices Vie","Assurance Maison et Voiture","Assurance Entreprises"],
+      "indianConsulate": ["Passeport Indien","E-Visa Indien","Carte OCI","Autres Services"],
+      "visas": ["Demande de Visa"],
+      "other": ["Traductions","Création de CV","Interprète"]
+    },
+    "about": {
+      "title": "QUI SOMMES-NOUS",
+      "subtitle": "VOICI AMEI – ASSOCIATION MONDE ET ITALIE",
+      "welcome": "Bienvenue. Nous vous invitons à découvrir qui nous sommes.",
+      "p1": "Nous sommes une réalité solide et dynamique, née avec l'objectif d'offrir un soutien professionnel et hautement qualifié aux défis d'un monde de plus en plus interconnecté. À une époque de grands changements et de mouvements mondiaux, AMEI se positionne comme le point de rencontre entre les besoins des citoyens et la complexité de la bureaucratie italienne.",
+      "p2": "Nous ne nous limitons pas à observer le changement : nous déployons notre expérience et notre connaissance approfondie de la réglementation pour être des consultants spécialisés. Nous sommes en mesure d'offrir des solutions ciblées, une assistance complète et une large gamme de services dédiés à tous les citoyens du monde qui ont choisi l'Italie comme foyer.",
+      "p3": "Nous sommes un point de référence construit sur l'écoute et la compétence. AMEI est une organisation faite de personnes pour les personnes, animée par la détermination d'améliorer la qualité de vie de nos clients.",
+      "listTitle": "Pour répondre à chacun de vos besoins, nous avons organisé notre activité en domaines spécialisés :",
+      "item1": "IMMIGRATION & SÉJOUR Conseil et assistance complets pour l'entrée et le séjour en Italie, des permis à la citoyenneté.",
+      "item2": "SOUTIEN AU CITOYEN (CAF & PATRONAGE) Gestion des dossiers fiscaux et de sécurité sociale : 730, ISEE, allocations familiales, chômage et retraites.",
+      "item3": "TRAVAIL ET FAMILLE Assistance pour la gestion du personnel domestique et soutien dans les protections du travail.",
+      "item4": "PROTECTION JURIDIQUE ET DROITS Soutien et conseil pour garantir le respect des droits de chaque individu.",
+      "item5": "INTÉGRATION ET SERVICES ACCESSOIRES Traductions, orientation vers les services locaux et assistance bureaucratique à 360 degrés.",
+      "footer1": "Notre réseau de professionnels est à la disposition de quiconque doit faire face aux démarches nécessaires pour vivre, travailler ou étudier dans notre pays.",
+      "footer2": "Quel que soit votre projet de vie ou votre besoin bureaucratique, AMEI est à vos côtés pour transformer chaque obstacle en opportunité !"
+    }
+  },
+  "es": {
+    "topBar": {
+      "story": "¡Comienza tu negocio con nosotros y escribe tu historia!",
+      "more": "Descubrir más"
+    },
+    "nav": {
+      "about": "Quiénes Somos",
+      "immigration": "Servicios de Inmigración",
+      "caf": "C.A.F. y Patrocinio",
+      "training": "Formación y Cursos de Idiomas",
+      "business": "Consultoría Empresarial",
+      "insurance": "Seguros",
+      "indianConsulate": "Servicios del Consulado Indio",
+      "visas": "Visados Internacionales",
+      "other": "Otros Servicios"
+    },
+    "services": {
+      "immigration": ["Permiso de Residencia","Reagrupación Familiar","Decreto de Flujos","Primera Entrada","Ciudadanía Italiana","Cumplimentación de Documentos"],
+      "caf": ["ISEE","Declaración 730","Desempleo NASpI","Solicitud de Subsidio Único","Invalidez","Dimisiones","RED","Arrendamientos","Subsidio Social","Extracto de Cotizaciones","CUD","Impuesto IMU","Sucesión","Solicitud de Pensión","Empleados Domésticos","INAIL","Desempleo Agrícola","Activación SPID","SEND"],
+      "training": ["Cursos de Idiomas","Cualificaciones Profesionales","Sector Socio-Sanitario","Curso de Seguridad Laboral"],
+      "business": ["Apertura de Negocio","Documentación de Evaluación de Riesgos DVR RSPP RLSS"],
+      "insurance": ["Seguro de Salud","Pólizas de Vida","Seguro de Casa y Coche","Seguro para Empresas"],
+      "indianConsulate": ["Pasaporte Indio","E-Visa India","Tarjeta OCI","Otros Servicios"],
+      "visas": ["Solicitud de Visado"],
+      "other": ["Traducciones","Creación de CV","Intérprete"]
+    },
+    "about": {
+      "title": "QUIÉNES SOMOS",
+      "subtitle": "ESTO ES AMEI – ASOCIACIÓN MUNDO E ITALIA",
+      "welcome": "Bienvenidos. Les invitamos a descubrir quiénes somos.",
+      "p1": "Somos una realidad sólida y dinámica, nacida con el objetivo de ofrecer un apoyo profesional y altamente cualificado a los desafíos de un mundo cada vez más interconectado. En una época de grandes cambios y movimientos globales, AMEI se posiciona como el punto de encuentro entre las necesidades de los ciudadanos y la complejidad de la burocracia italiana.",
+      "p2": "No nos limitamos a observar el cambio: desplegamos nuestra experiencia y profundo conocimiento normativo para ser consultores especializados. Somos capaces de ofrecer soluciones específicas, asistencia completa y una amplia gama de servicios dedicados a todos los ciudadanos del mundo que han elegido Italia como hogar.",
+      "p3": "Somos un punto de referencia construido sobre la escucha y la competencia. AMEI es una organización hecha de personas para las personas, impulsada por la determinación de mejorar la calidad de vida de nuestros clientes.",
+      "listTitle": "Para responder a cada una de sus necesidades, hemos organizado nuestra actividad en áreas especializadas:",
+      "item1": "INMIGRACIÓN & ESTANCIA Asesoramiento y asistencia completos para la entrada y estancia en Italia, desde los permisos hasta la ciudadanía.",
+      "item2": "APOYO AL CIUDADANO (CAF & PATROCINIO) Gestión de trámites fiscales y de seguridad social: 730, ISEE, subsidios familiares, desempleo y pensiones.",
+      "item3": "TRABAJO Y FAMILIA Asistencia para la gestión del personal doméstico y apoyo en las protecciones laborales.",
+      "item4": "PROTECCIÓN LEGAL Y DERECHOS Apoyo y asesoramiento para garantizar el respeto de los derechos de cada individuo.",
+      "item5": "INTEGRACIÓN Y SERVICIOS ACCESORIOS Traducciones, orientación a los servicios locales y asistencia burocrática a 360 grados.",
+      "footer1": "Nuestra red de profesionales está a disposición de cualquier persona que deba afrontar los trámites necesarios para vivir, trabajar o estudiar en nuestro país.",
+      "footer2": "Cualquiera que sea tu proyecto de vida o necesidad burocrática, ¡AMEI está a tu lado para transformar cada obstáculo en una oportunidad!"
+    }
+  },
+  "ar": {
+    "topBar": {
+      "story": "ابدأ نشاطك التجاري معنا واكتب قصتك!",
+      "more": "اكتشف المزيد"
+    },
+    "nav": {
+      "about": "من نحن",
+      "immigration": "خدمات الهجرة",
+      "caf": "خدمات CAF والرعاية",
+      "training": "التدريب ودورات اللغة",
+      "business": "الاستشارات التجارية",
+      "insurance": "التأمينات",
+      "indianConsulate": "خدمات القنصلية الهندية",
+      "visas": "التأشيرات الدولية",
+      "other": "خدمات أخرى"
+    },
+    "services": {
+      "immigration": ["تصريح الإقامة","لم شمل الأسرة","مرسوم التدفقات","الدخول الأول","الجنسية الإيطالية","تعبئة الوثائق"],
+      "caf": ["ISEE","إقرار ضريبي 730","إعانة البطالة NASpI","طلب البدل الموحد","الإعاقة","الاستقالات","RED","عقود الإيجار","البدل الاجتماعي","كشف الاشتراكات","CUD","ضريبة IMU","الميراث","طلب التقاعد","العمالة المنزلية","INAIL","بطالة القطاع الزراعي","تفعيل SPID","SEND"],
+      "training": ["دورات اللغة","المؤهلات المهنية","القطاع الاجتماعي الصحي","دورة السلامة في العمل"],
+      "business": ["فتح نشاط تجاري","وثائق تقييم المخاطر DVR RSPP RLSS"],
+      "insurance": ["التأمين الصحي","وثائق التأمين على الحياة","تأمين المنزل والسيارة","تأمين الشركات"],
+      "indianConsulate": ["جواز السفر الهندي","التأشيرة الإلكترونية الهندية","بطاقة OCI","خدمات أخرى"],
+      "visas": ["طلب تأشيرة"],
+      "other": ["الترجمات","إنشاء السيرة الذاتية","مترجم فوري"]
+    },
+    "about": {
+      "title": "من نحن",
+      "subtitle": "هذه هي AMEI – جمعية العالم وإيطاليا",
+      "welcome": "مرحباً بكم. ندعوكم لاكتشاف من نحن.",
+      "p1": "نحن واقع متين وديناميكي، وُلد بهدف تقديم دعم مهني ومؤهل للغاية لتحديات عالم متزايد الترابط. في عصر التغييرات الكبرى والحركات العالمية، تضع AMEI نفسها نقطة التقاء بين احتياجات المواطنين وتعقيدات البيروقراطية الإيطالية.",
+      "p2": "لا نكتفي بمراقبة التغيير: نوظف خبرتنا ومعرفتنا التنظيمية العميقة لنكون مستشارين متخصصين. نحن قادرون على تقديم حلول مستهدفة ومساعدة كاملة لجميع مواطني العالم الذين اختاروا إيطاليا وطناً لهم.",
+      "p3": "نحن نقطة مرجعية مبنية على الاستماع والكفاءة. AMEI منظمة من الناس للناس، مدفوعة بالعزم على تحسين جودة حياة عملائنا.",
+      "listTitle": "للإجابة على كل احتياجاتكم، نظمنا نشاطنا في مجالات متخصصة:",
+      "item1": "الهجرة والإقامة: استشارة ومساعدة كاملة للدخول والإقامة في إيطاليا، من التصاريح إلى الجنسية.",
+      "item2": "دعم المواطن (CAF والرعاية): إدارة الملفات الضريبية والضمان الاجتماعي: 730، ISEE، إعانات الأسرة، البطالة والمعاشات.",
+      "item3": "العمل والأسرة: المساعدة في إدارة العمالة المنزلية والدعم في حماية العمال.",
+      "item4": "الحماية القانونية والحقوق: الدعم والمشورة لضمان احترام حقوق كل فرد.",
+      "item5": "الاندماج والخدمات الإضافية: الترجمات، التوجيه نحو الخدمات المحلية والمساعدة البيروقراطية الشاملة.",
+      "footer1": "شبكتنا من المهنيين متاحة لأي شخص يحتاج إلى مواجهة الإجراءات اللازمة للعيش أو العمل أو الدراسة في بلدنا.",
+      "footer2": "مهما كان مشروع حياتك أو احتياجك البيروقراطي، AMEI إلى جانبك لتحويل كل عقبة إلى فرصة!"
+    }
+  },
+  "ru": {
+    "topBar": {
+      "story": "Начните свой бизнес с нами и напишите свою историю!",
+      "more": "Узнать больше"
+    },
+    "nav": {
+      "about": "О нас",
+      "immigration": "Иммиграционные услуги",
+      "caf": "CAF и Патронаж",
+      "training": "Обучение и языковые курсы",
+      "business": "Бизнес-консалтинг",
+      "insurance": "Страхование",
+      "indianConsulate": "Услуги индийского консульства",
+      "visas": "Международные визы",
+      "other": "Другие услуги"
+    },
+    "services": {
+      "immigration": ["Вид на жительство","Воссоединение семьи","Декрет о потоках","Первый въезд","Итальянское гражданство","Заполнение документов"],
+      "caf": ["ISEE","Налоговая декларация 730","Пособие по безработице NASpI","Заявление на единое пособие","Инвалидность","Увольнение по собственному желанию","RED","Аренда","Социальное пособие","Выписка о взносах","CUD","Налог IMU","Наследство","Заявление на пенсию","Домашний персонал","INAIL","Сельскохозяйственная безработица","Активация SPID","SEND"],
+      "training": ["Языковые курсы","Профессиональные квалификации","Социально-медицинский сектор","Курс по охране труда"],
+      "business": ["Открытие бизнеса","Документация по оценке рисков DVR RSPP RLSS"],
+      "insurance": ["Медицинское страхование","Страхование жизни","Страхование дома и автомобиля","Страхование бизнеса"],
+      "indianConsulate": ["Индийский паспорт","Индийская электронная виза","Карта OCI","Другие услуги"],
+      "visas": ["Заявление на визу"],
+      "other": ["Переводы","Создание резюме","Переводчик"]
+    },
+    "about": {
+      "title": "О НАС",
+      "subtitle": "ЭТО AMEI – АССОЦИАЦИЯ МИР И ИТАЛИЯ",
+      "welcome": "Добро пожаловать. Приглашаем вас узнать, кто мы такие.",
+      "p1": "Мы — надёжная и динамичная организация, созданная с целью оказания профессиональной и высококвалифицированной поддержки в условиях всё более взаимосвязанного мира. В эпоху глобальных перемен AMEI позиционирует себя как точку встречи между потребностями граждан и сложностью итальянской бюрократии.",
+      "p2": "Мы не ограничиваемся наблюдением за переменами: мы применяем наш опыт и глубокие знания нормативной базы, чтобы быть специализированными консультантами. Мы предлагаем целевые решения и полную помощь всем гражданам мира, выбравшим Италию своим домом.",
+      "p3": "Мы — точка опоры, построенная на умении слушать и профессионализме. AMEI — организация людей для людей, движимая стремлением улучшить качество жизни наших клиентов.",
+      "listTitle": "Для удовлетворения всех ваших потребностей мы организовали нашу деятельность по специализированным направлениям:",
+      "item1": "ИММИГРАЦИЯ И ПРОЖИВАНИЕ: Полное консультирование и помощь для въезда и проживания в Италии, от разрешений до гражданства.",
+      "item2": "ПОДДЕРЖКА ГРАЖДАН (CAF И ПАТРОНАЖ): Ведение налоговых и социальных дел: 730, ISEE, семейные пособия, безработица и пенсии.",
+      "item3": "РАБОТА И СЕМЬЯ: Помощь в управлении домашним персоналом и поддержка в трудовых правах.",
+      "item4": "ПРАВОВАЯ ЗАЩИТА И ПРАВА: Поддержка и консультации для обеспечения прав каждого человека.",
+      "item5": "ИНТЕГРАЦИЯ И ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ: Переводы, ориентация в местных службах и всесторонняя бюрократическая помощь.",
+      "footer1": "Наша сеть профессионалов доступна всем, кто должен пройти необходимые процедуры для жизни, работы или учёбы в нашей стране.",
+      "footer2": "Каким бы ни был ваш жизненный проект или бюрократическая потребность, AMEI рядом с вами, чтобы превратить каждое препятствие в возможность!"
     }
   }
 }

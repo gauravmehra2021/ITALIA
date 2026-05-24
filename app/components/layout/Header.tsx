@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '../../context/LanguageContext'
-import translationsData from '../../translations/languages.json'
 
 // Routes indexed by position — works regardless of active language
 const serviceRoutes: Record<string, string[]> = {
@@ -68,9 +67,6 @@ const serviceRoutes: Record<string, string[]> = {
   ],
 }
 
-type Translations = typeof translationsData
-type Lang = keyof Translations
-
 const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | string[] }) => {
   const [open, setOpen] = useState(false)
   const services = t(`services.${cat}`)
@@ -111,8 +107,17 @@ const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | 
 }
 
 const Header = () => {
-  const { t } = useLanguage()
+  const { t, language, setLanguage } = useLanguage()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const langs = [
+    { code: 'it', label: 'IT' },
+    { code: 'en', label: 'EN' },
+    { code: 'fr', label: 'FR' },
+    { code: 'es', label: 'ES' },
+    { code: 'ar', label: 'AR' },
+    { code: 'ru', label: 'RU' },
+  ] as const
 
   const categories = [
     'about',
@@ -141,6 +146,24 @@ const Header = () => {
             >
               {t('topBar.more')}
             </a>
+          </div>
+
+          {/* Language Toggle */}
+          <div className="flex items-center gap-1 rounded border border-white/30 p-[3px]">
+            {langs.map(({ code, label }) => (
+              <button
+                key={code}
+                onClick={() => {
+                  setLanguage(code)
+                  document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr'
+                }}
+                className={`rounded px-2 py-[2px] text-[11px] font-bold uppercase transition-all duration-300 ${
+                  language === code ? 'bg-white text-[#004a99]' : 'text-white/70 hover:text-white'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
         </div>
       </div>

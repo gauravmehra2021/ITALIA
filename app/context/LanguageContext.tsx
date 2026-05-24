@@ -9,7 +9,7 @@ import {
 
 import translationsData from "../translations/languages.json";
 
-type Language = "en" | "it";
+type Language = "it" | "en" | "fr" | "es" | "ar" | "ru";
 
 interface LanguageContextType {
   language: Language;
