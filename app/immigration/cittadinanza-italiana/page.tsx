@@ -4,7 +4,7 @@ export default function CittadinanzaItaliana() {
   return (
     <div className="container mx-auto max-w-[900px] py-20">
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">
-        Cittadinanza Italiana
+        Cittadinanza Italia
       </h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
         <p>Ottenere la <strong>Cittadinanza Italiana</strong> è il coronamento di un percorso di integrazione nel nostro Paese. Esistono diverse vie per acquisirla: per residenza, per matrimonio, per discendenza o per naturalizzazione.</p>
