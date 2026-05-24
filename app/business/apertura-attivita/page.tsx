@@ -15,7 +15,7 @@ export default function AperturaAttivita() {
             </li>
           ))}
         </ul>
-        <p>Hai un'idea imprenditoriale? Trasformala in realtà con il supporto di AMEI.</p>
+        <p>Hai un'idea imprenditoriale? Trasformala in realtà con il supporto di AI.</p>
       </div>
     </div>
   )
