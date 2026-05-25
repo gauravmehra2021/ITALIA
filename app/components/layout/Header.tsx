@@ -6,71 +6,13 @@ import { useLanguage } from '../../context/LanguageContext'
 
 // Routes indexed by position — works regardless of active language
 const serviceRoutes: Record<string, string[]> = {
-  immigration: [
-    '/immigration/permesso-di-soggiorno',
-    '/immigration/ricongiungimento-familiare',
-    '/immigration/decreto-flussi',
-    '/immigration/primo-ingresso',
-    '/immigration/cittadinanza-italiana',
-    '/immigration/compilazione-documenti',
-  ],
-  caf: [
-    '/caf/isee',
-    '/caf/730',
-    '/caf/naspi',
-    '/caf/domanda-assegno-unico',
-    '/caf/invalidita',
-    '/caf/dimissioni',
-    '/caf/red',
-    '/caf/locazioni',
-    '/caf/assegno-sociale',
-    '/caf/estratto-contributivo',
-    '/caf/cud',
-    '/caf/imu',
-    '/caf/successione',
-    '/caf/domanda-di-pensione',
-    '/caf/colf-e-badanti',
-    '/caf/inail',
-    '/caf/disoccupazione-agricola',
-    '/caf/attivazione-spid',
-    '/caf/send',
-  ],
-  training: [
-    '/training/corsi-di-lingua',
-    '/training/qualifiche-professionali',
-    '/training/settore-socio-sanitario',
-    '/training/corso-sicurezza-sul-lavoro',
-  ],
-  business: [
-    '/business/apertura-attivita',
-    '/business/documentazione-valutazione-rischi',
-  ],
-  insurance: [
-    '/insurance/assicurazioni-sanitarie',
-    '/insurance/polizze-vita',
-    '/insurance/assicurazione-casa-e-macchina',
-    '/insurance/assicurazioni-aziende',
-  ],
-  indianConsulate: [
-    '/indian-consulate/passaporto-indiano',
-    '/indian-consulate/e-visto-indiano',
-    '/indian-consulate/carta-oci',
-    '/indian-consulate/altri-servizi',
-  ],
-  visas: [
-    '/visas/richiesta-visto',
-  ],
-  other: [
-    '/other/traduzioni',
-    '/other/creazione-cv',
-    '/other/interprete',
-  ],
+  other: [],
 }
 
 const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | string[] }) => {
   const [open, setOpen] = useState(false)
   const services = t(`services.${cat}`)
-  const hasDropdown = cat !== 'about' && Array.isArray(services)
+  const hasDropdown = cat !== 'about' && cat !== 'immigration' && cat !== 'caf' && cat !== 'training' && cat !== 'business' && cat !== 'insurance' && cat !== 'visas' && cat !== 'indianConsulate' && cat !== 'other' && cat !== 'contact' && Array.isArray(services)
   const routes = serviceRoutes[cat] ?? []
 
   return (
@@ -81,6 +23,24 @@ const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | 
       >
         {cat === 'about' ? (
           <Link href="/WhoWeAre" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'immigration' ? (
+          <Link href="/immigration" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'caf' ? (
+          <Link href="/caf" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'training' ? (
+          <Link href="/training" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'business' ? (
+          <Link href="/business" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'insurance' ? (
+          <Link href="/insurance" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'visas' ? (
+          <Link href="/visas" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'indianConsulate' ? (
+          <Link href="/indian-consulate" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'other' ? (
+          <Link href="/other" className="w-full">{t(`nav.${cat}`)}</Link>
+        ) : cat === 'contact' ? (
+          <Link href="/contact" className="w-full">Contact Us</Link>
         ) : (
           <span className="w-full">{t(`nav.${cat}`)}</span>
         )}
@@ -129,6 +89,7 @@ const Header = () => {
     'indianConsulate',
     'visas',
     'other',
+    'contact',
   ] as const
 
   return (
@@ -194,6 +155,69 @@ const Header = () => {
                         className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
                       >
                         {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'immigration' ? (
+                      <Link
+                        href="/immigration"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'caf' ? (
+                      <Link
+                        href="/caf"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'training' ? (
+                      <Link
+                        href="/training"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'business' ? (
+                      <Link
+                        href="/business"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'insurance' ? (
+                      <Link
+                        href="/insurance"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'visas' ? (
+                      <Link
+                        href="/visas"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'indianConsulate' ? (
+                      <Link
+                        href="/indian-consulate"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'other' ? (
+                      <Link
+                        href="/other"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        {t(`nav.${cat}`)}
+                      </Link>
+                    ) : cat === 'contact' ? (
+                      <Link
+                        href="/contact"
+                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
+                      >
+                        Contact Us
                       </Link>
                     ) : (
                       <>
