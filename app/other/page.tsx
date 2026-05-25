@@ -95,7 +95,7 @@ export default function OtherServicesPage() {
 
             <div className="oth-hero-actions">
               <a href="#services" className="oth-btn-primary">View Services</a>
-              <a href="#cta" className="oth-btn-outline">Send Inquiry</a>
+              <Link href="/contact" className="oth-btn-outline">Send Inquiry</Link>
             </div>
 
             <div className="oth-hero-stats">
@@ -196,8 +196,8 @@ export default function OtherServicesPage() {
               </p>
             </div>
             <div className="oth-cta-actions">
-              <button className="oth-btn-primary">Send Inquiry</button>
-              <button className="oth-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="oth-btn-primary">Send Inquiry</Link>
+              <a href="tel:+390522172306" className="oth-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function OtherServicesPage() {
               </ul>
 
               <div className="oth-modal-footer">
-                <button className="oth-modal-btn oth-modal-btn-primary">Send Inquiry</button>
+              <Link href="/contact" className="oth-modal-btn oth-modal-btn-primary" onClick={() => setActiveModal(null)}>Send Inquiry</Link>
                 <button
                   className="oth-modal-btn oth-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

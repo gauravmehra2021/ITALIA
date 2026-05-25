@@ -110,7 +110,7 @@ export default function TrainingPage() {
 
             <div className="trn-hero-actions">
               <a href="#services" className="trn-btn-primary">View Courses</a>
-              <a href="#cta" className="trn-btn-outline">Enroll Now</a>
+              <Link href="/contact" className="trn-btn-outline">Enroll Now</Link>
             </div>
 
             <div className="trn-hero-stats">
@@ -211,8 +211,8 @@ export default function TrainingPage() {
               </p>
             </div>
             <div className="trn-cta-actions">
-              <button className="trn-btn-primary">Enroll Now</button>
-              <button className="trn-btn-outline">View Courses</button>
+              <Link href="/contact" className="trn-btn-primary">Enroll Now</Link>
+              <a href="#services" className="trn-btn-outline">View Courses</a>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function TrainingPage() {
               </ul>
 
               <div className="trn-modal-footer">
-                <button className="trn-modal-btn trn-modal-btn-primary">Enroll Now</button>
+              <Link href="/contact" className="trn-modal-btn trn-modal-btn-primary" onClick={() => setActiveModal(null)}>Enroll Now</Link>
                 <button
                   className="trn-modal-btn trn-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

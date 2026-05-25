@@ -140,7 +140,7 @@ export default function VisasPage() {
 
             <div className="vis-hero-actions">
               <a href="#services" className="vis-btn-primary">View Visa Types</a>
-              <a href="#cta" className="vis-btn-outline">Apply for Visa</a>
+              <Link href="/contact" className="vis-btn-outline">Apply for Visa</Link>
             </div>
 
             <div className="vis-hero-stats">
@@ -241,8 +241,8 @@ export default function VisasPage() {
               </p>
             </div>
             <div className="vis-cta-actions">
-              <button className="vis-btn-primary">Apply for Visa</button>
-              <button className="vis-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="vis-btn-primary">Apply for Visa</Link>
+              <a href="tel:+390522172306" className="vis-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -273,7 +273,7 @@ export default function VisasPage() {
               </ul>
 
               <div className="vis-modal-footer">
-                <button className="vis-modal-btn vis-modal-btn-primary">Apply for Visa</button>
+              <Link href="/contact" className="vis-modal-btn vis-modal-btn-primary" onClick={() => setActiveModal(null)}>Apply for Visa</Link>
                 <button
                   className="vis-modal-btn vis-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

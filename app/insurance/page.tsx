@@ -125,7 +125,7 @@ export default function InsurancePage() {
 
             <div className="ins-hero-actions">
               <a href="#services" className="ins-btn-primary">View Insurance Types</a>
-              <a href="#cta" className="ins-btn-outline">Get a Quote</a>
+              <Link href="/contact" className="ins-btn-outline">Get a Quote</Link>
             </div>
 
             <div className="ins-hero-stats">
@@ -226,8 +226,8 @@ export default function InsurancePage() {
               </p>
             </div>
             <div className="ins-cta-actions">
-              <button className="ins-btn-primary">Request a Quote</button>
-              <button className="ins-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="ins-btn-primary">Request a Quote</Link>
+              <a href="tel:+390522172306" className="ins-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ export default function InsurancePage() {
               </ul>
 
               <div className="ins-modal-footer">
-                <button className="ins-modal-btn ins-modal-btn-primary">Request a Quote</button>
+              <Link href="/contact" className="ins-modal-btn ins-modal-btn-primary" onClick={() => setActiveModal(null)}>Request a Quote</Link>
                 <button
                   className="ins-modal-btn ins-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

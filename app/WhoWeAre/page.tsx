@@ -163,7 +163,7 @@ const WhoWeAre = () => {
                 <span>Explore Our Services</span>
                 <span className="wwa-btn-arrow">→</span>
               </Link>
-              <Link href="#" className="wwa-closing-btn-outline">
+              <Link href="/contact" className="wwa-closing-btn-outline">
                 <span>Contact Us</span>
                 <span className="wwa-btn-arrow">→</span>
               </Link>

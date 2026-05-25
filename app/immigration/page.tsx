@@ -142,7 +142,7 @@ export default function ImmigrationPage() {
 
             <div className="imm-hero-actions">
               <a href="#services" className="imm-btn-primary">Explore Services</a>
-              <a href="#cta" className="imm-btn-outline">Contact Us</a>
+              <Link href="/contact" className="imm-btn-outline">Contact Us</Link>
             </div>
 
             <div className="imm-hero-stats">
@@ -243,8 +243,8 @@ export default function ImmigrationPage() {
               </p>
             </div>
             <div className="imm-cta-actions">
-              <button className="imm-btn-primary">Book Consultation</button>
-              <button className="imm-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="imm-btn-primary">Book Consultation</Link>
+              <a href="tel:+390522172306" className="imm-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -275,9 +275,9 @@ export default function ImmigrationPage() {
               </ul>
 
               <div className="imm-modal-footer">
-                <button className="imm-modal-btn imm-modal-btn-primary">
+              <Link href="/contact" className="imm-modal-btn imm-modal-btn-primary" onClick={() => setActiveModal(null)}>
                   Book Appointment
-                </button>
+                </Link>
                 <button
                   className="imm-modal-btn imm-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

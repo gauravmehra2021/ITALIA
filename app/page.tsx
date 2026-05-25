@@ -224,7 +224,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="home-cta-actions">
-              <Link href="/immigration" className="home-btn-primary">Get Started →</Link>
+              <Link href="/contact" className="home-btn-primary">Get Started →</Link>
               <Link href="/WhoWeAre" className="home-btn-outline">Learn More</Link>
             </div>
           </div>

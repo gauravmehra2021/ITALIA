@@ -53,7 +53,7 @@ export default function CafPage() {
 
             <div className="caf-hero-actions">
               <a href="#services" className="caf-btn-primary">View All Services</a>
-              <a href="#cta" className="caf-btn-outline">Contact Us</a>
+              <Link href="/contact" className="caf-btn-outline">Contact Us</Link>
             </div>
 
             <div className="caf-hero-stats">
@@ -154,8 +154,8 @@ export default function CafPage() {
               </p>
             </div>
             <div className="caf-cta-actions">
-              <button className="caf-btn-primary">Book Appointment</button>
-              <button className="caf-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="caf-btn-primary">Book Appointment</Link>
+              <a href="tel:+390522172306" className="caf-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>

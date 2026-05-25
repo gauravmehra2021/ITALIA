@@ -110,7 +110,7 @@ export default function IndianConsulatePage() {
 
             <div className="ind-hero-actions">
               <a href="#services" className="ind-btn-primary">View Services</a>
-              <a href="#cta" className="ind-btn-outline">Book Appointment</a>
+              <Link href="/contact" className="ind-btn-outline">Book Appointment</Link>
             </div>
 
             <div className="ind-hero-stats">
@@ -211,8 +211,8 @@ export default function IndianConsulatePage() {
               </p>
             </div>
             <div className="ind-cta-actions">
-              <button className="ind-btn-primary">Book Appointment</button>
-              <button className="ind-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="ind-btn-primary">Book Appointment</Link>
+              <a href="tel:+390522172306" className="ind-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function IndianConsulatePage() {
               </ul>
 
               <div className="ind-modal-footer">
-                <button className="ind-modal-btn ind-modal-btn-primary">Book Appointment</button>
+              <Link href="/contact" className="ind-modal-btn ind-modal-btn-primary" onClick={() => setActiveModal(null)}>Book Appointment</Link>
                 <button
                   className="ind-modal-btn ind-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}

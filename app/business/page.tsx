@@ -80,7 +80,7 @@ export default function BusinessPage() {
 
             <div className="biz-hero-actions">
               <a href="#services" className="biz-btn-primary">View Services</a>
-              <a href="#cta" className="biz-btn-outline">Request Consultation</a>
+              <Link href="/contact" className="biz-btn-outline">Request Consultation</Link>
             </div>
 
             <div className="biz-hero-stats">
@@ -181,8 +181,8 @@ export default function BusinessPage() {
               </p>
             </div>
             <div className="biz-cta-actions">
-              <button className="biz-btn-primary">Request Consultation</button>
-              <button className="biz-btn-outline">Call Us Now</button>
+              <Link href="/contact" className="biz-btn-primary">Request Consultation</Link>
+              <a href="tel:+390522172306" className="biz-btn-outline">Call Us Now</a>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function BusinessPage() {
               </ul>
 
               <div className="biz-modal-footer">
-                <button className="biz-modal-btn biz-modal-btn-primary">Request Consultation</button>
+              <Link href="/contact" className="biz-modal-btn biz-modal-btn-primary" onClick={() => setActiveModal(null)}>Request Consultation</Link>
                 <button
                   className="biz-modal-btn biz-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
