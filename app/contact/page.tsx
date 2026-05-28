@@ -2,20 +2,16 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './contact.css'
 
-const serviceOptions = [
-  'Immigration Services',
-  'CAF & Patronato',
-  'Training & Courses',
-  'Business Consultancy',
-  'Insurance',
-  'Indian Consulate',
-  'International Visas',
-  'Other Services',
-]
+type HourRow  = { day: string; time: string; closed: boolean }
+type LinkItem = { label: string; href: string }
+type ContactItem = { icon: string; label: string; value: string }
 
 export default function ContactPage() {
+  const { t } = useLanguage()
+
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
@@ -26,8 +22,46 @@ export default function ContactPage() {
     message: '',
     preferredContact: 'email',
   })
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading]     = useState(false)
   const [submitted, setSubmitted] = useState(false)
+
+  const rawServiceOptions = t('contact.form.serviceOptions')
+  const serviceOptions: string[] = Array.isArray(rawServiceOptions)
+    ? (rawServiceOptions as string[])
+    : ['Immigration Services','CAF & Patronato','Training & Courses','Business Consultancy','Insurance','Indian Consulate','International Visas','Other Services']
+
+  const rawSubjectOptions = t('contact.form.subjectOptions')
+  const subjectOptions: string[] = Array.isArray(rawSubjectOptions)
+    ? (rawSubjectOptions as string[])
+    : ['Book an Appointment','Request Information','Document Assistance','Application Status','General Inquiry','Other']
+
+  const rawHours = t('contact.sidebar.hours')
+  const hours: HourRow[] = Array.isArray(rawHours)
+    ? (rawHours as HourRow[])
+    : [
+        { day: 'Monday – Friday', time: '9:00 – 18:00', closed: false },
+        { day: 'Saturday',        time: '9:00 – 13:00', closed: false },
+        { day: 'Sunday',          time: 'Closed',        closed: true  },
+      ]
+
+  const rawLinks = t('contact.sidebar.links')
+  const quickLinks: LinkItem[] = Array.isArray(rawLinks)
+    ? (rawLinks as LinkItem[])
+    : [
+        { label: 'Immigration Services', href: '/immigration' },
+        { label: 'CAF & Patronato',      href: '/caf' },
+        { label: 'International Visas',  href: '/visas' },
+        { label: 'Who We Are',           href: '/WhoWeAre' },
+      ]
+
+  const rawContactItems = t('contact.sidebar.contactItems')
+  const contactItems: ContactItem[] = Array.isArray(rawContactItems)
+    ? (rawContactItems as ContactItem[])
+    : [
+        { icon: '📞', label: 'Phone',  value: '0522 1723060' },
+        { icon: '📧', label: 'Email',  value: 'info@gruppoeuropa.net' },
+        { icon: '📍', label: 'Office', value: 'Via G. Battista Pergolesi 2/A\n20124 Milan, Italy' },
+      ]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -51,10 +85,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-      setSubmitted(true)
-    }, 1800)
+    setTimeout(() => { setLoading(false); setSubmitted(true) }, 1800)
   }
 
   return (
@@ -64,16 +95,13 @@ export default function ContactPage() {
         <div className="container">
           <div className="cnt-hero-inner">
             <nav className="cnt-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('contact.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Contact Us</span>
+              <span>{t('contact.breadcrumbCurrent') || 'Contact Us'}</span>
             </nav>
-            <div className="cnt-hero-badge">📬 Get In Touch</div>
-            <h1 className="cnt-hero-title">Contact Us</h1>
-            <p className="cnt-hero-desc">
-              Have a question or need assistance? Fill in the form and our team will get
-              back to you as soon as possible — in your language.
-            </p>
+            <div className="cnt-hero-badge">{t('contact.hero.badge') || '📬 Get In Touch'}</div>
+            <h1 className="cnt-hero-title">{t('contact.hero.title') || 'Contact Us'}</h1>
+            <p className="cnt-hero-desc">{t('contact.hero.desc') || ''}</p>
           </div>
         </div>
       </section>
@@ -88,40 +116,35 @@ export default function ContactPage() {
               {submitted ? (
                 <div className="cnt-success">
                   <div className="cnt-success-icon">✓</div>
-                  <h2 className="cnt-success-title">Message Sent Successfully!</h2>
-                  <p className="cnt-success-text">
-                    Thank you for contacting AMEI. Our team will review your request and
-                    get back to you within 24 hours.
-                  </p>
+                  <h2 className="cnt-success-title">{t('contact.success.title') || 'Message Sent Successfully!'}</h2>
+                  <p className="cnt-success-text">{t('contact.success.text') || ''}</p>
                 </div>
               ) : (
                 <>
-                  <h2 className="cnt-form-title">Send Us a Message</h2>
-                  <p className="cnt-form-subtitle">
-                    Fill in your details below and tell us how we can help you.
-                  </p>
+                  <h2 className="cnt-form-title">{t('contact.form.title') || 'Send Us a Message'}</h2>
+                  <p className="cnt-form-subtitle">{t('contact.form.subtitle') || ''}</p>
 
                   <form onSubmit={handleSubmit}>
 
                     {/* Name row */}
                     <div className="cnt-form-row">
                       <div className="cnt-form-group">
-                        <label className="cnt-label">First Name *</label>
+                        <label className="cnt-label">{t('contact.form.firstName') || 'First Name *'}</label>
                         <input
                           className="cnt-input"
                           type="text"
-                          placeholder="Your first name"
+                          placeholder={t('contact.form.firstNamePlaceholder') || 'Your first name'}
                           required
                           value={form.firstName}
                           onChange={(e) => setForm({ ...form, firstName: e.target.value })}
                         />
                       </div>
                       <div className="cnt-form-group">
-                        <label className="cnt-label">Last Name *</label>
+                        <label className="cnt-label">{t('contact.form.lastName') || 'Last Name *'}</label>
                         <input
                           className="cnt-input"
                           type="text"
-                          placeholder="Your last name"
+                          placeholder={t('contact.form.lastNamePlaceholder') || 'Your last name'}
                           required
                           value={form.lastName}
                           onChange={(e) => setForm({ ...form, lastName: e.target.value })}
@@ -132,22 +155,22 @@ export default function ContactPage() {
                     {/* Contact row */}
                     <div className="cnt-form-row">
                       <div className="cnt-form-group">
-                        <label className="cnt-label">Email Address *</label>
+                        <label className="cnt-label">{t('contact.form.email') || 'Email Address *'}</label>
                         <input
                           className="cnt-input"
                           type="email"
-                          placeholder="your@email.com"
+                          placeholder={t('contact.form.emailPlaceholder') || 'your@email.com'}
                           required
                           value={form.email}
                           onChange={(e) => setForm({ ...form, email: e.target.value })}
                         />
                       </div>
                       <div className="cnt-form-group">
-                        <label className="cnt-label">Phone Number</label>
+                        <label className="cnt-label">{t('contact.form.phone') || 'Phone Number'}</label>
                         <input
                           className="cnt-input"
                           type="tel"
-                          placeholder="+39 000 000 0000"
+                          placeholder={t('contact.form.phonePlaceholder') || '+39 000 000 0000'}
                           value={form.phone}
                           onChange={(e) => setForm({ ...form, phone: e.target.value })}
                         />
@@ -156,26 +179,23 @@ export default function ContactPage() {
 
                     {/* Subject */}
                     <div className="cnt-form-group">
-                      <label className="cnt-label">Subject *</label>
+                      <label className="cnt-label">{t('contact.form.subject') || 'Subject *'}</label>
                       <select
                         className="cnt-select"
                         required
                         value={form.subject}
                         onChange={(e) => setForm({ ...form, subject: e.target.value })}
                       >
-                        <option value="">Select a subject...</option>
-                        <option>Book an Appointment</option>
-                        <option>Request Information</option>
-                        <option>Document Assistance</option>
-                        <option>Application Status</option>
-                        <option>General Inquiry</option>
-                        <option>Other</option>
+                        <option value="">{t('contact.form.subjectPlaceholder') || 'Select a subject...'}</option>
+                        {subjectOptions.map((opt) => (
+                          <option key={opt}>{opt}</option>
+                        ))}
                       </select>
                     </div>
 
                     {/* Services */}
                     <div className="cnt-form-group">
-                      <label className="cnt-label">Services of Interest</label>
+                      <label className="cnt-label">{t('contact.form.services') || 'Services of Interest'}</label>
                       <div className="cnt-services-grid">
                         {serviceOptions.map((s) => (
                           <label className="cnt-checkbox-label" key={s}>
@@ -193,25 +213,25 @@ export default function ContactPage() {
 
                     {/* Preferred contact */}
                     <div className="cnt-form-group">
-                      <label className="cnt-label">Preferred Contact Method</label>
+                      <label className="cnt-label">{t('contact.form.preferredContact') || 'Preferred Contact Method'}</label>
                       <select
                         className="cnt-select"
                         value={form.preferredContact}
                         onChange={(e) => setForm({ ...form, preferredContact: e.target.value })}
                       >
-                        <option value="email">Email</option>
-                        <option value="phone">Phone Call</option>
-                        <option value="whatsapp">WhatsApp</option>
-                        <option value="inperson">In-Person Visit</option>
+                        <option value="email">{t('contact.form.preferredOptions.email') || 'Email'}</option>
+                        <option value="phone">{t('contact.form.preferredOptions.phone') || 'Phone Call'}</option>
+                        <option value="whatsapp">{t('contact.form.preferredOptions.whatsapp') || 'WhatsApp'}</option>
+                        <option value="inperson">{t('contact.form.preferredOptions.inperson') || 'In-Person Visit'}</option>
                       </select>
                     </div>
 
                     {/* Message */}
                     <div className="cnt-form-group">
-                      <label className="cnt-label">Your Message *</label>
+                      <label className="cnt-label">{t('contact.form.message') || 'Your Message *'}</label>
                       <textarea
                         className="cnt-textarea"
-                        placeholder="Please describe your situation or question in detail..."
+                        placeholder={t('contact.form.messagePlaceholder') || 'Please describe your situation or question in detail...'}
                         required
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -230,15 +250,17 @@ export default function ContactPage() {
                         lineHeight: '1.7',
                         marginBottom: '16px'
                       }}>
-                        <strong style={{ color: '#0d4a6b', display: 'block', marginBottom: '6px' }}>Privacy Information (GDPR)</strong>
-                        Information provided pursuant to Regulation (EU) 2016/679 (GDPR) of 27 April 2016. Gruppo Europa srl, with registered office in Milan, Via Pergolesi 2/a, as Data Controller, informs you that the personal data you provide will be processed exclusively for the purpose of contacting the data subject as per your specific request.
+                        <strong style={{ color: '#0d4a6b', display: 'block', marginBottom: '6px' }}>
+                          {t('contact.form.gdpr.title') || 'Privacy Information (GDPR)'}
+                        </strong>
+                        {t('contact.form.gdpr.body') || ''}
                       </div>
 
                       <label className="cnt-checkbox-label" style={{ border: 'none', padding: '6px 0', background: 'transparent', marginBottom: '10px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                         <input type="checkbox" required onChange={() => {}} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
-                          <strong style={{ color: '#0d4a6b' }}>*</strong> I have read the information and I consent to the processing of my personal data for the purpose of being contacted as requested.
+                          {t('contact.form.gdpr.consent1') || ''}
                         </span>
                       </label>
 
@@ -246,7 +268,7 @@ export default function ContactPage() {
                         <input type="checkbox" onChange={() => {}} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
-                          I consent to the processing of my data for advertising or promotional purposes.
+                          {t('contact.form.gdpr.consent2') || ''}
                         </span>
                       </label>
 
@@ -254,27 +276,23 @@ export default function ContactPage() {
                         <input type="checkbox" onChange={() => {}} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
-                          I consent to the communication of my data to third parties for their respective marketing and promotional purposes.
+                          {t('contact.form.gdpr.consent3') || ''}
                         </span>
                       </label>
 
                       <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '12px' }}>
-                        Fields marked with <strong style={{ color: '#0d4a6b' }}>*</strong> are required.
+                        {t('contact.form.gdpr.required') || 'Fields marked with * are required.'}
                       </p>
                     </div>
 
-                    <button
-                      type="submit"
-                      className="cnt-submit-btn"
-                      disabled={loading}
-                    >
+                    <button type="submit" className="cnt-submit-btn" disabled={loading}>
                       {loading ? (
                         <>
                           <span className="cnt-submit-spinner" />
-                          Sending...
+                          {t('contact.form.sending') || 'Sending...'}
                         </>
                       ) : (
-                        <>Send Message →</>
+                        <>{t('contact.form.submit') || 'Send Message →'}</>
                       )}
                     </button>
 
@@ -288,20 +306,13 @@ export default function ContactPage() {
 
               {/* Contact Info */}
               <div className="cnt-info-card">
-                <div className="cnt-info-card-title">Contact Information</div>
-
-                {[
-                  { icon: '📞', label: 'Phone', value: '0522 1723060' },
-                  { icon: '📧', label: 'Email', value: 'info@gruppoeuropa.net' },
-                  { icon: '📍', label: 'Office', value: 'Via G. Battista Pergolesi 2/A\n20124 Milan, Italy' },
-                ].map((item, i) => (
+                <div className="cnt-info-card-title">{t('contact.sidebar.contactTitle') || 'Contact Information'}</div>
+                {contactItems.map((item, i) => (
                   <div className="cnt-contact-item" key={i}>
                     <div className="cnt-contact-icon">{item.icon}</div>
                     <div>
                       <div className="cnt-contact-label">{item.label}</div>
-                      <div className="cnt-contact-value" style={{ whiteSpace: 'pre-line' }}>
-                        {item.value}
-                      </div>
+                      <div className="cnt-contact-value" style={{ whiteSpace: 'pre-line' }}>{item.value}</div>
                     </div>
                   </div>
                 ))}
@@ -309,18 +320,12 @@ export default function ContactPage() {
 
               {/* Office Hours */}
               <div className="cnt-info-card">
-                <div className="cnt-info-card-title">Office Hours</div>
+                <div className="cnt-info-card-title">{t('contact.sidebar.hoursTitle') || 'Office Hours'}</div>
                 <div className="cnt-hours-list">
-                  {[
-                    { day: 'Monday – Friday', time: '9:00 – 18:00', closed: false },
-                    { day: 'Saturday',        time: '9:00 – 13:00', closed: false },
-                    { day: 'Sunday',          time: 'Closed',        closed: true  },
-                  ].map((h, i) => (
+                  {hours.map((h, i) => (
                     <div className="cnt-hours-row" key={i}>
                       <span className="cnt-hours-day">{h.day}</span>
-                      <span className={h.closed ? 'cnt-hours-closed' : 'cnt-hours-time'}>
-                        {h.time}
-                      </span>
+                      <span className={h.closed ? 'cnt-hours-closed' : 'cnt-hours-time'}>{h.time}</span>
                     </div>
                   ))}
                 </div>
@@ -328,13 +333,8 @@ export default function ContactPage() {
 
               {/* Quick Links */}
               <div className="cnt-info-card">
-                <div className="cnt-info-card-title">Quick Links</div>
-                {[
-                  { label: 'Immigration Services', href: '/immigration' },
-                  { label: 'CAF & Patronato',      href: '/caf' },
-                  { label: 'International Visas',  href: '/visas' },
-                  { label: 'Who We Are',           href: '/WhoWeAre' },
-                ].map((link, i) => (
+                <div className="cnt-info-card-title">{t('contact.sidebar.linksTitle') || 'Quick Links'}</div>
+                {quickLinks.map((link, i) => (
                   <Link
                     key={i}
                     href={link.href}
@@ -347,7 +347,7 @@ export default function ContactPage() {
                       color: '#0d4a6b',
                       fontWeight: 600,
                       textDecoration: 'none',
-                      borderBottom: i < 3 ? '1px solid #f1f5f9' : 'none',
+                      borderBottom: i < quickLinks.length - 1 ? '1px solid #f1f5f9' : 'none',
                       transition: 'gap 0.2s ease',
                     }}
                   >

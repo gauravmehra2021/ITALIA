@@ -17,6 +17,7 @@ import insuranceTranslations from "../translations/insurance.json";
 import indianConsulateTranslations from "../translations/indian-consulate.json";
 import visasTranslations from "../translations/visas.json";
 import otherTranslations from "../translations/other.json";
+import contactTranslations from "../translations/contact.json";
 
 type Language = "it" | "en";
 
@@ -68,6 +69,7 @@ export const LanguageProvider = ({
       ...Object.keys(indianConsulateTranslations || {}),
       ...Object.keys(visasTranslations || {}),
       ...Object.keys(otherTranslations || {}),
+      ...Object.keys(contactTranslations || {}),
     ]);
     for (const lang of langs) {
       const base = (translationsData as any)[lang] || {};
@@ -80,7 +82,8 @@ export const LanguageProvider = ({
       const indianConsulateExtra = (indianConsulateTranslations as any)[lang] || {};
       const visasExtra = (visasTranslations as any)[lang] || {};
       const otherExtra = (otherTranslations as any)[lang] || {};
-      result[lang] = merge(merge(merge(merge(merge(merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra), businessExtra), insuranceExtra), indianConsulateExtra), visasExtra), otherExtra);
+      const contactExtra = (contactTranslations as any)[lang] || {};
+      result[lang] = merge(merge(merge(merge(merge(merge(merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra), businessExtra), insuranceExtra), indianConsulateExtra), visasExtra), otherExtra), contactExtra);
     }
     return result;
   })();
