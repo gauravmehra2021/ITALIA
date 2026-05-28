@@ -1,0 +1,284 @@
+{
+  "it": {
+    "visas": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Visti Internazionali",
+      "hero": {
+        "badge": "🌍 Visti Internazionali",
+        "title": "Visti Internazionali",
+        "desc": "Assistiamo i clienti nella richiesta di visti internazionali con documentazione adeguata, supporto alla domanda e servizi di consulenza. I nostri esperti garantiscono che la tua domanda di visto sia completa, accurata e presentata nei tempi previsti.",
+        "actions": {
+          "viewTypes": "Vedi i tipi di visto",
+          "apply": "Richiedi il visto"
+        },
+        "stats": [
+          { "num": "6",    "label": "Categorie di visto" },
+          { "num": "800+", "label": "Visti elaborati" },
+          { "num": "20+",  "label": "Anni di esperienza" },
+          { "num": "97%",  "label": "Tasso di approvazione" }
+        ]
+      },
+      "intro": {
+        "title": "Assistenza esperta per i visti verso ogni destinazione",
+        "body": "Navigare tra i requisiti dei visti internazionali può essere complesso e stressante. In AMEI, i nostri specialisti dei visti hanno una conoscenza approfondita delle procedure consolari e dei requisiti documentali per l'Italia e l'area Schengen. Gestiamo ogni dettaglio affinché la tua domanda abbia le migliori possibilità di approvazione.",
+        "visualTitle": "Perché scegliere AMEI",
+        "checklist": [
+          "Consulenti visti esperti",
+          "Preparazione completa dei documenti",
+          "Assistenza per appuntamenti in ambasciata",
+          "Team di supporto multilingue",
+          "Elaborazione rapida e accurata",
+          "Alto tasso di approvazione dei visti"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi visti",
+        "desc": "Clicca su qualsiasi tipo di visto per saperne di più sui requisiti, i documenti e come fare domanda."
+      },
+      "services": [
+        {
+          "icon": "✈️",
+          "title": "Visto Turistico",
+          "desc": "Visto per soggiorni brevi per turismo, svago e visite familiari.",
+          "modalDesc": "Ti assistiamo nella richiesta del visto turistico Schengen, assicurando che tutta la documentazione sia preparata e presentata correttamente. Il nostro team ti guida attraverso l'intero processo, dalla prenotazione dell'appuntamento al ritiro del visto.",
+          "points": [
+            "Visto Schengen per soggiorni brevi (fino a 90 giorni)",
+            "Preparazione e revisione del modulo di domanda",
+            "Checklist e verifica dei documenti",
+            "Assistenza per la prenotazione dell'appuntamento in ambasciata",
+            "Indicazioni sull'assicurazione di viaggio",
+            "Follow-up sullo stato della domanda"
+          ]
+        },
+        {
+          "icon": "💼",
+          "title": "Visto di Lavoro",
+          "desc": "Visto per soggiorni lunghi per attività lavorative e professionali.",
+          "modalDesc": "Ottenere un visto di lavoro per l'Italia richiede il coordinamento tra datore di lavoro, lavoratore e autorità italiane. I nostri esperti gestiscono l'intero processo, dal Nulla Osta alla domanda di visto presso il consolato.",
+          "points": [
+            "Visto di lavoro nell'ambito del Decreto Flussi",
+            "Coordinamento del Nulla Osta del datore di lavoro",
+            "Preparazione documenti per il consolato",
+            "Supporto alla presentazione della domanda di visto",
+            "Conversione del permesso dopo l'arrivo",
+            "Assistenza per lavoro stagionale e permanente"
+          ]
+        },
+        {
+          "icon": "🎓",
+          "title": "Visto per Studio",
+          "desc": "Visto per studio per iscrizione universitaria e corsi di lingua.",
+          "modalDesc": "Assistiamo gli studenti internazionali nell'ottenimento del visto per studio italiano (visto per studio). Dalla conferma di iscrizione universitaria alla presentazione al consolato, il nostro team garantisce un processo fluido e senza stress.",
+          "points": [
+            "Domanda di visto per studio (visto per studio)",
+            "Documentazione di iscrizione universitaria o scolastica",
+            "Preparazione della prova di mezzi finanziari",
+            "Supporto per la documentazione alloggiativa",
+            "Indicazioni sull'assicurazione sanitaria",
+            "Permesso di soggiorno per studio dopo l'arrivo"
+          ]
+        },
+        {
+          "icon": "👨‍👩‍👧",
+          "title": "Visto Familiare",
+          "desc": "Visto per ricongiungimento familiare e per raggiungere parenti in Italia.",
+          "modalDesc": "Il visto familiare consente ai parenti di residenti o cittadini italiani di raggiungerli in Italia. Gestiamo tutta la documentazione per la domanda di Nulla Osta e il successivo processo di visto presso il consolato.",
+          "points": [
+            "Domanda di visto per ricongiungimento familiare",
+            "Richiesta Nulla Osta allo Sportello Unico",
+            "Documentazione sui requisiti di reddito e alloggio",
+            "Supporto per appuntamento e presentazione al consolato",
+            "Permesso di soggiorno per motivi familiari",
+            "Supporto per coniugi, figli e genitori"
+          ]
+        },
+        {
+          "icon": "🏥",
+          "title": "Visto Medico",
+          "desc": "Visto per cure mediche e scopi sanitari in Italia.",
+          "modalDesc": "L'Italia è una destinazione per il turismo medico e i trattamenti specializzati. Assistiamo pazienti e accompagnatori nell'ottenimento del visto appropriato per cure mediche, inclusa tutta la documentazione richiesta dalle strutture sanitarie italiane.",
+          "points": [
+            "Visto medico (visto per cure mediche)",
+            "Supporto per lettera di invito da ospedale o clinica",
+            "Visto per accompagnatore",
+            "Traduzione e certificazione dei documenti",
+            "Coordinamento appuntamento in ambasciata",
+            "Supporto per proroga in caso di trattamento prolungato"
+          ]
+        },
+        {
+          "icon": "🌍",
+          "title": "Altri Visti",
+          "desc": "Visti per affari, transito, religiosi e altri scopi speciali.",
+          "modalDesc": "Assistiamo con un'ampia gamma di altri tipi di visto, inclusi visti d'affari, visti di transito, visti religiosi e visti per scopi speciali. Il nostro team si mantiene aggiornato sugli ultimi requisiti consolari per tutte le categorie di visto.",
+          "points": [
+            "Visto d'affari per riunioni e conferenze",
+            "Assistenza per visto aeroportuale e di transito",
+            "Supporto per visto religioso e di missione",
+            "Indicazioni per visto diplomatico e ufficiale",
+            "Supporto per rinnovo e proroga del visto",
+            "Consulenza per casi di visto complessi"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Pronto a fare domanda per il tuo visto?",
+        "desc": "Prenota un appuntamento con i nostri specialisti dei visti oggi. Esamineremo il tuo caso, prepareremo tutti i documenti richiesti e ti guideremo in ogni fase della domanda.",
+        "actions": {
+          "apply": "Richiedi il visto",
+          "call": "Chiamaci ora"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi",
+        "apply": "Richiedi il visto"
+      }
+    }
+  },
+  "en": {
+    "visas": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "International Visas",
+      "hero": {
+        "badge": "🌍 International Visas",
+        "title": "International Visas",
+        "desc": "We assist clients in applying for international visas with proper documentation, application support, and consultation services. Our experts ensure your visa application is complete, accurate, and submitted on time.",
+        "actions": {
+          "viewTypes": "View Visa Types",
+          "apply": "Apply for Visa"
+        },
+        "stats": [
+          { "num": "6",    "label": "Visa Categories" },
+          { "num": "800+", "label": "Visas Processed" },
+          { "num": "20+",  "label": "Years Experience" },
+          { "num": "97%",  "label": "Approval Rate" }
+        ]
+      },
+      "intro": {
+        "title": "Expert Visa Assistance for Every Destination",
+        "body": "Navigating international visa requirements can be complex and stressful. At AMEI, our visa specialists have in-depth knowledge of consular procedures and documentation requirements for Italy and the Schengen area. We handle every detail so your application has the best possible chance of approval.",
+        "visualTitle": "Why Choose AMEI",
+        "checklist": [
+          "Experienced visa consultants",
+          "Complete document preparation",
+          "Embassy appointment assistance",
+          "Multilingual support team",
+          "Fast and accurate processing",
+          "High visa approval rate"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Visa Services",
+        "desc": "Click on any visa type to learn more about requirements, documents, and how to apply."
+      },
+      "services": [
+        {
+          "icon": "✈️",
+          "title": "Tourist Visa",
+          "desc": "Short-stay visa for tourism, leisure, and family visits.",
+          "modalDesc": "We assist you in applying for a Schengen tourist visa, ensuring all documentation is correctly prepared and submitted. Our team guides you through the entire process from appointment booking to visa collection.",
+          "points": [
+            "Schengen short-stay visa (up to 90 days)",
+            "Application form preparation and review",
+            "Document checklist and verification",
+            "Embassy appointment booking assistance",
+            "Travel insurance guidance",
+            "Follow-up on application status"
+          ]
+        },
+        {
+          "icon": "💼",
+          "title": "Work Visa",
+          "desc": "Long-stay work visa for employment and professional activities.",
+          "modalDesc": "Obtaining a work visa for Italy requires coordination between the employer, the worker, and Italian authorities. Our experts manage the entire process, from the Nulla Osta to the visa application at the consulate.",
+          "points": [
+            "Work visa under Decreto Flussi quota",
+            "Employer Nulla Osta coordination",
+            "Document preparation for consulate",
+            "Visa application submission support",
+            "Post-arrival permit conversion",
+            "Guidance for seasonal and permanent work"
+          ]
+        },
+        {
+          "icon": "🎓",
+          "title": "Student Visa",
+          "desc": "Study visa for university enrollment and language courses.",
+          "modalDesc": "We assist international students in obtaining the Italian student visa (visto per studio). From university enrollment confirmation to consulate submission, our team ensures a smooth and stress-free process.",
+          "points": [
+            "Student visa (visto per studio) application",
+            "University or school enrollment documentation",
+            "Proof of financial means preparation",
+            "Accommodation documentation support",
+            "Health insurance guidance",
+            "Residence permit for study after arrival"
+          ]
+        },
+        {
+          "icon": "👨‍👩‍👧",
+          "title": "Family Visa",
+          "desc": "Visa for family reunification and joining relatives in Italy.",
+          "modalDesc": "The family visa allows relatives of Italian residents or citizens to join them in Italy. We handle all documentation for the Nulla Osta application and the subsequent visa process at the consulate.",
+          "points": [
+            "Family reunification visa application",
+            "Nulla Osta request to the Sportello Unico",
+            "Income and housing requirement documentation",
+            "Consulate appointment and submission support",
+            "Residence permit for family reasons",
+            "Support for spouses, children, and parents"
+          ]
+        },
+        {
+          "icon": "🏥",
+          "title": "Medical Visa",
+          "desc": "Visa for medical treatment and healthcare purposes in Italy.",
+          "modalDesc": "Italy is a destination for medical tourism and specialized treatments. We assist patients and their companions in obtaining the appropriate visa for medical care, including all required documentation from Italian healthcare facilities.",
+          "points": [
+            "Medical visa (visto per cure mediche)",
+            "Hospital or clinic invitation letter support",
+            "Companion visa for accompanying persons",
+            "Document translation and certification",
+            "Embassy appointment coordination",
+            "Extension support if treatment is prolonged"
+          ]
+        },
+        {
+          "icon": "🌍",
+          "title": "Other Visas",
+          "desc": "Business, transit, religious, and other special purpose visas.",
+          "modalDesc": "We assist with a wide range of other visa types including business visas, transit visas, religious visas, and special purpose visas. Our team stays up to date with the latest consular requirements for all visa categories.",
+          "points": [
+            "Business visa for meetings and conferences",
+            "Airport and transit visa assistance",
+            "Religious and mission visa support",
+            "Diplomatic and official visa guidance",
+            "Visa renewal and extension support",
+            "Consultation for complex visa cases"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Ready to Apply for Your Visa?",
+        "desc": "Book an appointment with our visa specialists today. We will review your case, prepare all required documents, and guide you through every step of the application.",
+        "actions": {
+          "apply": "Apply for Visa",
+          "call": "Call Us Now"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close",
+        "apply": "Apply for Visa"
+      }
+    }
+  }
+}

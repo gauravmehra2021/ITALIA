@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './visas.css'
 
-const services = [
+const defaultServices = [
   {
     icon: '✈️',
     title: 'Tourist Visa',
@@ -51,7 +52,7 @@ const services = [
     ],
   },
   {
-    icon: '👨‍👩‍👧',
+    icon: '👨👩👧',
     title: 'Family Visa',
     desc: 'Visa for family reunification and joining relatives in Italy.',
     modalDesc:
@@ -97,10 +98,61 @@ const services = [
   },
 ]
 
-type Service = (typeof services)[number]
+type Service = (typeof defaultServices)[number]
+type HeroStat = { num: string; label: string }
 
 export default function VisasPage() {
+  const { t } = useLanguage()
   const [activeModal, setActiveModal] = useState<Service | null>(null)
+
+  const rawServices = t('visas.services')
+  const services: Service[] = Array.isArray(rawServices) ? (rawServices as Service[]) : defaultServices
+
+  const rawStats = t('visas.hero.stats')
+  const heroStats = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '6',    label: 'Visa Categories' },
+        { num: '800+', label: 'Visas Processed' },
+        { num: '20+',  label: 'Years Experience' },
+        { num: '97%',  label: 'Approval Rate' },
+      ]
+
+  const rawChecklist = t('visas.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Experienced visa consultants',
+        'Complete document preparation',
+        'Embassy appointment assistance',
+        'Multilingual support team',
+        'Fast and accurate processing',
+        'High visa approval rate',
+      ]
+
+  const heroBadge        = t('visas.hero.badge')              || '🌍 International Visas'
+  const heroTitle        = t('visas.hero.title')              || 'International Visas'
+  const heroDesc         = t('visas.hero.desc')               || ''
+  const viewTypesText    = t('visas.hero.actions.viewTypes')  || 'View Visa Types'
+  const applyText        = t('visas.hero.actions.apply')      || 'Apply for Visa'
+
+  const introTitle       = t('visas.intro.title')             || 'Expert Visa Assistance for Every Destination'
+  const introBody        = t('visas.intro.body')              || ''
+  const introVisualTitle = t('visas.intro.visualTitle')       || 'Why Choose AMEI'
+
+  const sectionTag       = t('visas.section.tag')             || 'What We Offer'
+  const sectionTitle     = t('visas.section.title')           || 'Our Visa Services'
+  const sectionDesc      = t('visas.section.desc')            || ''
+  const cardCta          = t('visas.card.cta')                || 'Learn More'
+
+  const ctaTitle         = t('visas.cta.title')               || 'Ready to Apply for Your Visa?'
+  const ctaDesc          = t('visas.cta.desc')                || ''
+  const ctaApply         = t('visas.cta.actions.apply')       || 'Apply for Visa'
+  const ctaCall          = t('visas.cta.actions.call')        || 'Call Us Now'
+
+  const modalListTitle   = t('visas.modal.listTitle')         || "What's Included"
+  const modalClose       = t('visas.modal.close')             || 'Close'
+  const modalApply       = t('visas.modal.apply')             || 'Apply for Visa'
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -123,33 +175,24 @@ export default function VisasPage() {
         <div className="container">
           <div className="vis-hero-inner animate-fade-in-up">
             <nav className="vis-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('visas.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Visti Internazionali</span>
+              <span>{t('visas.breadcrumbCurrent') || 'International Visas'}</span>
             </nav>
 
-            <div className="vis-hero-badge">🌍 International Visas</div>
+            <div className="vis-hero-badge">{heroBadge}</div>
 
-            <h1 className="vis-hero-title">Visti Internazionali</h1>
+            <h1 className="vis-hero-title">{heroTitle}</h1>
 
-            <p className="vis-hero-desc">
-              We assist clients in applying for international visas with proper documentation,
-              application support, and consultation services. Our experts ensure your visa
-              application is complete, accurate, and submitted on time.
-            </p>
+            <p className="vis-hero-desc">{heroDesc}</p>
 
             <div className="vis-hero-actions">
-              <a href="#services" className="vis-btn-primary">View Visa Types</a>
-              <Link href="/contact" className="vis-btn-outline">Apply for Visa</Link>
+              <a href="#services" className="vis-btn-primary">{viewTypesText}</a>
+              <Link href="/contact" className="vis-btn-outline">{applyText}</Link>
             </div>
 
             <div className="vis-hero-stats">
-              {[
-                { num: '6',    label: 'Visa Categories' },
-                { num: '800+', label: 'Visas Processed' },
-                { num: '20+',  label: 'Years Experience' },
-                { num: '97%',  label: 'Approval Rate' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="vis-hero-stat-num">{s.num}</div>
                   <div className="vis-hero-stat-label">{s.label}</div>
@@ -165,28 +208,14 @@ export default function VisasPage() {
         <div className="container">
           <div className="vis-intro-inner">
             <div className="vis-reveal">
-              <h2 className="vis-intro-title">
-                Expert Visa Assistance for Every Destination
-              </h2>
-              <p className="vis-intro-body">
-                Navigating international visa requirements can be complex and stressful. At AMEI,
-                our visa specialists have in-depth knowledge of consular procedures and documentation
-                requirements for Italy and the Schengen area. We handle every detail so your
-                application has the best possible chance of approval.
-              </p>
+              <h2 className="vis-intro-title">{introTitle}</h2>
+              <p className="vis-intro-body">{introBody}</p>
             </div>
 
             <div className="vis-intro-visual vis-reveal delay-2">
-              <div className="vis-intro-visual-title">Why Choose AMEI</div>
+              <div className="vis-intro-visual-title">{introVisualTitle}</div>
               <ul className="vis-checklist">
-                {[
-                  'Experienced visa consultants',
-                  'Complete document preparation',
-                  'Embassy appointment assistance',
-                  'Multilingual support team',
-                  'Fast and accurate processing',
-                  'High visa approval rate',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="vis-check-icon">✓</span>
                     {item}
@@ -202,11 +231,9 @@ export default function VisasPage() {
       <section className="vis-services" id="services">
         <div className="container">
           <div className="vis-section-header vis-reveal">
-            <span className="vis-section-tag">What We Offer</span>
-            <h2 className="vis-section-title">Our Visa Services</h2>
-            <p className="vis-section-desc">
-              Click on any visa type to learn more about requirements, documents, and how to apply.
-            </p>
+            <span className="vis-section-tag">{sectionTag}</span>
+            <h2 className="vis-section-title">{sectionTitle}</h2>
+            <p className="vis-section-desc">{sectionDesc}</p>
           </div>
 
           <div className="vis-cards-grid">
@@ -220,7 +247,7 @@ export default function VisasPage() {
                 <h3 className="vis-card-title">{service.title}</h3>
                 <p className="vis-card-desc">{service.desc}</p>
                 <span className="vis-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="vis-card-arrow">→</span>
                 </span>
               </div>
@@ -234,15 +261,12 @@ export default function VisasPage() {
         <div className="container">
           <div className="vis-cta-box vis-reveal">
             <div>
-              <h2 className="vis-cta-title">Ready to Apply for Your Visa?</h2>
-              <p className="vis-cta-desc">
-                Book an appointment with our visa specialists today. We will review your case,
-                prepare all required documents, and guide you through every step of the application.
-              </p>
+              <h2 className="vis-cta-title">{ctaTitle}</h2>
+              <p className="vis-cta-desc">{ctaDesc}</p>
             </div>
             <div className="vis-cta-actions">
-              <Link href="/contact" className="vis-btn-primary">Apply for Visa</Link>
-              <a href="tel:+390522172306" className="vis-btn-outline">Call Us Now</a>
+              <Link href="/contact" className="vis-btn-primary">{ctaApply}</Link>
+              <a href="tel:+390522172306" className="vis-btn-outline">{ctaCall}</a>
             </div>
           </div>
         </div>
@@ -265,7 +289,7 @@ export default function VisasPage() {
             <div className="vis-modal-body">
               <p className="vis-modal-desc">{activeModal.modalDesc}</p>
 
-              <div className="vis-modal-list-title">What&apos;s Included</div>
+              <div className="vis-modal-list-title">{modalListTitle}</div>
               <ul className="vis-modal-list">
                 {activeModal.points.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -273,12 +297,12 @@ export default function VisasPage() {
               </ul>
 
               <div className="vis-modal-footer">
-              <Link href="/contact" className="vis-modal-btn vis-modal-btn-primary" onClick={() => setActiveModal(null)}>Apply for Visa</Link>
+                <Link href="/contact" className="vis-modal-btn vis-modal-btn-primary" onClick={() => setActiveModal(null)}>{modalApply}</Link>
                 <button
                   className="vis-modal-btn vis-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
                 >
-                  Close
+                  {modalClose}
                 </button>
               </div>
             </div>
