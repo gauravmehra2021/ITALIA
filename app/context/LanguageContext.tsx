@@ -14,6 +14,7 @@ import cafTranslations from "../translations/caf.json";
 import trainingTranslations from "../translations/training.json";
 import businessTranslations from "../translations/business.json";
 import insuranceTranslations from "../translations/insurance.json";
+import indianConsulateTranslations from "../translations/indian-consulate.json";
 
 type Language = "it" | "en";
 
@@ -62,6 +63,7 @@ export const LanguageProvider = ({
       ...Object.keys(trainingTranslations || {}),
       ...Object.keys(businessTranslations || {}),
       ...Object.keys(insuranceTranslations || {}),
+      ...Object.keys(indianConsulateTranslations || {}),
     ]);
     for (const lang of langs) {
       const base = (translationsData as any)[lang] || {};
@@ -71,7 +73,8 @@ export const LanguageProvider = ({
       const trainingExtra = (trainingTranslations as any)[lang] || {};
       const businessExtra = (businessTranslations as any)[lang] || {};
       const insuranceExtra = (insuranceTranslations as any)[lang] || {};
-      result[lang] = merge(merge(merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra), businessExtra), insuranceExtra);
+      const indianConsulateExtra = (indianConsulateTranslations as any)[lang] || {};
+      result[lang] = merge(merge(merge(merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra), businessExtra), insuranceExtra), indianConsulateExtra);
     }
     return result;
   })();

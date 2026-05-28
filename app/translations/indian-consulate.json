@@ -1,0 +1,228 @@
+{
+  "it": {
+    "indianConsulate": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Servizi Consolato Indiano",
+      "hero": {
+        "badge": "🇮🇳 Servizi Consolato Indiano",
+        "title": "Servizi Consolato Indiano",
+        "desc": "Offriamo assistenza per i servizi consolari indiani, inclusi rinnovi del passaporto, carte OCI e domande di visto. Il nostro team guida i cittadini indiani residenti in Italia attraverso ogni procedura consolare con facilità e precisione.",
+        "actions": {
+          "viewServices": "Vedi i servizi",
+          "book": "Prenota appuntamento"
+        },
+        "stats": [
+          { "num": "4",    "label": "Servizi principali" },
+          { "num": "600+", "label": "Pratiche gestite" },
+          { "num": "20+",  "label": "Anni di esperienza" },
+          { "num": "99%",  "label": "Tasso di successo" }
+        ]
+      },
+      "intro": {
+        "title": "Il tuo partner di fiducia per i servizi consolari indiani in Italia",
+        "body": "Gestire le procedure del consolato indiano dall'estero può essere complicato. In AMEI, siamo specializzati nell'assistere la comunità indiana in Italia per tutte le esigenze consolari — dal rinnovo del passaporto alle domande OCI. Il nostro team multilingue garantisce che i tuoi documenti siano preparati e presentati correttamente, risparmiandoti tempo ed evitando errori.",
+        "visualTitle": "Perché scegliere AMEI",
+        "checklist": [
+          "Specializzati nelle procedure consolari indiane",
+          "Staff di lingua hindi e inglese",
+          "Preparazione completa dei documenti",
+          "Assistenza per appuntamenti al consolato",
+          "Elaborazione rapida e accurata",
+          "Fiducia della comunità indiana in Italia"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi consolari",
+        "desc": "Clicca su una scheda servizio per saperne di più sul processo, i documenti richiesti e come possiamo aiutarti."
+      },
+      "services": [
+        {
+          "icon": "🛂",
+          "title": "Passaporto Indiano",
+          "desc": "Nuove domande di passaporto, rinnovi e documenti di viaggio d'emergenza.",
+          "modalDesc": "Assistiamo i cittadini indiani residenti in Italia con tutti i servizi relativi al passaporto tramite il Consolato Indiano. Che tu abbia bisogno di un nuovo passaporto, di un rinnovo o di un documento di viaggio d'emergenza, il nostro team prepara tutta la documentazione necessaria e ti guida attraverso il processo consolare.",
+          "points": [
+            "Nuova domanda di passaporto per adulti e minori",
+            "Rinnovo del passaporto prima o dopo la scadenza",
+            "Certificato d'emergenza (EC) per viaggi urgenti",
+            "Modifica di indirizzo o dati personali",
+            "Preparazione e verifica dei documenti",
+            "Assistenza per la prenotazione dell'appuntamento al consolato"
+          ]
+        },
+        {
+          "icon": "🖥️",
+          "title": "E-Visa India",
+          "desc": "Domanda di e-Visa indiano online per turismo, affari e visite mediche.",
+          "modalDesc": "L'e-Visa indiano è un'autorizzazione di viaggio elettronica per visitare l'India per turismo, affari, cure mediche o conferenze. Ti assistiamo nel completare correttamente la domanda online, nel caricare i documenti richiesti e nel monitorare lo stato della tua domanda.",
+          "points": [
+            "e-Tourist Visa per viaggi di piacere e visite familiari",
+            "e-Business Visa per commercio e riunioni",
+            "e-Medical Visa per cure mediche in India",
+            "Compilazione del modulo di domanda online",
+            "Indicazioni su foto e specifiche dei documenti",
+            "Monitoraggio dello stato della domanda e supporto"
+          ]
+        },
+        {
+          "icon": "🪪",
+          "title": "Carta OCI",
+          "desc": "Assistenza per la domanda e il rinnovo della carta OCI (Overseas Citizen of India).",
+          "modalDesc": "La carta OCI (Overseas Citizen of India) garantisce il visto a vita per l'India e vari altri benefici alle persone di origine indiana. Assistiamo con nuove domande OCI, rinnovi e riemissioni dovute a nuovo passaporto o modifica dei dati personali.",
+          "points": [
+            "Nuova domanda di carta OCI",
+            "Rinnovo carta OCI con nuovo passaporto",
+            "Riemissione per modifica dei dati personali",
+            "OCI per minori e bambini",
+            "Preparazione documenti e invio online",
+            "Follow-up al consolato e monitoraggio dello stato"
+          ]
+        },
+        {
+          "icon": "🏛️",
+          "title": "Altri Servizi Consolari",
+          "desc": "Attestazione, procura, certificati di vita e altro ancora.",
+          "modalDesc": "Il Consolato Indiano offre una serie di servizi aggiuntivi per i cittadini indiani all'estero. Assistiamo con l'attestazione di documenti, la procura, i certificati di vita per pensioni e altre procedure consolari ufficiali.",
+          "points": [
+            "Attestazione e apostille di documenti",
+            "Preparazione della procura (PoA)",
+            "Certificato di vita per pensione (Jeevan Pramaan)",
+            "Servizi per certificati di nascita, matrimonio e morte",
+            "Certificato di buona condotta (PCC)",
+            "Rinuncia alla cittadinanza indiana (rinuncia)"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Hai bisogno di assistenza per i servizi del Consolato Indiano?",
+        "desc": "I nostri specialisti sono pronti ad assisterti. Prenota un appuntamento oggi e lascia che gestiamo tutta la documentazione e le procedure consolari per te.",
+        "actions": {
+          "book": "Prenota appuntamento",
+          "call": "Chiamaci ora"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi",
+        "book": "Prenota appuntamento"
+      }
+    }
+  },
+  "en": {
+    "indianConsulate": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Indian Consulate Services",
+      "hero": {
+        "badge": "🇮🇳 Indian Consulate Services",
+        "title": "Indian Consulate Services",
+        "desc": "We provide assistance for Indian consulate-related services including passport renewals, OCI cards, and visa applications. Our team guides Indian nationals residing in Italy through every consular procedure with ease and accuracy.",
+        "actions": {
+          "viewServices": "View Services",
+          "book": "Book Appointment"
+        },
+        "stats": [
+          { "num": "4",    "label": "Core Services" },
+          { "num": "600+", "label": "Cases Handled" },
+          { "num": "20+",  "label": "Years Experience" },
+          { "num": "99%",  "label": "Success Rate" }
+        ]
+      },
+      "intro": {
+        "title": "Your Trusted Partner for Indian Consular Services in Italy",
+        "body": "Navigating Indian consulate procedures from abroad can be challenging. At AMEI, we specialize in assisting the Indian community in Italy with all consular needs — from passport renewals to OCI applications. Our multilingual team ensures your documents are correctly prepared and submitted, saving you time and avoiding errors.",
+        "visualTitle": "Why Choose AMEI",
+        "checklist": [
+          "Specialized in Indian consular procedures",
+          "Hindi and English speaking staff",
+          "Complete document preparation",
+          "Consulate appointment assistance",
+          "Fast and accurate processing",
+          "Trusted by the Indian community in Italy"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Consular Services",
+        "desc": "Click on any service card to learn more about the process, required documents, and how we can help you."
+      },
+      "services": [
+        {
+          "icon": "🛂",
+          "title": "Indian Passport",
+          "desc": "New passport applications, renewals, and emergency travel documents.",
+          "modalDesc": "We assist Indian nationals residing in Italy with all passport-related services through the Indian Consulate. Whether you need a new passport, a renewal, or an emergency travel document, our team prepares all required documentation and guides you through the consulate process.",
+          "points": [
+            "New passport application for adults and minors",
+            "Passport renewal before or after expiry",
+            "Emergency Certificate (EC) for urgent travel",
+            "Change of address or personal details",
+            "Document preparation and verification",
+            "Consulate appointment booking assistance"
+          ]
+        },
+        {
+          "icon": "🖥️",
+          "title": "E-Visa India",
+          "desc": "Online Indian e-Visa application for tourism, business, and medical visits.",
+          "modalDesc": "The Indian e-Visa is an electronic travel authorization for visiting India for tourism, business, medical, or conference purposes. We assist you in completing the online application correctly, uploading the required documents, and tracking your application status.",
+          "points": [
+            "e-Tourist Visa for leisure and family visits",
+            "e-Business Visa for trade and meetings",
+            "e-Medical Visa for treatment in India",
+            "Online application form completion",
+            "Photo and document specification guidance",
+            "Application status tracking and support"
+          ]
+        },
+        {
+          "icon": "🪪",
+          "title": "OCI Card",
+          "desc": "Overseas Citizen of India card application and renewal assistance.",
+          "modalDesc": "The OCI (Overseas Citizen of India) card grants lifelong visa-free travel to India and various other benefits to persons of Indian origin. We assist with new OCI applications, renewals, and re-issuance due to new passport or change of personal details.",
+          "points": [
+            "New OCI card application",
+            "OCI card renewal with new passport",
+            "Re-issuance due to personal detail changes",
+            "OCI for minors and children",
+            "Document preparation and online submission",
+            "Consulate follow-up and status tracking"
+          ]
+        },
+        {
+          "icon": "🏛️",
+          "title": "Other Consular Services",
+          "desc": "Attestation, Power of Attorney, life certificates, and more.",
+          "modalDesc": "The Indian Consulate offers a range of additional services for Indian nationals abroad. We assist with document attestation, Power of Attorney, life certificates for pension purposes, and other official consular procedures.",
+          "points": [
+            "Document attestation and apostille",
+            "Power of Attorney (PoA) preparation",
+            "Life certificate for pension (Jeevan Pramaan)",
+            "Birth, marriage, and death certificate services",
+            "Police Clearance Certificate (PCC)",
+            "Surrender of Indian citizenship (renunciation)"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Need Help With Indian Consulate Services?",
+        "desc": "Our specialists are ready to assist you. Book an appointment today and let us handle all your consular documentation and procedures.",
+        "actions": {
+          "book": "Book Appointment",
+          "call": "Call Us Now"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close",
+        "book": "Book Appointment"
+      }
+    }
+  }
+}
