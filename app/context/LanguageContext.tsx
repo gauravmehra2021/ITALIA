@@ -10,6 +10,7 @@ import {
 import translationsData from "../translations/languages.json";
 import homepageTranslations from "../translations/homepage.json";
 import immigrationTranslations from "../translations/immigration.json";
+import cafTranslations from "../translations/caf.json";
 
 type Language = "it" | "en";
 
@@ -54,12 +55,14 @@ export const LanguageProvider = ({
       ...Object.keys(translationsData || {}),
       ...Object.keys(homepageTranslations || {}),
       ...Object.keys(immigrationTranslations || {}),
+      ...Object.keys(cafTranslations || {}),
     ]);
     for (const lang of langs) {
       const base = (translationsData as any)[lang] || {};
       const homepageExtra = (homepageTranslations as any)[lang] || {};
       const immigrationExtra = (immigrationTranslations as any)[lang] || {};
-      result[lang] = merge(merge(base, homepageExtra), immigrationExtra);
+      const cafExtra = (cafTranslations as any)[lang] || {};
+      result[lang] = merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra);
     }
     return result;
   })();

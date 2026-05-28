@@ -2,9 +2,10 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './caf.css'
 
-const services = [
+const defaultServices = [
   { icon: '📊', title: 'ISEE',                   desc: 'Indicatore della Situazione Economica Equivalente for welfare benefits.',       slug: 'isee' },
   { icon: '🧾', title: '730',                    desc: 'Annual income tax return filing for employees and pensioners.',                 slug: '730' },
   { icon: '💼', title: 'NASpI',                  desc: 'Unemployment benefit application and management.',                             slug: 'naspi' },
@@ -19,7 +20,59 @@ const services = [
   { icon: '🌾', title: 'Disoccupazione Agricola', desc: 'Agricultural unemployment benefit application and support.',                 slug: 'disoccupazione-agricola' },
 ]
 
+type Service = (typeof defaultServices)[number]
+
+type HeroStat = { num: string; label: string }
+
 export default function CafPage() {
+  const { t } = useLanguage()
+
+  const rawServices = t('caf.services')
+  const services: Service[] = Array.isArray(rawServices)
+    ? (rawServices as Service[])
+    : defaultServices
+
+  const rawStats = t('caf.hero.stats')
+  const heroStats: HeroStat[] = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '19+',  label: 'Services Offered' },
+        { num: '10K+', label: 'Practices Handled' },
+        { num: '20+',  label: 'Years Experience' },
+        { num: '98%',  label: 'Satisfaction Rate' },
+      ]
+
+  const rawChecklist = t('caf.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Certified CAF & Patronato operators',
+        'Fast turnaround on all practices',
+        'Multilingual assistance available',
+        'Up-to-date with latest regulations',
+        'Transparent fees, no hidden costs',
+        'In-person and remote support',
+      ]
+
+  const heroBadge = t('caf.hero.badge') || '🏛️ CAF & Patronato'
+  const heroTitle = t('caf.hero.title') || 'C.A.F. and Patronato'
+  const heroDesc = t('caf.hero.desc') || 'Our CAF and Patronato services help individuals and families manage tax, pension, welfare, and administrative procedures quickly and accurately. We assist both Italian and international residents with official documentation and applications.'
+  const viewAllText = t('caf.hero.actions.viewAll') || 'View All Services'
+  const contactText = t('caf.hero.actions.contact') || 'Contact Us'
+
+  const introTitle = t('caf.intro.title') || 'Complete Tax, Welfare & Administrative Support'
+  const introBody = t('caf.intro.body') || 'The CAF (Centro di Assistenza Fiscale) and Patronato services at AMEI cover the full spectrum of fiscal and social security needs. Whether you need to file your tax return, apply for a pension, or activate your SPID digital identity, our certified team handles everything with precision and care — in multiple languages.'
+  const introVisualTitle = t('caf.intro.visualTitle') || 'Our Guarantees'
+
+  const sectionTag = t('caf.section.tag') || 'What We Offer'
+  const sectionTitle = t('caf.section.title') || 'Our CAF & Patronato Services'
+  const sectionDesc = t('caf.section.desc') || 'Click on any service card to learn more about the process, requirements, and how we can help you.'
+  const cardCta = t('caf.card.cta') || 'Learn More'
+
+  const ctaTitle = t('caf.cta.title') || 'Need Help With a CAF or Patronato Practice?'
+  const ctaDesc = t('caf.cta.desc') || 'Our certified operators are ready to assist you. Book an appointment today and let us handle all the paperwork for you.'
+  const ctaBook = t('caf.cta.actions.book') || 'Book Appointment'
+  const ctaCall = t('caf.cta.actions.call') || 'Call Us Now'
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible') }),
@@ -36,33 +89,26 @@ export default function CafPage() {
         <div className="container">
           <div className="caf-hero-inner animate-fade-in-up">
             <nav className="caf-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('caf.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>C.A.F. e Patronato</span>
+              <span>{t('caf.breadcrumbCurrent') || 'C.A.F. e Patronato'}</span>
             </nav>
 
-            <div className="caf-hero-badge">🏛️ CAF &amp; Patronato</div>
+            <div className="caf-hero-badge">{heroBadge}</div>
 
-            <h1 className="caf-hero-title">C.A.F. e Patronato</h1>
+            <h1 className="caf-hero-title">{heroTitle}</h1>
 
             <p className="caf-hero-desc">
-              Our CAF and Patronato services help individuals manage tax, pension, welfare, and
-              administrative procedures quickly and accurately. We assist both Italian and
-              international residents with official documentation and applications.
+              {heroDesc}
             </p>
 
             <div className="caf-hero-actions">
-              <a href="#services" className="caf-btn-primary">View All Services</a>
-              <Link href="/contact" className="caf-btn-outline">Contact Us</Link>
+              <a href="#services" className="caf-btn-primary">{viewAllText}</a>
+              <Link href="/contact" className="caf-btn-outline">{contactText}</Link>
             </div>
 
             <div className="caf-hero-stats">
-              {[
-                { num: '19+',  label: 'Services Offered' },
-                { num: '10K+', label: 'Practices Handled' },
-                { num: '20+',  label: 'Years Experience' },
-                { num: '98%',  label: 'Satisfaction Rate' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="caf-hero-stat-num">{s.num}</div>
                   <div className="caf-hero-stat-label">{s.label}</div>
@@ -79,27 +125,17 @@ export default function CafPage() {
           <div className="caf-intro-inner">
             <div className="caf-reveal">
               <h2 className="caf-intro-title">
-                Complete Tax, Welfare &amp; Administrative Support
+                {introTitle}
               </h2>
               <p className="caf-intro-body">
-                The CAF (Centro di Assistenza Fiscale) and Patronato services at AMEI cover the full
-                spectrum of fiscal and social security needs. Whether you need to file your tax return,
-                apply for a pension, or activate your SPID digital identity, our certified team handles
-                everything with precision and care — in multiple languages.
+                {introBody}
               </p>
             </div>
 
             <div className="caf-intro-visual caf-reveal delay-2">
-              <div className="caf-intro-visual-title">Our Guarantees</div>
+              <div className="caf-intro-visual-title">{introVisualTitle}</div>
               <ul className="caf-checklist">
-                {[
-                  'Certified CAF & Patronato operators',
-                  'Fast turnaround on all practices',
-                  'Multilingual assistance available',
-                  'Up-to-date with latest regulations',
-                  'Transparent fees, no hidden costs',
-                  'In-person and remote support',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="caf-check-icon">✓</span>
                     {item}
@@ -115,10 +151,10 @@ export default function CafPage() {
       <section className="caf-services" id="services">
         <div className="container">
           <div className="caf-section-header caf-reveal">
-            <span className="caf-section-tag">What We Offer</span>
-            <h2 className="caf-section-title">Our CAF &amp; Patronato Services</h2>
+            <span className="caf-section-tag">{sectionTag}</span>
+            <h2 className="caf-section-title">{sectionTitle}</h2>
             <p className="caf-section-desc">
-              Click on any service card to learn more about the process, requirements, and how we can help you.
+              {sectionDesc}
             </p>
           </div>
 
@@ -133,7 +169,7 @@ export default function CafPage() {
                 <h3 className="caf-card-title">{service.title}</h3>
                 <p className="caf-card-desc">{service.desc}</p>
                 <span className="caf-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="caf-card-arrow">→</span>
                 </span>
               </Link>
@@ -147,15 +183,14 @@ export default function CafPage() {
         <div className="container">
           <div className="caf-cta-box caf-reveal">
             <div>
-              <h2 className="caf-cta-title">Need Help With a CAF or Patronato Practice?</h2>
+              <h2 className="caf-cta-title">{ctaTitle}</h2>
               <p className="caf-cta-desc">
-                Our certified operators are ready to assist you. Book an appointment today and let us
-                handle all the paperwork for you.
+                {ctaDesc}
               </p>
             </div>
             <div className="caf-cta-actions">
-              <Link href="/contact" className="caf-btn-primary">Book Appointment</Link>
-              <a href="tel:+390522172306" className="caf-btn-outline">Call Us Now</a>
+              <Link href="/contact" className="caf-btn-primary">{ctaBook}</Link>
+              <a href="tel:+390522172306" className="caf-btn-outline">{ctaCall}</a>
             </div>
           </div>
         </div>

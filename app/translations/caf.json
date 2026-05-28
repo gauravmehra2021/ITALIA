@@ -1,0 +1,102 @@
+{
+  "it": {
+    "caf": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "C.A.F. e Patronato",
+      "hero": {
+        "badge": "🏛️ CAF & Patronato",
+        "title": "C.A.F. e Patronato",
+        "desc": "I nostri servizi CAF e Patronato supportano persone e famiglie nella gestione delle pratiche fiscali, pensionistiche, previdenziali e amministrative. Assistenza documentale e applicazioni precise per residenti italiani e stranieri.",
+        "actions": {
+          "viewAll": "Visualizza tutti i servizi",
+          "contact": "Contattaci"
+        },
+        "stats": [
+          { "num": "19+", "label": "Servizi offerti" },
+          { "num": "10K+", "label": "Pratiche gestite" },
+          { "num": "20+", "label": "Anni di esperienza" },
+          { "num": "98%", "label": "Tasso di soddisfazione" }
+        ]
+      },
+      "intro": {
+        "title": "Supporto fiscale, previdenziale e amministrativo completo",
+        "body": "I servizi CAF e Patronato di AMEI coprono l'intero spettro delle esigenze fiscali e previdenziali. Che tu debba presentare la dichiarazione dei redditi, richiedere una pensione o attivare SPID, il nostro team certificato si occupa di tutto con precisione e cura — in più lingue.",
+        "visualTitle": "Le nostre garanzie",
+        "checklist": [
+          "Operatori CAF e Patronato certificati",
+          "Tempi rapidi su tutte le pratiche",
+          "Assistenza multilingue disponibile",
+          "Sempre aggiornati sulle normative",
+          "Costi trasparenti, senza sorprese",
+          "Supporto in sede e da remoto"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi CAF e Patronato",
+        "desc": "Clicca su una scheda per scoprire il processo, i requisiti e come possiamo aiutarti."
+      },
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Hai bisogno di aiuto con una pratica CAF o Patronato?",
+        "desc": "I nostri operatori certificati sono pronti ad assisterti. Prenota un appuntamento oggi e lascia a noi la gestione di tutta la documentazione.",
+        "actions": {
+          "book": "Prenota un appuntamento",
+          "call": "Chiamaci ora"
+        }
+      }
+    }
+  },
+  "en": {
+    "caf": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "CAF & Patronato",
+      "hero": {
+        "badge": "🏛️ CAF & Patronato",
+        "title": "C.A.F. and Patronato",
+        "desc": "Our CAF and Patronato services help individuals and families manage tax, pension, welfare, and administrative procedures quickly and accurately. We assist both Italian and international residents with official documentation and applications.",
+        "actions": {
+          "viewAll": "View All Services",
+          "contact": "Contact Us"
+        },
+        "stats": [
+          { "num": "19+", "label": "Services Offered" },
+          { "num": "10K+", "label": "Practices Handled" },
+          { "num": "20+", "label": "Years Experience" },
+          { "num": "98%", "label": "Satisfaction Rate" }
+        ]
+      },
+      "intro": {
+        "title": "Complete Tax, Welfare & Administrative Support",
+        "body": "The CAF (Centro di Assistenza Fiscale) and Patronato services at AMEI cover the full spectrum of fiscal and social security needs. Whether you need to file your tax return, apply for a pension, or activate your SPID digital identity, our certified team handles everything with precision and care — in multiple languages.",
+        "visualTitle": "Our Guarantees",
+        "checklist": [
+          "Certified CAF & Patronato operators",
+          "Fast turnaround on all practices",
+          "Multilingual assistance available",
+          "Up-to-date with latest regulations",
+          "Transparent fees, no hidden costs",
+          "In-person and remote support"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our CAF & Patronato Services",
+        "desc": "Click on any service card to learn more about the process, requirements, and how we can help you."
+      },
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Need Help With a CAF or Patronato Practice?",
+        "desc": "Our certified operators are ready to assist you. Book an appointment today and let us handle all the paperwork for you.",
+        "actions": {
+          "book": "Book Appointment",
+          "call": "Call Us Now"
+        }
+      }
+    }
+  }
+}
