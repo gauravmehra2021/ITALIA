@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './other.css'
 
-const services = [
+const defaultServices = [
   {
     icon: '🌐',
     title: 'Translation Services',
@@ -52,10 +53,61 @@ const services = [
   },
 ]
 
-type Service = (typeof services)[number]
+type Service = (typeof defaultServices)[number]
+type HeroStat = { num: string; label: string }
 
 export default function OtherServicesPage() {
+  const { t } = useLanguage()
   const [activeModal, setActiveModal] = useState<Service | null>(null)
+
+  const rawServices = t('other.services')
+  const services: Service[] = Array.isArray(rawServices) ? (rawServices as Service[]) : defaultServices
+
+  const rawStats = t('other.hero.stats')
+  const heroStats = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '3',    label: 'Services Offered' },
+        { num: '20+',  label: 'Languages Covered' },
+        { num: '20+',  label: 'Years Experience' },
+        { num: '100%', label: 'Client Satisfaction' },
+      ]
+
+  const rawChecklist = t('other.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Certified translators and interpreters',
+        'Over 20 languages available',
+        'Fast turnaround on all services',
+        'Legally recognized translations',
+        'Professional CV writing experts',
+        'Available in-person and remotely',
+      ]
+
+  const heroBadge        = t('other.hero.badge')              || '✨ Other Services'
+  const heroTitle        = t('other.hero.title')              || 'Other Services'
+  const heroDesc         = t('other.hero.desc')               || ''
+  const viewServicesText = t('other.hero.actions.viewServices') || 'View Services'
+  const inquiryText      = t('other.hero.actions.inquiry')    || 'Send Inquiry'
+
+  const introTitle       = t('other.intro.title')             || 'Supporting You Beyond the Paperwork'
+  const introBody        = t('other.intro.body')              || ''
+  const introVisualTitle = t('other.intro.visualTitle')       || 'Why Choose AMEI'
+
+  const sectionTag       = t('other.section.tag')             || 'What We Offer'
+  const sectionTitle     = t('other.section.title')           || 'Our Additional Services'
+  const sectionDesc      = t('other.section.desc')            || ''
+  const cardCta          = t('other.card.cta')                || 'Learn More'
+
+  const ctaTitle         = t('other.cta.title')               || 'Need One of These Services?'
+  const ctaDesc          = t('other.cta.desc')                || ''
+  const ctaInquiry       = t('other.cta.actions.inquiry')     || 'Send Inquiry'
+  const ctaCall          = t('other.cta.actions.call')        || 'Call Us Now'
+
+  const modalListTitle   = t('other.modal.listTitle')         || "What's Included"
+  const modalClose       = t('other.modal.close')             || 'Close'
+  const modalInquiry     = t('other.modal.inquiry')           || 'Send Inquiry'
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,33 +130,24 @@ export default function OtherServicesPage() {
         <div className="container">
           <div className="oth-hero-inner animate-fade-in-up">
             <nav className="oth-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('other.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Altri Servizi</span>
+              <span>{t('other.breadcrumbCurrent') || 'Other Services'}</span>
             </nav>
 
-            <div className="oth-hero-badge">✨ Altri Servizi</div>
+            <div className="oth-hero-badge">{heroBadge}</div>
 
-            <h1 className="oth-hero-title">Altri Servizi</h1>
+            <h1 className="oth-hero-title">{heroTitle}</h1>
 
-            <p className="oth-hero-desc">
-              Beyond our core services, AMEI offers a range of additional support services to help
-              you communicate, present yourself professionally, and navigate daily life in Italy.
-              From translations to CV writing and interpreting, we are here to help.
-            </p>
+            <p className="oth-hero-desc">{heroDesc}</p>
 
             <div className="oth-hero-actions">
-              <a href="#services" className="oth-btn-primary">View Services</a>
-              <Link href="/contact" className="oth-btn-outline">Send Inquiry</Link>
+              <a href="#services" className="oth-btn-primary">{viewServicesText}</a>
+              <Link href="/contact" className="oth-btn-outline">{inquiryText}</Link>
             </div>
 
             <div className="oth-hero-stats">
-              {[
-                { num: '3',    label: 'Services Offered' },
-                { num: '20+',  label: 'Languages Covered' },
-                { num: '20+',  label: 'Years Experience' },
-                { num: '100%', label: 'Client Satisfaction' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="oth-hero-stat-num">{s.num}</div>
                   <div className="oth-hero-stat-label">{s.label}</div>
@@ -120,28 +163,14 @@ export default function OtherServicesPage() {
         <div className="container">
           <div className="oth-intro-inner">
             <div className="oth-reveal">
-              <h2 className="oth-intro-title">
-                Supporting You Beyond the Paperwork
-              </h2>
-              <p className="oth-intro-body">
-                Life in Italy involves more than just bureaucratic procedures. At AMEI, we offer
-                practical support services that help you communicate effectively, find employment,
-                and navigate official appointments with confidence. Our multilingual team is always
-                ready to assist you in your own language.
-              </p>
+              <h2 className="oth-intro-title">{introTitle}</h2>
+              <p className="oth-intro-body">{introBody}</p>
             </div>
 
             <div className="oth-intro-visual oth-reveal delay-2">
-              <div className="oth-intro-visual-title">Why Choose AMEI</div>
+              <div className="oth-intro-visual-title">{introVisualTitle}</div>
               <ul className="oth-checklist">
-                {[
-                  'Certified translators and interpreters',
-                  'Over 20 languages available',
-                  'Fast turnaround on all services',
-                  'Legally recognized translations',
-                  'Professional CV writing experts',
-                  'Available in-person and remotely',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="oth-check-icon">✓</span>
                     {item}
@@ -157,11 +186,9 @@ export default function OtherServicesPage() {
       <section className="oth-services" id="services">
         <div className="container">
           <div className="oth-section-header oth-reveal">
-            <span className="oth-section-tag">What We Offer</span>
-            <h2 className="oth-section-title">Our Additional Services</h2>
-            <p className="oth-section-desc">
-              Click on any service card to learn more and send us an inquiry.
-            </p>
+            <span className="oth-section-tag">{sectionTag}</span>
+            <h2 className="oth-section-title">{sectionTitle}</h2>
+            <p className="oth-section-desc">{sectionDesc}</p>
           </div>
 
           <div className="oth-cards-grid">
@@ -175,7 +202,7 @@ export default function OtherServicesPage() {
                 <h3 className="oth-card-title">{service.title}</h3>
                 <p className="oth-card-desc">{service.desc}</p>
                 <span className="oth-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="oth-card-arrow">→</span>
                 </span>
               </div>
@@ -189,15 +216,12 @@ export default function OtherServicesPage() {
         <div className="container">
           <div className="oth-cta-box oth-reveal">
             <div>
-              <h2 className="oth-cta-title">Need One of These Services?</h2>
-              <p className="oth-cta-desc">
-                Send us an inquiry today and our team will get back to you promptly with all the
-                information you need to get started.
-              </p>
+              <h2 className="oth-cta-title">{ctaTitle}</h2>
+              <p className="oth-cta-desc">{ctaDesc}</p>
             </div>
             <div className="oth-cta-actions">
-              <Link href="/contact" className="oth-btn-primary">Send Inquiry</Link>
-              <a href="tel:+390522172306" className="oth-btn-outline">Call Us Now</a>
+              <Link href="/contact" className="oth-btn-primary">{ctaInquiry}</Link>
+              <a href="tel:+390522172306" className="oth-btn-outline">{ctaCall}</a>
             </div>
           </div>
         </div>
@@ -220,7 +244,7 @@ export default function OtherServicesPage() {
             <div className="oth-modal-body">
               <p className="oth-modal-desc">{activeModal.modalDesc}</p>
 
-              <div className="oth-modal-list-title">What&apos;s Included</div>
+              <div className="oth-modal-list-title">{modalListTitle}</div>
               <ul className="oth-modal-list">
                 {activeModal.points.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -228,12 +252,12 @@ export default function OtherServicesPage() {
               </ul>
 
               <div className="oth-modal-footer">
-              <Link href="/contact" className="oth-modal-btn oth-modal-btn-primary" onClick={() => setActiveModal(null)}>Send Inquiry</Link>
+                <Link href="/contact" className="oth-modal-btn oth-modal-btn-primary" onClick={() => setActiveModal(null)}>{modalInquiry}</Link>
                 <button
                   className="oth-modal-btn oth-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
                 >
-                  Close
+                  {modalClose}
                 </button>
               </div>
             </div>

@@ -1,0 +1,200 @@
+{
+  "it": {
+    "other": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Altri Servizi",
+      "hero": {
+        "badge": "✨ Altri Servizi",
+        "title": "Altri Servizi",
+        "desc": "Oltre ai nostri servizi principali, AMEI offre una serie di servizi di supporto aggiuntivi per aiutarti a comunicare, presentarti professionalmente e navigare la vita quotidiana in Italia. Dalle traduzioni alla scrittura del CV e all'interpretariato, siamo qui per aiutarti.",
+        "actions": {
+          "viewServices": "Vedi i servizi",
+          "inquiry": "Invia una richiesta"
+        },
+        "stats": [
+          { "num": "3",    "label": "Servizi offerti" },
+          { "num": "20+",  "label": "Lingue disponibili" },
+          { "num": "20+",  "label": "Anni di esperienza" },
+          { "num": "100%", "label": "Soddisfazione clienti" }
+        ]
+      },
+      "intro": {
+        "title": "Supporto che va oltre la burocrazia",
+        "body": "La vita in Italia comporta molto di più delle semplici procedure burocratiche. In AMEI, offriamo servizi di supporto pratici che ti aiutano a comunicare efficacemente, trovare lavoro e affrontare gli appuntamenti ufficiali con sicurezza. Il nostro team multilingue è sempre pronto ad assisterti nella tua lingua.",
+        "visualTitle": "Perché scegliere AMEI",
+        "checklist": [
+          "Traduttori e interpreti certificati",
+          "Oltre 20 lingue disponibili",
+          "Tempi di consegna rapidi per tutti i servizi",
+          "Traduzioni con valore legale riconosciuto",
+          "Esperti nella scrittura professionale del CV",
+          "Disponibile di persona e da remoto"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi aggiuntivi",
+        "desc": "Clicca su una scheda servizio per saperne di più e inviarci una richiesta."
+      },
+      "services": [
+        {
+          "icon": "🌐",
+          "title": "Servizi di Traduzione",
+          "desc": "Traduzione professionale di documenti in più lingue.",
+          "modalDesc": "I nostri traduttori certificati forniscono traduzioni accurate e legalmente riconosciute per tutti i tipi di documenti — dai certificati personali ai documenti legali e amministrativi ufficiali. Copriamo italiano, inglese, francese, spagnolo, arabo, hindi e molte altre lingue.",
+          "points": [
+            "Traduzioni certificate per uso ufficiale",
+            "Documenti personali: certificati di nascita, matrimonio, morte",
+            "Traduzione di documenti legali e amministrativi",
+            "Traduzione di documenti per immigrazione e consolato",
+            "Coordinamento apostille per documenti tradotti",
+            "Consegna rapida con garanzia di qualità"
+          ]
+        },
+        {
+          "icon": "📄",
+          "title": "Creazione CV",
+          "desc": "Scrittura professionale di CV e lettera di presentazione per il mercato del lavoro italiano.",
+          "modalDesc": "Un CV ben realizzato è il tuo primo passo verso l'impiego in Italia. Il nostro team crea CV professionali ottimizzati per i sistemi ATS e lettere di presentazione su misura per gli standard del mercato del lavoro italiano, aiutandoti a distinguerti presso datori di lavoro e agenzie di reclutamento.",
+          "points": [
+            "CV professionale in formato Europass italiano",
+            "CV personalizzato per specifiche candidature",
+            "Scrittura della lettera di presentazione",
+            "Ottimizzazione del profilo LinkedIn",
+            "Traduzione del CV dalla tua lingua madre",
+            "Consigli per la preparazione al colloquio inclusi"
+          ]
+        },
+        {
+          "icon": "🗣️",
+          "title": "Servizi di Interpretariato",
+          "desc": "Interpretariato professionale per appuntamenti, udienze e riunioni.",
+          "modalDesc": "I nostri interpreti professionisti ti assistono in contesti ufficiali dove le barriere linguistiche possono essere critiche — da appuntamenti medici e udienze legali a questure e uffici governativi. Forniamo interpretazione consecutiva e simultanea in più lingue.",
+          "points": [
+            "Interpretariato per appuntamenti medici",
+            "Interpretariato per udienze legali e in tribunale",
+            "Assistenza in questura e commissariato",
+            "Supporto presso uffici governativi e comuni",
+            "Interpretariato per riunioni d'affari",
+            "Disponibile in italiano, inglese, francese, arabo, hindi e altro"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Hai bisogno di uno di questi servizi?",
+        "desc": "Inviaci una richiesta oggi e il nostro team ti risponderà prontamente con tutte le informazioni necessarie per iniziare.",
+        "actions": {
+          "inquiry": "Invia una richiesta",
+          "call": "Chiamaci ora"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi",
+        "inquiry": "Invia una richiesta"
+      }
+    }
+  },
+  "en": {
+    "other": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Other Services",
+      "hero": {
+        "badge": "✨ Other Services",
+        "title": "Other Services",
+        "desc": "Beyond our core services, AMEI offers a range of additional support services to help you communicate, present yourself professionally, and navigate daily life in Italy. From translations to CV writing and interpreting, we are here to help.",
+        "actions": {
+          "viewServices": "View Services",
+          "inquiry": "Send Inquiry"
+        },
+        "stats": [
+          { "num": "3",    "label": "Services Offered" },
+          { "num": "20+",  "label": "Languages Covered" },
+          { "num": "20+",  "label": "Years Experience" },
+          { "num": "100%", "label": "Client Satisfaction" }
+        ]
+      },
+      "intro": {
+        "title": "Supporting You Beyond the Paperwork",
+        "body": "Life in Italy involves more than just bureaucratic procedures. At AMEI, we offer practical support services that help you communicate effectively, find employment, and navigate official appointments with confidence. Our multilingual team is always ready to assist you in your own language.",
+        "visualTitle": "Why Choose AMEI",
+        "checklist": [
+          "Certified translators and interpreters",
+          "Over 20 languages available",
+          "Fast turnaround on all services",
+          "Legally recognized translations",
+          "Professional CV writing experts",
+          "Available in-person and remotely"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Additional Services",
+        "desc": "Click on any service card to learn more and send us an inquiry."
+      },
+      "services": [
+        {
+          "icon": "🌐",
+          "title": "Translation Services",
+          "desc": "Professional document translation in multiple languages.",
+          "modalDesc": "Our certified translators provide accurate and legally recognized translations for all types of documents — from personal certificates to official legal and administrative papers. We cover Italian, English, French, Spanish, Arabic, Hindi, and more.",
+          "points": [
+            "Certified translations for official use",
+            "Personal documents: birth, marriage, death certificates",
+            "Legal and administrative document translation",
+            "Immigration and consular document translation",
+            "Apostille coordination for translated documents",
+            "Fast turnaround with quality guarantee"
+          ]
+        },
+        {
+          "icon": "📄",
+          "title": "CV Creation",
+          "desc": "Professional CV and cover letter writing for the Italian job market.",
+          "modalDesc": "A well-crafted CV is your first step toward employment in Italy. Our team creates professional, ATS-optimized CVs and cover letters tailored to the Italian job market standards, helping you stand out to employers and recruitment agencies.",
+          "points": [
+            "Professional CV in Italian Europass format",
+            "Custom CV for specific job applications",
+            "Cover letter (lettera di presentazione) writing",
+            "LinkedIn profile optimization",
+            "CV translation from your native language",
+            "Interview preparation tips included"
+          ]
+        },
+        {
+          "icon": "🗣️",
+          "title": "Interpreter Services",
+          "desc": "Professional interpreting for appointments, hearings, and meetings.",
+          "modalDesc": "Our professional interpreters assist you in official settings where language barriers can be critical — from medical appointments and legal hearings to police stations and government offices. We provide consecutive and simultaneous interpretation in multiple languages.",
+          "points": [
+            "Medical appointment interpretation",
+            "Legal and court hearing interpretation",
+            "Police station and questura assistance",
+            "Government office and municipality support",
+            "Business meeting interpretation",
+            "Available in Italian, English, French, Arabic, Hindi, and more"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Need One of These Services?",
+        "desc": "Send us an inquiry today and our team will get back to you promptly with all the information you need to get started.",
+        "actions": {
+          "inquiry": "Send Inquiry",
+          "call": "Call Us Now"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close",
+        "inquiry": "Send Inquiry"
+      }
+    }
+  }
+}
