@@ -1,0 +1,104 @@
+{
+  "it": {
+    "immigration": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Servizi per l'Immigrazione",
+      "hero": {
+        "badge": "🌍 Servizi Immigrazione",
+        "title": "Servizi per l'immigrazione",
+        "desc": "Forniamo assistenza completa per vivere, lavorare o stabilirti in Italia e in Europa. Il nostro team ti aiuta con la documentazione, le procedure e le formalità governative in modo chiaro e professionale.",
+        "actions": {
+          "explore": "Esplora i servizi",
+          "contact": "Contattaci"
+        },
+        "stats": [
+          { "num": "5000+", "label": "Permessi elaborati" },
+          { "num": "20+", "label": "Anni di esperienza" },
+          { "num": "98%", "label": "Tasso di successo" },
+          { "num": "6", "label": "Servizi principali" }
+        ]
+      },
+      "intro": {
+        "title": "Il tuo partner di fiducia per ogni passo dell'immigrazione",
+        "body": "Navigare nella legge sull'immigrazione italiana può essere complesso e dispendioso in termini di tempo. AMEI semplifica l'intero percorso — dal primo ingresso in Italia all'ottenimento della residenza permanente o della cittadinanza. Il nostro team esperto è sempre aggiornato sulle normative, così tu puoi concentrarti sui tuoi progetti.",
+        "visualTitle": "Perché scegliere AMEI",
+        "checklist": [
+          "Consulenti di immigrazione certificati",
+          "Gestione documentale end-to-end",
+          "Team multilingue",
+          "Processo rapido e trasparente",
+          "Migliaia di casi di successo",
+          "Sedi in tutta Italia"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi di immigrazione",
+        "desc": "Clicca su una scheda per scoprire il processo, i requisiti e come possiamo supportarti."
+      },
+      "cta": {
+        "title": "Hai bisogno di aiuto con il tuo processo di immigrazione?",
+        "desc": "I nostri esperti sono pronti ad assisterti. Prenota una consulenza gratuita oggi e lasciati guidare in ogni fase del tuo percorso.",
+        "actions": { "book": "Prenota una consulenza", "call": "Chiamaci ora" }
+      },
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi"
+      }
+    }
+  },
+  "en": {
+    "immigration": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Immigration Services",
+      "hero": {
+        "badge": "🌍 Immigration Services",
+        "title": "Immigration Services",
+        "desc": "We provide complete immigration assistance for individuals and families who want to live, work, or settle in Italy and Europe. Our team helps clients with legal documentation, application procedures, and government formalities in a smooth and professional manner.",
+        "actions": {
+          "explore": "Explore Services",
+          "contact": "Contact Us"
+        },
+        "stats": [
+          { "num": "5000+", "label": "Permits Processed" },
+          { "num": "20+", "label": "Years Experience" },
+          { "num": "98%", "label": "Success Rate" },
+          { "num": "6", "label": "Core Services" }
+        ]
+      },
+      "intro": {
+        "title": "Your Trusted Partner for Every Immigration Step",
+        "body": "Navigating Italian immigration law can be complex and time-consuming. At AMEI, we simplify the entire process — from your first entry into Italy to obtaining permanent residency or citizenship. Our experienced team stays up to date with the latest regulations so you don't have to.",
+        "visualTitle": "Why Choose AMEI",
+        "checklist": [
+          "Certified immigration consultants",
+          "End-to-end document management",
+          "Multilingual support team",
+          "Fast and transparent process",
+          "Thousands of successful cases",
+          "Offices across Italy"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Immigration Services",
+        "desc": "Click on any service card to learn more about the process, requirements, and how we can help you."
+      },
+      "cta": {
+        "title": "Need Help With Your Immigration Process?",
+        "desc": "Our experts are ready to assist you. Book a free consultation today and let us guide you through every step of your journey.",
+        "actions": { "book": "Book Consultation", "call": "Call Us Now" }
+      },
+      "card": {
+        "cta": "Learn More"
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close"
+      }
+    }
+  }
+}

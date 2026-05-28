@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './immigration.css'
 
-const services = [
+const defaultServices = [
   {
     icon: '📋',
     title: 'Permesso di Soggiorno',
@@ -91,10 +92,61 @@ const services = [
   },
 ]
 
-type Service = (typeof services)[number]
+type Service = (typeof defaultServices)[number]
+
+type HeroStat = { num: string; label: string }
 
 export default function ImmigrationPage() {
+  const { t } = useLanguage()
   const [activeModal, setActiveModal] = useState<Service | null>(null)
+
+  const rawServices = t('immigration.services')
+  const services: Service[] = Array.isArray(rawServices) ? (rawServices as Service[]) : defaultServices
+
+  const rawStats = t('immigration.hero.stats')
+  const heroStats: HeroStat[] = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '5000+', label: 'Permits Processed' },
+        { num: '20+', label: 'Years Experience' },
+        { num: '98%', label: 'Success Rate' },
+        { num: '6', label: 'Core Services' },
+      ]
+
+  const rawChecklist = t('immigration.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Certified immigration consultants',
+        'End-to-end document management',
+        'Multilingual support team',
+        'Fast and transparent process',
+        'Thousands of successful cases',
+        'Offices across Italy',
+      ]
+
+  const heroBadge = t('immigration.hero.badge') || '🌍 Immigration Services'
+  const heroTitle = t('immigration.hero.title') || 'Immigration Services'
+  const heroDesc = t('immigration.hero.desc') || 'We provide complete immigration assistance for individuals and families who want to live, work, or settle in Italy and Europe. Our team helps clients with legal documentation, application procedures, and government formalities in a smooth and professional manner.'
+  const exploreText = t('immigration.hero.actions.explore') || 'Explore Services'
+  const contactText = t('immigration.hero.actions.contact') || 'Contact Us'
+
+  const introTitle = t('immigration.intro.title') || 'Your Trusted Partner for Every Immigration Step'
+  const introBody = t('immigration.intro.body') || 'Navigating Italian immigration law can be complex and time-consuming. At AMEI, we simplify the entire process — from your first entry into Italy to obtaining permanent residency or citizenship. Our experienced team stays up to date with the latest regulations so you don\'t have to.'
+  const introVisualTitle = t('immigration.intro.visualTitle') || 'Why Choose AMEI'
+
+  const sectionTag = t('immigration.section.tag') || 'What We Offer'
+  const sectionTitle = t('immigration.section.title') || 'Our Immigration Services'
+  const sectionDesc = t('immigration.section.desc') || 'Click on any service card to learn more about the process, requirements, and how we can help you.'
+
+  const ctaTitle = t('immigration.cta.title') || 'Need Help With Your Immigration Process?'
+  const ctaDesc = t('immigration.cta.desc') || 'Our experts are ready to assist you. Book a free consultation today and let us guide you through every step of your journey.'
+  const ctaBook = t('immigration.cta.actions.book') || 'Book Consultation'
+  const ctaCall = t('immigration.cta.actions.call') || 'Call Us Now'
+  const cardCta = t('immigration.card.cta') || 'Learn More'
+
+  const modalListTitle = t('immigration.modal.listTitle') || "What's Included"
+  const modalClose = t('immigration.modal.close') || 'Close'
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -123,35 +175,28 @@ export default function ImmigrationPage() {
           <div className="imm-hero-inner animate-fade-in-up">
 
             <nav className="imm-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('immigration.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Servizi per l&apos;Immigrazione</span>
+              <span>{t('immigration.breadcrumbCurrent') || 'Servizi per l\'Immigrazione'}</span>
             </nav>
 
-            <div className="imm-hero-badge">🌍 Immigration Services</div>
+            <div className="imm-hero-badge">{heroBadge}</div>
 
             <h1 className="imm-hero-title">
-              Servizi per l&apos;Immigrazione
+              {heroTitle}
             </h1>
 
             <p className="imm-hero-desc">
-              We provide complete immigration assistance for individuals and families who want to live,
-              work, or settle in Italy and Europe. Our team helps clients with legal documentation,
-              application procedures, and government formalities in a smooth and professional manner.
+              {heroDesc}
             </p>
 
             <div className="imm-hero-actions">
-              <a href="#services" className="imm-btn-primary">Explore Services</a>
-              <Link href="/contact" className="imm-btn-outline">Contact Us</Link>
+              <a href="#services" className="imm-btn-primary">{exploreText}</a>
+              <Link href="/contact" className="imm-btn-outline">{contactText}</Link>
             </div>
 
             <div className="imm-hero-stats">
-              {[
-                { num: '5000+', label: 'Permits Processed' },
-                { num: '20+', label: 'Years Experience' },
-                { num: '98%', label: 'Success Rate' },
-                { num: '6', label: 'Core Services' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="imm-hero-stat-num">{s.num}</div>
                   <div className="imm-hero-stat-label">{s.label}</div>
@@ -168,27 +213,17 @@ export default function ImmigrationPage() {
           <div className="imm-intro-inner">
             <div className="imm-reveal">
               <h2 className="imm-intro-title">
-                Your Trusted Partner for Every Immigration Step
+                {introTitle}
               </h2>
               <p className="imm-intro-body">
-                Navigating Italian immigration law can be complex and time-consuming. At AMEI, we
-                simplify the entire process — from your first entry into Italy to obtaining permanent
-                residency or citizenship. Our experienced team stays up to date with the latest
-                regulations so you don&apos;t have to.
+                {introBody}
               </p>
             </div>
 
             <div className="imm-intro-visual imm-reveal delay-2">
-              <div className="imm-intro-visual-title">Why Choose AMEI</div>
+              <div className="imm-intro-visual-title">{introVisualTitle}</div>
               <ul className="imm-checklist">
-                {[
-                  'Certified immigration consultants',
-                  'End-to-end document management',
-                  'Multilingual support team',
-                  'Fast and transparent process',
-                  'Thousands of successful cases',
-                  'Offices across Italy',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="imm-check-icon">✓</span>
                     {item}
@@ -204,10 +239,10 @@ export default function ImmigrationPage() {
       <section className="imm-services" id="services">
         <div className="container">
           <div className="imm-section-header imm-reveal">
-            <span className="imm-section-tag">What We Offer</span>
-            <h2 className="imm-section-title">Our Immigration Services</h2>
+            <span className="imm-section-tag">{sectionTag}</span>
+            <h2 className="imm-section-title">{sectionTitle}</h2>
             <p className="imm-section-desc">
-              Click on any service card to learn more about the process, requirements, and how we can help you.
+              {sectionDesc}
             </p>
           </div>
 
@@ -222,7 +257,7 @@ export default function ImmigrationPage() {
                 <h3 className="imm-card-title">{service.title}</h3>
                 <p className="imm-card-desc">{service.desc}</p>
                 <span className="imm-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="imm-card-arrow">→</span>
                 </span>
               </div>
@@ -236,15 +271,14 @@ export default function ImmigrationPage() {
         <div className="container">
           <div className="imm-cta-box imm-reveal">
             <div>
-              <h2 className="imm-cta-title">Need Help With Your Immigration Process?</h2>
+              <h2 className="imm-cta-title">{ctaTitle}</h2>
               <p className="imm-cta-desc">
-                Our experts are ready to assist you. Book a free consultation today and let us guide
-                you through every step of your journey.
+                {ctaDesc}
               </p>
             </div>
             <div className="imm-cta-actions">
-              <Link href="/contact" className="imm-btn-primary">Book Consultation</Link>
-              <a href="tel:+390522172306" className="imm-btn-outline">Call Us Now</a>
+              <Link href="/contact" className="imm-btn-primary">{ctaBook}</Link>
+              <a href="tel:+390522172306" className="imm-btn-outline">{ctaCall}</a>
             </div>
           </div>
         </div>
@@ -267,7 +301,7 @@ export default function ImmigrationPage() {
             <div className="imm-modal-body">
               <p className="imm-modal-desc">{activeModal.modalDesc}</p>
 
-              <div className="imm-modal-list-title">What&apos;s Included</div>
+              <div className="imm-modal-list-title">{modalListTitle}</div>
               <ul className="imm-modal-list">
                 {activeModal.points.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -276,13 +310,13 @@ export default function ImmigrationPage() {
 
               <div className="imm-modal-footer">
               <Link href="/contact" className="imm-modal-btn imm-modal-btn-primary" onClick={() => setActiveModal(null)}>
-                  Book Appointment
+                  {ctaBook}
                 </Link>
                 <button
                   className="imm-modal-btn imm-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
                 >
-                  Close
+                  {modalClose}
                 </button>
               </div>
             </div>
