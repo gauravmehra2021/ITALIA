@@ -8,6 +8,7 @@ import {
 } from "react";
 
 import translationsData from "../translations/languages.json";
+import homepageTranslations from "../translations/homepage.json";
 
 type Language = "it" | "en";
 
@@ -29,17 +30,47 @@ export const LanguageProvider = ({
   const [language, setLanguage] =
     useState<Language>("it");
 
+  const mergedTranslations = (() => {
+    const merge = (a: any = {}, b: any = {}) => {
+      const out: any = { ...a };
+      for (const k of Object.keys(b)) {
+        if (
+          b[k] &&
+          typeof b[k] === "object" &&
+          !Array.isArray(b[k]) &&
+          typeof out[k] === "object"
+        ) {
+          out[k] = merge(out[k], b[k]);
+        } else {
+          out[k] = b[k];
+        }
+      }
+      return out;
+    };
+
+    const result: any = {};
+    const langs = new Set([
+      ...Object.keys(translationsData || {}),
+      ...Object.keys(homepageTranslations || {}),
+    ]);
+    for (const lang of langs) {
+      const base = (translationsData as any)[lang] || {};
+      const extra = (homepageTranslations as any)[lang] || {};
+      result[lang] = merge(base, extra);
+    }
+    return result;
+  })();
+
   const t = (path: string) => {
     const keys = path.split(".");
 
-    let result: any =
-      (translationsData as any)[language];
+    let result: any = (mergedTranslations as any)[language];
 
     for (const key of keys) {
       result = result?.[key];
     }
 
-    return result || path;
+    return result ?? path;
   };
 
   return (
