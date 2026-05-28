@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google"; // Added Google fonts here
+import { Geist, Geist_Mono, Inter, Outfit, Poppins } from "next/font/google"; // Added Google fonts here
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -29,6 +29,12 @@ const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
 // All head tags move here for performance and SEO optimization
 export const metadata: Metadata = {
   title: "L'Eleganza d'Italia | Servizi Internazionali Premium",
@@ -47,9 +53,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${outfit.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${outfit.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-slate-50">
+      <body className="min-h-screen flex flex-col bg-slate-50" suppressHydrationWarning>
         <LanguageProvider>
           <Header />
           <div className="flex-grow">

@@ -1,22 +1,26 @@
-'use client'
+import CafDetailPage from '../CafDetailPage'
 
 export default function Invalidita() {
   return (
-    <div className="container mx-auto max-w-[900px] py-20">
-      <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">Invalidità Civile</h1>
-      <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
-        <p>Il riconoscimento dell'<strong>Invalidità Civile</strong> permette di accedere a una serie di benefici economici e agevolazioni previsti dallo Stato italiano per le persone con ridotta capacità lavorativa.</p>
-        <p>Il nostro patronato vi assiste in tutto l'iter: dalla domanda all'INPS, alla visita medica, fino al ricorso in caso di esito negativo.</p>
-        <h2 className="text-2xl font-bold text-[#004a99]">Benefici ottenibili</h2>
-        <ul className="space-y-2">
-          {['Pensione di invalidità civile', 'Assegno mensile di assistenza', 'Indennità di accompagnamento', 'Agevolazioni fiscali e tariffarie', 'Collocamento mirato al lavoro (Legge 68/99)'].map((item, i) => (
-            <li key={i} className="flex items-start gap-3 rounded-md bg-white px-4 py-3 shadow-sm">
-              <span className="text-[#004a99]">▸</span><span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p>Contattaci per una valutazione gratuita della tua situazione e per avviare la pratica di invalidità.</p>
-      </div>
-    </div>
+    <CafDetailPage
+      icon="♿"
+      title="Invalidità Civile"
+      subtitle="Disability recognition and benefit application — our experts guide you through every step of the process."
+      description="Il riconoscimento dell'invalidità civile permette di accedere a una serie di benefici economici e agevolazioni. Il processo richiede la presentazione di una domanda all'INPS corredata da documentazione medica, seguita da una visita della commissione medica. Il nostro team vi assiste in ogni fase, dalla raccolta dei documenti alla presentazione della domanda e al monitoraggio dell'iter."
+      steps={[
+        'Collect all medical documentation certifying your condition',
+        'Our operator submits the application to INPS online',
+        'INPS schedules a medical commission visit',
+        'Attend the medical commission appointment',
+        'Receive the official recognition and access your benefits',
+      ]}
+      documents={[
+        'Identity document and tax code',
+        'Medical certificates and specialist reports',
+        'Hospital discharge summaries',
+        'Current medication prescriptions',
+        'ISEE certificate (for means-tested benefits)',
+      ]}
+    />
   )
 }

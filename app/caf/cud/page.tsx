@@ -1,22 +1,24 @@
-'use client'
+import CafDetailPage from '../CafDetailPage'
 
 export default function Cud() {
   return (
-    <div className="container mx-auto max-w-[900px] py-20">
-      <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">CUD – Certificazione Unica</h1>
-      <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
-        <p>La <strong>Certificazione Unica (CU)</strong>, precedentemente nota come CUD, è il documento che certifica i redditi da lavoro dipendente, pensione e assimilati percepiti nell'anno precedente.</p>
-        <p>Il nostro CAF vi assiste nel recupero e nella lettura della Certificazione Unica, necessaria per la compilazione del modello 730.</p>
-        <h2 className="text-2xl font-bold text-[#004a99]">Utilizzi della CU</h2>
-        <ul className="space-y-2">
-          {['Compilazione del modello 730', 'Richiesta di prestazioni sociali agevolate', 'Verifica delle ritenute fiscali operate dal datore di lavoro', 'Documentazione per pratiche bancarie e finanziarie', 'Calcolo dell\'ISEE'].map((item, i) => (
-            <li key={i} className="flex items-start gap-3 rounded-md bg-white px-4 py-3 shadow-sm">
-              <span className="text-[#004a99]">▸</span><span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p>Hai bisogno della tua CU? Vieni da noi e ti aiutiamo a recuperarla e interpretarla.</p>
-      </div>
-    </div>
+    <CafDetailPage
+      icon="📋"
+      title="CUD – Certificazione Unica"
+      subtitle="Single certification of income and withholding taxes — essential for your tax return and benefit applications."
+      description="Il CUD (ora denominato Certificazione Unica o CU) è il documento rilasciato dal datore di lavoro o dall'ente pensionistico che certifica i redditi percepiti e le ritenute fiscali operate nell'anno precedente. È indispensabile per la compilazione del Modello 730 e per molte pratiche previdenziali. Il nostro CAF vi assiste nel recupero e nella verifica del CUD."
+      steps={[
+        'Request your CU from your employer or pension provider',
+        'Bring the document to our office for verification',
+        'Our operator checks the data for accuracy',
+        'Use the CU for your 730 tax return or benefit applications',
+        'We archive a copy for your records',
+      ]}
+      documents={[
+        'Identity document and tax code',
+        'Previous year payslips (for verification)',
+        'Contact details of your employer or pension provider',
+      ]}
+    />
   )
 }
