@@ -1,6 +1,20 @@
+'use client'
+
 import Link from 'next/link'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Footer = () => {
+  const { t } = useLanguage()
+  const rawQuickLinks = t('footer.quickLinks')
+  const quickLinks = Array.isArray(rawQuickLinks) ? rawQuickLinks : [
+    { label: 'Migrants', href: '/migrants' },
+    { label: 'Travelers', href: '/travelers' },
+    { label: 'Families', href: '/families' },
+    { label: 'Companies', href: '/companies' },
+    { label: 'Loans and financing', href: '/loans' },
+    { label: 'Other Services', href: '/other-services' },
+  ]
+
   return (
     <footer className="bg-[rgb(37,39,46)] pt-20 text-[14px] leading-[1.6] text-[#b0b0b0]">
       <div className="container">
@@ -9,28 +23,24 @@ const Footer = () => {
           {/* About */}
           <div>
             <p className="mb-6 font-medium text-[#eee]">
-              Our knowledgeable staff will be happy to answer all your
-              questions and needs. Contact your nearest office or contact us.
+              {t('footer.aboutText1')}
             </p>
 
             <p className="text-[12px] leading-6 opacity-60">
-              Gruppo Europa agencies are managed by independent entrepreneurial
-              affiliates who operate under the Gruppo Europa brand under a
-              franchising agreement. Gruppo Europa provides support services to
-              businesses and individuals.
+              {t('footer.aboutText2')}
             </p>
           </div>
 
           {/* Contact */}
           <div>
             <h4 className="footer-title">
-              Contact Us
+              {t('footer.contactTitle')}
             </h4>
 
             <div className="space-y-3">
-              <p>Telephone: 0522 1723060</p>
-              <p>Email: info@gruppoeuropa.net</p>
-              <p>Office: Via G. Battista Pergolesi 2/A 20124 Milan</p>
+              <p>{t('footer.telephoneLabel')}: 0522 1723060</p>
+              <p>{t('footer.emailLabel')}: info@gruppoeuropa.net</p>
+              <p>{t('footer.officeLabel')}: Via G. Battista Pergolesi 2/A 20124 Milan</p>
             </div>
 
             {/* Social Icons */}
@@ -61,18 +71,11 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="footer-title">
-              Quick Links
+              {t('footer.quickLinksTitle')}
             </h4>
 
             <ul className="space-y-3">
-              {[
-                { label: 'Migrants', href: '/migrants' },
-                { label: 'Travelers', href: '/travelers' },
-                { label: 'Families', href: '/families' },
-                { label: 'Companies', href: '/companies' },
-                { label: 'Loans and financing', href: '/loans' },
-                { label: 'Other Services', href: '/other-services' },
-              ].map((item) => (
+              {quickLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -91,7 +94,7 @@ const Footer = () => {
           {/* Certifications */}
           <div>
             <h4 className="footer-title">
-              Certifications
+              {t('footer.certificationsTitle')}
             </h4>
 
             <div className="flex flex-col gap-4">
@@ -107,15 +110,11 @@ const Footer = () => {
       <div className="border-t border-white/10 bg-[#004a99] py-8 text-center text-[12px] text-white/80">
         <div className="container">
           <p className="mx-auto max-w-[900px] leading-7">
-            Gruppo Europa srl Sole Shareholder (subject to management and
-            coordination: Extrabanca SpA) - VAT number 10232730969 - Share
-            capital €100,000 fully paid-up - REA-MI 2515624 - Privacy policy
+            {t('footer.bottomLine1')}
             <br />
-            Gruppo Europa srl, an insurance intermediary registered under
-            letter E of the RUI (Italian Register of Insurance Intermediaries)
-            under no. E000597090
+            {t('footer.bottomLine2')}
             <br />
-            Reserved Area - Website created by DICE
+            {t('footer.bottomLine3')}
           </p>
         </div>
       </div>

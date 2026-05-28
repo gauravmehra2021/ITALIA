@@ -73,10 +73,6 @@ const Header = () => {
   const langs = [
     { code: 'it', label: 'IT' },
     { code: 'en', label: 'EN' },
-    { code: 'fr', label: 'FR' },
-    { code: 'es', label: 'ES' },
-    { code: 'ar', label: 'AR' },
-    { code: 'ru', label: 'RU' },
   ] as const
 
   const categories = [
@@ -114,10 +110,7 @@ const Header = () => {
             {langs.map(({ code, label }) => (
               <button
                 key={code}
-                onClick={() => {
-                  setLanguage(code)
-                  document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr'
-                }}
+                onClick={() => setLanguage(code)}
                 className={`rounded px-2 py-[2px] text-[11px] font-bold uppercase transition-all duration-300 ${
                   language === code ? 'bg-white text-[#004a99]' : 'text-white/70 hover:text-white'
                 }`}
