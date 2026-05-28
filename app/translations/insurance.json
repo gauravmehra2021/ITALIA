@@ -1,0 +1,256 @@
+{
+  "it": {
+    "insurance": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Assicurazioni",
+      "hero": {
+        "badge": "🛡️ Servizi Assicurativi",
+        "title": "Assicurazioni",
+        "desc": "Proteggi la tua famiglia, la tua casa, la tua azienda e il tuo futuro con le nostre soluzioni assicurative personalizzate. Collaboriamo con le principali compagnie assicurative per trovare la copertura migliore al prezzo più competitivo — su misura per le tue esigenze specifiche.",
+        "actions": {
+          "viewTypes": "Vedi i tipi di assicurazione",
+          "quote": "Richiedi un preventivo"
+        },
+        "stats": [
+          { "num": "5",   "label": "Tipi di assicurazione" },
+          { "num": "1K+", "label": "Polizze gestite" },
+          { "num": "20+", "label": "Anni di esperienza" },
+          { "num": "98%", "label": "Soddisfazione clienti" }
+        ]
+      },
+      "intro": {
+        "title": "Protezione completa per ogni aspetto della tua vita",
+        "body": "In AMEI, sappiamo che ogni cliente ha esigenze assicurative uniche. Che tu sia un privato, una famiglia o un imprenditore, i nostri specialisti assicurativi analizzano la tua situazione e ti consigliano la copertura più adatta tra un'ampia gamma di fornitori affidabili — garantendoti sempre la protezione giusta al prezzo giusto.",
+        "visualTitle": "Perché scegliere AMEI Assicurazioni",
+        "checklist": [
+          "Broker assicurativi indipendenti",
+          "Confronto tra più compagnie assicurative",
+          "Raccomandazioni di copertura personalizzate",
+          "Assistenza multilingue disponibile",
+          "Supporto e assistenza in caso di sinistro",
+          "Servizio di revisione annuale della polizza"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "Le nostre soluzioni assicurative",
+        "desc": "Clicca su qualsiasi tipo di assicurazione per saperne di più sulle opzioni di copertura e richiedere un preventivo personalizzato."
+      },
+      "services": [
+        {
+          "icon": "🏥",
+          "title": "Assicurazione Sanitaria",
+          "desc": "Copertura sanitaria completa per individui e famiglie in Italia.",
+          "modalDesc": "I nostri piani sanitari offrono una copertura medica completa che include visite specialistiche, ricoveri ospedalieri, diagnostica e cure dentistiche. Collaboriamo con le principali compagnie assicurative italiane ed europee per trovare il piano migliore per le tue esigenze e il tuo budget.",
+          "points": [
+            "Copertura visite specialistiche e medico di base",
+            "Copertura ricovero ospedaliero e interventi chirurgici",
+            "Esami diagnostici e analisi di laboratorio",
+            "Opzioni per cure dentistiche e visive",
+            "Assistenza medica d'emergenza all'estero",
+            "Piani per individui, famiglie e aziende"
+          ]
+        },
+        {
+          "icon": "🛡️",
+          "title": "Assicurazione sulla Vita",
+          "desc": "Proteggi il futuro finanziario della tua famiglia con polizze vita su misura.",
+          "modalDesc": "L'assicurazione sulla vita ti dà la tranquillità di sapere che la tua famiglia è finanziariamente protetta. Offriamo polizze temporanee, vita intera e collegate a investimenti da compagnie top-rated, personalizzate in base alla tua situazione personale e finanziaria.",
+          "points": [
+            "Assicurazione temporanea per la protezione del reddito",
+            "Polizze vita intera con componente di risparmio",
+            "Garanzie per malattie gravi e invalidità",
+            "Copertura vita a protezione del mutuo",
+            "Assistenza nella designazione dei beneficiari",
+            "Revisione e ottimizzazione annuale della polizza"
+          ]
+        },
+        {
+          "icon": "🏠",
+          "title": "Assicurazione Casa",
+          "desc": "Proteggi la tua casa e il suo contenuto da danni, furti e responsabilità civile.",
+          "modalDesc": "Le nostre soluzioni assicurative per la casa coprono la tua proprietà da incendi, alluvioni, furti e danni accidentali. Include anche la copertura di responsabilità civile per proteggerti da richieste di terzi. Disponibile per proprietari e inquilini.",
+          "points": [
+            "Copertura danni strutturali e all'edificio",
+            "Protezione del contenuto e degli effetti personali",
+            "Copertura furto e rapina",
+            "Protezione da danni idrici e alluvioni",
+            "Responsabilità civile per proprietari e inquilini",
+            "Alloggio temporaneo durante i lavori di riparazione"
+          ]
+        },
+        {
+          "icon": "🚗",
+          "title": "Assicurazione Veicoli",
+          "desc": "Soluzioni assicurative obbligatorie e complete per auto e veicoli.",
+          "modalDesc": "Ti aiutiamo a trovare la migliore assicurazione veicoli al prezzo più competitivo. Dalla RCA obbligatoria alla copertura kasko completa, confrontiamo le offerte di più compagnie per garantirti il miglior affare.",
+          "points": [
+            "RCA — responsabilità civile obbligatoria",
+            "Kasko — copertura completa per collisioni",
+            "Protezione furto e incendio",
+            "Assistenza stradale e traino",
+            "Tutela legale per incidenti stradali",
+            "Copertura per moto e veicoli commerciali"
+          ]
+        },
+        {
+          "icon": "🏢",
+          "title": "Assicurazione Aziendale",
+          "desc": "Soluzioni assicurative complete per proteggere la tua azienda e i tuoi dipendenti.",
+          "modalDesc": "Proteggere la tua azienda è fondamentale. Offriamo pacchetti assicurativi commerciali su misura che coprono locali, attrezzature, dipendenti e responsabilità professionale — garantendo che la tua azienda sia completamente protetta da eventi imprevisti.",
+          "points": [
+            "Assicurazione immobili e contenuto commerciale",
+            "Responsabilità civile professionale (RC Professionale)",
+            "Copertura infortuni e salute per i dipendenti",
+            "Assicurazione per interruzione dell'attività",
+            "Copertura rischio cyber e protezione dati",
+            "Pacchetti personalizzati per aziende di tutte le dimensioni"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Ottieni il tuo preventivo assicurativo personalizzato",
+        "desc": "I nostri specialisti assicurativi sono pronti a trovare la copertura migliore per te. Richiedi un preventivo gratuito oggi e lascia che proteggiamo ciò che conta di più.",
+        "actions": {
+          "quote": "Richiedi un preventivo",
+          "call": "Chiamaci ora"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa è coperto",
+        "close": "Chiudi",
+        "quote": "Richiedi un preventivo"
+      }
+    }
+  },
+  "en": {
+    "insurance": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Insurance",
+      "hero": {
+        "badge": "🛡️ Insurance Services",
+        "title": "Insurance",
+        "desc": "Protect your family, home, business, and future with our customized insurance solutions. We work with leading insurers to find the best coverage at the most competitive price — tailored to your specific needs.",
+        "actions": {
+          "viewTypes": "View Insurance Types",
+          "quote": "Get a Quote"
+        },
+        "stats": [
+          { "num": "5",   "label": "Insurance Types" },
+          { "num": "1K+", "label": "Policies Managed" },
+          { "num": "20+", "label": "Years Experience" },
+          { "num": "98%", "label": "Client Satisfaction" }
+        ]
+      },
+      "intro": {
+        "title": "Complete Protection for Every Aspect of Your Life",
+        "body": "At AMEI, we understand that every client has unique insurance needs. Whether you are an individual, a family, or a business owner, our insurance specialists analyze your situation and recommend the most suitable coverage from a wide range of trusted providers — ensuring you are always protected at the right price.",
+        "visualTitle": "Why Choose AMEI Insurance",
+        "checklist": [
+          "Independent insurance brokers",
+          "Comparison across multiple insurers",
+          "Personalized coverage recommendations",
+          "Multilingual assistance available",
+          "Claims support and assistance",
+          "Annual policy review service"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Insurance Solutions",
+        "desc": "Click on any insurance type to learn more about coverage options and request a personalized quote."
+      },
+      "services": [
+        {
+          "icon": "🏥",
+          "title": "Health Insurance",
+          "desc": "Comprehensive health coverage for individuals and families in Italy.",
+          "modalDesc": "Our health insurance plans provide complete medical coverage including specialist visits, hospitalization, diagnostics, and dental care. We work with leading Italian and European insurers to find the best plan for your needs and budget.",
+          "points": [
+            "Specialist and GP visits coverage",
+            "Hospitalization and surgery coverage",
+            "Diagnostic tests and lab exams",
+            "Dental and vision care options",
+            "Emergency medical assistance abroad",
+            "Plans for individuals, families, and companies"
+          ]
+        },
+        {
+          "icon": "🛡️",
+          "title": "Life Insurance",
+          "desc": "Protect your family's financial future with tailored life policies.",
+          "modalDesc": "Life insurance gives you peace of mind knowing your family is financially protected. We offer term life, whole life, and investment-linked policies from top-rated insurers, customized to your personal and financial situation.",
+          "points": [
+            "Term life insurance for income protection",
+            "Whole life policies with savings component",
+            "Critical illness and disability riders",
+            "Mortgage protection life cover",
+            "Beneficiary designation assistance",
+            "Annual policy review and optimization"
+          ]
+        },
+        {
+          "icon": "🏠",
+          "title": "Home Insurance",
+          "desc": "Protect your home and contents against damage, theft, and liability.",
+          "modalDesc": "Our home insurance solutions cover your property against fire, flood, theft, and accidental damage. We also include civil liability coverage to protect you against claims from third parties. Available for owners and tenants.",
+          "points": [
+            "Building and structural damage coverage",
+            "Contents and personal belongings protection",
+            "Theft and burglary coverage",
+            "Water damage and flooding protection",
+            "Civil liability for homeowners and tenants",
+            "Temporary accommodation during repairs"
+          ]
+        },
+        {
+          "icon": "🚗",
+          "title": "Vehicle Insurance",
+          "desc": "Mandatory and comprehensive car and vehicle insurance solutions.",
+          "modalDesc": "We help you find the best vehicle insurance at the most competitive price. From mandatory RCA (third-party liability) to full comprehensive cover, we compare offers from multiple insurers to get you the best deal.",
+          "points": [
+            "RCA — mandatory third-party liability",
+            "Kasko — comprehensive collision coverage",
+            "Theft and fire protection",
+            "Roadside assistance and towing",
+            "Legal protection for road accidents",
+            "Coverage for motorcycles and commercial vehicles"
+          ]
+        },
+        {
+          "icon": "🏢",
+          "title": "Business Insurance",
+          "desc": "Complete insurance solutions to protect your company and employees.",
+          "modalDesc": "Protecting your business is essential. We offer tailored commercial insurance packages covering your premises, equipment, employees, and professional liability — ensuring your business is fully protected against unexpected events.",
+          "points": [
+            "Commercial property and contents insurance",
+            "Professional liability (RC Professionale)",
+            "Employee accident and health coverage",
+            "Business interruption insurance",
+            "Cyber risk and data protection coverage",
+            "Customized packages for all business sizes"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Get Your Personalized Insurance Quote",
+        "desc": "Our insurance specialists are ready to find the best coverage for you. Request a free quote today and let us protect what matters most.",
+        "actions": {
+          "quote": "Request a Quote",
+          "call": "Call Us Now"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Covered",
+        "close": "Close",
+        "quote": "Request a Quote"
+      }
+    }
+  }
+}

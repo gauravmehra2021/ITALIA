@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './insurance.css'
 
-const services = [
+const defaultServices = [
   {
     icon: '🏥',
     title: 'Health Insurance',
@@ -23,7 +24,7 @@ const services = [
   {
     icon: '🛡️',
     title: 'Life Insurance',
-    desc: 'Protect your family\'s financial future with tailored life policies.',
+    desc: "Protect your family's financial future with tailored life policies.",
     modalDesc:
       'Life insurance gives you peace of mind knowing your family is financially protected. We offer term life, whole life, and investment-linked policies from top-rated insurers, customized to your personal and financial situation.',
     points: [
@@ -82,10 +83,61 @@ const services = [
   },
 ]
 
-type Service = (typeof services)[number]
+type Service = (typeof defaultServices)[number]
+type HeroStat = { num: string; label: string }
 
 export default function InsurancePage() {
+  const { t } = useLanguage()
   const [activeModal, setActiveModal] = useState<Service | null>(null)
+
+  const rawServices = t('insurance.services')
+  const services: Service[] = Array.isArray(rawServices) ? (rawServices as Service[]) : defaultServices
+
+  const rawStats = t('insurance.hero.stats')
+  const heroStats = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '5',   label: 'Insurance Types' },
+        { num: '1K+', label: 'Policies Managed' },
+        { num: '20+', label: 'Years Experience' },
+        { num: '98%', label: 'Client Satisfaction' },
+      ]
+
+  const rawChecklist = t('insurance.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Independent insurance brokers',
+        'Comparison across multiple insurers',
+        'Personalized coverage recommendations',
+        'Multilingual assistance available',
+        'Claims support and assistance',
+        'Annual policy review service',
+      ]
+
+  const heroBadge        = t('insurance.hero.badge')           || '🛡️ Insurance Services'
+  const heroTitle        = t('insurance.hero.title')           || 'Insurance'
+  const heroDesc         = t('insurance.hero.desc')            || ''
+  const viewTypesText    = t('insurance.hero.actions.viewTypes') || 'View Insurance Types'
+  const quoteText        = t('insurance.hero.actions.quote')   || 'Get a Quote'
+
+  const introTitle       = t('insurance.intro.title')          || 'Complete Protection for Every Aspect of Your Life'
+  const introBody        = t('insurance.intro.body')           || ''
+  const introVisualTitle = t('insurance.intro.visualTitle')    || 'Why Choose AMEI Insurance'
+
+  const sectionTag       = t('insurance.section.tag')          || 'What We Offer'
+  const sectionTitle     = t('insurance.section.title')        || 'Our Insurance Solutions'
+  const sectionDesc      = t('insurance.section.desc')         || ''
+  const cardCta          = t('insurance.card.cta')             || 'Learn More'
+
+  const ctaTitle         = t('insurance.cta.title')            || 'Get Your Personalized Insurance Quote'
+  const ctaDesc          = t('insurance.cta.desc')             || ''
+  const ctaQuote         = t('insurance.cta.actions.quote')    || 'Request a Quote'
+  const ctaCall          = t('insurance.cta.actions.call')     || 'Call Us Now'
+
+  const modalListTitle   = t('insurance.modal.listTitle')      || "What's Covered"
+  const modalClose       = t('insurance.modal.close')          || 'Close'
+  const modalQuote       = t('insurance.modal.quote')          || 'Request a Quote'
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -108,33 +160,24 @@ export default function InsurancePage() {
         <div className="container">
           <div className="ins-hero-inner animate-fade-in-up">
             <nav className="ins-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('insurance.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Assicurazioni</span>
+              <span>{t('insurance.breadcrumbCurrent') || 'Insurance'}</span>
             </nav>
 
-            <div className="ins-hero-badge">🛡️ Insurance Services</div>
+            <div className="ins-hero-badge">{heroBadge}</div>
 
-            <h1 className="ins-hero-title">Assicurazioni</h1>
+            <h1 className="ins-hero-title">{heroTitle}</h1>
 
-            <p className="ins-hero-desc">
-              Protect your family, home, business, and future with our customized insurance
-              solutions. We work with leading insurers to find the best coverage at the most
-              competitive price — tailored to your specific needs.
-            </p>
+            <p className="ins-hero-desc">{heroDesc}</p>
 
             <div className="ins-hero-actions">
-              <a href="#services" className="ins-btn-primary">View Insurance Types</a>
-              <Link href="/contact" className="ins-btn-outline">Get a Quote</Link>
+              <a href="#services" className="ins-btn-primary">{viewTypesText}</a>
+              <Link href="/contact" className="ins-btn-outline">{quoteText}</Link>
             </div>
 
             <div className="ins-hero-stats">
-              {[
-                { num: '5',    label: 'Insurance Types' },
-                { num: '1K+',  label: 'Policies Managed' },
-                { num: '20+',  label: 'Years Experience' },
-                { num: '98%',  label: 'Client Satisfaction' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="ins-hero-stat-num">{s.num}</div>
                   <div className="ins-hero-stat-label">{s.label}</div>
@@ -150,28 +193,14 @@ export default function InsurancePage() {
         <div className="container">
           <div className="ins-intro-inner">
             <div className="ins-reveal">
-              <h2 className="ins-intro-title">
-                Complete Protection for Every Aspect of Your Life
-              </h2>
-              <p className="ins-intro-body">
-                At AMEI, we understand that every client has unique insurance needs. Whether you are
-                an individual, a family, or a business owner, our insurance specialists analyze your
-                situation and recommend the most suitable coverage from a wide range of trusted
-                providers — ensuring you are always protected at the right price.
-              </p>
+              <h2 className="ins-intro-title">{introTitle}</h2>
+              <p className="ins-intro-body">{introBody}</p>
             </div>
 
             <div className="ins-intro-visual ins-reveal delay-2">
-              <div className="ins-intro-visual-title">Why Choose AMEI Insurance</div>
+              <div className="ins-intro-visual-title">{introVisualTitle}</div>
               <ul className="ins-checklist">
-                {[
-                  'Independent insurance brokers',
-                  'Comparison across multiple insurers',
-                  'Personalized coverage recommendations',
-                  'Multilingual assistance available',
-                  'Claims support and assistance',
-                  'Annual policy review service',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="ins-check-icon">✓</span>
                     {item}
@@ -187,11 +216,9 @@ export default function InsurancePage() {
       <section className="ins-services" id="services">
         <div className="container">
           <div className="ins-section-header ins-reveal">
-            <span className="ins-section-tag">What We Offer</span>
-            <h2 className="ins-section-title">Our Insurance Solutions</h2>
-            <p className="ins-section-desc">
-              Click on any insurance type to learn more about coverage options and request a personalized quote.
-            </p>
+            <span className="ins-section-tag">{sectionTag}</span>
+            <h2 className="ins-section-title">{sectionTitle}</h2>
+            <p className="ins-section-desc">{sectionDesc}</p>
           </div>
 
           <div className="ins-cards-grid">
@@ -205,7 +232,7 @@ export default function InsurancePage() {
                 <h3 className="ins-card-title">{service.title}</h3>
                 <p className="ins-card-desc">{service.desc}</p>
                 <span className="ins-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="ins-card-arrow">→</span>
                 </span>
               </div>
@@ -219,15 +246,12 @@ export default function InsurancePage() {
         <div className="container">
           <div className="ins-cta-box ins-reveal">
             <div>
-              <h2 className="ins-cta-title">Get Your Personalized Insurance Quote</h2>
-              <p className="ins-cta-desc">
-                Our insurance specialists are ready to find the best coverage for you. Request a
-                free quote today and let us protect what matters most.
-              </p>
+              <h2 className="ins-cta-title">{ctaTitle}</h2>
+              <p className="ins-cta-desc">{ctaDesc}</p>
             </div>
             <div className="ins-cta-actions">
-              <Link href="/contact" className="ins-btn-primary">Request a Quote</Link>
-              <a href="tel:+390522172306" className="ins-btn-outline">Call Us Now</a>
+              <Link href="/contact" className="ins-btn-primary">{ctaQuote}</Link>
+              <a href="tel:+390522172306" className="ins-btn-outline">{ctaCall}</a>
             </div>
           </div>
         </div>
@@ -250,7 +274,7 @@ export default function InsurancePage() {
             <div className="ins-modal-body">
               <p className="ins-modal-desc">{activeModal.modalDesc}</p>
 
-              <div className="ins-modal-list-title">What&apos;s Covered</div>
+              <div className="ins-modal-list-title">{modalListTitle}</div>
               <ul className="ins-modal-list">
                 {activeModal.points.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -258,12 +282,12 @@ export default function InsurancePage() {
               </ul>
 
               <div className="ins-modal-footer">
-              <Link href="/contact" className="ins-modal-btn ins-modal-btn-primary" onClick={() => setActiveModal(null)}>Request a Quote</Link>
+                <Link href="/contact" className="ins-modal-btn ins-modal-btn-primary" onClick={() => setActiveModal(null)}>{modalQuote}</Link>
                 <button
                   className="ins-modal-btn ins-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
                 >
-                  Close
+                  {modalClose}
                 </button>
               </div>
             </div>
