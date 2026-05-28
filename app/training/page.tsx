@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './training.css'
 
-const services = [
+const defaultServices = [
   {
     icon: '🗣️',
     title: 'Corsi di Lingua',
@@ -65,12 +66,62 @@ const services = [
       'Refresher courses for existing certifications',
     ],
   },
-]
+ ]
 
-type Service = (typeof services)[number]
+type Service = (typeof defaultServices)[number]
+
+type HeroStat = { num: string; label: string }
 
 export default function TrainingPage() {
+  const { t } = useLanguage()
   const [activeModal, setActiveModal] = useState<Service | null>(null)
+
+  const rawServices = t('training.services')
+  const services: Service[] = Array.isArray(rawServices) ? (rawServices as Service[]) : defaultServices
+
+  const rawStats = t('training.hero.stats')
+  const heroStats = Array.isArray(rawStats)
+    ? (rawStats as HeroStat[])
+    : [
+        { num: '4',    label: 'Course Programs' },
+        { num: '500+', label: 'Students Trained' },
+        { num: '20+',  label: 'Years Experience' },
+        { num: '98%',  label: 'Satisfaction Rate' },
+      ]
+
+  const rawChecklist = t('training.intro.checklist')
+  const checklist: string[] = Array.isArray(rawChecklist)
+    ? (rawChecklist as string[])
+    : [
+        'Certified and accredited programs',
+        'Experienced multilingual instructors',
+        'Flexible schedules for workers',
+        'Official certifications recognized in Italy',
+        'Small class sizes for better learning',
+        'Job placement support after completion',
+      ]
+
+  const heroBadge = t('training.hero.badge') || '🎓 Training & Language Courses'
+  const heroTitle = t('training.hero.title') || 'Training & Language Courses'
+  const heroDesc = t('training.hero.desc') || 'We offer professional training programs and language courses designed to improve career opportunities and communication skills in Italy and Europe. Our certified instructors guide you every step of the way.'
+  const viewCoursesText = t('training.hero.actions.viewCourses') || 'View Courses'
+  const enrollText = t('training.hero.actions.enroll') || 'Enroll Now'
+
+  const introTitle = t('training.intro.title') || 'Build Your Skills, Advance Your Career'
+  const introBody = t('training.intro.body') || 'At AMEI, we believe education and professional development are the keys to integration and success in Italy. Our training programs are designed for immigrants, workers, and anyone looking to improve their qualifications — with courses available in multiple languages and flexible formats to fit your lifestyle.'
+  const introVisualTitle = t('training.intro.visualTitle') || 'Why Choose Our Courses'
+
+  const sectionTag = t('training.section.tag') || 'What We Offer'
+  const sectionTitle = t('training.section.title') || 'Our Training Programs'
+  const sectionDesc = t('training.section.desc') || 'Click on any course card to learn more about the program, schedule, and how to enroll.'
+  const cardCta = t('training.card.cta') || 'Learn More'
+
+  const ctaTitle = t('training.cta.title') || 'Ready to Start Your Training?'
+  const ctaDesc = t('training.cta.desc') || 'Enroll in one of our certified programs today. Our team will guide you through the registration process and help you choose the right course for your goals.'
+  const ctaEnroll = t('training.cta.actions.enroll') || 'Enroll Now'
+  const ctaView = t('training.cta.actions.view') || 'View Courses'
+  const modalListTitle = t('training.modal.listTitle') || "What's Included"
+  const modalClose = t('training.modal.close') || 'Close'
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -93,33 +144,26 @@ export default function TrainingPage() {
         <div className="container">
           <div className="trn-hero-inner animate-fade-in-up">
             <nav className="trn-hero-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('training.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <span>Formazione e Corsi di Lingua</span>
+              <span>{t('training.breadcrumbCurrent') || 'Training & Language Courses'}</span>
             </nav>
 
-            <div className="trn-hero-badge">🎓 Training &amp; Language Courses</div>
+            <div className="trn-hero-badge">{heroBadge}</div>
 
-            <h1 className="trn-hero-title">Formazione e Corsi di Lingua</h1>
+            <h1 className="trn-hero-title">{heroTitle}</h1>
 
             <p className="trn-hero-desc">
-              We offer professional training programs and language courses designed to improve career
-              opportunities and communication skills in Italy and Europe. Our certified instructors
-              guide you every step of the way.
+              {heroDesc}
             </p>
 
             <div className="trn-hero-actions">
-              <a href="#services" className="trn-btn-primary">View Courses</a>
-              <Link href="/contact" className="trn-btn-outline">Enroll Now</Link>
+              <a href="#services" className="trn-btn-primary">{viewCoursesText}</a>
+              <Link href="/contact" className="trn-btn-outline">{enrollText}</Link>
             </div>
 
             <div className="trn-hero-stats">
-              {[
-                { num: '4',    label: 'Course Programs' },
-                { num: '500+', label: 'Students Trained' },
-                { num: '20+',  label: 'Years Experience' },
-                { num: '98%',  label: 'Satisfaction Rate' },
-              ].map((s, i) => (
+              {heroStats.map((s, i) => (
                 <div key={i}>
                   <div className="trn-hero-stat-num">{s.num}</div>
                   <div className="trn-hero-stat-label">{s.label}</div>
@@ -136,27 +180,17 @@ export default function TrainingPage() {
           <div className="trn-intro-inner">
             <div className="trn-reveal">
               <h2 className="trn-intro-title">
-                Build Your Skills, Advance Your Career
+                {introTitle}
               </h2>
               <p className="trn-intro-body">
-                At AMEI, we believe education and professional development are the keys to integration
-                and success in Italy. Our training programs are designed for immigrants, workers, and
-                anyone looking to improve their qualifications — with courses available in multiple
-                languages and flexible formats to fit your lifestyle.
+                {introBody}
               </p>
             </div>
 
             <div className="trn-intro-visual trn-reveal delay-2">
-              <div className="trn-intro-visual-title">Why Choose Our Courses</div>
+              <div className="trn-intro-visual-title">{introVisualTitle}</div>
               <ul className="trn-checklist">
-                {[
-                  'Certified and accredited programs',
-                  'Experienced multilingual instructors',
-                  'Flexible schedules for workers',
-                  'Official certifications recognized in Italy',
-                  'Small class sizes for better learning',
-                  'Job placement support after completion',
-                ].map((item, i) => (
+                {checklist.map((item, i) => (
                   <li key={i}>
                     <span className="trn-check-icon">✓</span>
                     {item}
@@ -172,10 +206,10 @@ export default function TrainingPage() {
       <section className="trn-services" id="services">
         <div className="container">
           <div className="trn-section-header trn-reveal">
-            <span className="trn-section-tag">What We Offer</span>
-            <h2 className="trn-section-title">Our Training Programs</h2>
+            <span className="trn-section-tag">{sectionTag}</span>
+            <h2 className="trn-section-title">{sectionTitle}</h2>
             <p className="trn-section-desc">
-              Click on any course card to learn more about the program, schedule, and how to enroll.
+              {sectionDesc}
             </p>
           </div>
 
@@ -190,7 +224,7 @@ export default function TrainingPage() {
                 <h3 className="trn-card-title">{service.title}</h3>
                 <p className="trn-card-desc">{service.desc}</p>
                 <span className="trn-card-cta">
-                  Learn More
+                  {cardCta}
                   <span className="trn-card-arrow">→</span>
                 </span>
               </div>
@@ -204,15 +238,14 @@ export default function TrainingPage() {
         <div className="container">
           <div className="trn-cta-box trn-reveal">
             <div>
-              <h2 className="trn-cta-title">Ready to Start Your Training?</h2>
+              <h2 className="trn-cta-title">{ctaTitle}</h2>
               <p className="trn-cta-desc">
-                Enroll in one of our certified programs today. Our team will guide you through the
-                registration process and help you choose the right course for your goals.
+                {ctaDesc}
               </p>
             </div>
             <div className="trn-cta-actions">
-              <Link href="/contact" className="trn-btn-primary">Enroll Now</Link>
-              <a href="#services" className="trn-btn-outline">View Courses</a>
+              <Link href="/contact" className="trn-btn-primary">{ctaEnroll}</Link>
+              <a href="#services" className="trn-btn-outline">{ctaView}</a>
             </div>
           </div>
         </div>
@@ -235,7 +268,7 @@ export default function TrainingPage() {
             <div className="trn-modal-body">
               <p className="trn-modal-desc">{activeModal.modalDesc}</p>
 
-              <div className="trn-modal-list-title">What&apos;s Included</div>
+              <div className="trn-modal-list-title">{modalListTitle}</div>
               <ul className="trn-modal-list">
                 {activeModal.points.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -243,12 +276,12 @@ export default function TrainingPage() {
               </ul>
 
               <div className="trn-modal-footer">
-              <Link href="/contact" className="trn-modal-btn trn-modal-btn-primary" onClick={() => setActiveModal(null)}>Enroll Now</Link>
+              <Link href="/contact" className="trn-modal-btn trn-modal-btn-primary" onClick={() => setActiveModal(null)}>{ctaEnroll}</Link>
                 <button
                   className="trn-modal-btn trn-modal-btn-secondary"
                   onClick={() => setActiveModal(null)}
                 >
-                  Close
+                  {modalClose}
                 </button>
               </div>
             </div>

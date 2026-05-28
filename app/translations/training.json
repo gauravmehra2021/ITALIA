@@ -1,0 +1,234 @@
+{
+  "it": {
+    "training": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Formazione e Corsi di Lingua",
+      "hero": {
+        "badge": "🎓 Formazione & Corsi di Lingua",
+        "title": "Formazione e Corsi di Lingua",
+        "desc": "Offriamo programmi di formazione professionale e corsi di lingua progettati per migliorare le opportunità di carriera e le abilità comunicative in Italia e in Europa. I nostri istruttori certificati ti accompagnano in ogni fase.",
+        "actions": {
+          "viewCourses": "Vedi i corsi",
+          "enroll": "Iscriviti ora"
+        },
+        "stats": [
+          { "num": "4", "label": "Programmi di corso" },
+          { "num": "500+", "label": "Studenti formati" },
+          { "num": "20+", "label": "Anni di esperienza" },
+          { "num": "98%", "label": "Tasso di soddisfazione" }
+        ]
+      },
+      "intro": {
+        "title": "Costruisci le tue competenze, fai crescere la tua carriera",
+        "body": "In AMEI crediamo che l'istruzione e lo sviluppo professionale siano la chiave per l'integrazione e il successo in Italia. I nostri programmi di formazione sono pensati per immigrati, lavoratori e chiunque voglia migliorare le proprie qualifiche — con corsi disponibili in più lingue e formati flessibili.",
+        "visualTitle": "Perché scegliere i nostri corsi",
+        "checklist": [
+          "Programmi certificati e accreditati",
+          "Istruttori multilingue esperti",
+          "Orari flessibili per lavoratori",
+          "Certificazioni ufficiali riconosciute in Italia",
+          "Classi ridotte per un apprendimento migliore",
+          "Supporto per l'inserimento lavorativo dopo il corso"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri programmi di formazione",
+        "desc": "Clicca su un corso per scoprire il programma, il calendario e come iscriverti."
+      },
+      "services": [
+        {
+          "icon": "🗣️",
+          "title": "Corsi di Lingua",
+          "desc": "Corsi di italiano e inglese per studenti e lavoratori.",
+          "modalDesc": "I nostri corsi di lingua sono pensati per tutti i livelli — da principianti assoluti a parlanti avanzati. Offriamo italiano per stranieri e inglese per professionisti, con orari flessibili per adattarsi al lavoro e allo studio.",
+          "points": [
+            "Corsi di italiano per stranieri di tutti i livelli (A1–C2)",
+            "Corsi di inglese per professionisti",
+            "Orari mattina, pomeriggio e sera",
+            "Gruppi ridotti per attenzione personalizzata",
+            "Preparazione a certificazioni ufficiali (CILS, CELI, IELTS)",
+            "Opzioni online e in presenza"
+          ],
+          "slug": "corsi-di-lingua"
+        },
+        {
+          "icon": "🎓",
+          "title": "Qualifiche Professionali",
+          "desc": "Programmi di qualificazione professionale certificati.",
+          "modalDesc": "I nostri programmi di qualificazione professionale sono riconosciuti ufficialmente e pensati per aiutarti a entrare o avanzare nel mercato del lavoro italiano. Offriamo certificazioni in più settori, conformi agli standard italiani ed europei.",
+          "points": [
+            "Certificazioni professionali riconosciute a livello nazionale",
+            "Programmi per edilizia, logistica e servizi",
+            "Certificazione HACCP e sicurezza alimentare",
+            "Patenti per muletto e operatori di macchinari",
+            "Qualifiche amministrative e contabili",
+            "Supporto per il riconoscimento delle qualifiche estere"
+          ],
+          "slug": "qualifiche-professionali"
+        },
+        {
+          "icon": "🏥",
+          "title": "Settore Socio-Sanitario",
+          "desc": "Formazione per i settori sanitario e socio-sanitario.",
+          "modalDesc": "I nostri programmi socio-sanitari ti preparano per una carriera nell'assistenza sanitaria, cura degli anziani e servizi sociali. Tutti i corsi sono accreditati e soddisfano i requisiti per lavorare nelle strutture italiane.",
+          "points": [
+            "Corso OSS (Operatore Socio Sanitario)",
+            "Assistenza anziani e disabili",
+            "Certificazione primo soccorso e risposta alle emergenze",
+            "Supporto per stage pratici",
+            "Assistenza all'inserimento lavorativo dopo la certificazione",
+            "Formazione continua per professionisti già attivi"
+          ],
+          "slug": "settore-socio-sanitario"
+        },
+        {
+          "icon": "⛑️",
+          "title": "Corso Sicurezza sul Lavoro",
+          "desc": "Certificazione e formazione sulla sicurezza sul lavoro.",
+          "modalDesc": "La formazione sulla sicurezza sul lavoro è obbligatoria per tutti i lavoratori in Italia ai sensi del D.Lgs. 81/2008. I nostri corsi certificati coprono sicurezza generale, categorie di rischio specifiche e primo soccorso — conformi alla normativa italiana.",
+          "points": [
+            "Sicurezza generale sul lavoro (basso, medio, alto rischio)",
+            "Formazione RSPP e ASPP",
+            "Certificazione primo soccorso (D.Lgs. 81/2008)",
+            "Prevenzione incendi e procedure d'emergenza",
+            "Sicurezza cantieri (POS, PSC)",
+            "Corsi di aggiornamento per certificazioni esistenti"
+          ],
+          "slug": "corso-sicurezza-sul-lavoro"
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Pronto a iniziare la tua formazione?",
+        "desc": "Iscriviti a uno dei nostri programmi certificati oggi. Il nostro team ti guiderà nella registrazione e ti aiuterà a scegliere il corso giusto per i tuoi obiettivi.",
+        "actions": {
+          "enroll": "Iscriviti ora",
+          "view": "Vedi i corsi"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi"
+      }
+    }
+  },
+  "en": {
+    "training": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Training & Language Courses",
+      "hero": {
+        "badge": "🎓 Training & Language Courses",
+        "title": "Training & Language Courses",
+        "desc": "We offer professional training programs and language courses designed to improve career opportunities and communication skills in Italy and Europe. Our certified instructors guide you every step of the way.",
+        "actions": {
+          "viewCourses": "View Courses",
+          "enroll": "Enroll Now"
+        },
+        "stats": [
+          { "num": "4", "label": "Course Programs" },
+          { "num": "500+", "label": "Students Trained" },
+          { "num": "20+", "label": "Years Experience" },
+          { "num": "98%", "label": "Satisfaction Rate" }
+        ]
+      },
+      "intro": {
+        "title": "Build Your Skills, Advance Your Career",
+        "body": "At AMEI, we believe education and professional development are the keys to integration and success in Italy. Our training programs are designed for immigrants, workers, and anyone looking to improve their qualifications — with courses available in multiple languages and flexible formats to fit your lifestyle.",
+        "visualTitle": "Why Choose Our Courses",
+        "checklist": [
+          "Certified and accredited programs",
+          "Experienced multilingual instructors",
+          "Flexible schedules for workers",
+          "Official certifications recognized in Italy",
+          "Small class sizes for better learning",
+          "Job placement support after completion"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Training Programs",
+        "desc": "Click on any course card to learn more about the program, schedule, and how to enroll."
+      },
+      "services": [
+        {
+          "icon": "🗣️",
+          "title": "Language Courses",
+          "desc": "Italian and English language courses for students and workers.",
+          "modalDesc": "Our language courses are designed for all levels — from complete beginners to advanced speakers. We offer Italian for foreigners and English for professionals, with flexible schedules to fit your work and study commitments.",
+          "points": [
+            "Italian language courses for all levels (A1–C2)",
+            "English language courses for professionals",
+            "Flexible morning, afternoon, and evening schedules",
+            "Small groups for personalized attention",
+            "Official certification preparation (CILS, CELI, IELTS)",
+            "Online and in-person options available"
+          ],
+          "slug": "language-courses"
+        },
+        {
+          "icon": "🎓",
+          "title": "Professional Qualifications",
+          "desc": "Certified professional qualification programs.",
+          "modalDesc": "Our professional qualification programs are officially recognized and designed to help you enter or advance in the Italian job market. We offer certifications across multiple sectors, fully compliant with Italian and European standards.",
+          "points": [
+            "Nationally recognized professional certifications",
+            "Programs for construction, logistics, and services",
+            "Food handling and HACCP certification",
+            "Forklift and machinery operator licenses",
+            "Administrative and accounting qualifications",
+            "Support for foreign qualification recognition"
+          ],
+          "slug": "professional-qualifications"
+        },
+        {
+          "icon": "🏥",
+          "title": "Healthcare & Social Care",
+          "desc": "Training for healthcare and socio-sanitary sectors.",
+          "modalDesc": "Our socio-sanitary training programs prepare you for a career in healthcare assistance, elderly care, and social services. All courses are accredited and meet the requirements for working in Italian healthcare facilities.",
+          "points": [
+            "OSS (Operatore Socio Sanitario) training course",
+            "Elderly and disability care assistance",
+            "First aid and emergency response certification",
+            "Practical internship placement support",
+            "Job placement assistance after certification",
+            "Continuing education for existing professionals"
+          ],
+          "slug": "healthcare-social-care"
+        },
+        {
+          "icon": "⛑️",
+          "title": "Workplace Safety Course",
+          "desc": "Workplace safety certification and training.",
+          "modalDesc": "Workplace safety training is mandatory for all workers in Italy under Legislative Decree 81/2008. Our certified courses cover general safety, specific risk categories, and first aid — fully compliant with Italian law.",
+          "points": [
+            "General workplace safety (low, medium, high risk)",
+            "RSPP and ASPP safety manager training",
+            "First aid certification (D.Lgs. 81/2008)",
+            "Fire prevention and emergency procedures",
+            "Construction site safety (POS, PSC)",
+            "Refresher courses for existing certifications"
+          ],
+          "slug": "workplace-safety-course"
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Ready to Start Your Training?",
+        "desc": "Enroll in one of our certified programs today. Our team will guide you through the registration process and help you choose the right course for your goals.",
+        "actions": {
+          "enroll": "Enroll Now",
+          "view": "View Courses"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close"
+      }
+    }
+  }
+}
