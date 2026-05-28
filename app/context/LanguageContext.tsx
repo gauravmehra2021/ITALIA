@@ -12,6 +12,7 @@ import homepageTranslations from "../translations/homepage.json";
 import immigrationTranslations from "../translations/immigration.json";
 import cafTranslations from "../translations/caf.json";
 import trainingTranslations from "../translations/training.json";
+import businessTranslations from "../translations/business.json";
 
 type Language = "it" | "en";
 
@@ -58,6 +59,7 @@ export const LanguageProvider = ({
       ...Object.keys(immigrationTranslations || {}),
       ...Object.keys(cafTranslations || {}),
       ...Object.keys(trainingTranslations || {}),
+      ...Object.keys(businessTranslations || {}),
     ]);
     for (const lang of langs) {
       const base = (translationsData as any)[lang] || {};
@@ -65,7 +67,8 @@ export const LanguageProvider = ({
       const immigrationExtra = (immigrationTranslations as any)[lang] || {};
       const cafExtra = (cafTranslations as any)[lang] || {};
       const trainingExtra = (trainingTranslations as any)[lang] || {};
-      result[lang] = merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra);
+      const businessExtra = (businessTranslations as any)[lang] || {};
+      result[lang] = merge(merge(merge(merge(merge(base, homepageExtra), immigrationExtra), cafExtra), trainingExtra), businessExtra);
     }
     return result;
   })();

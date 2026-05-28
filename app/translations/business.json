@@ -1,0 +1,172 @@
+{
+  "it": {
+    "business": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Consulenza Aziendale",
+      "hero": {
+        "badge": "💼 Consulenza Aziendale",
+        "title": "Consulenza Aziendale",
+        "desc": "Supportiamo startup, aziende e imprenditori con la registrazione aziendale, la documentazione legale e le soluzioni di conformità sul lavoro. I nostri esperti semplificano ogni fase del processo così puoi concentrarti sulla crescita della tua attività.",
+        "actions": {
+          "viewServices": "Vedi i servizi",
+          "contact": "Richiedi consulenza"
+        },
+        "stats": [
+          { "num": "2",    "label": "Servizi principali" },
+          { "num": "300+", "label": "Aziende assistite" },
+          { "num": "20+",  "label": "Anni di esperienza" },
+          { "num": "100%", "label": "Conformità legale" }
+        ]
+      },
+      "intro": {
+        "title": "Il tuo partner per l'avvio e la conformità aziendale",
+        "body": "Avviare un'attività in Italia richiede di navigare tra normative complesse, obblighi fiscali e requisiti di sicurezza. In AMEI, il nostro team di consulenza aziendale offre supporto completo — dal primo passo di registrazione alla gestione continua della conformità — affinché la tua azienda operi in modo fluido e legale.",
+        "visualTitle": "Perché scegliere AMEI",
+        "checklist": [
+          "Consulenti aziendali certificati",
+          "Supporto completo per conformità legale e fiscale",
+          "Assistenza multilingue disponibile",
+          "Tempi rapidi di registrazione",
+          "Esperti in documentazione sulla sicurezza sul lavoro",
+          "Supporto continuativo post-registrazione"
+        ]
+      },
+      "section": {
+        "tag": "Cosa offriamo",
+        "title": "I nostri servizi aziendali",
+        "desc": "Clicca su una scheda servizio per saperne di più sul processo, i requisiti e come possiamo aiutarti."
+      },
+      "services": [
+        {
+          "icon": "🏢",
+          "title": "Apertura Attività",
+          "desc": "Supporto per l'apertura e la registrazione di attività per startup e imprenditori.",
+          "modalDesc": "Avviare un'attività in Italia comporta molteplici passaggi burocratici — dalla scelta della giusta struttura legale alla registrazione presso la Camera di Commercio e le autorità fiscali. Il nostro team ti guida in ogni fase, assicurando che la tua azienda sia pienamente conforme fin dal primo giorno.",
+          "points": [
+            "Scelta della struttura legale (ditta individuale, SRL, SNC, ecc.)",
+            "Registrazione alla Camera di Commercio (CCIAA)",
+            "Apertura Partita IVA",
+            "Iscrizione INPS e INAIL per il titolare",
+            "Licenza comunale (SCIA/SUAP)",
+            "Assistenza per l'apertura del conto corrente aziendale"
+          ]
+        },
+        {
+          "icon": "📋",
+          "title": "Documentazione DVR / RSPP / RLSS",
+          "desc": "Servizi professionali di valutazione dei rischi e documentazione sulla sicurezza sul lavoro.",
+          "modalDesc": "La legge italiana (D.Lgs. 81/2008) richiede che tutte le aziende dispongano di un documento completo di valutazione dei rischi (DVR) e delle figure di sicurezza designate. I nostri professionisti certificati preparano tutta la documentazione obbligatoria e forniscono la formazione richiesta per la tua azienda.",
+          "points": [
+            "DVR — Documento di Valutazione dei Rischi",
+            "Nomina e formazione RSPP (Responsabile del Servizio di Prevenzione)",
+            "RLSS — Rappresentante dei Lavoratori per la Sicurezza",
+            "Preparazione del piano di emergenza ed evacuazione",
+            "Segnaletica di sicurezza e verifica di conformità",
+            "Aggiornamenti annuali della documentazione di sicurezza"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Scopri di più"
+      },
+      "cta": {
+        "title": "Pronto ad avviare o far crescere la tua attività?",
+        "desc": "I nostri consulenti aziendali sono pronti ad assisterti. Richiedi una consulenza gratuita oggi e lascia che gestiamo tutta la burocrazia di registrazione e conformità per te.",
+        "actions": {
+          "contact": "Richiedi consulenza",
+          "call": "Chiamaci ora"
+        }
+      },
+      "modal": {
+        "listTitle": "Cosa include",
+        "close": "Chiudi",
+        "contact": "Richiedi consulenza"
+      }
+    }
+  },
+  "en": {
+    "business": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Business Consultancy",
+      "hero": {
+        "badge": "💼 Business Consultancy",
+        "title": "Business Consultancy",
+        "desc": "We support startups, companies, and entrepreneurs with business registration, legal documentation, and workplace compliance solutions. Our experts simplify every step of the process so you can focus on growing your business.",
+        "actions": {
+          "viewServices": "View Services",
+          "contact": "Request Consultation"
+        },
+        "stats": [
+          { "num": "2",    "label": "Core Services" },
+          { "num": "300+", "label": "Businesses Assisted" },
+          { "num": "20+",  "label": "Years Experience" },
+          { "num": "100%", "label": "Legal Compliance" }
+        ]
+      },
+      "intro": {
+        "title": "Your Partner for Business Setup & Compliance",
+        "body": "Setting up a business in Italy requires navigating complex regulations, tax obligations, and safety requirements. At AMEI, our business consultancy team provides end-to-end support — from the very first registration step to ongoing compliance management — so your business operates smoothly and legally.",
+        "visualTitle": "Why Choose AMEI",
+        "checklist": [
+          "Certified business consultants",
+          "Full legal and tax compliance support",
+          "Multilingual assistance available",
+          "Fast registration turnaround",
+          "Workplace safety documentation experts",
+          "Ongoing post-registration support"
+        ]
+      },
+      "section": {
+        "tag": "What We Offer",
+        "title": "Our Business Services",
+        "desc": "Click on any service card to learn more about the process, requirements, and how we can help you."
+      },
+      "services": [
+        {
+          "icon": "🏢",
+          "title": "Apertura Attività",
+          "desc": "Business opening and registration support for startups and entrepreneurs.",
+          "modalDesc": "Starting a business in Italy involves multiple bureaucratic steps — from choosing the right legal structure to registering with the Chamber of Commerce and tax authorities. Our team guides you through every step, ensuring your business is fully compliant from day one.",
+          "points": [
+            "Choice of legal structure (ditta individuale, SRL, SNC, etc.)",
+            "Chamber of Commerce registration (CCIAA)",
+            "VAT number (Partita IVA) opening",
+            "INPS and INAIL registration for the business owner",
+            "Municipal business license (SCIA/SUAP)",
+            "Opening of business bank account guidance"
+          ]
+        },
+        {
+          "icon": "📋",
+          "title": "DVR / RSPP / RLSS Documentation",
+          "desc": "Professional workplace risk assessment and safety documentation services.",
+          "modalDesc": "Italian law (D.Lgs. 81/2008) requires all businesses to have a complete workplace risk assessment document (DVR) and designated safety figures. Our certified professionals prepare all mandatory safety documentation and provide the required training for your company.",
+          "points": [
+            "DVR — Documento di Valutazione dei Rischi",
+            "RSPP appointment and training (Responsabile del Servizio di Prevenzione)",
+            "RLSS — Rappresentante dei Lavoratori per la Sicurezza",
+            "Emergency and evacuation plan preparation",
+            "Workplace safety signage and compliance check",
+            "Annual safety documentation updates"
+          ]
+        }
+      ],
+      "card": {
+        "cta": "Learn More"
+      },
+      "cta": {
+        "title": "Ready to Start or Grow Your Business?",
+        "desc": "Our business consultants are ready to assist you. Request a free consultation today and let us handle all the registration and compliance paperwork for you.",
+        "actions": {
+          "contact": "Request Consultation",
+          "call": "Call Us Now"
+        }
+      },
+      "modal": {
+        "listTitle": "What's Included",
+        "close": "Close",
+        "contact": "Request Consultation"
+      }
+    }
+  }
+}
