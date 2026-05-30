@@ -2,122 +2,168 @@
 
 import Link from 'next/link'
 import { useLanguage } from '../../context/LanguageContext'
+import './Footer.css'
+
+const quickLinks = [
+  { label: 'Who We Are',          href: '/WhoWeAre' },
+  { label: 'Immigration Services', href: '/immigration' },
+  { label: 'CAF & Patronato',      href: '/caf' },
+  { label: 'Training & Courses',   href: '/training' },
+  { label: 'Business Consulting',  href: '/business' },
+  { label: 'Insurance',            href: '/insurance' },
+  { label: 'International Visas',  href: '/visas' },
+  { label: 'Other Services',       href: '/other' },
+]
+
+const offices = [
+  {
+    name: 'SS Europa — Mantova',
+    address: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia',
+    phone: '+39 352 071 6656',
+  },
+]
 
 const Footer = () => {
   const { t } = useLanguage()
-  const rawQuickLinks = t('footer.quickLinks')
-  const quickLinks = Array.isArray(rawQuickLinks) ? rawQuickLinks : [
-    { label: 'Migrants', href: '/migrants' },
-    { label: 'Travelers', href: '/travelers' },
-    { label: 'Families', href: '/families' },
-    { label: 'Companies', href: '/companies' },
-    { label: 'Loans and financing', href: '/loans' },
-    { label: 'Other Services', href: '/other-services' },
-  ]
 
   return (
-    <footer className="bg-[rgb(37,39,46)] pt-20 text-[14px] leading-[1.6] text-[#b0b0b0]">
-      <div className="container">
-        {/* Grid */}
-        <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-[1.5fr_1fr_1fr_1fr]">
-          {/* About */}
-          <div>
-            <p className="mb-6 font-medium text-[#eee]">
-              {t('footer.aboutText1')}
-            </p>
+    <footer className="footer">
 
-            <p className="text-[12px] leading-6 opacity-60">
-              {t('footer.aboutText2')}
-            </p>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="footer-title">
-              {t('footer.contactTitle')}
-            </h4>
-
-            <div className="space-y-3">
-              <p>{t('footer.telephoneLabel')}: 0522 1723060</p>
-              <p>{t('footer.emailLabel')}: info@gruppoeuropa.net</p>
-              <p>{t('footer.officeLabel')}: Via G. Battista Pergolesi 2/A 20124 Milan</p>
-            </div>
-
-            {/* Social Icons */}
-            <div className="mt-6 flex gap-3">
-              <a
-                href="#"
-                className="flex h-[38px] w-[38px] items-center justify-center rounded bg-[#3b5998] font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
-              >
-                f
-              </a>
-
-              <a
-                href="#"
-                className="flex h-[38px] w-[38px] items-center justify-center rounded bg-[#00acee] font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
-              >
-                t
-              </a>
-
-              <a
-                href="#"
-                className="flex h-[38px] w-[38px] items-center justify-center rounded bg-[#c4302b] font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
-              >
-                y
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="footer-title">
-              {t('footer.quickLinksTitle')}
-            </h4>
-
-            <ul className="space-y-3">
-              {quickLinks.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="group flex items-center text-[#b0b0b0] transition-all duration-300 hover:translate-x-[5px] hover:text-white"
-                  >
-                    <span className="mr-3 font-bold text-[#004a99]">
-                      »
-                    </span>
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Certifications */}
-          <div>
-            <h4 className="footer-title">
-              {t('footer.certificationsTitle')}
-            </h4>
-
-            <div className="flex flex-col gap-4">
-              <div className="h-[45px] rounded border border-white/10 bg-white/5" />
-              <div className="h-[45px] rounded border border-white/10 bg-white/5" />
-              <div className="h-[45px] rounded border border-white/10 bg-white/5" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10 bg-[#004a99] py-8 text-center text-[12px] text-white/80">
+      {/* ── Top Bar ── */}
+      <div className="footer-topbar">
         <div className="container">
-          <p className="mx-auto max-w-[900px] leading-7">
-            {t('footer.bottomLine1')}
-            <br />
-            {t('footer.bottomLine2')}
-            <br />
-            {t('footer.bottomLine3')}
-          </p>
+          <div className="footer-topbar-inner">
+            <p className="footer-topbar-text">
+              Your trusted partner for immigration, tax, and administrative services —
+              <span> AMEI is here for you.</span>
+            </p>
+            <div className="footer-topbar-socials">
+              <a href="#" className="footer-social-link facebook" aria-label="Facebook">f</a>
+              <a href="#" className="footer-social-link twitter"  aria-label="Twitter">t</a>
+              <a href="#" className="footer-social-link instagram" aria-label="Instagram">in</a>
+              <a href="#" className="footer-social-link youtube"  aria-label="YouTube">▶</a>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* ── Main Body ── */}
+      <div className="footer-body">
+        <div className="container">
+          <div className="footer-grid">
+
+            {/* Col 1 — About */}
+            <div className="footer-col footer-col-about">
+              <Link href="/" className="footer-about-logo">
+                <img src="/images/logo.svg" alt="AMEI Logo" />
+              </Link>
+              <p className="footer-about-desc">
+                AMEI – Associazione Mondo e Italia is your professional partner for
+                immigration, tax, welfare, and administrative services in Italy. We
+                support individuals, families, and companies with certified expertise
+                and multilingual assistance.
+              </p>
+              <p className="footer-about-legal">
+                Gruppo Europa agencies are managed by independent entrepreneurial
+                affiliates operating under the Gruppo Europa brand under a franchising
+                agreement. Gruppo Europa provides support services to businesses and individuals.
+              </p>
+            </div>
+
+            {/* Col 2 — Offices & Contact */}
+            <div className="footer-col footer-col-contact">
+              <h4 className="footer-col-title">Our Offices</h4>
+
+              {offices.map((office, i) => (
+                <div className="footer-office-card" key={i}>
+                  <div className="footer-office-name">{office.name}</div>
+                  <div className="footer-office-address">
+                    {office.address.split('\n').map((line, j) => (
+                      <span key={j}>{line}<br /></span>
+                    ))}
+                  </div>
+                  <div className="footer-office-phone">
+                    <a href={`tel:${office.phone.replace(/\s/g, '')}`}>{office.phone}</a>
+                  </div>
+                </div>
+              ))}
+
+              <div className="footer-contact-list" style={{ marginTop: '20px' }}>
+                <div className="footer-contact-item">
+                  <div className="footer-contact-icon">✉</div>
+                  <div className="footer-contact-body">
+                    <div className="footer-contact-label">Email</div>
+                    <div className="footer-contact-value">
+                      <a href="mailto:info@gruppoeuropa.net">info@gruppoeuropa.net</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="footer-contact-item">
+                  <div className="footer-contact-icon">📞</div>
+                  <div className="footer-contact-body">
+                    <div className="footer-contact-label">Telephone</div>
+                    <div className="footer-contact-value">
+                      <a href="tel:+390522172306">0522 1723060</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Col 3 — Quick Links */}
+            <div className="footer-col footer-col-links">
+              <h4 className="footer-col-title">Quick Links</h4>
+              <ul className="footer-links-list">
+                {quickLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href}>{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 4 — Certifications */}
+            <div className="footer-col footer-col-certs">
+              <h4 className="footer-col-title">Certifications</h4>
+              <div className="footer-cert-list">
+                <div className="footer-cert-item">CAF Certified</div>
+                <div className="footer-cert-item">Patronato Authorized</div>
+                <div className="footer-cert-item">ISO Compliant</div>
+                <div className="footer-cert-item">INPS Partner</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* ── Divider ── */}
+      <hr className="footer-divider" />
+
+      {/* ── Bottom Bar ── */}
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="footer-bottom-inner">
+            <p className="footer-bottom-legal">
+              Gruppo Europa srl Sole Shareholder (subject to management and coordination: Extrabanca SpA) —
+              VAT number 10232730969 — Share capital €100,000 fully paid-up — REA-MI 2515624 — Privacy Policy &nbsp;|&nbsp;
+              Gruppo Europa srl, insurance intermediary registered under letter E of the RUI under no. E000597090
+            </p>
+            <div className="footer-bottom-right">
+              Website by{' '}
+              <a
+                href="https://wa.me/917580099131"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#f37021', fontWeight: 600, textDecoration: 'none' }}
+              >
+                AM
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </footer>
   )
 }

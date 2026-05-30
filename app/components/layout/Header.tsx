@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '../../context/LanguageContext'
 
@@ -40,7 +40,7 @@ const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | 
         ) : cat === 'other' ? (
           <Link href="/other" className="w-full">{t(`nav.${cat}`)}</Link>
         ) : cat === 'contact' ? (
-          <Link href="/contact" className="w-full">Contact Us</Link>
+          <Link href="/contact" className="w-full text-[#f37021]">Contact Us</Link>
         ) : (
           <span className="w-full">{t(`nav.${cat}`)}</span>
         )}
@@ -69,6 +69,13 @@ const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | 
 const Header = () => {
   const { t, language, setLanguage } = useLanguage()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const langs = [
     { code: 'it', label: 'IT' },
@@ -88,21 +95,33 @@ const Header = () => {
     'contact',
   ] as const
 
+  /* shared nav link class — underline style hover instead of full bg */
+  const navLinkClass = `
+    relative flex min-h-[54px] w-full items-center justify-center px-2 py-2
+    text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444]
+    transition-colors duration-200 xl:text-[10px]
+    hover:text-[#004a99]
+    after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[3px]
+    after:scale-x-0 after:bg-[#004a99] after:transition-transform after:duration-300
+    hover:after:scale-x-100
+  `.replace(/\s+/g, ' ').trim()
+
   return (
-    <header className="sticky top-0 z-[1000] w-full">
-      {/* Top Bar */}
+    <header className={`sticky top-0 z-[1000] w-full transition-all duration-300 ${scrolled ? 'shadow-[0_2px_20px_rgba(0,0,0,0.1)]' : 'shadow-[0_1px_4px_rgba(0,0,0,0.04)]'}`}>
+
+      {/* ── Top Bar ── */}
       <div className="bg-[#004a99] py-1.5 text-white">
         <div className="container flex items-center justify-between px-4">
           <div className="flex items-center gap-3">
             <span className="hidden text-[12px] sm:inline">
               {t('topBar.story')}
             </span>
-            <a
-              href="#"
+            <Link
+              href="/contact"
               className="rounded border border-white/40 px-3 py-1 text-[11px] font-medium transition-all duration-300 hover:bg-white hover:text-[#004a99] sm:text-[12px]"
             >
               {t('topBar.more')}
-            </a>
+            </Link>
           </div>
 
           {/* Language Toggle */}
@@ -122,9 +141,10 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Header */}
-      <div className="bg-white shadow-[0_2px_15px_rgba(0,0,0,0.05)]">
-        <div className="container flex items-center justify-between gap-4 px-4 py-3 lg:py-5">
+      {/* ── Main Header ── */}
+      <div className="bg-white">
+        <div className="container flex items-center justify-between gap-4 px-4 py-3 lg:py-0">
+
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center">
             <img
@@ -136,73 +156,46 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden flex-1 items-center justify-end lg:flex">
-            <ul className="flex w-full max-w-[1000px] items-center justify-between">
+            <ul className="flex items-center">
               {categories.map((cat) => {
                 const services = t(`services.${cat}`)
                 const routes = serviceRoutes[cat] ?? []
                 return (
                   <li key={cat} className="group relative flex flex-1 justify-center">
                     {cat === 'about' ? (
-                      <Link
-                        href="/WhoWeAre"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/WhoWeAre" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'immigration' ? (
-                      <Link
-                        href="/immigration"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/immigration" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'caf' ? (
-                      <Link
-                        href="/caf"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/caf" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'training' ? (
-                      <Link
-                        href="/training"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/training" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'business' ? (
-                      <Link
-                        href="/business"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/business" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'insurance' ? (
-                      <Link
-                        href="/insurance"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/insurance" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'visas' ? (
-                      <Link
-                        href="/visas"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/visas" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'indianConsulate' ? (
-                      <Link
-                        href="/indian-consulate"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/indian-consulate" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'other' ? (
-                      <Link
-                        href="/other"
-                        className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
-                      >
+                      <Link href="/other" className={navLinkClass}>
                         {t(`nav.${cat}`)}
                       </Link>
                     ) : cat === 'contact' ? (
@@ -214,16 +207,13 @@ const Header = () => {
                       </Link>
                     ) : (
                       <>
-                        <span className="flex min-h-[50px] w-full cursor-default items-center justify-center gap-1 px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 group-hover:bg-[#004a99] group-hover:text-white xl:text-[10px]">
+                        <span className={`${navLinkClass} cursor-default group-hover:text-[#004a99] group-hover:after:scale-x-100`}>
                           {t(`nav.${cat}`)}
-                          <span className="text-[8px] transition-transform duration-300 group-hover:rotate-180">
-                            ▼
-                          </span>
+                          <span className="ml-1 text-[7px] transition-transform duration-300 group-hover:rotate-180">▼</span>
                         </span>
-
                         {/* Dropdown */}
-                        <div className="invisible absolute left-0 top-full z-[1001] w-[300px] translate-y-3 overflow-hidden rounded-b-[8px] bg-white opacity-0 shadow-[0_10px_40px_rgba(0,0,0,0.15)] transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                          <div className="bg-[#004a99] px-4 py-2 text-[11px] font-medium text-white">
+                        <div className="invisible absolute left-0 top-full z-[1001] w-[280px] translate-y-2 overflow-hidden rounded-b-lg rounded-t-none bg-white opacity-0 shadow-[0_12px_36px_rgba(0,0,0,0.12)] transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                          <div className="bg-[#004a99] px-4 py-2 text-[11px] font-semibold uppercase tracking-wide text-white">
                             {t(`nav.${cat}`)}
                           </div>
                           <ul className="max-h-[300px] overflow-y-auto py-1">
@@ -231,7 +221,7 @@ const Header = () => {
                               <li key={idx}>
                                 <Link
                                   href={routes[idx] ?? '#'}
-                                  className="block border-l-[3px] border-transparent px-4 py-2 text-[12px] text-[#666] transition-all duration-200 hover:border-[#004a99] hover:bg-gray-50 hover:pl-6 hover:text-[#004a99]"
+                                  className="block border-l-[3px] border-transparent px-4 py-2 text-[12px] text-[#555] transition-all duration-200 hover:border-[#004a99] hover:bg-blue-50 hover:pl-5 hover:text-[#004a99]"
                                 >
                                   {item}
                                 </Link>
@@ -259,7 +249,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`overflow-hidden bg-white transition-all duration-500 lg:hidden ${isMobileMenuOpen ? 'max-h-[2000px] border-t' : 'max-h-0'}`}>
+        <div className={`overflow-hidden bg-white transition-all duration-500 lg:hidden ${isMobileMenuOpen ? 'max-h-[2000px] border-t border-gray-100' : 'max-h-0'}`}>
           <ul className="container flex flex-col px-4 py-2">
             {categories.map((cat) => (
               <MobileMenuItem key={cat} cat={cat} t={t} />
@@ -267,6 +257,9 @@ const Header = () => {
           </ul>
         </div>
       </div>
+
+      {/* Bottom accent line */}
+      <div className="h-[3px] bg-gradient-to-r from-[#004a99] via-[#0062cc] to-[#f37021]" />
     </header>
   )
 }
