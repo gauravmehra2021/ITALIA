@@ -19,12 +19,17 @@ const offices = [
   {
     name: 'SS Europa — Mantova',
     address: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia',
-    phone: '+39 352 071 6656',
+    phone: '+39 376 148 7097',
   },
 ]
 
 const Footer = () => {
   const { t } = useLanguage()
+
+  const rawQuickLinks = t('footer.quickLinks')
+  const translatedLinks: { label: string; href: string }[] = Array.isArray(rawQuickLinks)
+    ? rawQuickLinks
+    : quickLinks
 
   return (
     <footer className="footer">
@@ -34,8 +39,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-topbar-inner">
             <p className="footer-topbar-text">
-              Your trusted partner for immigration, tax, and administrative services —
-              <span> AMEI is here for you.</span>
+              {t('topBar.story')}
             </p>
             <div className="footer-topbar-socials">
               <a href="#" className="footer-social-link facebook" aria-label="Facebook">f</a>
@@ -57,22 +61,13 @@ const Footer = () => {
               <Link href="/" className="footer-about-logo">
                 <img src="/images/logo.svg" alt="AMEI Logo" />
               </Link>
-              <p className="footer-about-desc">
-                AMEI – Associazione Mondo e Italia is your professional partner for
-                immigration, tax, welfare, and administrative services in Italy. We
-                support individuals, families, and companies with certified expertise
-                and multilingual assistance.
-              </p>
-              <p className="footer-about-legal">
-                Gruppo Europa agencies are managed by independent entrepreneurial
-                affiliates operating under the Gruppo Europa brand under a franchising
-                agreement. Gruppo Europa provides support services to businesses and individuals.
-              </p>
+              <p className="footer-about-desc">{t('footer.aboutText1')}</p>
+              <p className="footer-about-legal">{t('footer.aboutText2')}</p>
             </div>
 
             {/* Col 2 — Offices & Contact */}
             <div className="footer-col footer-col-contact">
-              <h4 className="footer-col-title">Our Offices</h4>
+              <h4 className="footer-col-title">{t('footer.contactTitle')}</h4>
 
               {offices.map((office, i) => (
                 <div className="footer-office-card" key={i}>
@@ -92,18 +87,18 @@ const Footer = () => {
                 <div className="footer-contact-item">
                   <div className="footer-contact-icon">✉</div>
                   <div className="footer-contact-body">
-                    <div className="footer-contact-label">Email</div>
+                    <div className="footer-contact-label">{t('footer.emailLabel')}</div>
                     <div className="footer-contact-value">
-                      <a href="mailto:info@gruppoeuropa.net">info@gruppoeuropa.net</a>
+                      <a href="mailto:sseuropa@yahoo.com">sseuropa@yahoo.com</a>
                     </div>
                   </div>
                 </div>
                 <div className="footer-contact-item">
                   <div className="footer-contact-icon">📞</div>
                   <div className="footer-contact-body">
-                    <div className="footer-contact-label">Telephone</div>
+                    <div className="footer-contact-label">{t('footer.telephoneLabel')}</div>
                     <div className="footer-contact-value">
-                      <a href="tel:+390522172306">0522 1723060</a>
+                      <a href="tel:+390376148097">03761487097</a>
                     </div>
                   </div>
                 </div>
@@ -112,9 +107,9 @@ const Footer = () => {
 
             {/* Col 3 — Quick Links */}
             <div className="footer-col footer-col-links">
-              <h4 className="footer-col-title">Quick Links</h4>
+              <h4 className="footer-col-title">{t('footer.quickLinksTitle')}</h4>
               <ul className="footer-links-list">
-                {quickLinks.map((link) => (
+                {translatedLinks.map((link) => (
                   <li key={link.label}>
                     <Link href={link.href}>{link.label}</Link>
                   </li>
@@ -124,7 +119,7 @@ const Footer = () => {
 
             {/* Col 4 — Certifications */}
             <div className="footer-col footer-col-certs">
-              <h4 className="footer-col-title">Certifications</h4>
+              <h4 className="footer-col-title">{t('footer.certificationsTitle')}</h4>
               <div className="footer-cert-list">
                 <div className="footer-cert-item">CAF Certified</div>
                 <div className="footer-cert-item">Patronato Authorized</div>
@@ -145,9 +140,8 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-inner">
             <p className="footer-bottom-legal">
-              Gruppo Europa srl Sole Shareholder (subject to management and coordination: Extrabanca SpA) —
-              VAT number 10232730969 — Share capital €100,000 fully paid-up — REA-MI 2515624 — Privacy Policy &nbsp;|&nbsp;
-              Gruppo Europa srl, insurance intermediary registered under letter E of the RUI under no. E000597090
+              {t('footer.bottomLine1')}<br />
+              {t('footer.bottomLine2')}
             </p>
             <div className="footer-bottom-right">
               Website by{' '}

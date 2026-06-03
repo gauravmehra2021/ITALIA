@@ -110,34 +110,45 @@ const Header = () => {
     <header className={`sticky top-0 z-[1000] w-full transition-all duration-300 ${scrolled ? 'shadow-[0_2px_20px_rgba(0,0,0,0.1)]' : 'shadow-[0_1px_4px_rgba(0,0,0,0.04)]'}`}>
 
       {/* ── Top Bar ── */}
-      <div className="bg-[#004a99] py-1.5 text-white">
+      <div className="bg-[#003a7a] py-2 text-white">
         <div className="container flex items-center justify-between px-4">
-          <div className="flex items-center gap-3">
-            <span className="hidden text-[12px] sm:inline">
-              {t('topBar.story')}
-            </span>
+
+          {/* Left — tagline + CTA */}
+          <div className="flex items-center gap-4">
+            <div className="hidden items-center gap-2 sm:flex">
+              <span className="h-[5px] w-[5px] rounded-full bg-[#f37021] opacity-90" />
+              <span className="text-[11px] font-medium tracking-wide text-white/75">
+                {t('topBar.story')}
+              </span>
+            </div>
             <Link
               href="/contact"
-              className="rounded border border-white/40 px-3 py-1 text-[11px] font-medium transition-all duration-300 hover:bg-white hover:text-[#004a99] sm:text-[12px]"
+              className="rounded border border-[#f37021]/60 bg-[#f37021]/10 px-3 py-[4px] text-[10.5px] font-semibold tracking-wide text-[#f37021] transition-all duration-300 hover:border-[#f37021] hover:bg-[#f37021] hover:text-white"
             >
               {t('topBar.more')}
             </Link>
           </div>
 
-          {/* Language Toggle */}
-          <div className="flex items-center gap-1 rounded border border-white/30 p-[3px]">
+          {/* Right — language switcher */}
+          <div className="flex items-center divide-x divide-white/20">
             {langs.map(({ code, label }) => (
               <button
                 key={code}
                 onClick={() => setLanguage(code)}
-                className={`rounded px-2 py-[2px] text-[11px] font-bold uppercase transition-all duration-300 ${
-                  language === code ? 'bg-white text-[#004a99]' : 'text-white/70 hover:text-white'
+                className={`px-3 py-1 text-[11px] font-bold uppercase tracking-widest transition-all duration-200 ${
+                  language === code
+                    ? 'text-white'
+                    : 'text-white/35 hover:text-white/70'
                 }`}
               >
                 {label}
+                {language === code && (
+                  <span className="ml-1 inline-block h-[3px] w-[3px] rounded-full bg-[#f37021] align-middle" />
+                )}
               </button>
             ))}
           </div>
+
         </div>
       </div>
 

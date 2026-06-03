@@ -58,9 +58,9 @@ export default function ContactPage() {
   const contactItems: ContactItem[] = Array.isArray(rawContactItems)
     ? (rawContactItems as ContactItem[])
     : [
-        { icon: '📞', label: 'Phone',  value: '0522 1723060' },
-        { icon: '📧', label: 'Email',  value: 'info@gruppoeuropa.net' },
-        { icon: '📍', label: 'Office', value: 'Via G. Battista Pergolesi 2/A\n20124 Milan, Italy' },
+        { icon: '📞', label: 'Phone',  value: '-3520716656' },
+        { icon: '📧', label: 'Email',  value: 'sseuropa@yahoo.com' },
+        { icon: '📍', label: 'Office', value: 'Via Saverio Battinelli No-8/10 Mantova 46100, Italy' },
       ]
 
   useEffect(() => {
