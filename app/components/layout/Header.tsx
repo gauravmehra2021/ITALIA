@@ -40,7 +40,7 @@ const MobileMenuItem = ({ cat, t }: { cat: string; t: (key: string) => string | 
         ) : cat === 'other' ? (
           <Link href="/other" className="w-full">{t(`nav.${cat}`)}</Link>
         ) : cat === 'contact' ? (
-          <Link href="/contact" className="w-full text-[#f37021]">Contact Us</Link>
+          <Link href="/contact" className="w-full text-[#f37021]">{t('nav.contact')}</Link>
         ) : (
           <span className="w-full">{t(`nav.${cat}`)}</span>
         )}
@@ -203,7 +203,7 @@ const Header = () => {
                         href="/contact"
                         className="flex min-h-[50px] w-full items-center justify-center px-1 py-2 text-center text-[9.5px] font-bold uppercase tracking-wide text-[#444] transition-all duration-300 hover:bg-[#004a99] hover:text-white xl:text-[10px]"
                       >
-                        Contact Us
+                        {t('nav.contact')}
                       </Link>
                     ) : (
                       <>

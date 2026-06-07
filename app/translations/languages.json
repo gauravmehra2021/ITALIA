@@ -13,7 +13,8 @@
       "insurance": "Assicurazioni",
       "indianConsulate": "Servizi Consolato Indiano",
       "visas": "Visti Internazionali",
-      "other": "Altri servizi"
+      "other": "Altri servizi",
+      "contact": "Contattaci"
     },
     "services": {
       "immigration": ["Permesso di Soggiorno","Ricongiungimento familiare","Decreto Flussi","Primo Ingresso","Cittadinanza Italiana","Compilazione documenti"],
@@ -81,7 +82,8 @@
       "insurance": "Insurance",
       "indianConsulate": "Indian Consulate Services",
       "visas": "International Visas",
-      "other": "Other Services"
+      "other": "Other Services",
+      "contact": "Contact Us"
     },
     "services": {
       "immigration": ["Residence Permit","Family Reunification","Flow Decree","First Entry","Italian Citizenship","Document Filling"],
