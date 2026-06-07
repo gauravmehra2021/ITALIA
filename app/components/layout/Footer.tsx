@@ -4,17 +4,6 @@ import Link from 'next/link'
 import { useLanguage } from '../../context/LanguageContext'
 import './Footer.css'
 
-const quickLinks = [
-  { label: 'Who We Are',          href: '/WhoWeAre' },
-  { label: 'Immigration Services', href: '/immigration' },
-  { label: 'CAF & Patronato',      href: '/caf' },
-  { label: 'Training & Courses',   href: '/training' },
-  { label: 'Business Consulting',  href: '/business' },
-  { label: 'Insurance',            href: '/insurance' },
-  { label: 'International Visas',  href: '/visas' },
-  { label: 'Other Services',       href: '/other' },
-]
-
 const offices = [
   {
     name: 'SS Europa — Mantova',
@@ -26,6 +15,16 @@ const offices = [
 const Footer = () => {
   const { t } = useLanguage()
 
+  const quickLinks = (() => {
+    const raw = t('footer.quickLinks')
+    return Array.isArray(raw) ? raw : []
+  })()
+
+  const certs = (() => {
+    const raw = t('footer.certs')
+    return Array.isArray(raw) ? raw : ['CAF Certified', 'Patronato Authorized', 'ISO Compliant', 'INPS Partner']
+  })()
+
   return (
     <footer className="footer">
 
@@ -34,8 +33,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-topbar-inner">
             <p className="footer-topbar-text">
-              Your trusted partner for immigration, tax, and administrative services —
-              <span> AMEI is here for you.</span>
+              {t('footer.topBarText') || 'Your trusted partner for immigration, tax, and administrative services — AMEI is here for you.'}
             </p>
             <div className="footer-topbar-socials">
               <a href="#" className="footer-social-link facebook" aria-label="Facebook">f</a>
@@ -58,21 +56,16 @@ const Footer = () => {
                 <img src="/images/logo.svg" alt="AMEI Logo" />
               </Link>
               <p className="footer-about-desc">
-                AMEI – Associazione Mondo e Italia is your professional partner for
-                immigration, tax, welfare, and administrative services in Italy. We
-                support individuals, families, and companies with certified expertise
-                and multilingual assistance.
+                {t('footer.aboutDesc') || 'AMEI – Associazione Mondo e Italia is your professional partner for immigration, tax, welfare, and administrative services in Italy.'}
               </p>
               <p className="footer-about-legal">
-                Gruppo Europa agencies are managed by independent entrepreneurial
-                affiliates operating under the Gruppo Europa brand under a franchising
-                agreement. Gruppo Europa provides support services to businesses and individuals.
+                {t('footer.aboutText2') || 'Gruppo Europa agencies are managed by independent entrepreneurial affiliates operating under the Gruppo Europa brand under a franchising agreement.'}
               </p>
             </div>
 
             {/* Col 2 — Offices & Contact */}
             <div className="footer-col footer-col-contact">
-              <h4 className="footer-col-title">Our Offices</h4>
+              <h4 className="footer-col-title">{t('footer.officesTitle') || 'Our Offices'}</h4>
 
               {offices.map((office, i) => (
                 <div className="footer-office-card" key={i}>
@@ -92,7 +85,7 @@ const Footer = () => {
                 <div className="footer-contact-item">
                   <div className="footer-contact-icon">✉</div>
                   <div className="footer-contact-body">
-                    <div className="footer-contact-label">Email</div>
+                    <div className="footer-contact-label">{t('footer.emailLabel') || 'Email'}</div>
                     <div className="footer-contact-value">
                       <a href="mailto:info@gruppoeuropa.net">info@gruppoeuropa.net</a>
                     </div>
@@ -101,7 +94,7 @@ const Footer = () => {
                 <div className="footer-contact-item">
                   <div className="footer-contact-icon">📞</div>
                   <div className="footer-contact-body">
-                    <div className="footer-contact-label">Telephone</div>
+                    <div className="footer-contact-label">{t('footer.telephoneLabel') || 'Telephone'}</div>
                     <div className="footer-contact-value">
                       <a href="tel:+390522172306">0522 1723060</a>
                     </div>
@@ -112,10 +105,10 @@ const Footer = () => {
 
             {/* Col 3 — Quick Links */}
             <div className="footer-col footer-col-links">
-              <h4 className="footer-col-title">Quick Links</h4>
+              <h4 className="footer-col-title">{t('footer.quickLinksTitle') || 'Quick Links'}</h4>
               <ul className="footer-links-list">
-                {quickLinks.map((link) => (
-                  <li key={link.label}>
+                {quickLinks.map((link: { label: string; href: string }) => (
+                  <li key={link.href}>
                     <Link href={link.href}>{link.label}</Link>
                   </li>
                 ))}
@@ -124,12 +117,11 @@ const Footer = () => {
 
             {/* Col 4 — Certifications */}
             <div className="footer-col footer-col-certs">
-              <h4 className="footer-col-title">Certifications</h4>
+              <h4 className="footer-col-title">{t('footer.certificationsTitle') || 'Certifications'}</h4>
               <div className="footer-cert-list">
-                <div className="footer-cert-item">CAF Certified</div>
-                <div className="footer-cert-item">Patronato Authorized</div>
-                <div className="footer-cert-item">ISO Compliant</div>
-                <div className="footer-cert-item">INPS Partner</div>
+                {certs.map((cert: string) => (
+                  <div key={cert} className="footer-cert-item">{cert}</div>
+                ))}
               </div>
             </div>
 
@@ -145,9 +137,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-inner">
             <p className="footer-bottom-legal">
-              Gruppo Europa srl Sole Shareholder (subject to management and coordination: Extrabanca SpA) —
-              VAT number 10232730969 — Share capital €100,000 fully paid-up — REA-MI 2515624 — Privacy Policy &nbsp;|&nbsp;
-              Gruppo Europa srl, insurance intermediary registered under letter E of the RUI under no. E000597090
+              {t('footer.bottomLine1')} &nbsp;|&nbsp; {t('footer.bottomLine2')}
             </p>
             <div className="footer-bottom-right">
               Website by{' '}

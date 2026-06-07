@@ -47,7 +47,87 @@
       "modal": {
         "listTitle": "Cosa include",
         "close": "Chiudi"
-      }
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "Permesso di Soggiorno",
+          "desc": "Supporto per nuove domande, rinnovi e documentazione.",
+          "modalDesc": "Forniamo assistenza completa per ottenere e rinnovare il tuo Permesso di Soggiorno. I nostri esperti ti guidano in ogni fase del processo, assicurando che tutti i documenti siano correttamente preparati e presentati.",
+          "points": [
+            "Nuove domande per lavoro, famiglia e studio",
+            "Rinnovo dei permessi di soggiorno in scadenza",
+            "Preparazione e verifica dei documenti",
+            "Prenotazione appuntamento alla Questura",
+            "Monitoraggio dello stato della domanda"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "Ricongiungimento Familiare",
+          "desc": "Assistenza per il ricongiungimento di coniugi, figli e genitori.",
+          "modalDesc": "Il nostro team ti assiste nel portare la tua famiglia in Italia attraverso la procedura ufficiale di ricongiungimento familiare. Gestiamo tutta la documentazione e dialoghiamo con le autorità competenti per tuo conto.",
+          "points": [
+            "Valutazione dell'idoneità al ricongiungimento familiare",
+            "Preparazione domanda per coniuge e figli",
+            "Orientamento sui requisiti reddituali e abitativi",
+            "Supporto per la domanda di Nulla Osta",
+            "Assistenza per il visto dei familiari"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi",
+          "desc": "Guida per le domande di permesso di lavoro tramite Decreto Flussi.",
+          "modalDesc": "Il Decreto Flussi è il decreto annuale sulle quote che consente ai lavoratori extracomunitari di entrare in Italia per lavoro. Guidiamo datori di lavoro e lavoratori nell'intero processo di domanda dall'inizio alla fine.",
+          "points": [
+            "Verifica idoneità datore di lavoro e lavoratore",
+            "Invio domanda online (click day)",
+            "Raccolta e preparazione documenti",
+            "Coordinamento Nulla Osta e visto",
+            "Supporto per la conversione del permesso post-arrivo"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "Primo Ingresso",
+          "desc": "Supporto per le procedure di primo ingresso in Italia.",
+          "modalDesc": "Entrare in Italia per la prima volta comporta diversi passaggi burocratici. Semplifichiamo il processo guidandoti attraverso tutte le procedure necessarie dal momento del tuo arrivo.",
+          "points": [
+            "Presentazione della Dichiarazione di Presenza",
+            "Richiesta Codice Fiscale",
+            "Iscrizione anagrafica (Residenza)",
+            "Assistenza per la Tessera Sanitaria",
+            "Orientamento iniziale sui documenti"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "Cittadinanza Italiana",
+          "desc": "Assistenza per la domanda di cittadinanza italiana e la documentazione.",
+          "modalDesc": "Ottenere la cittadinanza italiana è un traguardo importante. I nostri specialisti ti assistono nella preparazione di una domanda completa e accurata, sia per residenza, matrimonio o discendenza.",
+          "points": [
+            "Cittadinanza per lunga residenza (10 anni)",
+            "Cittadinanza per matrimonio",
+            "Cittadinanza per discendenza (Jure Sanguinis)",
+            "Apostille e traduzione documenti",
+            "Presentazione domanda e monitoraggio"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "Compilazione Documenti",
+          "desc": "Preparazione e verifica professionale dei documenti.",
+          "modalDesc": "Una documentazione accurata e completa è alla base di ogni procedura di immigrazione riuscita. Il nostro team prepara, rivede e verifica professionalmente tutti i tuoi documenti.",
+          "points": [
+            "Compilazione moduli per tutte le procedure",
+            "Traduzione e certificazione documenti",
+            "Coordinamento apostille",
+            "Revisione checklist documenti",
+            "Supporto per la presentazione agli uffici competenti"
+          ]
+        }
+      ]
     }
   },
   "en": {
@@ -98,7 +178,87 @@
       "modal": {
         "listTitle": "What's Included",
         "close": "Close"
-      }
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "Permesso di Soggiorno",
+          "desc": "Support for new applications, renewals, and documentation.",
+          "modalDesc": "We provide complete assistance for obtaining and renewing your Permesso di Soggiorno (Residence Permit). Our experts guide you through every step of the process, ensuring all documents are correctly prepared and submitted.",
+          "points": [
+            "New permit applications for work, family, and study",
+            "Renewal of expiring residence permits",
+            "Document preparation and verification",
+            "Appointment booking at the Questura",
+            "Follow-up on application status"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "Ricongiungimento Familiare",
+          "desc": "Family reunification assistance for spouses, children, and parents.",
+          "modalDesc": "Our team assists you in bringing your family to Italy through the official family reunification process. We handle all paperwork and liaise with the relevant authorities on your behalf.",
+          "points": [
+            "Eligibility assessment for family reunification",
+            "Application preparation for spouses and children",
+            "Income and housing requirement guidance",
+            "Nulla Osta application support",
+            "Visa application assistance for family members"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi",
+          "desc": "Guidance for work permit applications under Decreto Flussi.",
+          "modalDesc": "The Decreto Flussi is the annual quota decree that allows non-EU workers to enter Italy for work. We guide employers and workers through the entire application process from start to finish.",
+          "points": [
+            "Employer and worker eligibility check",
+            "Online application submission (click day)",
+            "Document collection and preparation",
+            "Nulla Osta and visa coordination",
+            "Post-arrival permit conversion support"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "Primo Ingresso",
+          "desc": "Support for first-time entry procedures into Italy.",
+          "modalDesc": "Entering Italy for the first time involves several bureaucratic steps. We simplify the process by guiding you through all required procedures from the moment you arrive.",
+          "points": [
+            "Dichiarazione di Presenza filing",
+            "Codice Fiscale application",
+            "Residence registration (Residenza)",
+            "Health card (Tessera Sanitaria) assistance",
+            "Initial document orientation"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "Cittadinanza Italiana",
+          "desc": "Assistance with Italian citizenship applications and paperwork.",
+          "modalDesc": "Acquiring Italian citizenship is a significant milestone. Our specialists assist you in preparing a complete and accurate application, whether by residence, marriage, or descent.",
+          "points": [
+            "Citizenship by long-term residence (10 years)",
+            "Citizenship by marriage",
+            "Citizenship by descent (Jure Sanguinis)",
+            "Document apostille and translation",
+            "Application submission and follow-up"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "Compilazione Documenti",
+          "desc": "Professional document preparation and verification services.",
+          "modalDesc": "Accurate and complete documentation is the foundation of every successful immigration procedure. Our team professionally prepares, reviews, and verifies all your documents.",
+          "points": [
+            "Form filling for all immigration procedures",
+            "Document translation and certification",
+            "Apostille coordination",
+            "Document checklist review",
+            "Submission support at relevant offices"
+          ]
+        }
+      ]
     }
   }
 }
