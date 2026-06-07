@@ -67,8 +67,8 @@
       "sidebar": {
         "contactTitle": "Informazioni di contatto",
         "contactItems": [
-          { "icon": "📞", "label": "Telefono", "value": "0522 1723060" },
-          { "icon": "📧", "label": "Email",    "value": "info@gruppoeuropa.net" },
+          { "icon": "📞", "label": "Telefono", "value": "03761487097" },
+          { "icon": "📧", "label": "Email",    "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Ufficio",  "value": "Via G. Battista Pergolesi 2/A\n20124 Milano, Italia" }
         ],
         "hoursTitle": "Orari di apertura",
@@ -155,8 +155,8 @@
       "sidebar": {
         "contactTitle": "Contact Information",
         "contactItems": [
-          { "icon": "📞", "label": "Phone",  "value": "0522 1723060" },
-          { "icon": "📧", "label": "Email",  "value": "info@gruppoeuropa.net" },
+          { "icon": "📞", "label": "Phone",  "value": "03761487097" },
+          { "icon": "📧", "label": "Email",  "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Office", "value": "Via G. Battista Pergolesi 2/A\n20124 Milan, Italy" }
         ],
         "hoursTitle": "Office Hours",

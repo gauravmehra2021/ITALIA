@@ -8,7 +8,7 @@ const offices = [
   {
     name: 'SS Europa — Mantova',
     address: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia',
-    phone: '+39 352 071 6656',
+    phone: '+39 376 148 7097',
   },
 ]
 
@@ -87,7 +87,7 @@ const Footer = () => {
                   <div className="footer-contact-body">
                     <div className="footer-contact-label">{t('footer.emailLabel') || 'Email'}</div>
                     <div className="footer-contact-value">
-                      <a href="mailto:info@gruppoeuropa.net">info@gruppoeuropa.net</a>
+                      <a href="mailto:sseuropa@yahoo.com">sseuropa@yahoo.com</a>
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <div className="footer-contact-body">
                     <div className="footer-contact-label">{t('footer.telephoneLabel') || 'Telephone'}</div>
                     <div className="footer-contact-value">
-                      <a href="tel:+390522172306">0522 1723060</a>
+                      <a href="tel:+390376148097">03761487097</a>
                     </div>
                   </div>
                 </div>

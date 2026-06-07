@@ -125,3 +125,7 @@ img {
     padding-inline: 1rem;
   }
 }
+.lg\:h-\[60px\] {
+  height: 48px;
+  border-radius: 4px;
+}
