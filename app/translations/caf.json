@@ -46,7 +46,21 @@
           "book": "Prenota un appuntamento",
           "call": "Chiamaci ora"
         }
-      }
+      },
+      "services": [
+        { "icon": "📊", "title": "ISEE",                      "desc": "Indicatore della Situazione Economica Equivalente per i benefit assistenziali.",       "slug": "isee" },
+        { "icon": "🧾", "title": "730",                     "desc": "Dichiarazione dei redditi annuale per lavoratori dipendenti e pensionati.",           "slug": "730" },
+        { "icon": "💼", "title": "NASpI",                   "desc": "Domanda e gestione dell'indennità di disoccupazione.",                              "slug": "naspi" },
+        { "icon": "👶", "title": "Assegno Unico",            "desc": "Domanda di assegno universale per i figli per le famiglie.",                         "slug": "domanda-assegno-unico" },
+        { "icon": "♿", "title": "Invalidità",               "desc": "Riconoscimento dell'invalidità e supporto per la domanda di benefici.",             "slug": "invalidita" },
+        { "icon": "🏦", "title": "Pensione",                 "desc": "Domanda di pensione, calcolo e pianificazione del pensionamento.",                  "slug": "domanda-di-pensione" },
+        { "icon": "🔐", "title": "Attivazione SPID",          "desc": "Attivazione identità digitale per i servizi pubblici online italiani.",             "slug": "attivazione-spid" },
+        { "icon": "🏠", "title": "IMU",                      "desc": "Calcolo e assistenza al pagamento dell'imposta municipale sugli immobili.",          "slug": "imu" },
+        { "icon": "📋", "title": "CUD",                      "desc": "Certificazione unica dei redditi e delle ritenute fiscali.",                         "slug": "cud" },
+        { "icon": "🧹", "title": "Colf e Badanti",           "desc": "Gestione contratti e contributi per collaboratori domestici e assistenti familiari.", "slug": "colf-e-badanti" },
+        { "icon": "⚖️", "title": "Successione",              "desc": "Dichiarazione di successione e procedure di trasferimento del patrimonio.",           "slug": "successione" },
+        { "icon": "🌾", "title": "Disoccupazione Agricola",  "desc": "Domanda e supporto per l'indennità di disoccupazione agricola.",                   "slug": "disoccupazione-agricola" }
+      ]
     }
   },
   "en": {
@@ -96,7 +110,21 @@
           "book": "Book Appointment",
           "call": "Call Us Now"
         }
-      }
+      },
+      "services": [
+        { "icon": "📊", "title": "ISEE",                   "desc": "Indicatore della Situazione Economica Equivalente for welfare benefits.",       "slug": "isee" },
+        { "icon": "🧾", "title": "730",                    "desc": "Annual income tax return filing for employees and pensioners.",                 "slug": "730" },
+        { "icon": "💼", "title": "NASpI",                  "desc": "Unemployment benefit application and management.",                             "slug": "naspi" },
+        { "icon": "👶", "title": "Assegno Unico",           "desc": "Universal child allowance application for families.",                         "slug": "domanda-assegno-unico" },
+        { "icon": "♿", "title": "Invalidità",              "desc": "Disability recognition and benefit application support.",                     "slug": "invalidita" },
+        { "icon": "🏦", "title": "Pensione",                "desc": "Pension application, calculation, and retirement planning.",                  "slug": "domanda-di-pensione" },
+        { "icon": "🔐", "title": "SPID Activation",         "desc": "Digital identity activation for Italian online public services.",             "slug": "attivazione-spid" },
+        { "icon": "🏠", "title": "IMU",                     "desc": "Municipal property tax calculation and payment assistance.",                  "slug": "imu" },
+        { "icon": "📋", "title": "CUD",                     "desc": "Single certification of income and withholding taxes.",                      "slug": "cud" },
+        { "icon": "🧹", "title": "Colf e Badanti",          "desc": "Domestic worker and caregiver contract and contribution management.",         "slug": "colf-e-badanti" },
+        { "icon": "⚖️", "title": "Successione",             "desc": "Inheritance declaration and estate transfer procedures.",                    "slug": "successione" },
+        { "icon": "🌾", "title": "Disoccupazione Agricola", "desc": "Agricultural unemployment benefit application and support.",                 "slug": "disoccupazione-agricola" }
+      ]
     }
   }
 }
