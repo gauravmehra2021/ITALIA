@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '../context/LanguageContext'
+import { submitContactForm } from '../lib/contact'
 import './contact.css'
 
 type HourRow  = { day: string; time: string; closed: boolean }
@@ -24,6 +25,10 @@ export default function ContactPage() {
   })
   const [loading, setLoading]     = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError]         = useState<string | null>(null)
+  const [consentContact, setConsentContact]       = useState(false)
+  const [consentAdvertising, setConsentAdvertising] = useState(false)
+  const [consentThirdParty, setConsentThirdParty] = useState(false)
 
   const rawServiceOptions = t('contact.form.serviceOptions')
   const serviceOptions: string[] = Array.isArray(rawServiceOptions)
@@ -82,10 +87,23 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    setTimeout(() => { setLoading(false); setSubmitted(true) }, 1800)
+    setError(null)
+    try {
+      await submitContactForm({
+        ...form,
+        consentContact,
+        consentAdvertising,
+        consentThirdParty,
+      })
+      setSubmitted(true)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Submission failed. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -257,7 +275,7 @@ export default function ContactPage() {
                       </div>
 
                       <label className="cnt-checkbox-label" style={{ border: 'none', padding: '6px 0', background: 'transparent', marginBottom: '10px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                        <input type="checkbox" required onChange={() => {}} />
+                        <input type="checkbox" required checked={consentContact} onChange={(e) => setConsentContact(e.target.checked)} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
                           {t('contact.form.gdpr.consent1') || ''}
@@ -265,7 +283,7 @@ export default function ContactPage() {
                       </label>
 
                       <label className="cnt-checkbox-label" style={{ border: 'none', padding: '6px 0', background: 'transparent', marginBottom: '10px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                        <input type="checkbox" onChange={() => {}} />
+                        <input type="checkbox" checked={consentAdvertising} onChange={(e) => setConsentAdvertising(e.target.checked)} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
                           {t('contact.form.gdpr.consent2') || ''}
@@ -273,7 +291,7 @@ export default function ContactPage() {
                       </label>
 
                       <label className="cnt-checkbox-label" style={{ border: 'none', padding: '6px 0', background: 'transparent', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                        <input type="checkbox" onChange={() => {}} />
+                        <input type="checkbox" checked={consentThirdParty} onChange={(e) => setConsentThirdParty(e.target.checked)} />
                         <span className="cnt-checkbox-box" style={{ marginTop: '2px', flexShrink: 0 }}>✓</span>
                         <span style={{ fontSize: '0.85rem', color: '#475569', lineHeight: '1.6' }}>
                           {t('contact.form.gdpr.consent3') || ''}
@@ -284,6 +302,12 @@ export default function ContactPage() {
                         {t('contact.form.gdpr.required') || 'Fields marked with * are required.'}
                       </p>
                     </div>
+
+                    {error && (
+                      <div style={{ color: '#ef4444', fontSize: '0.88rem', marginBottom: '12px', padding: '10px 14px', background: '#fef2f2', borderRadius: '8px', border: '1px solid #fecaca' }}>
+                        {error}
+                      </div>
+                    )}
 
                     <button type="submit" className="cnt-submit-btn" disabled={loading}>
                       {loading ? (
