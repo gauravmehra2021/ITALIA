@@ -73,7 +73,7 @@ const WhoWeAre = () => {
             {/* Left — text */}
             <div>
               <div className="wwa-reveal-left">
-                <span className="wwa-intro-eyebrow">About AMEI</span>
+                <span className="wwa-intro-eyebrow">SS EUROPA — Sostegno e Soluzioni per l&apos;Europa (by AmEi)</span>
                 <h2 className="wwa-intro-title">{t('about.title')}</h2>
                 <p className="wwa-intro-text">{t('about.p1')}</p>
               </div>

@@ -94,11 +94,10 @@
   text-decoration: none;
 }
 .footer-about-logo img {
-  height: 48px;
+  height: 60px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+  opacity: 1;
 }
 .footer-about-desc {
   font-size: 13.5px;

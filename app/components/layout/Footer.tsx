@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-topbar-inner">
             <p className="footer-topbar-text">
-              {t('footer.topBarText') || 'Your trusted partner for immigration, tax, and administrative services — AMEI is here for you.'}
+              {t('footer.topBarText') || 'Your trusted partner for immigration, tax, and administrative services — SS EUROPA is here for you.'}
             </p>
             <div className="footer-topbar-socials">
               <a href="#" className="footer-social-link facebook" aria-label="Facebook">f</a>
@@ -53,10 +53,10 @@ const Footer = () => {
             {/* Col 1 — About */}
             <div className="footer-col footer-col-about">
               <Link href="/" className="footer-about-logo">
-                <img src="/images/logo.svg" alt="AMEI Logo" />
+                <img src="/images/new logo.png" alt="AMEI Logo" />
               </Link>
               <p className="footer-about-desc">
-                {t('footer.aboutDesc') || 'AMEI – Associazione Mondo e Italia is your professional partner for immigration, tax, welfare, and administrative services in Italy.'}
+                {t('footer.aboutDesc') || 'SS EUROPA — Sostegno e Soluzioni per l\'Europa (by AmEi) is your professional partner for immigration, tax, welfare, and administrative services in Italy.'}
               </p>
               <p className="footer-about-legal">
                 {t('footer.aboutText2') || 'Gruppo Europa agencies are managed by independent entrepreneurial affiliates operating under the Gruppo Europa brand under a franchising agreement.'}
