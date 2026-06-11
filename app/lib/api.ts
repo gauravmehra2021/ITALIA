@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.sseuropa.com/api/'
+const BASE_URL = 'https://api.sseuropa.com'
 
 interface ApiOptions {
   method?: string
