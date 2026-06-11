@@ -63,7 +63,7 @@ export default function HomePage() {
         <div className="container">
           <div className="home-hero-inner">
 
-            <div className="home-hero-badge">{t('home.hero.badge') || '🇮🇹 AMEI — Associazione Mondo e Italia'}</div>
+            <div className="home-hero-badge">{t('home.hero.badge') || '🇮🇹 SS EUROPA — Sostegno e Soluzioni per l\'Europa (by AmEi)'}</div>
 
             <h1 className="home-hero-title">
               {t('home.hero.titleLine1') || 'We Help You'} <span>{t('home.hero.titleLine2') || 'Live, Work'}</span><br />
@@ -114,16 +114,16 @@ export default function HomePage() {
           <div className="home-intro-inner">
 
             <div className="home-reveal-left">
-              <span className="home-intro-eyebrow">{t('home.intro.eyebrow') || 'About AMEI'}</span>
+              <span className="home-intro-eyebrow">{t('home.intro.eyebrow') || 'About SS EUROPA'}</span>
               <h2 className="home-intro-title">{t('home.intro.title') || 'Your Trusted Partner for Life in Italy'}</h2>
-              <p className="home-intro-text">{t('home.intro.p1') || 'AMEI — Associazione Mondo e Italia — is a professional services organization dedicated to helping immigrants, families, and businesses navigate the complexities of Italian bureaucracy. With over 20 years of experience, we offer end-to-end support across immigration, tax, training, insurance, and more.'}</p>
+              <p className="home-intro-text">{t('home.intro.p1') || 'SS EUROPA — Sostegno e Soluzioni per l\'Europa (by AmEi) — is a professional services organization dedicated to helping immigrants, families, and businesses navigate the complexities of Italian bureaucracy. With over 20 years of experience, we offer end-to-end support across immigration, tax, training, insurance, and more.'}</p>
               <p className="home-intro-text">{t('home.intro.p2') || 'Our multilingual team is committed to making your journey in Italy smooth, legal, and stress-free — from your first day to full integration.'}</p>
               <Link href="/WhoWeAre" className="home-intro-btn">{t('home.intro.learnMore') || 'Learn More About Us'}<span className="home-intro-btn-arrow">→</span></Link>
             </div>
 
             <div className="home-reveal-right home-delay-1">
               <div className="home-intro-visual">
-                <div className="home-intro-visual-title">{t('home.intro.visualTitle') || 'Why Clients Choose AMEI'}</div>
+                <div className="home-intro-visual-title">{t('home.intro.visualTitle') || 'Why Clients Choose SS EUROPA'}</div>
                 <ul className="home-checklist">
                   {checklist.map((item, i) => (
                     <li key={i}>
@@ -180,7 +180,7 @@ export default function HomePage() {
           <div className="home-why-inner">
 
             <div className="home-reveal-left">
-              <span className="home-intro-eyebrow">{t('home.why.eyebrow') || 'Why AMEI'}</span>
+              <span className="home-intro-eyebrow">{t('home.why.eyebrow') || 'Why SS EUROPA'}</span>
               <h2 className="home-intro-title">{t('home.why.title') || 'The Expertise &amp; Care You Deserve'}</h2>
               <p className="home-intro-text">{t('home.why.desc') || "We don't just process paperwork — we build lasting relationships with our clients. Our team of certified professionals is dedicated to delivering results with transparency, speed, and genuine care for your wellbeing."}</p>
               <Link href="/WhoWeAre" className="home-intro-btn">{t('home.why.cta') || 'Discover Our Story'}<span className="home-intro-btn-arrow">→</span></Link>

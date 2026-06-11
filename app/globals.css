@@ -57,7 +57,7 @@ img {
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem !important;
 }
 
 /* Scrollbar */
@@ -125,7 +125,8 @@ img {
     padding-inline: 1rem;
   }
 }
-.lg\:h-\[60px\] {
-  height: 48px;
-  border-radius: 4px;
+
+
+header nav ul li a {
+  font-size: 12px !important;
 }
