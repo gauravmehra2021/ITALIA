@@ -16,23 +16,23 @@ export const SUBJECT_ENUM: Record<string, number> = {
   'Altro':                 5,
 }
 
-// service_of_interest: index of selected service (0-based), 0 if none
+// service_of_interest: 0->Immigration, 1->CAF, 2->Training, 3->Business, 4->Insurance, 5->Indian Consulate, 6->Visas, 7->Other
 export const SERVICE_ENUM: Record<string, number> = {
-  'Immigration Services':   1,
-  'Servizi Immigrazione':   1,
-  'CAF & Patronato':        2,
-  'Training & Courses':     3,
-  'Formazione & Corsi':     3,
-  'Business Consultancy':   4,
-  'Consulenza Aziendale':   4,
-  'Insurance':              5,
-  'Assicurazioni':          5,
-  'Indian Consulate':       6,
-  'Consolato Indiano':      6,
-  'International Visas':    7,
-  'Visti Internazionali':   7,
-  'Other Services':         8,
-  'Altri Servizi':          8,
+  'Immigration Services':   0,
+  'Servizi Immigrazione':   0,
+  'CAF & Patronato':        1,
+  'Training & Courses':     2,
+  'Formazione & Corsi':     2,
+  'Business Consultancy':   3,
+  'Consulenza Aziendale':   3,
+  'Insurance':              4,
+  'Assicurazioni':          4,
+  'Indian Consulate':       5,
+  'Consolato Indiano':      5,
+  'International Visas':    6,
+  'Visti Internazionali':   6,
+  'Other Services':         7,
+  'Altri Servizi':          7,
 }
 
 // preferred_contact_method: 0->Email, 1->Phone, 2->WhatsApp, 3->Visit in person
@@ -66,7 +66,7 @@ export async function submitContactForm(form: ContactFormData) {
       email:                             form.email,
       telephone_number:                  form.phone,
       object_type:                       SUBJECT_ENUM[form.subject] ?? 5,
-      service_of_interest:               SERVICE_ENUM[form.services[0]] ?? 0,
+      service_of_interest:               form.services.length ? (SERVICE_ENUM[form.services[0]] ?? 0) : 0,
       preferred_contact_method:          CONTACT_METHOD_ENUM[form.preferredContact] ?? 0,
       message:                           form.message,
       consent_for_contact:               form.consentContact ? 1 : 0,

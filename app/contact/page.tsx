@@ -206,7 +206,7 @@ export default function ContactPage() {
                       >
                         <option value="">{t('contact.form.subjectPlaceholder') || 'Select a subject...'}</option>
                         {subjectOptions.map((opt) => (
-                          <option key={opt}>{opt}</option>
+                          <option key={opt} value={opt}>{opt}</option>
                         ))}
                       </select>
                     </div>
