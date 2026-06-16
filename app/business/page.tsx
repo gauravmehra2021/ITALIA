@@ -78,7 +78,7 @@ export default function BusinessPage() {
 
   const introTitle      = t('business.intro.title')         || 'Your Partner for Business Setup & Compliance'
   const introBody       = t('business.intro.body')          || ''
-  const introVisualTitle = t('business.intro.visualTitle')  || 'Why Choose AMEI'
+  const introVisualTitle = t('business.intro.visualTitle')  || 'Why Choose SS EUROPA SOSTEGNO E SOLUZIONI PER L EUROPA'
 
   const sectionTag      = t('business.section.tag')         || 'What We Offer'
   const sectionTitle    = t('business.section.title')       || 'Our Business Services'

@@ -108,7 +108,7 @@ export default function TrainingPage() {
   const enrollText = t('training.hero.actions.enroll') || 'Enroll Now'
 
   const introTitle = t('training.intro.title') || 'Build Your Skills, Advance Your Career'
-  const introBody = t('training.intro.body') || 'At AMEI, we believe education and professional development are the keys to integration and success in Italy. Our training programs are designed for immigrants, workers, and anyone looking to improve their qualifications — with courses available in multiple languages and flexible formats to fit your lifestyle.'
+  const introBody = t('training.intro.body') || 'At SS EUROPA SOSTEGNO E SOLUZIONI PER L EUROPA, we believe education and professional development are the keys to integration and success in Italy. Our training programs are designed for immigrants, workers, and anyone looking to improve their qualifications — with courses available in multiple languages and flexible formats to fit your lifestyle.'
   const introVisualTitle = t('training.intro.visualTitle') || 'Why Choose Our Courses'
 
   const sectionTag = t('training.section.tag') || 'What We Offer'

@@ -138,7 +138,7 @@ export default function VisasPage() {
 
   const introTitle       = t('visas.intro.title')             || 'Expert Visa Assistance for Every Destination'
   const introBody        = t('visas.intro.body')              || ''
-  const introVisualTitle = t('visas.intro.visualTitle')       || 'Why Choose AMEI'
+  const introVisualTitle = t('visas.intro.visualTitle')       || 'Why Choose SS EUROPA SOSTEGNO E SOLUZIONI PER L EUROPA'
 
   const sectionTag       = t('visas.section.tag')             || 'What We Offer'
   const sectionTitle     = t('visas.section.title')           || 'Our Visa Services'

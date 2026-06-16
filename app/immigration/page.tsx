@@ -132,8 +132,8 @@ export default function ImmigrationPage() {
   const contactText = t('immigration.hero.actions.contact') || 'Contact Us'
 
   const introTitle = t('immigration.intro.title') || 'Your Trusted Partner for Every Immigration Step'
-  const introBody = t('immigration.intro.body') || 'Navigating Italian immigration law can be complex and time-consuming. At AMEI, we simplify the entire process — from your first entry into Italy to obtaining permanent residency or citizenship. Our experienced team stays up to date with the latest regulations so you don\'t have to.'
-  const introVisualTitle = t('immigration.intro.visualTitle') || 'Why Choose AMEI'
+  const introBody = t('immigration.intro.body') || 'Navigating Italian immigration law can be complex and time-consuming. At SS EUROPA  we simplify the entire process — from your first entry into Italy to obtaining permanent residency or citizenship. Our experienced team stays up to date with the latest regulations so you don\'t have to.'
+  const introVisualTitle = t('immigration.intro.visualTitle') || 'Why Choose SS EUROPA '
 
   const sectionTag = t('immigration.section.tag') || 'What We Offer'
   const sectionTitle = t('immigration.section.title') || 'Our Immigration Services'

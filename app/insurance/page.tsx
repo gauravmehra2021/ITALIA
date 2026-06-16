@@ -123,7 +123,7 @@ export default function InsurancePage() {
 
   const introTitle       = t('insurance.intro.title')          || 'Complete Protection for Every Aspect of Your Life'
   const introBody        = t('insurance.intro.body')           || ''
-  const introVisualTitle = t('insurance.intro.visualTitle')    || 'Why Choose AMEI Insurance'
+  const introVisualTitle = t('insurance.intro.visualTitle')    || 'Why Choose SS EUROPA Insurance'
 
   const sectionTag       = t('insurance.section.tag')          || 'What We Offer'
   const sectionTitle     = t('insurance.section.title')        || 'Our Insurance Solutions'

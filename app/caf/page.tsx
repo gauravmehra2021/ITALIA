@@ -61,7 +61,7 @@ export default function CafPage() {
   const contactText = t('caf.hero.actions.contact') || 'Contact Us'
 
   const introTitle = t('caf.intro.title') || 'Complete Tax, Welfare & Administrative Support'
-  const introBody = t('caf.intro.body') || 'The CAF (Centro di Assistenza Fiscale) and Patronato services at AMEI cover the full spectrum of fiscal and social security needs. Whether you need to file your tax return, apply for a pension, or activate your SPID digital identity, our certified team handles everything with precision and care — in multiple languages.'
+  const introBody = t('caf.intro.body') || 'The CAF (Centro di Assistenza Fiscale) and Patronato services at SS EUROPA SOSTEGNO E SOLUZIONI PER L EUROPA cover the full spectrum of fiscal and social security needs. Whether you need to file your tax return, apply for a pension, or activate your SPID digital identity, our certified team handles everything with precision and care — in multiple languages.'
   const introVisualTitle = t('caf.intro.visualTitle') || 'Our Guarantees'
 
   const sectionTag = t('caf.section.tag') || 'What We Offer'
