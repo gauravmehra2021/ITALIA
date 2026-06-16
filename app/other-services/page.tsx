@@ -18,7 +18,7 @@ export default function OtherServicesPage() {
         Other Services
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        Beyond our core services, AMEI offers a wide range of additional support to help you navigate daily life in Italy. From professional translations to digital identity activation, we are here to simplify every aspect of your bureaucratic journey.
+        Beyond our core services, SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA offers a wide range of additional support to help you navigate daily life in Italy. From professional translations to digital identity activation, we are here to simplify every aspect of your bureaucratic journey.
       </p>
 
       <div className="mb-12 space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">

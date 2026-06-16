@@ -46,7 +46,7 @@ export default function RicongiungimentoFamiliare() {
                 Il <strong>Ricongiungimento Familiare</strong> permette ai cittadini stranieri regolarmente soggiornanti in Italia di far venire nel nostro Paese i propri familiari. È un diritto fondamentale che consente di riunire il nucleo familiare nel rispetto delle normative vigenti.
               </p>
               <p className="imm-detail-text">
-                AMEI vi guida attraverso l&apos;intero processo, dalla verifica dei requisiti necessari fino all&apos;ottenimento del visto di ingresso per i vostri cari.
+                SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA vi guida attraverso l&apos;intero processo, dalla verifica dei requisiti necessari fino all&apos;ottenimento del visto di ingresso per i vostri cari.
               </p>
 
               <span className="imm-detail-label">Our Services</span>

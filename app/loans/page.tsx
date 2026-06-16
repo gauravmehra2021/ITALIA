@@ -30,7 +30,7 @@ export default function LoansPage() {
         Loans & Financing
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        AMEI connects you with the best financial solutions available in Italy. Whether you need a personal loan, business financing, or a mortgage, our consultants help you navigate the options and find the right fit for your needs and budget.
+        SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA connects you with the best financial solutions available in Italy. Whether you need a personal loan, business financing, or a mortgage, our consultants help you navigate the options and find the right fit for your needs and budget.
       </p>
 
       <h2 className="mb-6 text-2xl font-bold text-[#004a99]">Our Financial Services</h2>

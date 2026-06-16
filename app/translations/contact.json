@@ -62,12 +62,12 @@
       },
       "success": {
         "title": "Messaggio inviato con successo!",
-        "text": "Grazie per aver contattato AMEI. Il nostro team esaminerà la tua richiesta e ti risponderà entro 24 ore."
+        "text": "Grazie per aver contattato SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA. Il nostro team esaminerà la tua richiesta e ti risponderà entro 24 ore."
       },
       "sidebar": {
         "contactTitle": "Informazioni di contatto",
         "contactItems": [
-          { "icon": "📞", "label": "Telefono", "value": "03761487097" },
+          { "icon": "📞", "label": "Telefono", "value": "+39 376 148 7097" },
           { "icon": "📧", "label": "Email",    "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Ufficio",  "value": "Via G. Battista Pergolesi 2/A\n20124 Milano, Italia" }
         ],
@@ -150,12 +150,12 @@
       },
       "success": {
         "title": "Message Sent Successfully!",
-        "text": "Thank you for contacting AMEI. Our team will review your request and get back to you within 24 hours."
+        "text": "Thank you for contacting SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA. Our team will review your request and get back to you within 24 hours."
       },
       "sidebar": {
         "contactTitle": "Contact Information",
         "contactItems": [
-          { "icon": "📞", "label": "Phone",  "value": "03761487097" },
+          { "icon": "📞", "label": "Phone",  "value": "+39 376 148 7097" },
           { "icon": "📧", "label": "Email",  "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Office", "value": "Via G. Battista Pergolesi 2/A\n20124 Milan, Italy" }
         ],

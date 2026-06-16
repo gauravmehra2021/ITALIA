@@ -5,7 +5,7 @@ export default function Traduzioni() {
     <div className="container mx-auto max-w-[900px] py-20">
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">Traduzioni</h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
-        <p>AMEI offre servizi di <strong>traduzione professionale</strong> di documenti ufficiali e personali in diverse lingue. Le nostre traduzioni sono accurate, rapide e, dove richiesto, giurate presso il Tribunale.</p>
+        <p>SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA offre servizi di <strong>traduzione professionale</strong> di documenti ufficiali e personali in diverse lingue. Le nostre traduzioni sono accurate, rapide e, dove richiesto, giurate presso il Tribunale.</p>
         <p>Disponiamo di traduttori qualificati per le principali lingue parlate dalla nostra comunità: italiano, inglese, hindi, punjabi, urdu, arabo e altre.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Documenti che traduciamo</h2>
         <ul className="space-y-2">

@@ -108,7 +108,7 @@ export default function IndianConsulatePage() {
 
   const introTitle       = t('indianConsulate.intro.title')             || 'Your Trusted Partner for Indian Consular Services in Italy'
   const introBody        = t('indianConsulate.intro.body')              || ''
-  const introVisualTitle = t('indianConsulate.intro.visualTitle')       || 'Why Choose AMEI'
+  const introVisualTitle = t('indianConsulate.intro.visualTitle')       || 'Why Choose SS EUROPA '
 
   const sectionTag       = t('indianConsulate.section.tag')             || 'What We Offer'
   const sectionTitle     = t('indianConsulate.section.title')           || 'Our Consular Services'

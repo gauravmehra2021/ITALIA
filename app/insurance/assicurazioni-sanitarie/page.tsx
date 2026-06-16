@@ -6,7 +6,7 @@ export default function AssicurazioniSanitarie() {
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">Assicurazioni Sanitarie</h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
         <p>Le <strong>assicurazioni sanitarie</strong> integrano il Servizio Sanitario Nazionale, garantendo accesso rapido a visite specialistiche, esami diagnostici e ricoveri in strutture private senza lunghe attese.</p>
-        <p>AMEI collabora con le principali compagnie assicurative per offrirti la polizza sanitaria più adatta alle tue esigenze e al tuo budget.</p>
+        <p>SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA collabora con le principali compagnie assicurative per offrirti la polizza sanitaria più adatta alle tue esigenze e al tuo budget.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Coperture disponibili</h2>
         <ul className="space-y-2">
           {['Visite specialistiche e accertamenti diagnostici', 'Ricovero ospedaliero in strutture convenzionate', 'Interventi chirurgici programmati e d\'urgenza', 'Cure dentistiche e oculistiche', 'Polizze individuali, familiari e aziendali'].map((item, i) => (

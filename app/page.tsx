@@ -63,7 +63,7 @@ export default function HomePage() {
         <div className="container">
           <div className="home-hero-inner">
 
-            <div className="home-hero-badge">{t('home.hero.badge') || '🇮🇹 SS EUROPA — Sostegno e Soluzioni per l\'Europa (by AmEi)'}</div>
+            <div className="home-hero-badge">{t('home.hero.badge') || '🇮🇹 SS EUROPA — Sostegno e Soluzioni per l\'Europa '}</div>
 
             <h1 className="home-hero-title">
               {t('home.hero.titleLine1') || 'We Help You'} <span>{t('home.hero.titleLine2') || 'Live, Work'}</span><br />

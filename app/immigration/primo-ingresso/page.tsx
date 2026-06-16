@@ -46,7 +46,7 @@ export default function PrimoIngresso() {
                 Il <strong>Primo Ingresso</strong> in Italia richiede una serie di adempimenti burocratici che possono risultare complessi per chi non conosce il sistema italiano. Dalla dichiarazione di presenza al codice fiscale, ogni passo è fondamentale per regolarizzare la propria posizione.
               </p>
               <p className="imm-detail-text">
-                AMEI vi accompagna fin dal primo momento, aiutandovi a comprendere i requisiti e le procedure necessarie per entrare e soggiornare regolarmente in Italia.
+                SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA vi accompagna fin dal primo momento, aiutandovi a comprendere i requisiti e le procedure necessarie per entrare e soggiornare regolarmente in Italia.
               </p>
 
               <span className="imm-detail-label">Our Services</span>

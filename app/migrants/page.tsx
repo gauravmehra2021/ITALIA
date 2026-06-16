@@ -20,7 +20,7 @@ export default function MigrantsPage() {
         Migrants
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        AMEI is your trusted partner for every step of your journey in Italy. Whether you have just arrived or have been living here for years, we provide complete support for all immigration-related needs — from your first residence permit to Italian citizenship.
+        SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA is your trusted partner for every step of your journey in Italy. Whether you have just arrived or have been living here for years, we provide complete support for all immigration-related needs — from your first residence permit to Italian citizenship.
       </p>
 
       <div className="mb-12 space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">

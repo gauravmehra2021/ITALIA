@@ -93,7 +93,7 @@ export default function OtherServicesPage() {
 
   const introTitle       = t('other.intro.title')             || 'Supporting You Beyond the Paperwork'
   const introBody        = t('other.intro.body')              || ''
-  const introVisualTitle = t('other.intro.visualTitle')       || 'Why Choose AMEI'
+  const introVisualTitle = t('other.intro.visualTitle')       || 'Why Choose SS EUROPA SOSTEGNO E SOLUZIONI PER L EUROPA'
 
   const sectionTag       = t('other.section.tag')             || 'What We Offer'
   const sectionTitle     = t('other.section.title')           || 'Our Additional Services'

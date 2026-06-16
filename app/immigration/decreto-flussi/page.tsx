@@ -46,7 +46,7 @@ export default function DecretoFlussi() {
                 Il <strong>Decreto Flussi</strong> è il provvedimento annuale con cui il Governo italiano stabilisce le quote di lavoratori stranieri non comunitari ammessi in Italia per motivi di lavoro. Le domande vengono presentate online in un giorno specifico, il cosiddetto &quot;click day&quot;.
               </p>
               <p className="imm-detail-text">
-                AMEI vi assiste nella presentazione della domanda nei tempi previsti, massimizzando le possibilità di successo grazie alla nostra esperienza pluriennale nel settore.
+                SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA vi assiste nella presentazione della domanda nei tempi previsti, massimizzando le possibilità di successo grazie alla nostra esperienza pluriennale nel settore.
               </p>
 
               <span className="imm-detail-label">Our Services</span>

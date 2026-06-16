@@ -6,7 +6,7 @@ export default function EVistoIndiano() {
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">E-Visto Indiano</h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
         <p>L'<strong>E-Visto Indiano (eVisa)</strong> è il visto elettronico che permette ai cittadini stranieri di visitare l'India per turismo, affari o cure mediche senza dover recarsi fisicamente al consolato.</p>
-        <p>AMEI vi assiste nella compilazione della domanda online e nella preparazione dei documenti necessari per ottenere l'eVisa in modo rapido e senza errori.</p>
+        <p>SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA vi assiste nella compilazione della domanda online e nella preparazione dei documenti necessari per ottenere l'eVisa in modo rapido e senza errori.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Tipologie di eVisa</h2>
         <ul className="space-y-2">
           {['e-Tourist Visa (turismo, brevi soggiorni)', 'e-Business Visa (affari e commercio)', 'e-Medical Visa (cure mediche in India)', 'e-Conference Visa (partecipazione a conferenze)', 'Assistenza per visti consolari tradizionali'].map((item, i) => (

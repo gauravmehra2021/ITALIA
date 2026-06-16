@@ -18,7 +18,7 @@ export default function TravelersPage() {
         Travelers
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        Planning a trip abroad or welcoming visitors to Italy? AMEI provides all the support you need — from visa applications to document translations — ensuring your travel experience is smooth and stress-free.
+        Planning a trip abroad or welcoming visitors to Italy? SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA provides all the support you need — from visa applications to document translations — ensuring your travel experience is smooth and stress-free.
       </p>
 
       <div className="mb-12 space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">

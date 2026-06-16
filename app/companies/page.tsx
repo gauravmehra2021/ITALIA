@@ -19,7 +19,7 @@ export default function CompaniesPage() {
         Companies
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        AMEI supports businesses of all sizes with a full range of administrative, legal, and insurance services. From starting a new business in Italy to managing workplace safety and hiring foreign workers, we are your one-stop partner.
+        SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA supports businesses of all sizes with a full range of administrative, legal, and insurance services. From starting a new business in Italy to managing workplace safety and hiring foreign workers, we are your one-stop partner.
       </p>
 
       <div className="mb-12 space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">

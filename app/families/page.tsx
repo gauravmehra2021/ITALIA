@@ -22,7 +22,7 @@ export default function FamiliesPage() {
         Families
       </h1>
       <p className="mb-10 text-[1.1rem] leading-[1.8] text-[#444]">
-        At AMEI, we understand that family is everything. We offer a comprehensive range of services designed to support families at every stage of life in Italy — from reuniting loved ones to securing financial benefits and protecting what matters most.
+        At SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA, we understand that family is everything. We offer a comprehensive range of services designed to support families at every stage of life in Italy — from reuniting loved ones to securing financial benefits and protecting what matters most.
       </p>
 
       <div className="mb-12 space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">

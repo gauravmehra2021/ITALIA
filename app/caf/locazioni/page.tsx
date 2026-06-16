@@ -5,7 +5,7 @@ export default function Locazioni() {
     <div className="container mx-auto max-w-[900px] py-20">
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">Locazioni – Contratti di Affitto</h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
-        <p>La gestione dei <strong>contratti di locazione</strong> richiede adempimenti fiscali precisi: registrazione, proroga, risoluzione e cedolare secca. AMEI vi assiste in tutte le fasi.</p>
+        <p>La gestione dei <strong>contratti di locazione</strong> richiede adempimenti fiscali precisi: registrazione, proroga, risoluzione e cedolare secca. SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA vi assiste in tutte le fasi.</p>
         <p>Il nostro team vi guida nella scelta del regime fiscale più conveniente e gestisce tutti gli adempimenti burocratici legati all'affitto.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Servizi per le locazioni</h2>
         <ul className="space-y-2">

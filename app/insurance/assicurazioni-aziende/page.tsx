@@ -6,7 +6,7 @@ export default function AssicurazioniAziende() {
       <h1 className="mb-6 text-4xl font-extrabold uppercase tracking-wide text-[#004a99]">Assicurazioni per Aziende</h1>
       <div className="space-y-5 text-[1.05rem] leading-[1.8] text-[#444]">
         <p>Le <strong>assicurazioni aziendali</strong> proteggono la tua impresa dai rischi operativi, garantendo continuità aziendale e tutela del patrimonio in caso di eventi imprevisti.</p>
-        <p>AMEI offre consulenza assicurativa personalizzata per aziende di ogni dimensione, dalla piccola impresa alla società strutturata.</p>
+        <p>SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA offre consulenza assicurativa personalizzata per aziende di ogni dimensione, dalla piccola impresa alla società strutturata.</p>
         <h2 className="text-2xl font-bold text-[#004a99]">Polizze aziendali</h2>
         <ul className="space-y-2">
           {['RC Professionale e RC Prodotti', 'Polizza multirischio per uffici e negozi', 'Assicurazione per dipendenti (infortuni e malattia)', 'Polizza D&O (Directors and Officers)', 'Cyber risk e protezione dati aziendali'].map((item, i) => (
