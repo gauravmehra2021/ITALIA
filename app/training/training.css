@@ -211,6 +211,8 @@
 .trn-modal-body { padding: 32px 36px 36px; }
 .trn-modal-desc { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 26px; }
 .trn-modal-list-title { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #1a6b4a; margin-bottom: 14px; }
+.trn-modal-languages { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.trn-modal-lang-tag { background: #eef7f2; color: #1a6b4a; font-size: 0.82rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; border: 1px solid #1a6b4a25; }
 .trn-modal-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
 .trn-modal-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--text-main); line-height: 1.6; padding: 10px 12px; border-radius: 8px; transition: background 0.2s; }
 .trn-modal-list li:hover { background: #eef7f2; }

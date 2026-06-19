@@ -40,17 +40,28 @@
         {
           "icon": "🗣️",
           "title": "Corsi di Lingua",
-          "desc": "Corsi di italiano e inglese per studenti e lavoratori.",
-          "modalDesc": "I nostri corsi di lingua sono pensati per tutti i livelli — da principianti assoluti a parlanti avanzati. Offriamo italiano per stranieri e inglese per professionisti, con orari flessibili per adattarsi al lavoro e allo studio.",
+          "desc": "Corsi di italiano, inglese, hindi, punjabi, arabo, cinese, sri lankan e urdu per studenti e lavoratori.",
+          "modalDesc": "I nostri corsi di lingua sono pensati per tutti i livelli — da principianti assoluti a parlanti avanzati. Offriamo corsi in italiano, inglese, hindi, punjabi, arabo, cinese, sri lankan e urdu, con orari flessibili per adattarsi al lavoro e allo studio.",
           "points": [
             "Corsi di italiano per stranieri di tutti i livelli (A1–C2)",
             "Corsi di inglese per professionisti",
+            "Corsi di hindi, punjabi, arabo, cinese, sri lankan e urdu",
             "Orari mattina, pomeriggio e sera",
             "Gruppi ridotti per attenzione personalizzata",
             "Preparazione a certificazioni ufficiali (CILS, CELI, IELTS)",
             "Opzioni online e in presenza"
           ],
-          "slug": "corsi-di-lingua"
+          "slug": "corsi-di-lingua",
+          "languages": [
+            "Italiano",
+            "English",
+            "Hindi",
+            "Punjabi",
+            "Arabo",
+            "Cinese",
+            "Sri Lankan",
+            "Urdu"
+          ]
         },
         {
           "icon": "🎓",
@@ -111,6 +122,7 @@
       },
       "modal": {
         "listTitle": "Cosa include",
+        "languagesTitle": "Corsi Lingue",
         "close": "Chiudi"
       }
     }
@@ -156,17 +168,28 @@
         {
           "icon": "🗣️",
           "title": "Language Courses",
-          "desc": "Italian and English language courses for students and workers.",
-          "modalDesc": "Our language courses are designed for all levels — from complete beginners to advanced speakers. We offer Italian for foreigners and English for professionals, with flexible schedules to fit your work and study commitments.",
+          "desc": "Italian, English, Hindi, Punjabi, Arabic, Chinese, Sri Lankan and Urdu language courses for students and workers.",
+          "modalDesc": "Our language courses are designed for all levels — from complete beginners to advanced speakers. We offer courses in Italian, English, Hindi, Punjabi, Arabic, Chinese, Sri Lankan, and Urdu, with flexible schedules to fit your work and study commitments.",
           "points": [
-            "Italian language courses for all levels (A1–C2)",
-            "English language courses for professionals",
+           "Italian language courses for all levels (A1–C2)",
+"English language courses for professionals",
+"Hindi, Punjabi, Arabic, Chinese, Sinhala, and Urdu language courses for all proficiency levels",
             "Flexible morning, afternoon, and evening schedules",
             "Small groups for personalized attention",
             "Official certification preparation (CILS, CELI, IELTS)",
             "Online and in-person options available"
           ],
-          "slug": "language-courses"
+          "slug": "language-courses",
+          "languages": [
+            "Italiano",
+            "English",
+            "Hindi",
+            "Punjabi",
+            "Arabo",
+            "Cinese",
+            "Sri Lankan",
+            "Urdu"
+          ]
         },
         {
           "icon": "🎓",
@@ -227,6 +250,7 @@
       },
       "modal": {
         "listTitle": "What's Included",
+        "languagesTitle": "Language Courses",
         "close": "Close"
       }
     }
