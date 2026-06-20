@@ -121,6 +121,7 @@ export default function TrainingPage() {
   const ctaEnroll = t('training.cta.actions.enroll') || 'Enroll Now'
   const ctaView = t('training.cta.actions.view') || 'View Courses'
   const modalListTitle = t('training.modal.listTitle') || "What's Included"
+  const modalLanguagesTitle = t('training.modal.languagesTitle') || 'Language Courses'
   const modalClose = t('training.modal.close') || 'Close'
 
   useEffect(() => {
@@ -268,6 +269,16 @@ export default function TrainingPage() {
             <div className="trn-modal-body">
               <p className="trn-modal-desc">{activeModal.modalDesc}</p>
 
+              {'languages' in activeModal && (
+                <>
+                  <div className="trn-modal-list-title">{modalLanguagesTitle}</div>
+                  <div className="trn-modal-languages">
+                    {(activeModal as any).languages.map((lang: string, i: number) => (
+                      <span key={i} className="trn-modal-lang-tag">{lang}</span>
+                    ))}
+                  </div>
+                </>
+              )}
               <div className="trn-modal-list-title">{modalListTitle}</div>
               <ul className="trn-modal-list">
                 {activeModal.points.map((point, i) => (

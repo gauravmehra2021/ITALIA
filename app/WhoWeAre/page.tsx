@@ -35,7 +35,7 @@ const WhoWeAre = () => {
         <div className="container">
           <div className="wwa-hero-inner">
 
-            <div className="wwa-hero-badge">🇮🇹 Chi Siamo</div>
+            <div className="wwa-hero-badge"> Chi Siamo</div>
 
             <h1 className="wwa-hero-title">
               {t('about.subtitle')}
@@ -47,14 +47,14 @@ const WhoWeAre = () => {
 
             <div className="wwa-hero-stats">
               {[
-                { num: '20+',  label: 'Years of Experience' },
-                { num: '5K+',  label: 'Clients Assisted' },
-                { num: '98%',  label: 'Satisfaction Rate' },
-                { num: '8',    label: 'Service Areas' },
+                { num: '20+',  key: 'statsYears' },
+                { num: '5K+',  key: 'statsClients' },
+                { num: '98%',  key: 'statsSatisfaction' },
+                { num: '8',    key: 'statsAreas' },
               ].map((s, i) => (
                 <div className="wwa-hero-stat" key={i}>
                   <div className="wwa-hero-stat-num">{s.num}</div>
-                  <div className="wwa-hero-stat-label">{s.label}</div>
+                  <div className="wwa-hero-stat-label">{t(`about.${s.key}`)}</div>
                 </div>
               ))}
             </div>
@@ -83,17 +83,10 @@ const WhoWeAre = () => {
 
             {/* Right — card */}
             <div className="wwa-intro-visual wwa-reveal-right wwa-delay-1">
-              <div className="wwa-intro-card">
-                <div className="wwa-intro-card-title">Our Core Values</div>
+            <div className="wwa-intro-card">
+                <div className="wwa-intro-card-title">{t('about.coreValuesTitle')}</div>
                 <ul className="wwa-values-list">
-                  {[
-                    'Professionalism & Expertise',
-                    'Multilingual Support',
-                    'Transparency & Trust',
-                    'Client-First Approach',
-                    'Continuous Innovation',
-                    'Community Integration',
-                  ].map((val, i) => (
+                  {(t('about.coreValues') as string[]).map((val: string, i: number) => (
                     <li key={i}>
                       <span className="wwa-values-icon">✓</span>
                       {val}
@@ -114,10 +107,10 @@ const WhoWeAre = () => {
         <div className="container">
 
           <div className="wwa-areas-header wwa-reveal">
-            <span className="wwa-areas-tag">What We Do</span>
+            <span className="wwa-areas-tag">{t('about.areasTag')}</span>
             <h2 className="wwa-areas-title">{t('about.listTitle')}</h2>
             <p className="wwa-areas-desc">
-              Our activity is organized into specialized areas to serve every need with precision and expertise.
+              {t('about.areasDesc')}
             </p>
           </div>
 
@@ -160,11 +153,11 @@ const WhoWeAre = () => {
 
             <div className="wwa-closing-actions wwa-reveal wwa-delay-3">
               <Link href="/" className="wwa-closing-btn-primary">
-                <span>Explore Our Services</span>
+                <span>{t('about.exploreServices')}</span>
                 <span className="wwa-btn-arrow">→</span>
               </Link>
               <Link href="/contact" className="wwa-closing-btn-outline">
-                <span>Contact Us</span>
+                <span>{t('about.contactUs')}</span>
                 <span className="wwa-btn-arrow">→</span>
               </Link>
             </div>
