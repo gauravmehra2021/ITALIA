@@ -41,7 +41,7 @@
           "icon": "🗣️",
           "title": "Corsi di Lingua",
           "desc": "Corsi di italiano, inglese, hindi, punjabi, arabo, cinese, sri lankan e urdu per studenti e lavoratori.",
-          "modalDesc": "I nostri corsi di lingua sono pensati per tutti i livelli — da principianti assoluti a parlanti avanzati. Offriamo corsi in italiano, inglese, hindi, punjabi, arabo, cinese, sri lankan e urdu, con orari flessibili per adattarsi al lavoro e allo studio.",
+          "modalDesc": "I nostri corsi di lingua Con i insegnanti madre lingua sono pensati per tutti i livelli — da principianti assoluti a parlanti avanzati. Offriamo corsi in italiano, inglese, hindi, punjabi, arabo, cinese, sri lankan e urdu, con orari flessibili per adattarsi al lavoro e allo studio.",
           "points": [
             "Corsi di italiano per stranieri di tutti i livelli (A1–C2)",
             "Corsi di inglese per professionisti",
@@ -67,14 +67,17 @@
           "icon": "🎓",
           "title": "Qualifiche Professionali",
           "desc": "Programmi di qualificazione professionale certificati.",
-          "modalDesc": "I nostri programmi di qualificazione professionale sono riconosciuti ufficialmente e pensati per aiutarti a entrare o avanzare nel mercato del lavoro italiano. Offriamo certificazioni in più settori, conformi agli standard italiani ed europei.",
+          "modalDesc": "I nostri programmi di formazione e qualificazione professionale sono riconosciuti ufficialmente e progettati per aiutarti a entrare, crescere o avanzare nel mercato del lavoro italiano. Offriamo corsi e certificazioni in diversi settori, conformi agli standard italiani ed europei, con il supporto di professionisti qualificati e partner accreditati.",
           "points": [
             "Certificazioni professionali riconosciute a livello nazionale",
             "Programmi per edilizia, logistica e servizi",
             "Certificazione HACCP e sicurezza alimentare",
+            "Attestati Muletto (certificazione per operatori di carrelli elevatori)",
             "Patenti per muletto e operatori di macchinari",
+            "Orientamento professionale e supporto per l’inserimento nel mondo del lavoro",
             "Qualifiche amministrative e contabili",
-            "Supporto per il riconoscimento delle qualifiche estere"
+            "Supporto per il riconoscimento delle qualifiche estere",
+            "Vengono organizzati con i nostri Partner e Collaboratori"
           ],
           "slug": "qualifiche-professionali"
         },
@@ -202,7 +205,8 @@
             "Food handling and HACCP certification",
             "Forklift and machinery operator licenses",
             "Administrative and accounting qualifications",
-            "Support for foreign qualification recognition"
+            "Support for foreign qualification recognition",
+            "They are organized with our Partners and Collaborators"
           ],
           "slug": "professional-qualifications"
         },
