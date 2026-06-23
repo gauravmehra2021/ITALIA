@@ -10,6 +10,8 @@ const navLinks = [
   { icon: '✈️', label: 'Primo Ingresso',               href: '/immigration/primo-ingresso' },
   { icon: '🇮🇹', label: 'Cittadinanza Italiana',       href: '/immigration/cittadinanza-italiana' },
   { icon: '📂', label: 'Compilazione Documenti',       href: '/immigration/compilazione-documenti' },
+  { icon: '🌐', label: 'Mediazione Culturale',         href: '/immigration/mediazione-culturale' },
+  { icon: '🏦', label: 'Consulenza Bancaria',          href: '/immigration/consulenza-bancaria' },
 ]
 
 export default function RicongiungimentoFamiliare() {
