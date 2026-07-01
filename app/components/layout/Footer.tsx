@@ -137,7 +137,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-inner">
             <p className="footer-bottom-legal">
-              {t('footer.bottomLine1')} &nbsp;|&nbsp; {t('footer.bottomLine2')}
+              {t('footer.bottomLine1')}
             </p>
             <div className="footer-bottom-right">
               Website by{' '}
