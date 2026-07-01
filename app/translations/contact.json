@@ -67,7 +67,7 @@
       "sidebar": {
         "contactTitle": "Informazioni di contatto",
         "contactItems": [
-          { "icon": "📞", "label": "Telefono", "value": "+39 376 148 7097" },
+          { "icon": "📞", "label": "Telefono", "value": "+39 0376 148 7097" },
           { "icon": "📧", "label": "Email",    "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Ufficio",  "value": "Via G. Battista Pergolesi 2/A\n20124 Milano, Italia" }
         ],
@@ -155,7 +155,7 @@
       "sidebar": {
         "contactTitle": "Contact Information",
         "contactItems": [
-          { "icon": "📞", "label": "Phone",  "value": "+39 376 148 7097" },
+          { "icon": "📞", "label": "Phone",  "value": "+39 0376 148 7097" },
           { "icon": "📧", "label": "Email",  "value": "sseuropa@yahoo.com" },
           { "icon": "📍", "label": "Office", "value": "Via G. Battista Pergolesi 2/A\n20124 Milan, Italy" }
         ],

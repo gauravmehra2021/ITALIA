@@ -130,3 +130,32 @@ img {
 header nav ul li a {
   font-size: 12px !important;
 }
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+  }
+
+  .navbar-toggle {
+      display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-toggle,
+  .mobile-menu,
+  .menu-toggle,
+  .hamburger {
+      display: none !important;
+  }
+
+  .navbar-collapse,
+  .main-menu,
+  .navbar-nav {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+  }
+}

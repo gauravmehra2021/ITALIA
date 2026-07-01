@@ -8,7 +8,7 @@ const offices = [
   {
     name: 'SS Europa — Mantova',
     address: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia',
-    phone: '+3520716656',
+    phone: '+39 3520716656',
   },
 ]
 
@@ -56,7 +56,7 @@ const Footer = () => {
                 <img src="/images/new logo.png" alt="SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA Logo" />
               </Link>
           <p className="footer-about-desc">
-  {t('footer.aboutDesc') || "SS EUROPA — Sostegno e Soluzioni per l'Europa is your professional partner for immigration, tax, welfare, and administrative services in Italy."}
+  {t('footer.aboutDesc') || "SS EUROPA {Sostegno e Soluzioni per l'Europa} is your professional partner for immigration, tax, welfare, and administrative services in Italy."}
 </p>
               <p className="footer-about-legal">
                 {t('footer.aboutText2') || 'Gruppo Europa agencies are managed by independent entrepreneurial affiliates operating under the Gruppo Europa brand under a franchising agreement.'}
@@ -96,7 +96,7 @@ const Footer = () => {
                   <div className="footer-contact-body">
                     <div className="footer-contact-label">{t('footer.telephoneLabel') || 'Telephone'}</div>
                     <div className="footer-contact-value">
-                      <a href="tel:+390376148097">+39 376 148 7097</a>
+                      <a href="tel:+390376148097">+39 0376 148 7097</a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-inner">
             <p className="footer-bottom-legal">
-              {t('footer.bottomLine1')} &nbsp;|&nbsp; {t('footer.bottomLine2')}
+              {t('footer.bottomLine1')}
             </p>
             <div className="footer-bottom-right">
               Website by{' '}
