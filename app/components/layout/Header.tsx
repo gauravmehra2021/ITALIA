@@ -154,7 +154,7 @@ const Header = () => {
 
       {/* ── Main Header ── */}
       <div className="bg-white">
-        <div className="container flex items-center justify-between gap-4 px-4 py-3 lg:py-0">
+        <div className="container flex items-center justify-between gap-4 px-4 py-3 md:py-0">
 
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center">
@@ -166,7 +166,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden flex-1 items-center justify-end lg:flex">
+          <nav className="hidden flex-1 items-center justify-end md:flex">
             <ul className="flex items-center">
               {categories.map((cat) => {
                 const services = t(`services.${cat}`)
@@ -251,7 +251,7 @@ const Header = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden"
+            className="relative flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
           >
             <span className={`h-[2px] w-6 bg-[#004a99] transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
             <span className={`h-[2px] w-6 bg-[#004a99] transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
@@ -260,7 +260,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`overflow-hidden bg-white transition-all duration-500 lg:hidden ${isMobileMenuOpen ? 'max-h-[2000px] border-t border-gray-100' : 'max-h-0'}`}>
+        <div className={`overflow-hidden bg-white transition-all duration-500 md:hidden ${isMobileMenuOpen ? 'max-h-[2000px] border-t border-gray-100' : 'max-h-0'}`}>
           <ul className="container flex flex-col px-4 py-2">
             {categories.map((cat) => (
               <MobileMenuItem key={cat} cat={cat} t={t} />

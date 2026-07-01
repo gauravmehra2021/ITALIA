@@ -81,14 +81,14 @@
           "desc": "Guida per le domande di permesso di lavoro tramite Decreto Flussi.",
           "modalDesc": "Il Decreto Flussi è il decreto annuale sulle quote che consente ai lavoratori extracomunitari di entrare in Italia per lavoro. Guidiamo datori di lavoro e lavoratori nell'intero processo di domanda dall'inizio alla fine.",
           "points": [
-            "Verifica idoneità datore di lavoro e lavoratore",
+            "Asseverazione",
             "Invio domanda online (click day)",
             "Raccolta e preparazione documenti",
             "Coordinamento Nulla Osta e visto",
             "Supporto per la conversione del permesso post-arrivo",
             "Assistenza per l'assunzione di Colf e Badanti",
             "Conversione del Permesso di Soggiorno",
-            "Supporto per percorsi di tirocinio e formazione professionale.",
+            "Supporto per percorsi di per estero e formazione professionale.",
             "Assistenza per procedure di sanatoria e regolarizzazione"
           ]
         },
@@ -141,7 +141,9 @@
             "Ascolto attivo e decodifica dei bisogni profondi",
             "Supporto in ambito sanitario e ospedaliero",
             "Assistenza presso Pubblica Amministrazione e Forze dell'Ordine",
-            "Accompagnamento scolastico e progetti inclusivi"
+            "Accompagnamento scolastico e progetti inclusivi",
+            "Assistenza presso tribunale",
+            "Assistenza notaio per compra e vendita"
           ]
         },
         {
