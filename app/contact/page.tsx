@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Select from 'react-select'
 import { useLanguage } from '../context/LanguageContext'
 import { submitContactForm } from '../lib/contact'
 import './contact.css'
@@ -9,6 +10,23 @@ import './contact.css'
 type HourRow  = { day: string; time: string; closed: boolean }
 type LinkItem = { label: string; href: string }
 type ContactItem = { icon: string; label: string; value: string }
+
+const COUNTRIES = [
+  'Afghanistan','Albania','Algeria','Andorra','Angola','Argentina','Armenia','Australia','Austria','Azerbaijan',
+  'Bahrain','Bangladesh','Belarus','Belgium','Belize','Benin','Bolivia','Bosnia and Herzegovina','Brazil','Bulgaria',
+  'Burkina Faso','Burundi','Cambodia','Cameroon','Canada','Chile','China','Colombia','Congo','Croatia',
+  'Cuba','Cyprus','Czech Republic','Denmark','Dominican Republic','Ecuador','Egypt','El Salvador','Estonia','Ethiopia',
+  'Finland','France','Georgia','Germany','Ghana','Greece','Guatemala','Guinea','Haiti','Honduras',
+  'Hungary','India','Indonesia','Iran','Iraq','Ireland','Israel','Italy','Ivory Coast','Jamaica',
+  'Japan','Jordan','Kazakhstan','Kenya','Kosovo','Kuwait','Kyrgyzstan','Laos','Latvia','Lebanon',
+  'Libya','Lithuania','Luxembourg','Madagascar','Malaysia','Mali','Malta','Mexico','Moldova','Mongolia',
+  'Montenegro','Morocco','Mozambique','Myanmar','Nepal','Netherlands','New Zealand','Nicaragua','Niger','Nigeria',
+  'North Macedonia','Norway','Pakistan','Palestine','Panama','Paraguay','Peru','Philippines','Poland','Portugal',
+  'Qatar','Romania','Russia','Rwanda','Saudi Arabia','Senegal','Serbia','Sierra Leone','Slovakia','Slovenia',
+  'Somalia','South Africa','South Korea','Spain','Sri Lanka','Sudan','Sweden','Switzerland','Syria','Taiwan',
+  'Tajikistan','Tanzania','Thailand','Togo','Tunisia','Turkey','Turkmenistan','Uganda','Ukraine','United Arab Emirates',
+  'United Kingdom','United States','Uruguay','Uzbekistan','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'
+].map(c => ({ value: c, label: c }))
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -18,6 +36,7 @@ export default function ContactPage() {
     lastName: '',
     email: '',
     phone: '',
+    country: '',
     subject: '',
     services: [] as string[],
     message: '',
@@ -193,6 +212,36 @@ export default function ContactPage() {
                           onChange={(e) => setForm({ ...form, phone: e.target.value })}
                         />
                       </div>
+                    </div>
+
+                    {/* Subject */}
+                    <div className="cnt-form-group">
+                      <label className="cnt-label">{t('contact.form.country') || 'Country *'}</label>
+                      <Select
+                        options={COUNTRIES}
+                        value={form.country ? { value: form.country, label: form.country } : null}
+                        onChange={(opt) => setForm({ ...form, country: opt?.value || '' })}
+                        placeholder={t('contact.form.countryPlaceholder') || 'Select your country...'}
+                        isSearchable
+                        required
+                        styles={{
+                          control: (base, state) => ({
+                            ...base,
+                            borderColor: state.isFocused ? '#0d4a6b' : '#e2e8f0',
+                            boxShadow: state.isFocused ? '0 0 0 3px rgba(13,74,107,0.1)' : 'none',
+                            borderRadius: '10px',
+                            padding: '2px 4px',
+                            fontSize: '0.92rem',
+                            '&:hover': { borderColor: '#0d4a6b' },
+                          }),
+                          option: (base, state) => ({
+                            ...base,
+                            backgroundColor: state.isSelected ? '#0d4a6b' : state.isFocused ? '#f0f7ff' : 'white',
+                            color: state.isSelected ? 'white' : '#1e293b',
+                          }),
+                          placeholder: (base) => ({ ...base, color: '#94a3b8' }),
+                        }}
+                      />
                     </div>
 
                     {/* Subject */}

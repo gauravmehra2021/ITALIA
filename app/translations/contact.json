@@ -19,6 +19,8 @@
         "emailPlaceholder": "tua@email.com",
         "phone": "Numero di Telefono",
         "phonePlaceholder": "+39 000 000 0000",
+        "country": "Paese *",
+        "countryPlaceholder": "Seleziona il tuo paese...",
         "subject": "Oggetto *",
         "subjectPlaceholder": "Seleziona un oggetto...",
         "subjectOptions": [
@@ -107,6 +109,8 @@
         "emailPlaceholder": "your@email.com",
         "phone": "Phone Number",
         "phonePlaceholder": "+39 000 000 0000",
+        "country": "Country *",
+        "countryPlaceholder": "Select your country...",
         "subject": "Subject *",
         "subjectPlaceholder": "Select a subject...",
         "subjectOptions": [

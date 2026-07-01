@@ -48,6 +48,7 @@ export interface ContactFormData {
   lastName: string
   email: string
   phone: string
+  country: string
   subject: string
   services: string[]
   message: string
@@ -65,6 +66,7 @@ export async function submitContactForm(form: ContactFormData) {
       surname:                           form.lastName,
       email:                             form.email,
       telephone_number:                  form.phone,
+      country:                           form.country,
       object_type:                       SUBJECT_ENUM[form.subject] ?? 5,
       service_of_interest:               form.services.length ? (SERVICE_ENUM[form.services[0]] ?? 0) : 0,
       preferred_contact_method:          CONTACT_METHOD_ENUM[form.preferredContact] ?? 0,
