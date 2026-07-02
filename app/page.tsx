@@ -44,6 +44,16 @@ export default function HomePage() {
   ]
 
   useEffect(() => {
+    import('./lib/visitor').then(({ trackVisitor }) =>
+      trackVisitor({
+        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        language:  navigator.language,
+        page:      window.location.pathname,
+      }).catch(() => {})
+    )
+  }, [])
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add('visible')),
       { threshold: 0.1 }
