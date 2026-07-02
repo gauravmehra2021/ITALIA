@@ -58,9 +58,7 @@ const Footer = () => {
           <p className="footer-about-desc">
   {t('footer.aboutDesc') || "SS EUROPA {Sostegno e Soluzioni per l'Europa} is your professional partner for immigration, tax, welfare, and administrative services in Italy."}
 </p>
-              <p className="footer-about-legal">
-                {t('footer.aboutText2') || 'Gruppo Europa agencies are managed by independent entrepreneurial affiliates operating under the Gruppo Europa brand under a franchising agreement.'}
-              </p>
+
             </div>
 
             {/* Col 2 — Offices & Contact */}
