@@ -138,7 +138,7 @@ export default function ContactPage() {
             </nav>
             <div className="cnt-hero-badge">{t('contact.hero.badge') || '📬 Get In Touch'}</div>
             <h1 className="cnt-hero-title">{t('contact.hero.title') || 'Contact Us'}</h1>
-            <p className="cnt-hero-desc">{t('contact.hero.desc') || ''}</p>
+            <p className="cnt-hero-desc">{t('contact.hero.desc') || ''} </p>
           </div>
         </div>
       </section>
