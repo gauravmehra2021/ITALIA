@@ -89,6 +89,15 @@ export default function HomePage() {
               <Link href="/WhoWeAre" className="home-btn-outline">
                 {t('home.hero.actions.who') || 'Who We Are'}
               </Link>
+              <a
+                href="https://us05web.zoom.us/j/9513471774?pwd=BjoKbvTXmrDmLARQAxgLgSiOmoHqbm.1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="home-btn-outline"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+              >
+                🎓 Join Classes
+              </a>
             </div>
 
             <div className="home-hero-stats">
