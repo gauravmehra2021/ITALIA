@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { useLanguage } from '../context/LanguageContext'
 import './caf.css'
 
 export interface CafDetailProps {
@@ -14,6 +15,7 @@ export interface CafDetailProps {
 }
 
 export default function CafDetailPage({ icon, title, subtitle, description, steps, documents }: CafDetailProps) {
+  const { t } = useLanguage()
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible') }),
@@ -50,10 +52,10 @@ export default function CafDetailPage({ icon, title, subtitle, description, step
 
             {/* Main Content */}
             <div className="caf-detail-main caf-reveal">
-              <h2 className="caf-detail-section-title">About This Service</h2>
+              <h2 className="caf-detail-section-title">{t('caf.detail.aboutTitle')}</h2>
               <p className="caf-detail-text">{description}</p>
 
-              <h2 className="caf-detail-section-title">How It Works</h2>
+              <h2 className="caf-detail-section-title">{t('caf.detail.howItWorksTitle')}</h2>
               <div className="caf-detail-steps">
                 {steps.map((step, i) => (
                   <div className="caf-detail-step" key={i}>
@@ -67,7 +69,7 @@ export default function CafDetailPage({ icon, title, subtitle, description, step
             {/* Sidebar */}
             <div className="caf-detail-sidebar caf-reveal delay-2">
               <div className="caf-detail-sidebar-card">
-                <div className="caf-detail-sidebar-title">Documents Required</div>
+                <div className="caf-detail-sidebar-title">{t('caf.detail.documentsTitle')}</div>
                 <ul className="caf-detail-docs-list">
                   {documents.map((doc, i) => (
                     <li key={i}>{doc}</li>
@@ -76,20 +78,20 @@ export default function CafDetailPage({ icon, title, subtitle, description, step
               </div>
 
               <div className="caf-detail-sidebar-card">
-                <div className="caf-detail-sidebar-title">Need Assistance?</div>
+                <div className="caf-detail-sidebar-title">{t('caf.detail.assistanceTitle')}</div>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '14px' }}>
-                  Our certified operators are available to guide you through the entire process.
+                  {t('caf.detail.assistanceDesc')}
                 </p>
-                <button className="caf-detail-contact-btn">Book Appointment</button>
+                <button className="caf-detail-contact-btn">{t('caf.detail.bookBtn')}</button>
                 <button className="caf-detail-contact-btn" style={{ marginTop: '10px', background: '#f1f5fb', color: 'var(--primary)' }}>
-                  Call Us Now
+                  {t('caf.detail.callBtn')}
                 </button>
               </div>
 
               <div className="caf-detail-sidebar-card">
-                <div className="caf-detail-sidebar-title">Other Services</div>
+                <div className="caf-detail-sidebar-title">{t('caf.detail.otherServicesTitle')}</div>
                 <Link href="/caf" style={{ fontSize: '0.88rem', color: 'var(--primary)', fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  ← Back to all CAF services
+                  {t('caf.detail.backLink')}
                 </Link>
               </div>
             </div>

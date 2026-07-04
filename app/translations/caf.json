@@ -47,6 +47,35 @@
           "call": "Chiamaci ora"
         }
       },
+      "detail": {
+        "aboutTitle": "Informazioni sul Servizio",
+        "howItWorksTitle": "Come Funziona",
+        "documentsTitle": "Documenti Richiesti",
+        "assistanceTitle": "Hai bisogno di assistenza?",
+        "assistanceDesc": "I nostri operatori certificati sono disponibili per guidarti attraverso l'intero processo.",
+        "bookBtn": "Prenota Appuntamento",
+        "callBtn": "Chiamaci Ora",
+        "otherServicesTitle": "Altri Servizi",
+        "backLink": "← Torna a tutti i servizi CAF"
+      },
+      "colfEBadanti": {
+        "subtitle": "Gestione contratti e contributi per collaboratori domestici e assistenti familiari — conformità completa semplificata.",
+        "description": "La gestione di colf e badanti richiede la corretta stipula del contratto di lavoro domestico, il versamento dei contributi INPS e il rispetto del CCNL di settore. Il nostro team vi assiste nella redazione del contratto, nel calcolo e versamento dei contributi trimestrali e nella gestione di eventuali pratiche di assunzione o cessazione del rapporto di lavoro.",
+        "steps": [
+          "Definire le condizioni di lavoro (orario, retribuzione, mansioni)",
+          "Il nostro operatore redige il contratto di lavoro domestico",
+          "Registrazione del lavoratore presso l'INPS per i contributi previdenziali",
+          "Calcoliamo e versiamo i contributi trimestrali",
+          "Gestione di eventuali modifiche contrattuali, rinnovi o cessazioni"
+        ],
+        "documents": [
+          "Documenti d'identità del datore di lavoro e del lavoratore",
+          "Codici fiscali di entrambe le parti",
+          "Permesso di soggiorno del lavoratore (se extracomunitario)",
+          "IBAN del conto bancario del lavoratore",
+          "Contratto precedente (in caso di rinnovo)"
+        ]
+      },
       "services": [
         { "icon": "📊", "title": "ISEE",                      "desc": "Indicatore della Situazione Economica Equivalente per i benefit assistenziali.",       "slug": "isee" },
         { "icon": "🧾", "title": "730",                     "desc": "Dichiarazione dei redditi annuale per lavoratori dipendenti e pensionati.",           "slug": "730" },
@@ -110,6 +139,35 @@
           "book": "Book Appointment",
           "call": "Call Us Now"
         }
+      },
+      "detail": {
+        "aboutTitle": "About This Service",
+        "howItWorksTitle": "How It Works",
+        "documentsTitle": "Documents Required",
+        "assistanceTitle": "Need Assistance?",
+        "assistanceDesc": "Our certified operators are available to guide you through the entire process.",
+        "bookBtn": "Book Appointment",
+        "callBtn": "Call Us Now",
+        "otherServicesTitle": "Other Services",
+        "backLink": "← Back to all CAF services"
+      },
+      "colfEBadanti": {
+        "subtitle": "Domestic worker and caregiver contract and contribution management — full compliance made simple.",
+        "description": "Managing domestic workers (colf e badanti) requires the correct drafting of the domestic work contract, payment of INPS contributions, and compliance with the sector's national collective agreement. Our team assists you in drafting the contract, calculating and paying quarterly contributions, and managing any hiring or termination procedures.",
+        "steps": [
+          "Define the employment terms (hours, salary, duties)",
+          "Our operator drafts the domestic work contract",
+          "Register the worker with INPS for social contributions",
+          "We calculate and submit quarterly contribution payments",
+          "Manage any contract changes, renewals, or terminations"
+        ],
+        "documents": [
+          "Identity documents of employer and worker",
+          "Tax codes of both parties",
+          "Worker's residence permit (if non-EU)",
+          "IBAN bank account of the worker",
+          "Previous contract (if renewal)"
+        ]
       },
       "services": [
         { "icon": "📊", "title": "ISEE",                   "desc": "Indicatore della Situazione Economica Equivalente for welfare benefits.",       "slug": "isee" },
