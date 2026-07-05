@@ -36,6 +36,34 @@ const defaultServices = [
       'Annual safety documentation updates',
     ],
   },
+  {
+    icon: '🌐',
+    title: 'Mediazione Culturale',
+    desc: 'Social and emotional bridge between cultures — specialized professionals for integration.',
+    modalDesc:
+      'The intercultural mediator is not a simple interpreter, but a specialized professional who acts as a social and emotional bridge. They have deep knowledge of social codes, customs, and regulations of both the country of origin and the host country.',
+    points: [
+      'In-depth linguistic and cultural skills',
+      'Active listening and decoding of deep needs',
+      'Support in healthcare and hospital settings',
+      'Assistance with Public Administration and Law Enforcement',
+      'School accompaniment and inclusive projects',
+    ],
+  },
+  {
+    icon: '🏦',
+    title: 'Consulenza Bancaria',
+    desc: 'Professional support for wealth management, credit access, and financial planning.',
+    modalDesc:
+      'Banking consultancy is a professional service aimed at supporting individuals and businesses in wealth management, credit access, and financial planning. We offer a complete overview to understand how it works and what models are available.',
+    points: [
+      'Current account management and daily banking operations',
+      'Mortgages for first home, second home, and real estate purchase',
+      'Personalized financing and personal loans',
+      'Credit, debit, and prepaid cards',
+      'Mortgage subrogation and portability',
+    ],
+  },
 ]
 
 type Service = (typeof defaultServices)[number]

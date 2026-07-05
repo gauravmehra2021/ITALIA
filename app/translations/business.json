@@ -12,10 +12,22 @@
           "contact": "Richiedi consulenza"
         },
         "stats": [
-          { "num": "2",    "label": "Servizi principali" },
-          { "num": "300+", "label": "Aziende assistite" },
-          { "num": "20+",  "label": "Anni di esperienza" },
-          { "num": "100%", "label": "Conformità legale" }
+          {
+            "num": "2",
+            "label": "Servizi principali"
+          },
+          {
+            "num": "300+",
+            "label": "Aziende assistite"
+          },
+          {
+            "num": "20+",
+            "label": "Anni di esperienza"
+          },
+          {
+            "num": "100%",
+            "label": "Conformità legale"
+          }
         ]
       },
       "intro": {
@@ -39,7 +51,7 @@
       "services": [
         {
           "icon": "🏢",
-          "title": "Apertura Attività",
+          "title": "Apertura alla chiusura dell attivita",
           "desc": "Supporto per l'apertura e la registrazione di attività per startup e imprenditori.",
           "modalDesc": "Avviare un'attività in Italia comporta molteplici passaggi burocratici — dalla scelta della giusta struttura legale alla registrazione presso la Camera di Commercio e le autorità fiscali. Il nostro team ti guida in ogni fase, assicurando che la tua azienda sia pienamente conforme fin dal primo giorno.",
           "points": [
@@ -48,7 +60,14 @@
             "Apertura Partita IVA",
             "Iscrizione INPS e INAIL per il titolare",
             "Licenza comunale (SCIA/SUAP)",
-            "Assistenza per l'apertura del conto corrente aziendale"
+            "Assistenza per l'apertura del conto corrente aziendale",
+            "GESTIONE DEL BALANCIO",
+"CONTO ECONOMICO",
+
+"REPORTI",
+"BUSTA PAGA",
+
+"ETC ECTC"
           ]
         },
         {
@@ -63,6 +82,34 @@
             "Preparazione del piano di emergenza ed evacuazione",
             "Segnaletica di sicurezza e verifica di conformità",
             "Aggiornamenti annuali della documentazione di sicurezza"
+          ]
+        },
+        {
+          "icon": "🌐",
+          "title": "Mediazione Culturale",
+          "desc": "Ponte sociale ed emotivo tra culture — professionisti specializzati per l'integrazione.",
+          "modalDesc": "Il mediatore interculturale non è un semplice interprete, ma un professionista specializzato che agisce come ponte sociale ed emotivo. Conosce a fondo i codici sociali, le abitudini e le normative sia del Paese d'origine sia di quello ospitante.",
+          "points": [
+            "Competenze linguistiche e culturali approfondite",
+            "Ascolto attivo e decodifica dei bisogni profondi",
+            "Supporto in ambito sanitario e ospedaliero",
+            "Assistenza presso Pubblica Amministrazione e Forze dell'Ordine",
+            "Accompagnamento scolastico e progetti inclusivi",
+            "Assistenza presso tribunale",
+            "Assistenza notaio per compra e vendita"
+          ]
+        },
+        {
+          "icon": "🏦",
+          "title": "Consulenza Bancaria",
+          "desc": "Supporto professionale per gestione del patrimonio, accesso al credito e pianificazione finanziaria.",
+          "modalDesc": "La consulenza bancaria è un servizio professionale mirato a supportare privati e imprese nella gestione del patrimonio, nell'accesso al credito e nella pianificazione finanziaria. Offriamo una panoramica completa per capire come funziona e quali sono i modelli disponibili.",
+          "points": [
+            "Gestione conto corrente e operatività bancaria quotidiana",
+            "Mutui prima casa, seconda casa e acquisto immobiliare",
+            "Finanziamenti personalizzati e prestiti personali",
+            "Carte di credito, debito e prepagate",
+            "Surroga e portabilità del mutuo"
           ]
         }
       ],
@@ -97,10 +144,22 @@
           "contact": "Request Consultation"
         },
         "stats": [
-          { "num": "2",    "label": "Core Services" },
-          { "num": "300+", "label": "Businesses Assisted" },
-          { "num": "20+",  "label": "Years Experience" },
-          { "num": "100%", "label": "Legal Compliance" }
+          {
+            "num": "2",
+            "label": "Core Services"
+          },
+          {
+            "num": "300+",
+            "label": "Businesses Assisted"
+          },
+          {
+            "num": "20+",
+            "label": "Years Experience"
+          },
+          {
+            "num": "100%",
+            "label": "Legal Compliance"
+          }
         ]
       },
       "intro": {
@@ -148,6 +207,32 @@
             "Emergency and evacuation plan preparation",
             "Workplace safety signage and compliance check",
             "Annual safety documentation updates"
+          ]
+        },
+        {
+          "icon": "🌐",
+          "title": "Mediazione Culturale",
+          "desc": "Social and emotional bridge between cultures — specialized professionals for integration.",
+          "modalDesc": "The intercultural mediator is not a simple interpreter, but a specialized professional who acts as a social and emotional bridge. They have deep knowledge of social codes, customs, and regulations of both the country of origin and the host country.",
+          "points": [
+            "In-depth linguistic and cultural skills",
+            "Active listening and decoding of deep needs",
+            "Support in healthcare and hospital settings",
+            "Assistance with Public Administration and Law Enforcement",
+            "School accompaniment and inclusive projects"
+          ]
+        },
+        {
+          "icon": "🏦",
+          "title": "Consulenza Bancaria",
+          "desc": "Professional support for wealth management, credit access, and financial planning.",
+          "modalDesc": "Banking consultancy is a professional service aimed at supporting individuals and businesses in wealth management, credit access, and financial planning. We offer a complete overview to understand how it works and what models are available.",
+          "points": [
+            "Current account management and daily banking operations",
+            "Mortgages for first home, second home, and real estate purchase",
+            "Personalized financing and personal loans",
+            "Credit, debit, and prepaid cards",
+            "Mortgage subrogation and portability"
           ]
         }
       ],

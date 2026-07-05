@@ -32,9 +32,9 @@ export default function CafDetailPage({ icon, title, subtitle, description, step
         <div className="container">
           <div className="caf-detail-hero-inner animate-fade-in-up">
             <nav className="caf-detail-breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/">{t('caf.breadcrumbHome') || 'Home'}</Link>
               <span>/</span>
-              <Link href="/caf">C.A.F. e Patronato</Link>
+              <Link href="/caf">{t('caf.breadcrumbCurrent') || 'C.A.F. e Patronato'}</Link>
               <span>/</span>
               <span>{title}</span>
             </nav>

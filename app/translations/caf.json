@@ -58,6 +58,404 @@
         "otherServicesTitle": "Altri Servizi",
         "backLink": "← Torna a tutti i servizi CAF"
       },
+      "isee": {
+        "subtitle": "Indicatore della Situazione Economica Equivalente — necessario per accedere a prestazioni sociali agevolate.",
+        "description": "L'ISEE è lo strumento che misura la situazione economica delle famiglie italiane ed è necessario per accedere a numerose prestazioni sociali agevolate come bonus luce, gas, reddito di cittadinanza, assegno unico, agevolazioni scolastiche e molto altro. Il nostro CAF è autorizzato a raccogliere la documentazione e a presentare la Dichiarazione Sostitutiva Unica (DSU) per il calcolo dell'ISEE.",
+        "steps": [
+          "Prenota un appuntamento presso il nostro ufficio o contattaci online",
+          "Porta tutta la documentazione richiesta per il tuo nucleo familiare",
+          "Il nostro operatore compila e invia la dichiarazione DSU",
+          "Ricevi il tuo certificato ISEE entro pochi giorni",
+          "Usa il tuo ISEE per accedere ai benefici a cui hai diritto"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale (tutti i componenti del nucleo)",
+          "Ultima CU o dichiarazione dei redditi 730",
+          "Estratti conto bancari e postali",
+          "Documenti di proprietà immobiliare (se applicabile)",
+          "Documenti di registrazione dei veicoli",
+          "Certificati di invalidità (se applicabile)"
+        ]
+      },
+      "modello730": {
+        "subtitle": "Dichiarazione dei redditi annuale per lavoratori dipendenti e pensionati — massimizza il rimborso con i nostri operatori CAF certificati.",
+        "description": "Il Modello 730 è la dichiarazione dei redditi destinata ai lavoratori dipendenti e pensionati. Presentarlo correttamente permette di recuperare le detrazioni fiscali a cui hai diritto, come spese mediche, interessi sul mutuo, spese scolastiche e molto altro. Il nostro CAF elabora il tuo 730 in modo preciso e puntuale, garantendoti il massimo rimborso possibile nel rispetto della normativa vigente.",
+        "steps": [
+          "Raccogli tutti i documenti di reddito e spesa dell'anno precedente",
+          "Prenota un appuntamento con il nostro operatore CAF",
+          "Il nostro esperto esamina e compila la tua dichiarazione 730",
+          "La dichiarazione viene inviata telematicamente all'Agenzia delle Entrate",
+          "L'eventuale rimborso viene accreditato direttamente in busta paga o pensione"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "CU (Certificazione Unica) dal datore di lavoro o ente pensionistico",
+          "Ricevute spese mediche",
+          "Estratti conto interessi sul mutuo",
+          "Ricevute tasse scolastiche e universitarie",
+          "Fatture ristrutturazione o efficienza energetica"
+        ]
+      },
+      "naspi": {
+        "subtitle": "Domanda e gestione dell'indennità di disoccupazione — gestiamo l'intero processo per te.",
+        "description": "La NASpI (Nuova Assicurazione Sociale per l'Impiego) è l'indennità di disoccupazione riconosciuta ai lavoratori dipendenti che hanno perso involontariamente il lavoro. Il nostro team vi assiste nella presentazione della domanda all'INPS entro i termini previsti, verificando i requisiti e massimizzando il periodo di fruizione del beneficio.",
+        "steps": [
+          "Verifica i requisiti: perdita involontaria del lavoro e contributi versati",
+          "Raccogli tutta la documentazione richiesta",
+          "Il nostro operatore invia la domanda NASpI all'INPS online",
+          "L'INPS elabora la domanda (di solito entro 30 giorni)",
+          "I pagamenti mensili iniziano dall'8° giorno dopo la perdita del lavoro"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Lettera di licenziamento o accordo di risoluzione",
+          "Ultima busta paga",
+          "Coordinate bancarie IBAN",
+          "Contratto di lavoro (se disponibile)"
+        ]
+      },
+      "assegnoUnico": {
+        "subtitle": "Assegno universale per le famiglie con figli a carico — gestiamo la domanda dall'inizio alla fine.",
+        "description": "L'Assegno Unico Universale è un beneficio economico riconosciuto a tutte le famiglie con figli a carico fino a 21 anni. L'importo varia in base all'ISEE familiare e al numero di figli. Il nostro CAF vi assiste nella presentazione della domanda all'INPS, verificando i requisiti e assicurando che riceviate l'importo massimo spettante.",
+        "steps": [
+          "Calcola il tuo ISEE (possiamo aiutarti anche con questo)",
+          "Prenota un appuntamento con il nostro operatore CAF",
+          "Il nostro operatore invia la domanda all'INPS",
+          "L'INPS verifica la domanda e conferma l'idoneità",
+          "I pagamenti mensili vengono accreditati direttamente sul tuo conto bancario"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale (entrambi i genitori)",
+          "Codici fiscali di tutti i figli a carico",
+          "Certificato ISEE aggiornato",
+          "Coordinate bancarie IBAN",
+          "Certificato di invalidità per i figli (se applicabile)"
+        ]
+      },
+      "invalidita": {
+        "subtitle": "Riconoscimento dell'invalidità e domanda di benefici — i nostri esperti ti guidano in ogni fase del processo.",
+        "description": "Il riconoscimento dell'invalidità civile permette di accedere a una serie di benefici economici e agevolazioni. Il processo richiede la presentazione di una domanda all'INPS corredata da documentazione medica, seguita da una visita della commissione medica. Il nostro team vi assiste in ogni fase, dalla raccolta dei documenti alla presentazione della domanda e al monitoraggio dell'iter.",
+        "steps": [
+          "Raccogli tutta la documentazione medica che certifica la tua condizione",
+          "Il nostro operatore invia la domanda all'INPS online",
+          "L'INPS fissa una visita della commissione medica",
+          "Partecipa all'appuntamento con la commissione medica",
+          "Ricevi il riconoscimento ufficiale e accedi ai tuoi benefici"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Certificati medici e referti specialistici",
+          "Lettere di dimissione ospedaliere",
+          "Prescrizioni farmacologiche attuali",
+          "Certificato ISEE (per benefici con soglia reddituale)"
+        ]
+      },
+      "pensione": {
+        "subtitle": "Domanda di pensione, calcolo e pianificazione del pensionamento — assicuriamo che tu riceva tutti i benefici a cui hai diritto.",
+        "description": "La domanda di pensione è un passaggio fondamentale per accedere alla pensione di vecchiaia, anticipata o di invalidità. Il nostro Patronato è autorizzato a presentare domande di pensione all'INPS per conto dei cittadini, verificando i contributi versati, calcolando l'importo spettante e gestendo l'intero iter burocratico.",
+        "steps": [
+          "Richiedi il tuo estratto contributivo all'INPS",
+          "Il nostro operatore verifica i requisiti e calcola la tua pensione",
+          "Prepariamo e inviamo la domanda di pensione all'INPS",
+          "L'INPS elabora la domanda e potrebbe richiedere ulteriori documenti",
+          "I pagamenti pensionistici iniziano dalla data di decorrenza approvata"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Estratto contributivo",
+          "Documenti della storia lavorativa",
+          "Coordinate bancarie IBAN",
+          "Certificato di matrimonio o stato di famiglia (se applicabile)"
+        ]
+      },
+      "spid": {
+        "subtitle": "Attivazione dell'identità digitale per i servizi pubblici online italiani — rapida, sicura e completamente assistita.",
+        "description": "Lo SPID (Sistema Pubblico di Identità Digitale) è l'identità digitale che permette di accedere a tutti i servizi online della Pubblica Amministrazione italiana, come INPS, Agenzia delle Entrate, Fascicolo Sanitario e molto altro. Il nostro team vi assiste nell'attivazione dello SPID in modo semplice e veloce, anche per chi non ha dimestichezza con la tecnologia.",
+        "steps": [
+          "Scegli il tuo identity provider (ti consigliamo quello più adatto)",
+          "Porta i tuoi documenti al nostro ufficio per la verifica dell'identità",
+          "Il nostro operatore completa il processo di registrazione con te",
+          "Ricevi le tue credenziali SPID via email e SMS",
+          "Inizia a usare SPID per accedere a tutti i servizi pubblici online italiani"
+        ],
+        "documents": [
+          "Documento d'identità valido (carta d'identità o passaporto)",
+          "Codice fiscale",
+          "Indirizzo email attivo",
+          "Numero di cellulare attivo",
+          "Numero di telefono italiano per la verifica SMS"
+        ]
+      },
+      "imu": {
+        "subtitle": "Calcolo e assistenza al pagamento dell'imposta municipale sugli immobili — evita errori e sanzioni con il nostro supporto esperto.",
+        "description": "L'IMU (Imposta Municipale Unica) è la tassa comunale sugli immobili. Si applica a seconde case, immobili commerciali e terreni agricoli. Il calcolo corretto dell'IMU richiede la conoscenza delle aliquote comunali aggiornate e delle eventuali esenzioni. Il nostro CAF vi assiste nel calcolo preciso dell'importo dovuto e nella compilazione del modello F24 per il pagamento.",
+        "steps": [
+          "Fornisci i dettagli di tutti gli immobili soggetti a IMU",
+          "Il nostro operatore recupera le aliquote comunali aggiornate",
+          "Calcoliamo l'importo esatto dovuto per ogni immobile",
+          "Prepariamo il modello F24 per le scadenze di giugno e dicembre",
+          "Inviamo il pagamento e conserviamo i documenti per riferimento futuro"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Atti di proprietà o dati catastali",
+          "Ricevute di pagamento IMU dell'anno precedente",
+          "Contratti di affitto (se l'immobile è affittato)",
+          "Certificati di invalidità o esenzione (se applicabile)"
+        ]
+      },
+      "cud": {
+        "subtitle": "Certificazione unica dei redditi e delle ritenute fiscali — indispensabile per la dichiarazione dei redditi e le domande di benefici.",
+        "description": "Il CUD (ora denominato Certificazione Unica o CU) è il documento rilasciato dal datore di lavoro o dall'ente pensionistico che certifica i redditi percepiti e le ritenute fiscali operate nell'anno precedente. È indispensabile per la compilazione del Modello 730 e per molte pratiche previdenziali. Il nostro CAF vi assiste nel recupero e nella verifica del CUD.",
+        "steps": [
+          "Richiedi la CU al tuo datore di lavoro o ente pensionistico",
+          "Porta il documento al nostro ufficio per la verifica",
+          "Il nostro operatore controlla i dati per accuratezza",
+          "Usa la CU per la dichiarazione 730 o le domande di benefici",
+          "Archiviamo una copia per i tuoi archivi"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Buste paga dell'anno precedente (per verifica)",
+          "Dati di contatto del datore di lavoro o ente pensionistico"
+        ]
+      },
+      "successione": {
+        "subtitle": "Dichiarazione di successione e procedure di trasferimento del patrimonio — gestiamo le pratiche complesse per tuo conto.",
+        "description": "La dichiarazione di successione deve essere presentata all'Agenzia delle Entrate entro 12 mesi dalla data del decesso. È obbligatoria quando l'eredità comprende beni immobili o quando il valore supera determinate soglie. Il nostro CAF vi assiste nella raccolta dei documenti, nel calcolo delle imposte di successione e nella presentazione della dichiarazione.",
+        "steps": [
+          "Raccogli tutti i documenti relativi al defunto e all'eredità",
+          "Il nostro operatore identifica tutti i beni e le passività dell'eredità",
+          "Calcoliamo le imposte di successione applicabili",
+          "Prepariamo e inviamo la dichiarazione di successione all'Agenzia delle Entrate",
+          "Gestiamo i trasferimenti immobiliari e gli aggiornamenti catastali"
+        ],
+        "documents": [
+          "Certificato di morte del defunto",
+          "Documenti d'identità e codici fiscali di tutti gli eredi",
+          "Testamento o certificato di stato di famiglia",
+          "Atti di proprietà e dati catastali",
+          "Estratti conto bancari del defunto",
+          "Documenti di registrazione dei veicoli"
+        ]
+      },
+      "disoccupazioneAgricola": {
+        "subtitle": "Domanda di indennità di disoccupazione agricola — assicuriamo che i lavoratori agricoli stagionali ricevano i benefici a cui hanno diritto.",
+        "description": "La disoccupazione agricola è un'indennità riconosciuta ai lavoratori agricoli a tempo determinato (OTD) che hanno lavorato in agricoltura nell'anno precedente. La domanda deve essere presentata all'INPS entro il 31 marzo dell'anno successivo a quello in cui si è verificata la disoccupazione. Il nostro Patronato vi assiste nella presentazione della domanda nei termini previsti.",
+        "steps": [
+          "Verifica le giornate di lavoro agricolo nell'anno precedente",
+          "Raccogli tutta la documentazione richiesta",
+          "Il nostro operatore invia la domanda all'INPS entro il 31 marzo",
+          "L'INPS verifica le giornate di lavoro agricolo con i datori di lavoro",
+          "Il beneficio viene pagato direttamente sul tuo conto bancario"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Certificati di lavoro agricolo dai datori di lavoro",
+          "Estratto contributivo INPS",
+          "Coordinate bancarie IBAN",
+          "Permesso di soggiorno (se lavoratore extracomunitario)"
+        ]
+      },
+      "isee": {
+        "subtitle": "Indicatore della Situazione Economica Equivalente — necessario per accedere a prestazioni sociali agevolate.",
+        "description": "L'ISEE è lo strumento che misura la situazione economica delle famiglie italiane ed è necessario per accedere a numerose prestazioni sociali agevolate come bonus luce, gas, reddito di cittadinanza, assegno unico, agevolazioni scolastiche e molto altro. Il nostro CAF è autorizzato a raccogliere la documentazione e a presentare la Dichiarazione Sostitutiva Unica (DSU) per il calcolo dell'ISEE.",
+        "steps": [
+          "Prenota un appuntamento presso il nostro ufficio o contattaci online",
+          "Porta tutta la documentazione richiesta per il tuo nucleo familiare",
+          "Il nostro operatore compila e invia la dichiarazione DSU",
+          "Ricevi il tuo certificato ISEE entro pochi giorni",
+          "Usa il tuo ISEE per accedere ai benefici a cui hai diritto"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale (tutti i componenti del nucleo)",
+          "Ultima CU o dichiarazione dei redditi 730",
+          "Estratti conto bancari e postali",
+          "Documenti di proprietà immobiliare (se applicabile)",
+          "Documenti di registrazione dei veicoli",
+          "Certificati di invalidità (se applicabile)"
+        ]
+      },
+      "modello730": {
+        "subtitle": "Dichiarazione dei redditi annuale per lavoratori dipendenti e pensionati — massimizza il rimborso con i nostri operatori CAF certificati.",
+        "description": "Il Modello 730 è la dichiarazione dei redditi destinata ai lavoratori dipendenti e pensionati. Presentarlo correttamente permette di recuperare le detrazioni fiscali a cui hai diritto, come spese mediche, interessi sul mutuo, spese scolastiche e molto altro. Il nostro CAF elabora il tuo 730 in modo preciso e puntuale, garantendoti il massimo rimborso possibile nel rispetto della normativa vigente.",
+        "steps": [
+          "Raccogli tutti i documenti di reddito e spesa dell'anno precedente",
+          "Prenota un appuntamento con il nostro operatore CAF",
+          "Il nostro esperto esamina e compila la tua dichiarazione 730",
+          "La dichiarazione viene inviata telematicamente all'Agenzia delle Entrate",
+          "L'eventuale rimborso viene accreditato direttamente in busta paga o pensione"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "CU (Certificazione Unica) dal datore di lavoro o ente pensionistico",
+          "Ricevute spese mediche",
+          "Estratti conto interessi sul mutuo",
+          "Ricevute tasse scolastiche e universitarie",
+          "Fatture ristrutturazione o efficienza energetica"
+        ]
+      },
+      "naspi": {
+        "subtitle": "Domanda e gestione dell'indennità di disoccupazione — gestiamo l'intero processo per te.",
+        "description": "La NASpI (Nuova Assicurazione Sociale per l'Impiego) è l'indennità di disoccupazione riconosciuta ai lavoratori dipendenti che hanno perso involontariamente il lavoro. Il nostro team vi assiste nella presentazione della domanda all'INPS entro i termini previsti, verificando i requisiti e massimizzando il periodo di fruizione del beneficio.",
+        "steps": [
+          "Verifica i requisiti: perdita involontaria del lavoro e contributi versati",
+          "Raccogli tutta la documentazione richiesta",
+          "Il nostro operatore invia la domanda NASpI all'INPS online",
+          "L'INPS elabora la domanda (di solito entro 30 giorni)",
+          "I pagamenti mensili iniziano dall'8° giorno dopo la perdita del lavoro"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Lettera di licenziamento o accordo di risoluzione",
+          "Ultima busta paga",
+          "Coordinate bancarie IBAN",
+          "Contratto di lavoro (se disponibile)"
+        ]
+      },
+      "assegnoUnico": {
+        "subtitle": "Assegno universale per le famiglie con figli a carico — gestiamo la domanda dall'inizio alla fine.",
+        "description": "L'Assegno Unico Universale è un beneficio economico riconosciuto a tutte le famiglie con figli a carico fino a 21 anni. L'importo varia in base all'ISEE familiare e al numero di figli. Il nostro CAF vi assiste nella presentazione della domanda all'INPS, verificando i requisiti e assicurando che riceviate l'importo massimo spettante.",
+        "steps": [
+          "Calcola il tuo ISEE (possiamo aiutarti anche con questo)",
+          "Prenota un appuntamento con il nostro operatore CAF",
+          "Il nostro operatore invia la domanda all'INPS",
+          "L'INPS verifica la domanda e conferma l'idoneità",
+          "I pagamenti mensili vengono accreditati direttamente sul tuo conto bancario"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale (entrambi i genitori)",
+          "Codici fiscali di tutti i figli a carico",
+          "Certificato ISEE aggiornato",
+          "Coordinate bancarie IBAN",
+          "Certificato di invalidità per i figli (se applicabile)"
+        ]
+      },
+      "invalidita": {
+        "subtitle": "Riconoscimento dell'invalidità e domanda di benefici — i nostri esperti ti guidano in ogni fase del processo.",
+        "description": "Il riconoscimento dell'invalidità civile permette di accedere a una serie di benefici economici e agevolazioni. Il processo richiede la presentazione di una domanda all'INPS corredata da documentazione medica, seguita da una visita della commissione medica. Il nostro team vi assiste in ogni fase, dalla raccolta dei documenti alla presentazione della domanda e al monitoraggio dell'iter.",
+        "steps": [
+          "Raccogli tutta la documentazione medica che certifica la tua condizione",
+          "Il nostro operatore invia la domanda all'INPS online",
+          "L'INPS fissa una visita della commissione medica",
+          "Partecipa all'appuntamento con la commissione medica",
+          "Ricevi il riconoscimento ufficiale e accedi ai tuoi benefici"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Certificati medici e referti specialistici",
+          "Lettere di dimissione ospedaliere",
+          "Prescrizioni farmacologiche attuali",
+          "Certificato ISEE (per benefici con soglia reddituale)"
+        ]
+      },
+      "pensione": {
+        "subtitle": "Domanda di pensione, calcolo e pianificazione del pensionamento — assicuriamo che tu riceva tutti i benefici a cui hai diritto.",
+        "description": "La domanda di pensione è un passaggio fondamentale per accedere alla pensione di vecchiaia, anticipata o di invalidità. Il nostro Patronato è autorizzato a presentare domande di pensione all'INPS per conto dei cittadini, verificando i contributi versati, calcolando l'importo spettante e gestendo l'intero iter burocratico.",
+        "steps": [
+          "Richiedi il tuo estratto contributivo all'INPS",
+          "Il nostro operatore verifica i requisiti e calcola la tua pensione",
+          "Prepariamo e inviamo la domanda di pensione all'INPS",
+          "L'INPS elabora la domanda e potrebbe richiedere ulteriori documenti",
+          "I pagamenti pensionistici iniziano dalla data di decorrenza approvata"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Estratto contributivo",
+          "Documenti della storia lavorativa",
+          "Coordinate bancarie IBAN",
+          "Certificato di matrimonio o stato di famiglia (se applicabile)"
+        ]
+      },
+      "spid": {
+        "subtitle": "Attivazione dell'identità digitale per i servizi pubblici online italiani — rapida, sicura e completamente assistita.",
+        "description": "Lo SPID (Sistema Pubblico di Identità Digitale) è l'identità digitale che permette di accedere a tutti i servizi online della Pubblica Amministrazione italiana, come INPS, Agenzia delle Entrate, Fascicolo Sanitario e molto altro. Il nostro team vi assiste nell'attivazione dello SPID in modo semplice e veloce, anche per chi non ha dimestichezza con la tecnologia.",
+        "steps": [
+          "Scegli il tuo identity provider (ti consigliamo quello più adatto)",
+          "Porta i tuoi documenti al nostro ufficio per la verifica dell'identità",
+          "Il nostro operatore completa il processo di registrazione con te",
+          "Ricevi le tue credenziali SPID via email e SMS",
+          "Inizia a usare SPID per accedere a tutti i servizi pubblici online italiani"
+        ],
+        "documents": [
+          "Documento d'identità valido (carta d'identità o passaporto)",
+          "Codice fiscale",
+          "Indirizzo email attivo",
+          "Numero di cellulare attivo",
+          "Numero di telefono italiano per la verifica SMS"
+        ]
+      },
+      "imu": {
+        "subtitle": "Calcolo e assistenza al pagamento dell'imposta municipale sugli immobili — evita errori e sanzioni con il nostro supporto esperto.",
+        "description": "L'IMU (Imposta Municipale Unica) è la tassa comunale sugli immobili. Si applica a seconde case, immobili commerciali e terreni agricoli. Il calcolo corretto dell'IMU richiede la conoscenza delle aliquote comunali aggiornate e delle eventuali esenzioni. Il nostro CAF vi assiste nel calcolo preciso dell'importo dovuto e nella compilazione del modello F24 per il pagamento.",
+        "steps": [
+          "Fornisci i dettagli di tutti gli immobili soggetti a IMU",
+          "Il nostro operatore recupera le aliquote comunali aggiornate",
+          "Calcoliamo l'importo esatto dovuto per ogni immobile",
+          "Prepariamo il modello F24 per le scadenze di giugno e dicembre",
+          "Inviamo il pagamento e conserviamo i documenti per riferimento futuro"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Atti di proprietà o dati catastali",
+          "Ricevute di pagamento IMU dell'anno precedente",
+          "Contratti di affitto (se l'immobile è affittato)",
+          "Certificati di invalidità o esenzione (se applicabile)"
+        ]
+      },
+      "cud": {
+        "subtitle": "Certificazione unica dei redditi e delle ritenute fiscali — indispensabile per la dichiarazione dei redditi e le domande di benefici.",
+        "description": "Il CUD (ora denominato Certificazione Unica o CU) è il documento rilasciato dal datore di lavoro o dall'ente pensionistico che certifica i redditi percepiti e le ritenute fiscali operate nell'anno precedente. È indispensabile per la compilazione del Modello 730 e per molte pratiche previdenziali. Il nostro CAF vi assiste nel recupero e nella verifica del CUD.",
+        "steps": [
+          "Richiedi la CU al tuo datore di lavoro o ente pensionistico",
+          "Porta il documento al nostro ufficio per la verifica",
+          "Il nostro operatore controlla i dati per accuratezza",
+          "Usa la CU per la dichiarazione 730 o le domande di benefici",
+          "Archiviamo una copia per i tuoi archivi"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Buste paga dell'anno precedente (per verifica)",
+          "Dati di contatto del datore di lavoro o ente pensionistico"
+        ]
+      },
+      "successione": {
+        "subtitle": "Dichiarazione di successione e procedure di trasferimento del patrimonio — gestiamo le pratiche complesse per tuo conto.",
+        "description": "La dichiarazione di successione deve essere presentata all'Agenzia delle Entrate entro 12 mesi dalla data del decesso. È obbligatoria quando l'eredità comprende beni immobili o quando il valore supera determinate soglie. Il nostro CAF vi assiste nella raccolta dei documenti, nel calcolo delle imposte di successione e nella presentazione della dichiarazione.",
+        "steps": [
+          "Raccogli tutti i documenti relativi al defunto e all'eredità",
+          "Il nostro operatore identifica tutti i beni e le passività dell'eredità",
+          "Calcoliamo le imposte di successione applicabili",
+          "Prepariamo e inviamo la dichiarazione di successione all'Agenzia delle Entrate",
+          "Gestiamo i trasferimenti immobiliari e gli aggiornamenti catastali"
+        ],
+        "documents": [
+          "Certificato di morte del defunto",
+          "Documenti d'identità e codici fiscali di tutti gli eredi",
+          "Testamento o certificato di stato di famiglia",
+          "Atti di proprietà e dati catastali",
+          "Estratti conto bancari del defunto",
+          "Documenti di registrazione dei veicoli"
+        ]
+      },
+      "disoccupazioneAgricola": {
+        "subtitle": "Domanda di indennità di disoccupazione agricola — assicuriamo che i lavoratori agricoli stagionali ricevano i benefici a cui hanno diritto.",
+        "description": "La disoccupazione agricola è un'indennità riconosciuta ai lavoratori agricoli a tempo determinato (OTD) che hanno lavorato in agricoltura nell'anno precedente. La domanda deve essere presentata all'INPS entro il 31 marzo dell'anno successivo a quello in cui si è verificata la disoccupazione. Il nostro Patronato vi assiste nella presentazione della domanda nei termini previsti.",
+        "steps": [
+          "Verifica le giornate di lavoro agricolo nell'anno precedente",
+          "Raccogli tutta la documentazione richiesta",
+          "Il nostro operatore invia la domanda all'INPS entro il 31 marzo",
+          "L'INPS verifica le giornate di lavoro agricolo con i datori di lavoro",
+          "Il beneficio viene pagato direttamente sul tuo conto bancario"
+        ],
+        "documents": [
+          "Documento d'identità e codice fiscale",
+          "Certificati di lavoro agricolo dai datori di lavoro",
+          "Estratto contributivo INPS",
+          "Coordinate bancarie IBAN",
+          "Permesso di soggiorno (se lavoratore extracomunitario)"
+        ]
+      },
       "colfEBadanti": {
         "subtitle": "Gestione contratti e contributi per collaboratori domestici e assistenti familiari — conformità completa semplificata.",
         "description": "La gestione di colf e badanti richiede la corretta stipula del contratto di lavoro domestico, il versamento dei contributi INPS e il rispetto del CCNL di settore. Il nostro team vi assiste nella redazione del contratto, nel calcolo e versamento dei contributi trimestrali e nella gestione di eventuali pratiche di assunzione o cessazione del rapporto di lavoro.",
@@ -150,6 +548,404 @@
         "callBtn": "Call Us Now",
         "otherServicesTitle": "Other Services",
         "backLink": "← Back to all CAF services"
+      },
+      "isee": {
+        "subtitle": "Indicatore della Situazione Economica Equivalente — required for accessing welfare benefits and social services.",
+        "description": "ISEE is the tool that measures the economic situation of Italian families and is required to access numerous subsidised social benefits such as energy bonuses, citizenship income, universal child allowance, school subsidies, and much more. Our CAF is authorised to collect documentation and submit the Dichiarazione Sostitutiva Unica (DSU) for ISEE calculation.",
+        "steps": [
+          "Book an appointment at our office or contact us online",
+          "Bring all required documents for your household",
+          "Our operator compiles and submits the DSU declaration",
+          "Receive your ISEE certificate within a few days",
+          "Use your ISEE to access the benefits you are entitled to"
+        ],
+        "documents": [
+          "Identity document and tax code (all family members)",
+          "Most recent CU or 730 income declaration",
+          "Bank and postal account statements",
+          "Property ownership documents (if applicable)",
+          "Vehicle registration documents",
+          "Disability certificates (if applicable)"
+        ]
+      },
+      "modello730": {
+        "subtitle": "Annual income tax return for employees and pensioners — maximize your refund with our certified CAF operators.",
+        "description": "The Modello 730 is the income tax return for employees and pensioners. Filing it correctly allows you to recover the tax deductions you are entitled to, such as medical expenses, mortgage interest, school fees, and much more. Our CAF processes your 730 accurately and on time, ensuring you receive the maximum possible refund in compliance with current regulations.",
+        "steps": [
+          "Gather all income and expense documents from the previous year",
+          "Book an appointment with our CAF operator",
+          "Our expert reviews and compiles your 730 declaration",
+          "Declaration is submitted electronically to the Revenue Agency",
+          "Any refund is credited directly to your payslip or pension"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "CU (Certificazione Unica) from your employer or pension",
+          "Medical expense receipts",
+          "Mortgage interest statements",
+          "School and university fee receipts",
+          "Home renovation or energy efficiency invoices"
+        ]
+      },
+      "naspi": {
+        "subtitle": "Unemployment benefit application and management — we handle the entire process for you.",
+        "description": "NASpI (Nuova Assicurazione Sociale per l'Impiego) is the unemployment benefit for employees who have involuntarily lost their job. Our team assists you in submitting the application to INPS within the required deadlines, verifying eligibility and maximising the benefit period.",
+        "steps": [
+          "Verify eligibility: involuntary job loss and contribution requirements",
+          "Collect all required documents",
+          "Our operator submits the NASpI application to INPS online",
+          "INPS processes the application (usually within 30 days)",
+          "Monthly benefit payments begin from the 8th day after job loss"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Dismissal letter or termination agreement",
+          "Last payslip",
+          "IBAN bank account details",
+          "Employment contract (if available)"
+        ]
+      },
+      "assegnoUnico": {
+        "subtitle": "Universal child allowance for families with dependent children — we handle the application from start to finish.",
+        "description": "The Assegno Unico Universale is a financial benefit for all families with dependent children up to age 21. The amount varies based on the family ISEE and number of children. Our CAF assists you in submitting the application to INPS, verifying eligibility and ensuring you receive the maximum entitled amount.",
+        "steps": [
+          "Calculate your ISEE (we can help with this too)",
+          "Book an appointment with our CAF operator",
+          "Our operator submits the application to INPS",
+          "INPS verifies the application and confirms eligibility",
+          "Monthly payments are credited directly to your bank account"
+        ],
+        "documents": [
+          "Identity document and tax code (both parents)",
+          "Tax codes of all dependent children",
+          "Current ISEE certificate",
+          "IBAN bank account details",
+          "Disability certificate for children (if applicable)"
+        ]
+      },
+      "invalidita": {
+        "subtitle": "Disability recognition and benefit application — our experts guide you through every step of the process.",
+        "description": "Civil disability recognition allows access to a range of financial benefits and concessions. The process requires submitting an application to INPS with medical documentation, followed by a medical commission visit. Our team assists you at every stage, from document collection to application submission and process monitoring.",
+        "steps": [
+          "Collect all medical documentation certifying your condition",
+          "Our operator submits the application to INPS online",
+          "INPS schedules a medical commission visit",
+          "Attend the medical commission appointment",
+          "Receive the official recognition and access your benefits"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Medical certificates and specialist reports",
+          "Hospital discharge summaries",
+          "Current medication prescriptions",
+          "ISEE certificate (for means-tested benefits)"
+        ]
+      },
+      "pensione": {
+        "subtitle": "Pension application, calculation, and retirement planning — we ensure you receive every benefit you are entitled to.",
+        "description": "The pension application is a fundamental step to access old-age, early, or disability pension. Our Patronato is authorised to submit pension applications to INPS on behalf of citizens, verifying contributions paid, calculating the entitled amount, and managing the entire bureaucratic process.",
+        "steps": [
+          "Request your contribution statement (estratto contributivo) from INPS",
+          "Our operator verifies your eligibility and calculates your pension",
+          "We prepare and submit the pension application to INPS",
+          "INPS processes the application and may request additional documents",
+          "Pension payments begin from the approved start date"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Contribution statement (estratto contributivo)",
+          "Employment history documents",
+          "IBAN bank account details",
+          "Marriage or family status certificate (if applicable)"
+        ]
+      },
+      "spid": {
+        "subtitle": "Digital identity activation for Italian online public services — quick, secure, and fully assisted.",
+        "description": "SPID (Sistema Pubblico di Identità Digitale) is the digital identity that allows access to all online services of the Italian Public Administration, such as INPS, Revenue Agency, Health Records, and much more. Our team assists you in activating SPID simply and quickly, even for those unfamiliar with technology.",
+        "steps": [
+          "Choose your identity provider (we recommend the most suitable one)",
+          "Bring your documents to our office for identity verification",
+          "Our operator completes the registration process with you",
+          "Receive your SPID credentials via email and SMS",
+          "Start using SPID to access all Italian public services online"
+        ],
+        "documents": [
+          "Valid identity document (ID card or passport)",
+          "Tax code (codice fiscale)",
+          "Active email address",
+          "Active mobile phone number",
+          "Italian phone number for SMS verification"
+        ]
+      },
+      "imu": {
+        "subtitle": "Municipal property tax calculation and payment assistance — avoid errors and penalties with our expert support.",
+        "description": "IMU (Imposta Municipale Unica) is the municipal property tax. It applies to second homes, commercial properties, and agricultural land. Correct IMU calculation requires knowledge of updated municipal rates and any applicable exemptions. Our CAF assists you in precisely calculating the amount due and completing the F24 payment form.",
+        "steps": [
+          "Provide details of all properties subject to IMU",
+          "Our operator retrieves the current municipal tax rates",
+          "We calculate the exact amount due for each property",
+          "Prepare the F24 payment form for June and December deadlines",
+          "Submit payment and keep records for future reference"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Property deeds or cadastral data",
+          "Previous year IMU payment receipts",
+          "Rental contracts (if property is rented)",
+          "Disability or exemption certificates (if applicable)"
+        ]
+      },
+      "cud": {
+        "subtitle": "Single certification of income and withholding taxes — essential for your tax return and benefit applications.",
+        "description": "The CUD (now called Certificazione Unica or CU) is the document issued by the employer or pension provider certifying income received and tax withholdings in the previous year. It is essential for completing the Modello 730 and for many social security procedures. Our CAF assists you in retrieving and verifying the CUD.",
+        "steps": [
+          "Request your CU from your employer or pension provider",
+          "Bring the document to our office for verification",
+          "Our operator checks the data for accuracy",
+          "Use the CU for your 730 tax return or benefit applications",
+          "We archive a copy for your records"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Previous year payslips (for verification)",
+          "Contact details of your employer or pension provider"
+        ]
+      },
+      "successione": {
+        "subtitle": "Inheritance declaration and estate transfer procedures — we handle the complex paperwork on your behalf.",
+        "description": "The succession declaration must be submitted to the Revenue Agency within 12 months of the date of death. It is mandatory when the estate includes real estate or when the value exceeds certain thresholds. Our CAF assists you in collecting documents, calculating inheritance taxes, and submitting the declaration.",
+        "steps": [
+          "Collect all documents relating to the deceased and the estate",
+          "Our operator identifies all assets and liabilities of the estate",
+          "We calculate the applicable inheritance taxes",
+          "Prepare and submit the succession declaration to the Revenue Agency",
+          "Handle property transfers and cadastral updates"
+        ],
+        "documents": [
+          "Death certificate of the deceased",
+          "Identity documents and tax codes of all heirs",
+          "Will or family status certificate",
+          "Property deeds and cadastral data",
+          "Bank account statements of the deceased",
+          "Vehicle registration documents"
+        ]
+      },
+      "disoccupazioneAgricola": {
+        "subtitle": "Agricultural unemployment benefit application — we ensure seasonal agricultural workers receive their entitled benefits.",
+        "description": "Agricultural unemployment benefit is an allowance for fixed-term agricultural workers (OTD) who worked in agriculture in the previous year. The application must be submitted to INPS by March 31st of the year following the unemployment. Our Patronato assists you in submitting the application within the required deadlines.",
+        "steps": [
+          "Verify your agricultural work days in the previous year",
+          "Collect all required documents",
+          "Our operator submits the application to INPS before March 31st",
+          "INPS verifies the agricultural work days with employers",
+          "Benefit is paid directly to your bank account"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Agricultural work certificates from employers",
+          "INPS contribution statement",
+          "IBAN bank account details",
+          "Residence permit (if non-EU worker)"
+        ]
+      },
+      "isee": {
+        "subtitle": "Indicatore della Situazione Economica Equivalente — required for accessing welfare benefits and social services.",
+        "description": "ISEE is the tool that measures the economic situation of Italian families and is required to access numerous subsidised social benefits such as energy bonuses, citizenship income, universal child allowance, school subsidies, and much more. Our CAF is authorised to collect documentation and submit the Dichiarazione Sostitutiva Unica (DSU) for ISEE calculation.",
+        "steps": [
+          "Book an appointment at our office or contact us online",
+          "Bring all required documents for your household",
+          "Our operator compiles and submits the DSU declaration",
+          "Receive your ISEE certificate within a few days",
+          "Use your ISEE to access the benefits you are entitled to"
+        ],
+        "documents": [
+          "Identity document and tax code (all family members)",
+          "Most recent CU or 730 income declaration",
+          "Bank and postal account statements",
+          "Property ownership documents (if applicable)",
+          "Vehicle registration documents",
+          "Disability certificates (if applicable)"
+        ]
+      },
+      "modello730": {
+        "subtitle": "Annual income tax return for employees and pensioners — maximize your refund with our certified CAF operators.",
+        "description": "The Modello 730 is the income tax return for employees and pensioners. Filing it correctly allows you to recover the tax deductions you are entitled to, such as medical expenses, mortgage interest, school fees, and much more. Our CAF processes your 730 accurately and on time, ensuring you receive the maximum possible refund in compliance with current regulations.",
+        "steps": [
+          "Gather all income and expense documents from the previous year",
+          "Book an appointment with our CAF operator",
+          "Our expert reviews and compiles your 730 declaration",
+          "Declaration is submitted electronically to the Revenue Agency",
+          "Any refund is credited directly to your payslip or pension"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "CU (Certificazione Unica) from your employer or pension",
+          "Medical expense receipts",
+          "Mortgage interest statements",
+          "School and university fee receipts",
+          "Home renovation or energy efficiency invoices"
+        ]
+      },
+      "naspi": {
+        "subtitle": "Unemployment benefit application and management — we handle the entire process for you.",
+        "description": "NASpI (Nuova Assicurazione Sociale per l'Impiego) is the unemployment benefit for employees who have involuntarily lost their job. Our team assists you in submitting the application to INPS within the required deadlines, verifying eligibility and maximising the benefit period.",
+        "steps": [
+          "Verify eligibility: involuntary job loss and contribution requirements",
+          "Collect all required documents",
+          "Our operator submits the NASpI application to INPS online",
+          "INPS processes the application (usually within 30 days)",
+          "Monthly benefit payments begin from the 8th day after job loss"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Dismissal letter or termination agreement",
+          "Last payslip",
+          "IBAN bank account details",
+          "Employment contract (if available)"
+        ]
+      },
+      "assegnoUnico": {
+        "subtitle": "Universal child allowance for families with dependent children — we handle the application from start to finish.",
+        "description": "The Assegno Unico Universale is a financial benefit for all families with dependent children up to age 21. The amount varies based on the family ISEE and number of children. Our CAF assists you in submitting the application to INPS, verifying eligibility and ensuring you receive the maximum entitled amount.",
+        "steps": [
+          "Calculate your ISEE (we can help with this too)",
+          "Book an appointment with our CAF operator",
+          "Our operator submits the application to INPS",
+          "INPS verifies the application and confirms eligibility",
+          "Monthly payments are credited directly to your bank account"
+        ],
+        "documents": [
+          "Identity document and tax code (both parents)",
+          "Tax codes of all dependent children",
+          "Current ISEE certificate",
+          "IBAN bank account details",
+          "Disability certificate for children (if applicable)"
+        ]
+      },
+      "invalidita": {
+        "subtitle": "Disability recognition and benefit application — our experts guide you through every step of the process.",
+        "description": "Civil disability recognition allows access to a range of financial benefits and concessions. The process requires submitting an application to INPS with medical documentation, followed by a medical commission visit. Our team assists you at every stage, from document collection to application submission and process monitoring.",
+        "steps": [
+          "Collect all medical documentation certifying your condition",
+          "Our operator submits the application to INPS online",
+          "INPS schedules a medical commission visit",
+          "Attend the medical commission appointment",
+          "Receive the official recognition and access your benefits"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Medical certificates and specialist reports",
+          "Hospital discharge summaries",
+          "Current medication prescriptions",
+          "ISEE certificate (for means-tested benefits)"
+        ]
+      },
+      "pensione": {
+        "subtitle": "Pension application, calculation, and retirement planning — we ensure you receive every benefit you are entitled to.",
+        "description": "The pension application is a fundamental step to access old-age, early, or disability pension. Our Patronato is authorised to submit pension applications to INPS on behalf of citizens, verifying contributions paid, calculating the entitled amount, and managing the entire bureaucratic process.",
+        "steps": [
+          "Request your contribution statement (estratto contributivo) from INPS",
+          "Our operator verifies your eligibility and calculates your pension",
+          "We prepare and submit the pension application to INPS",
+          "INPS processes the application and may request additional documents",
+          "Pension payments begin from the approved start date"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Contribution statement (estratto contributivo)",
+          "Employment history documents",
+          "IBAN bank account details",
+          "Marriage or family status certificate (if applicable)"
+        ]
+      },
+      "spid": {
+        "subtitle": "Digital identity activation for Italian online public services — quick, secure, and fully assisted.",
+        "description": "SPID (Sistema Pubblico di Identità Digitale) is the digital identity that allows access to all online services of the Italian Public Administration, such as INPS, Revenue Agency, Health Records, and much more. Our team assists you in activating SPID simply and quickly, even for those unfamiliar with technology.",
+        "steps": [
+          "Choose your identity provider (we recommend the most suitable one)",
+          "Bring your documents to our office for identity verification",
+          "Our operator completes the registration process with you",
+          "Receive your SPID credentials via email and SMS",
+          "Start using SPID to access all Italian public services online"
+        ],
+        "documents": [
+          "Valid identity document (ID card or passport)",
+          "Tax code (codice fiscale)",
+          "Active email address",
+          "Active mobile phone number",
+          "Italian phone number for SMS verification"
+        ]
+      },
+      "imu": {
+        "subtitle": "Municipal property tax calculation and payment assistance — avoid errors and penalties with our expert support.",
+        "description": "IMU (Imposta Municipale Unica) is the municipal property tax. It applies to second homes, commercial properties, and agricultural land. Correct IMU calculation requires knowledge of updated municipal rates and any applicable exemptions. Our CAF assists you in precisely calculating the amount due and completing the F24 payment form.",
+        "steps": [
+          "Provide details of all properties subject to IMU",
+          "Our operator retrieves the current municipal tax rates",
+          "We calculate the exact amount due for each property",
+          "Prepare the F24 payment form for June and December deadlines",
+          "Submit payment and keep records for future reference"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Property deeds or cadastral data",
+          "Previous year IMU payment receipts",
+          "Rental contracts (if property is rented)",
+          "Disability or exemption certificates (if applicable)"
+        ]
+      },
+      "cud": {
+        "subtitle": "Single certification of income and withholding taxes — essential for your tax return and benefit applications.",
+        "description": "The CUD (now called Certificazione Unica or CU) is the document issued by the employer or pension provider certifying income received and tax withholdings in the previous year. It is essential for completing the Modello 730 and for many social security procedures. Our CAF assists you in retrieving and verifying the CUD.",
+        "steps": [
+          "Request your CU from your employer or pension provider",
+          "Bring the document to our office for verification",
+          "Our operator checks the data for accuracy",
+          "Use the CU for your 730 tax return or benefit applications",
+          "We archive a copy for your records"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Previous year payslips (for verification)",
+          "Contact details of your employer or pension provider"
+        ]
+      },
+      "successione": {
+        "subtitle": "Inheritance declaration and estate transfer procedures — we handle the complex paperwork on your behalf.",
+        "description": "The succession declaration must be submitted to the Revenue Agency within 12 months of the date of death. It is mandatory when the estate includes real estate or when the value exceeds certain thresholds. Our CAF assists you in collecting documents, calculating inheritance taxes, and submitting the declaration.",
+        "steps": [
+          "Collect all documents relating to the deceased and the estate",
+          "Our operator identifies all assets and liabilities of the estate",
+          "We calculate the applicable inheritance taxes",
+          "Prepare and submit the succession declaration to the Revenue Agency",
+          "Handle property transfers and cadastral updates"
+        ],
+        "documents": [
+          "Death certificate of the deceased",
+          "Identity documents and tax codes of all heirs",
+          "Will or family status certificate",
+          "Property deeds and cadastral data",
+          "Bank account statements of the deceased",
+          "Vehicle registration documents"
+        ]
+      },
+      "disoccupazioneAgricola": {
+        "subtitle": "Agricultural unemployment benefit application — we ensure seasonal agricultural workers receive their entitled benefits.",
+        "description": "Agricultural unemployment benefit is an allowance for fixed-term agricultural workers (OTD) who worked in agriculture in the previous year. The application must be submitted to INPS by March 31st of the year following the unemployment. Our Patronato assists you in submitting the application within the required deadlines.",
+        "steps": [
+          "Verify your agricultural work days in the previous year",
+          "Collect all required documents",
+          "Our operator submits the application to INPS before March 31st",
+          "INPS verifies the agricultural work days with employers",
+          "Benefit is paid directly to your bank account"
+        ],
+        "documents": [
+          "Identity document and tax code",
+          "Agricultural work certificates from employers",
+          "INPS contribution statement",
+          "IBAN bank account details",
+          "Residence permit (if non-EU worker)"
+        ]
       },
       "colfEBadanti": {
         "subtitle": "Domestic worker and caregiver contract and contribution management — full compliance made simple.",
