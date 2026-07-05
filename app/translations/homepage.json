@@ -9,7 +9,8 @@
         "desc": "Servizi completi di immigrazione, amministrazione e professionali per privati, famiglie e aziende. Il nostro team certificato ti guida ad ogni passo — nella tua lingua.",
         "actions": {
           "explore": "Esplora i servizi →",
-          "who": "Chi siamo"
+          "who": "Chi siamo",
+          "joinClass": "🎓 Unisciti alle lezioni"
         },
         "stats": [
           { "num": "20+", "label": "Anni di esperienza" },
@@ -80,7 +81,8 @@
         "desc": "Complete immigration, administrative, and professional services for individuals, families, and businesses. Our certified team guides you through every step — in your language.",
         "actions": {
           "explore": "Explore Services →",
-          "who": "Who We Are"
+          "who": "Who We Are",
+          "joinClass": "🎓 Join Classes"
         },
         "stats": [
           { "num": "20+", "label": "Years Experience" },

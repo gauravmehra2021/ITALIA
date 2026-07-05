@@ -96,7 +96,7 @@ export default function HomePage() {
                 className="home-btn-outline"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
-                🎓 Join Classes
+                {t('home.hero.actions.joinClass') || '🎓 Join Classes'}
               </a>
             </div>
 
