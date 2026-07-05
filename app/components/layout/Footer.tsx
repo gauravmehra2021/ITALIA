@@ -147,7 +147,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 style={{ color: '#f37021', fontWeight: 600, textDecoration: 'none' }}
               >
-                AM
+                AS
               </a>
             </div>
           </div>
