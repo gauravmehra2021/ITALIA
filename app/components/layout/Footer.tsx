@@ -140,7 +140,7 @@ const Footer = () => {
               {t('footer.bottomLine1')}
             </p>
             <div className="footer-bottom-right">
-              Website by{' '}
+              Website by { '' }
               <a
                 href="https://wa.me/917580099131"
                 target="_blank"
