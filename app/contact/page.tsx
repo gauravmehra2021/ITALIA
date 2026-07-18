@@ -82,9 +82,9 @@ export default function ContactPage() {
   const contactItems: ContactItem[] = Array.isArray(rawContactItems)
     ? (rawContactItems as ContactItem[])
     : [
-        { icon: '📞', label: 'Phone',  value: '-3520716656' },
+        { icon: '📱', label: 'Mobile', value: '+39 3520716656' },
         { icon: '📧', label: 'Email',  value: 'sseuropa@yahoo.com' },
-        { icon: '📍', label: 'Office', value: 'Via Saverio Battinelli No-8/10 Mantova 46100, Italy' },
+        { icon: '📍', label: 'Office', value: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia' },
       ]
 
   useEffect(() => {
@@ -218,6 +218,7 @@ export default function ContactPage() {
                     <div className="cnt-form-group">
                       <label className="cnt-label">{t('contact.form.country') || 'Country *'}</label>
                       <Select
+                        instanceId="country-select"
                         options={COUNTRIES}
                         value={form.country ? { value: form.country, label: form.country } : null}
                         onChange={(opt) => setForm({ ...form, country: opt?.value || '' })}
