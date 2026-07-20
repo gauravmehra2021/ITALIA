@@ -12,10 +12,22 @@
           "contact": "Contattaci"
         },
         "stats": [
-          { "num": "5000+", "label": "Permessi elaborati" },
-          { "num": "20+", "label": "Anni di esperienza" },
-          { "num": "98%", "label": "Tasso di successo" },
-          { "num": "8", "label": "Servizi principali" }
+          {
+            "num": "5000+",
+            "label": "Permessi elaborati"
+          },
+          {
+            "num": "20+",
+            "label": "Anni di esperienza"
+          },
+          {
+            "num": "98%",
+            "label": "Tasso di successo"
+          },
+          {
+            "num": "8",
+            "label": "Servizi principali"
+          }
         ]
       },
       "intro": {
@@ -39,7 +51,10 @@
       "cta": {
         "title": "Hai bisogno di aiuto con il tuo processo di immigrazione?",
         "desc": "I nostri esperti sono pronti ad assisterti. Prenota una consulenza gratuita oggi e lasciati guidare in ogni fase del tuo percorso.",
-        "actions": { "book": "Prenota una consulenza", "call": "Chiamaci ora" }
+        "actions": {
+          "book": "Prenota una consulenza",
+          "call": "Chiamaci ora"
+        }
       },
       "card": {
         "cta": "Scopri di più"
@@ -147,10 +162,22 @@
           "contact": "Contact Us"
         },
         "stats": [
-          { "num": "5000+", "label": "Permits Processed" },
-          { "num": "20+", "label": "Years Experience" },
-          { "num": "98%", "label": "Success Rate" },
-          { "num": "8", "label": "Core Services" }
+          {
+            "num": "5000+",
+            "label": "Permits Processed"
+          },
+          {
+            "num": "20+",
+            "label": "Years Experience"
+          },
+          {
+            "num": "98%",
+            "label": "Success Rate"
+          },
+          {
+            "num": "8",
+            "label": "Core Services"
+          }
         ]
       },
       "intro": {
@@ -174,7 +201,10 @@
       "cta": {
         "title": "Need Help With Your Immigration Process?",
         "desc": "Our experts are ready to assist you. Book a free consultation today and let us guide you through every step of your journey.",
-        "actions": { "book": "Book Consultation", "call": "Call Us Now" }
+        "actions": {
+          "book": "Book Consultation",
+          "call": "Call Us Now"
+        }
       },
       "card": {
         "cta": "Learn More"
@@ -183,38 +213,86 @@
         "listTitle": "What's Included",
         "close": "Close"
       },
-     "services": [
-  {
-    "icon": "📋",
-    "title": "Residence Permit",
-    "desc": "Support for new applications, renewals, and documentation."
-  },
-  {
-    "icon": "🫂",
-    "title": "Family Reunification",
-    "desc": "Family reunification assistance for spouses, children, and parents."
-  },
-  {
-    "icon": "📝",
-    "title": "Work Permit (Decreto Flussi)",
-    "desc": "Guidance for work permit applications under Decreto Flussi."
-  },
-  {
-    "icon": "✈️",
-    "title": "First Entry",
-    "desc": "Support for first-time entry procedures into Italy."
-  },
-  {
-    "icon": "🇮🇹",
-    "title": "Italian Citizenship",
-    "desc": "Assistance with Italian citizenship applications and paperwork."
-  },
-  {
-    "icon": "📂",
-    "title": "Document Preparation",
-    "desc": "Professional document preparation and verification services."
-  }
-]
+      "services": [
+        {
+          "icon": "📋",
+          "title": "Residence Permit",
+          "desc": "Support for new applications, renewals, and required documentation.",
+          "modalDesc": "We provide complete assistance for obtaining and renewing your Residence Permit. Our experts guide you through every step of the process, ensuring all required documents are accurately prepared and submitted.",
+          "points": [
+            "New residence permit applications for work, family, and study",
+            "Renewal of expiring residence permits",
+            "Document preparation and verification",
+            "Appointment booking with the Immigration Office",
+            "Follow-up on application status"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "Family Reunification",
+          "desc": "Assistance with bringing spouses, children, and parents to Italy.",
+          "modalDesc": "Our team helps you bring your eligible family members to Italy through the official family reunification process. We prepare the required documentation and guide you through every stage of the application.",
+          "points": [
+            "Eligibility assessment for family reunification",
+            "Application preparation for spouses and children",
+            "Guidance on income and housing requirements",
+            "Work authorization certificate application support",
+            "Visa application assistance for family members"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Flow Decree (Annual Work Permit Program)",
+          "desc": "Guidance for work permit applications under Italy's annual work permit program.",
+          "modalDesc": "The Flow Decree is Italy's annual program that allows non-EU citizens to enter the country for employment. We assist both employers and workers throughout the entire application process, from eligibility checks to final approval.",
+          "points": [
+            "Employer and worker eligibility assessment",
+            "Online application submission",
+            "Document collection and preparation",
+            "Work authorization and visa coordination",
+            "Post-arrival residence permit assistance"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "First Entry to Italy",
+          "desc": "Support for all procedures required after your first arrival in Italy.",
+          "modalDesc": "Moving to Italy for the first time involves several important administrative procedures. We guide you through each step to ensure a smooth and stress-free transition.",
+          "points": [
+            "Declaration of Presence assistance",
+            "Tax Identification Number application",
+            "Residence registration",
+            "Health Insurance Card assistance",
+            "Initial document guidance and orientation"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "Italian Citizenship",
+          "desc": "Professional assistance with Italian citizenship applications.",
+          "modalDesc": "Obtaining Italian citizenship is an important milestone. Our specialists help prepare and submit complete applications for citizenship through residence, marriage, or ancestry.",
+          "points": [
+            "Citizenship through long-term residence",
+            "Citizenship through marriage",
+            "Citizenship through ancestry",
+            "Document legalization and certified translation",
+            "Application submission and progress tracking"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "Document Preparation",
+          "desc": "Professional preparation, review, and verification of immigration documents.",
+          "modalDesc": "Accurate documentation is essential for a successful immigration process. Our team ensures your forms and supporting documents are complete, accurate, and ready for submission.",
+          "points": [
+            "Application form completion for immigration procedures",
+            "Document translation and certification",
+            "Document legalization assistance",
+            "Complete document checklist review",
+            "Submission support with the relevant authorities"
+          ]
+        }
+      ]
     }
   }
 }
