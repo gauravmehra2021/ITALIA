@@ -181,7 +181,7 @@ export default function HomePage() {
                 <h3 className="home-service-title">{s.title}</h3>
                 <p className="home-service-desc">{s.desc}</p>
                 <span className="home-service-cta">
-                  {t('home.service.cta') || 'Learn More'}
+                  {t('home.services.cta') || 'Learn More'}
                   <span className="home-service-arrow">→</span>
                 </span>
               </Link>

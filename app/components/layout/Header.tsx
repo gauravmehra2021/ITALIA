@@ -80,6 +80,9 @@ const Header = () => {
   const langs = [
     { code: 'it', label: 'IT' },
     { code: 'en', label: 'EN' },
+    { code: 'pa', label: 'PA' },
+    { code: 'ur', label: 'UR' },
+    { code: 'bn', label: 'BN' },
   ] as const
 
   const categories = [
