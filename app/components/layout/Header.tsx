@@ -83,6 +83,8 @@ const Header = () => {
     { code: 'pa', label: 'PA' },
     { code: 'ur', label: 'UR' },
     { code: 'bn', label: 'BN' },
+    { code: 'si', label: 'SI' },
+    { code: 'ar', label: 'AR' },
   ] as const
 
   const categories = [

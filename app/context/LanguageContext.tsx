@@ -20,7 +20,7 @@ import visasTranslations from "../translations/visas.json";
 import otherTranslations from "../translations/other.json";
 import contactTranslations from "../translations/contact.json";
 
-type Language = "it" | "en" | "ur" | "bn" | "pa";
+type Language = "it" | "en" | "ur" | "bn" | "pa" | "si" | "ar";
 
 interface LanguageContextType {
   language: Language;
@@ -48,7 +48,9 @@ export const LanguageProvider = ({
       savedLanguage === "en" ||
       savedLanguage === "ur" ||
       savedLanguage === "bn" ||
-      savedLanguage === "pa"
+      savedLanguage === "pa" ||
+      savedLanguage === "si" ||
+      savedLanguage === "ar"
     ) {
       return savedLanguage as Language;
     }
@@ -57,6 +59,8 @@ export const LanguageProvider = ({
     if (browserLanguage.startsWith("ur")) return "ur";
     if (browserLanguage.startsWith("bn")) return "bn";
     if (browserLanguage.startsWith("pa")) return "pa";
+    if (browserLanguage.startsWith("si")) return "si";
+    if (browserLanguage.startsWith("ar")) return "ar";
     if (browserLanguage.startsWith("en")) return "en";
 
     return "it";
@@ -73,7 +77,7 @@ export const LanguageProvider = ({
   useEffect(() => {
     if (typeof document !== "undefined") {
       document.documentElement.lang = language;
-      document.documentElement.dir = language === "ur" ? "rtl" : "ltr";
+      document.documentElement.dir = language === "ur" || language === "ar" ? "rtl" : "ltr";
     }
   }, [language]);
 
