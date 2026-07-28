@@ -12,10 +12,22 @@
           "contact": "Contattaci"
         },
         "stats": [
-          { "num": "5000+", "label": "Permessi elaborati" },
-          { "num": "20+", "label": "Anni di esperienza" },
-          { "num": "98%", "label": "Tasso di successo" },
-          { "num": "8", "label": "Servizi principali" }
+          {
+            "num": "5000+",
+            "label": "Permessi elaborati"
+          },
+          {
+            "num": "20+",
+            "label": "Anni di esperienza"
+          },
+          {
+            "num": "98%",
+            "label": "Tasso di successo"
+          },
+          {
+            "num": "8",
+            "label": "Servizi principali"
+          }
         ]
       },
       "intro": {
@@ -39,7 +51,10 @@
       "cta": {
         "title": "Hai bisogno di aiuto con il tuo processo di immigrazione?",
         "desc": "I nostri esperti sono pronti ad assisterti. Prenota una consulenza gratuita oggi e lasciati guidare in ogni fase del tuo percorso.",
-        "actions": { "book": "Prenota una consulenza", "call": "Chiamaci ora" }
+        "actions": {
+          "book": "Prenota una consulenza",
+          "call": "Chiamaci ora"
+        }
       },
       "card": {
         "cta": "Scopri di più"
@@ -147,10 +162,22 @@
           "contact": "Contact Us"
         },
         "stats": [
-          { "num": "5000+", "label": "Permits Processed" },
-          { "num": "20+", "label": "Years Experience" },
-          { "num": "98%", "label": "Success Rate" },
-          { "num": "8", "label": "Core Services" }
+          {
+            "num": "5000+",
+            "label": "Permits Processed"
+          },
+          {
+            "num": "20+",
+            "label": "Years Experience"
+          },
+          {
+            "num": "98%",
+            "label": "Success Rate"
+          },
+          {
+            "num": "8",
+            "label": "Core Services"
+          }
         ]
       },
       "intro": {
@@ -174,7 +201,10 @@
       "cta": {
         "title": "Need Help With Your Immigration Process?",
         "desc": "Our experts are ready to assist you. Book a free consultation today and let us guide you through every step of your journey.",
-        "actions": { "book": "Book Consultation", "call": "Call Us Now" }
+        "actions": {
+          "book": "Book Consultation",
+          "call": "Call Us Now"
+        }
       },
       "card": {
         "cta": "Learn More"
@@ -186,80 +216,810 @@
       "services": [
         {
           "icon": "📋",
-          "title": "Permesso di Soggiorno",
-          "desc": "Support for new applications, renewals, and documentation.",
-          "modalDesc": "We provide complete assistance for obtaining and renewing your Permesso di Soggiorno (Residence Permit). Our experts guide you through every step of the process, ensuring all documents are correctly prepared and submitted.",
+          "title": "Residence Permit",
+          "desc": "Support for new applications, renewals, and required documentation.",
+          "modalDesc": "We provide complete assistance for obtaining and renewing your Residence Permit. Our experts guide you through every step of the process, ensuring all required documents are accurately prepared and submitted.",
           "points": [
-            "New permit applications for work, family, and study",
+            "New residence permit applications for work, family, and study",
             "Renewal of expiring residence permits",
             "Document preparation and verification",
-            "Appointment booking at the Questura",
+            "Appointment booking with the Immigration Office",
             "Follow-up on application status"
           ]
         },
         {
           "icon": "🫂",
-          "title": "Ricongiungimento Familiare",
-          "desc": "Family reunification assistance for spouses, children, and parents.",
-          "modalDesc": "Our team assists you in bringing your family to Italy through the official family reunification process. We handle all paperwork and liaise with the relevant authorities on your behalf.",
+          "title": "Family Reunification",
+          "desc": "Assistance with bringing spouses, children, and parents to Italy.",
+          "modalDesc": "Our team helps you bring your eligible family members to Italy through the official family reunification process. We prepare the required documentation and guide you through every stage of the application.",
           "points": [
             "Eligibility assessment for family reunification",
             "Application preparation for spouses and children",
-            "Income and housing requirement guidance",
-            "Nulla Osta application support",
+            "Guidance on income and housing requirements",
+            "Work authorization certificate application support",
             "Visa application assistance for family members"
           ]
         },
         {
           "icon": "📝",
-          "title": "Decreto Flussi",
-          "desc": "Guidance for work permit applications under Decreto Flussi.",
-          "modalDesc": "The Decreto Flussi is the annual quota decree that allows non-EU workers to enter Italy for work. We guide employers and workers through the entire application process from start to finish.",
+          "title": "Flow Decree (Annual Work Permit Program)",
+          "desc": "Guidance for work permit applications under Italy's annual work permit program.",
+          "modalDesc": "The Flow Decree is Italy's annual program that allows non-EU citizens to enter the country for employment. We assist both employers and workers throughout the entire application process, from eligibility checks to final approval.",
           "points": [
-            "Employer and worker eligibility check",
-            "Online application submission (click day)",
+            "Employer and worker eligibility assessment",
+            "Online application submission",
             "Document collection and preparation",
-            "Nulla Osta and visa coordination",
-            "Post-arrival permit conversion support"
+            "Work authorization and visa coordination",
+            "Post-arrival residence permit assistance"
           ]
         },
         {
           "icon": "✈️",
-          "title": "Primo Ingresso",
-          "desc": "Support for first-time entry procedures into Italy.",
-          "modalDesc": "Entering Italy for the first time involves several bureaucratic steps. We simplify the process by guiding you through all required procedures from the moment you arrive.",
+          "title": "First Entry to Italy",
+          "desc": "Support for all procedures required after your first arrival in Italy.",
+          "modalDesc": "Moving to Italy for the first time involves several important administrative procedures. We guide you through each step to ensure a smooth and stress-free transition.",
           "points": [
-            "Dichiarazione di Presenza filing",
-            "Codice Fiscale application",
-            "Residence registration (Residenza)",
-            "Health card (Tessera Sanitaria) assistance",
-            "Initial document orientation"
+            "Declaration of Presence assistance",
+            "Tax Identification Number application",
+            "Residence registration",
+            "Health Insurance Card assistance",
+            "Initial document guidance and orientation"
           ]
         },
         {
           "icon": "🇮🇹",
-          "title": "Cittadinanza Italiana",
-          "desc": "Assistance with Italian citizenship applications and paperwork.",
-          "modalDesc": "Acquiring Italian citizenship is a significant milestone. Our specialists assist you in preparing a complete and accurate application, whether by residence, marriage, or descent.",
+          "title": "Italian Citizenship",
+          "desc": "Professional assistance with Italian citizenship applications.",
+          "modalDesc": "Obtaining Italian citizenship is an important milestone. Our specialists help prepare and submit complete applications for citizenship through residence, marriage, or ancestry.",
           "points": [
-            "Citizenship by long-term residence (10 years)",
-            "Citizenship by marriage",
-            "Citizenship by descent (Jure Sanguinis)",
-            "Document apostille and translation",
-            "Application submission and follow-up"
+            "Citizenship through long-term residence",
+            "Citizenship through marriage",
+            "Citizenship through ancestry",
+            "Document legalization and certified translation",
+            "Application submission and progress tracking"
           ]
         },
         {
           "icon": "📂",
-          "title": "Compilazione Documenti",
-          "desc": "Professional document preparation and verification services.",
-          "modalDesc": "Accurate and complete documentation is the foundation of every successful immigration procedure. Our team professionally prepares, reviews, and verifies all your documents.",
+          "title": "Document Preparation",
+          "desc": "Professional preparation, review, and verification of immigration documents.",
+          "modalDesc": "Accurate documentation is essential for a successful immigration process. Our team ensures your forms and supporting documents are complete, accurate, and ready for submission.",
           "points": [
-            "Form filling for all immigration procedures",
+            "Application form completion for immigration procedures",
             "Document translation and certification",
-            "Apostille coordination",
-            "Document checklist review",
-            "Submission support at relevant offices"
+            "Document legalization assistance",
+            "Complete document checklist review",
+            "Submission support with the relevant authorities"
+          ]
+        }
+      ]
+    }
+  },
+  "ur": {
+    "immigration": {
+      "breadcrumbHome": "ہوم",
+      "breadcrumbCurrent": "امیگریشن خدمات",
+      "hero": {
+        "badge": "🌍 امیگریشن خدمات",
+        "title": "امیگریشن خدمات",
+        "desc": "ہم ان افراد اور خاندانوں کے لیے مکمل امیگریشن معاونت فراہم کرتے ہیں جو اٹلی اور یورپ میں رہنا، کام کرنا یا آباد ہونا چاہتے ہیں۔ ہماری ٹیم کلائنٹس کی قانونی دستاویزات، درخواستی طریقہ کار اور سرکاری کارروائیوں میں آسان اور پیشہ ورانہ انداز میں مدد کرتی ہے۔",
+        "actions": {
+          "explore": "خدمات دریافت کریں",
+          "contact": "ہم سے رابطہ کریں"
+        },
+        "stats": [
+          {
+            "num": "5000+",
+            "label": "کارروائی شدہ اجازت نامے"
+          },
+          {
+            "num": "20+",
+            "label": "سالوں کا تجربہ"
+          },
+          {
+            "num": "98%",
+            "label": "کامیابی کی شرح"
+          },
+          {
+            "num": "8",
+            "label": "بنیادی خدمات"
+          }
+        ]
+      },
+      "intro": {
+        "title": "امیگریشن کے ہر قدم کے لیے آپ کا قابلِ اعتماد ساتھی",
+        "body": "اطالوی امیگریشن قانون سے نمٹنا پیچیدہ اور وقت طلب ہو سکتا ہے۔ SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA پورے عمل کو آسان بناتا ہے — اٹلی میں آپ کی پہلی آمد سے لے کر مستقل رہائش یا شہریت کے حصول تک۔ ہماری تجربہ کار ٹیم ہمیشہ تازہ ترین ضوابط سے باخبر رہتی ہے، تاکہ آپ کو اس کی فکر نہ کرنا پڑے۔",
+        "visualTitle": "SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA کیوں منتخب کریں",
+        "checklist": [
+          "تصدیق شدہ امیگریشن مشیران",
+          "مکمل دستاویزی انتظام",
+          "کثیر لسانی معاون ٹیم",
+          "تیز اور شفاف عمل",
+          "ہزاروں کامیاب مقدمات",
+          "پورے اٹلی میں دفاتر"
+        ]
+      },
+      "section": {
+        "tag": "ہم کیا پیش کرتے ہیں",
+        "title": "ہماری امیگریشن خدمات",
+        "desc": "عمل، تقاضوں اور ہم آپ کی کیسے مدد کر سکتے ہیں کے بارے میں مزید جاننے کے لیے کسی بھی خدمت کارڈ پر کلک کریں۔"
+      },
+      "cta": {
+        "title": "اپنے امیگریشن عمل میں مدد درکار ہے؟",
+        "desc": "ہمارے ماہرین آپ کی مدد کے لیے تیار ہیں۔ آج ہی مفت مشاورت بک کریں اور اپنے سفر کے ہر مرحلے پر ہماری رہنمائی حاصل کریں۔",
+        "actions": {
+          "book": "مشاورت بک کریں",
+          "call": "ابھی کال کریں"
+        }
+      },
+      "card": {
+        "cta": "مزید جانیں"
+      },
+      "modal": {
+        "listTitle": "کیا شامل ہے",
+        "close": "بند کریں"
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "Permesso di Soggiorno",
+          "desc": "نئی درخواستوں، تجدید اور مطلوبہ دستاویزات کے لیے معاونت۔",
+          "modalDesc": "ہم آپ کے Permesso di Soggiorno کے حصول اور تجدید کے لیے مکمل معاونت فراہم کرتے ہیں۔ ہمارے ماہرین عمل کے ہر مرحلے پر آپ کی رہنمائی کرتے ہیں، اس بات کو یقینی بناتے ہوئے کہ تمام مطلوبہ دستاویزات درست طور پر تیار اور جمع کرائی جائیں۔",
+          "points": [
+            "کام، خاندان اور تعلیم کے لیے نئی رہائشی اجازت نامے کی درخواستیں",
+            "میعاد ختم ہونے والے رہائشی اجازت ناموں کی تجدید",
+            "دستاویزات کی تیاری اور تصدیق",
+            "امیگریشن دفتر کے ساتھ اپائنٹمنٹ کی بکنگ",
+            "درخواست کی صورتحال کی پیروی"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "خاندانی اتحاد",
+          "desc": "شریکِ حیات، بچوں اور والدین کو اٹلی لانے میں معاونت۔",
+          "modalDesc": "ہماری ٹیم سرکاری خاندانی اتحاد کے عمل کے ذریعے آپ کے اہل خاندانی افراد کو اٹلی لانے میں آپ کی مدد کرتی ہے۔ ہم مطلوبہ دستاویزات تیار کرتے ہیں اور درخواست کے ہر مرحلے پر آپ کی رہنمائی کرتے ہیں۔",
+          "points": [
+            "خاندانی اتحاد کے لیے اہلیت کا جائزہ",
+            "شریکِ حیات اور بچوں کے لیے درخواست کی تیاری",
+            "آمدنی اور رہائش کے تقاضوں پر رہنمائی",
+            "ورک اتھارٹی سرٹیفکیٹ کی درخواست میں معاونت",
+            "خاندانی افراد کے لیے ویزا درخواست میں معاونت"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi (سالانہ ورک پرمٹ پروگرام)",
+          "desc": "اٹلی کے سالانہ ورک پرمٹ پروگرام کے تحت ورک پرمٹ درخواستوں کے لیے رہنمائی۔",
+          "modalDesc": "Decreto Flussi اٹلی کا سالانہ پروگرام ہے جو غیر یورپی شہریوں کو روزگار کے لیے ملک میں داخلے کی اجازت دیتا ہے۔ ہم آجروں اور کارکنوں دونوں کی اہلیت کی جانچ سے لے کر حتمی منظوری تک پورے درخواستی عمل میں معاونت کرتے ہیں۔",
+          "points": [
+            "آجر اور کارکن کی اہلیت کا جائزہ",
+            "آن لائن درخواست جمع کروانا",
+            "دستاویزات کی جمع آوری اور تیاری",
+            "ورک اتھارٹی اور ویزا کا رابطہ کاری",
+            "آمد کے بعد رہائشی اجازت نامے میں معاونت"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "اٹلی میں پہلی آمد",
+          "desc": "اٹلی میں آپ کی پہلی آمد کے بعد درکار تمام طریقہ کار کے لیے معاونت۔",
+          "modalDesc": "پہلی بار اٹلی منتقل ہونے میں کئی اہم انتظامی طریقہ کار شامل ہوتے ہیں۔ ہم ایک آسان اور بے فکر منتقلی کو یقینی بنانے کے لیے ہر قدم پر آپ کی رہنمائی کرتے ہیں۔",
+          "points": [
+            "Dichiarazione di Presenza (موجودگی کے اعلان) میں معاونت",
+            "ٹیکس شناختی نمبر کی درخواست",
+            "رہائش کا اندراج",
+            "ہیلتھ انشورنس کارڈ میں معاونت",
+            "ابتدائی دستاویزی رہنمائی اور واقفیت"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "اطالوی شہریت",
+          "desc": "اطالوی شہریت کی درخواستوں کے لیے پیشہ ورانہ معاونت۔",
+          "modalDesc": "اطالوی شہریت کا حصول ایک اہم سنگِ میل ہے۔ ہمارے ماہرین رہائش، شادی یا نسب کے ذریعے شہریت کے لیے مکمل درخواستیں تیار اور جمع کرانے میں مدد کرتے ہیں۔",
+          "points": [
+            "طویل مدتی رہائش کے ذریعے شہریت",
+            "شادی کے ذریعے شہریت",
+            "نسب کے ذریعے شہریت",
+            "دستاویزات کی قانونی توثیق اور تصدیق شدہ ترجمہ",
+            "درخواست جمع کرانا اور پیش رفت کی نگرانی"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "دستاویزات کی تیاری",
+          "desc": "امیگریشن دستاویزات کی پیشہ ورانہ تیاری، جائزہ اور تصدیق۔",
+          "modalDesc": "کامیاب امیگریشن عمل کے لیے درست دستاویزات ضروری ہیں۔ ہماری ٹیم اس بات کو یقینی بناتی ہے کہ آپ کے فارم اور معاون دستاویزات مکمل، درست اور جمع کرانے کے لیے تیار ہوں۔",
+          "points": [
+            "امیگریشن طریقہ کار کے لیے درخواست فارم کی تکمیل",
+            "دستاویزات کا ترجمہ اور تصدیق",
+            "دستاویزات کی قانونی توثیق میں معاونت",
+            "مکمل دستاویزی چیک لسٹ کا جائزہ",
+            "متعلقہ حکام کے پاس جمع کرانے میں معاونت"
+          ]
+        }
+      ]
+    }
+  },
+  "bn": {
+    "immigration": {
+      "breadcrumbHome": "হোম",
+      "breadcrumbCurrent": "অভিবাসন পরিষেবা",
+      "hero": {
+        "badge": "🌍 অভিবাসন পরিষেবা",
+        "title": "অভিবাসন পরিষেবা",
+        "desc": "যারা ইতালি ও ইউরোপে বসবাস, কাজ বা স্থায়ীভাবে বসতি স্থাপন করতে চান, তাদের এবং তাদের পরিবারের জন্য আমরা সম্পূর্ণ অভিবাসন সহায়তা প্রদান করি। আমাদের দল ক্লায়েন্টদের আইনি ডকুমেন্টেশন, আবেদন পদ্ধতি এবং সরকারি আনুষ্ঠানিকতায় সহজ ও পেশাদার পদ্ধতিতে সাহায্য করে।",
+        "actions": {
+          "explore": "পরিষেবাগুলি অন্বেষণ করুন",
+          "contact": "যোগাযোগ করুন"
+        },
+        "stats": [
+          {
+            "num": "5000+",
+            "label": "প্রক্রিয়াকৃত পারমিট"
+          },
+          {
+            "num": "20+",
+            "label": "বছরের অভিজ্ঞতা"
+          },
+          {
+            "num": "98%",
+            "label": "সাফল্যের হার"
+          },
+          {
+            "num": "8",
+            "label": "মূল পরিষেবা"
+          }
+        ]
+      },
+      "intro": {
+        "title": "প্রতিটি অভিবাসন ধাপের জন্য আপনার বিশ্বস্ত সঙ্গী",
+        "body": "ইতালীয় অভিবাসন আইন মোকাবেলা করা জটিল ও সময়সাপেক্ষ হতে পারে। SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA সমগ্র প্রক্রিয়াটিকে সহজ করে তোলে — ইতালিতে আপনার প্রথম প্রবেশ থেকে শুরু করে স্থায়ী বসবাস বা নাগরিকত্ব অর্জন পর্যন্ত। আমাদের অভিজ্ঞ দল সর্বদা সর্বশেষ প্রবিধানের সাথে হালনাগাদ থাকে, তাই আপনাকে তা নিয়ে চিন্তা করতে হয় না।",
+        "visualTitle": "কেন SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA বেছে নেবেন",
+        "checklist": [
+          "সার্টিফায়েড অভিবাসন পরামর্শদাতা",
+          "প্রান্ত থেকে প্রান্ত নথি ব্যবস্থাপনা",
+          "বহুভাষিক সহায়তা দল",
+          "দ্রুত ও স্বচ্ছ প্রক্রিয়া",
+          "হাজার হাজার সফল কেস",
+          "সমগ্র ইতালি জুড়ে অফিস"
+        ]
+      },
+      "section": {
+        "tag": "আমরা যা অফার করি",
+        "title": "আমাদের অভিবাসন পরিষেবা",
+        "desc": "প্রক্রিয়া, প্রয়োজনীয়তা এবং আমরা কীভাবে আপনাকে সাহায্য করতে পারি সে সম্পর্কে আরও জানতে যেকোনো পরিষেবা কার্ডে ক্লিক করুন।"
+      },
+      "cta": {
+        "title": "আপনার অভিবাসন প্রক্রিয়ায় সাহায্য প্রয়োজন?",
+        "desc": "আমাদের বিশেষজ্ঞরা আপনাকে সহায়তা করতে প্রস্তুত। আজই একটি বিনামূল্যের পরামর্শ বুক করুন এবং আপনার যাত্রার প্রতিটি ধাপে আমাদের নির্দেশনা নিন।",
+        "actions": {
+          "book": "পরামর্শ বুক করুন",
+          "call": "এখনই কল করুন"
+        }
+      },
+      "card": {
+        "cta": "আরও জানুন"
+      },
+      "modal": {
+        "listTitle": "যা অন্তর্ভুক্ত",
+        "close": "বন্ধ করুন"
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "Permesso di Soggiorno",
+          "desc": "নতুন আবেদন, নবায়ন এবং প্রয়োজনীয় ডকুমেন্টেশনের জন্য সহায়তা।",
+          "modalDesc": "আমরা আপনার Permesso di Soggiorno পাওয়া ও নবায়নের জন্য সম্পূর্ণ সহায়তা প্রদান করি। আমাদের বিশেষজ্ঞরা প্রক্রিয়ার প্রতিটি ধাপে আপনাকে পথ দেখান, নিশ্চিত করেন যে সমস্ত প্রয়োজনীয় নথি সঠিকভাবে প্রস্তুত ও জমা দেওয়া হয়েছে।",
+          "points": [
+            "কাজ, পরিবার ও অধ্যয়নের জন্য নতুন রেসিডেন্স পারমিট আবেদন",
+            "মেয়াদোত্তীর্ণ হতে চলা রেসিডেন্স পারমিট নবায়ন",
+            "নথি প্রস্তুতি ও যাচাইকরণ",
+            "ইমিগ্রেশন অফিসের সাথে অ্যাপয়েন্টমেন্ট বুকিং",
+            "আবেদনের অবস্থা সম্পর্কে ফলো-আপ"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "পারিবারিক পুনর্মিলন",
+          "desc": "স্বামী/স্ত্রী, সন্তান ও পিতামাতাকে ইতালিতে আনার ক্ষেত্রে সহায়তা।",
+          "modalDesc": "আমাদের দল সরকারি পারিবারিক পুনর্মিলন প্রক্রিয়ার মাধ্যমে আপনার যোগ্য পরিবারের সদস্যদের ইতালিতে আনতে সাহায্য করে। আমরা প্রয়োজনীয় ডকুমেন্টেশন প্রস্তুত করি এবং আবেদনের প্রতিটি পর্যায়ে আপনাকে পথ দেখাই।",
+          "points": [
+            "পারিবারিক পুনর্মিলনের জন্য যোগ্যতা মূল্যায়ন",
+            "স্বামী/স্ত্রী ও সন্তানদের জন্য আবেদন প্রস্তুতি",
+            "আয় ও আবাসন প্রয়োজনীয়তা সম্পর্কে নির্দেশনা",
+            "কর্ম অনুমোদন সনদ আবেদনে সহায়তা",
+            "পরিবারের সদস্যদের জন্য ভিসা আবেদন সহায়তা"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi (বার্ষিক কর্ম অনুমতি কর্মসূচি)",
+          "desc": "ইতালির বার্ষিক কর্ম অনুমতি কর্মসূচির অধীনে কর্ম অনুমতি আবেদনের জন্য নির্দেশনা।",
+          "modalDesc": "Decreto Flussi হল ইতালির বার্ষিক কর্মসূচি যা অ-ইইউ নাগরিকদের কর্মসংস্থানের জন্য দেশে প্রবেশের অনুমতি দেয়। আমরা যোগ্যতা যাচাই থেকে চূড়ান্ত অনুমোদন পর্যন্ত সমগ্র আবেদন প্রক্রিয়া জুড়ে নিয়োগকর্তা ও কর্মী উভয়কেই সহায়তা করি।",
+          "points": [
+            "নিয়োগকর্তা ও কর্মীর যোগ্যতা মূল্যায়ন",
+            "অনলাইন আবেদন জমা",
+            "নথি সংগ্রহ ও প্রস্তুতি",
+            "কর্ম অনুমোদন ও ভিসা সমন্বয়",
+            "আগমন-পরবর্তী রেসিডেন্স পারমিট সহায়তা"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "ইতালিতে প্রথম প্রবেশ",
+          "desc": "ইতালিতে আপনার প্রথম আগমনের পর প্রয়োজনীয় সমস্ত পদ্ধতির জন্য সহায়তা।",
+          "modalDesc": "প্রথমবার ইতালিতে স্থানান্তরিত হওয়ার সাথে বেশ কয়েকটি গুরুত্বপূর্ণ প্রশাসনিক পদ্ধতি জড়িত থাকে। একটি সহজ ও চাপমুক্ত পরিবর্তন নিশ্চিত করতে আমরা প্রতিটি ধাপে আপনাকে পথ দেখাই।",
+          "points": [
+            "Dichiarazione di Presenza (উপস্থিতির ঘোষণা) সহায়তা",
+            "কর শনাক্তকরণ নম্বর আবেদন",
+            "বসবাস নিবন্ধন",
+            "স্বাস্থ্য বীমা কার্ড সহায়তা",
+            "প্রাথমিক নথি নির্দেশনা ও অভিমুখীকরণ"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "ইতালীয় নাগরিকত্ব",
+          "desc": "ইতালীয় নাগরিকত্ব আবেদনের জন্য পেশাদার সহায়তা।",
+          "modalDesc": "ইতালীয় নাগরিকত্ব অর্জন একটি গুরুত্বপূর্ণ মাইলফলক। আমাদের বিশেষজ্ঞরা বসবাস, বিবাহ বা বংশপরম্পরার মাধ্যমে নাগরিকত্বের জন্য সম্পূর্ণ আবেদন প্রস্তুত ও জমা দিতে সাহায্য করেন।",
+          "points": [
+            "দীর্ঘমেয়াদি বসবাসের মাধ্যমে নাগরিকত্ব",
+            "বিবাহের মাধ্যমে নাগরিকত্ব",
+            "বংশপরম্পরার মাধ্যমে নাগরিকত্ব",
+            "নথি আইনি বৈধকরণ ও প্রত্যয়িত অনুবাদ",
+            "আবেদন জমা ও অগ্রগতি ট্র্যাকিং"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "নথি প্রস্তুতি",
+          "desc": "অভিবাসন নথির পেশাদার প্রস্তুতি, পর্যালোচনা ও যাচাইকরণ।",
+          "modalDesc": "একটি সফল অভিবাসন প্রক্রিয়ার জন্য সঠিক ডকুমেন্টেশন অপরিহার্য। আমাদের দল নিশ্চিত করে যে আপনার ফর্ম ও সহায়ক নথিগুলি সম্পূর্ণ, সঠিক এবং জমা দেওয়ার জন্য প্রস্তুত।",
+          "points": [
+            "অভিবাসন পদ্ধতির জন্য আবেদন ফর্ম পূরণ",
+            "নথি অনুবাদ ও প্রত্যয়ন",
+            "নথি আইনি বৈধকরণে সহায়তা",
+            "সম্পূর্ণ নথি চেকলিস্ট পর্যালোচনা",
+            "সংশ্লিষ্ট কর্তৃপক্ষের কাছে জমা দেওয়ার সহায়তা"
+          ]
+        }
+      ]
+    }
+  },
+  "pa": {
+    "immigration": {
+      "breadcrumbHome": "ਹੋਮ",
+      "breadcrumbCurrent": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ",
+      "hero": {
+        "badge": "🌍 ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ",
+        "title": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ",
+        "desc": "ਅਸੀਂ ਉਹਨਾਂ ਵਿਅਕਤੀਆਂ ਅਤੇ ਪਰਿਵਾਰਾਂ ਲਈ ਸੰਪੂਰਨ ਇਮੀਗ੍ਰੇਸ਼ਨ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ ਜੋ ਇਟਲੀ ਅਤੇ ਯੂਰਪ ਵਿੱਚ ਰਹਿਣਾ, ਕੰਮ ਕਰਨਾ ਜਾਂ ਵੱਸਣਾ ਚਾਹੁੰਦੇ ਹਨ। ਸਾਡੀ ਟੀਮ ਗਾਹਕਾਂ ਦੀ ਕਾਨੂੰਨੀ ਦਸਤਾਵੇਜ਼ੀਕਰਨ, ਅਰਜ਼ੀ ਪ੍ਰਕਿਰਿਆਵਾਂ ਅਤੇ ਸਰਕਾਰੀ ਰਸਮੀ ਕਾਰਵਾਈਆਂ ਵਿੱਚ ਸੁਖਾਲੇ ਅਤੇ ਪੇਸ਼ੇਵਰ ਢੰਗ ਨਾਲ ਮਦਦ ਕਰਦੀ ਹੈ।",
+        "actions": {
+          "explore": "ਸੇਵਾਵਾਂ ਦੀ ਪੜਚੋਲ ਕਰੋ",
+          "contact": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ"
+        },
+        "stats": [
+          {
+            "num": "5000+",
+            "label": "ਕਾਰਵਾਈ ਕੀਤੇ ਪਰਮਿਟ"
+          },
+          {
+            "num": "20+",
+            "label": "ਸਾਲਾਂ ਦਾ ਤਜਰਬਾ"
+          },
+          {
+            "num": "98%",
+            "label": "ਸਫਲਤਾ ਦਰ"
+          },
+          {
+            "num": "8",
+            "label": "ਮੁੱਖ ਸੇਵਾਵਾਂ"
+          }
+        ]
+      },
+      "intro": {
+        "title": "ਹਰ ਇਮੀਗ੍ਰੇਸ਼ਨ ਕਦਮ ਲਈ ਤੁਹਾਡਾ ਭਰੋਸੇਯੋਗ ਸਾਥੀ",
+        "body": "ਇਤਾਲਵੀ ਇਮੀਗ੍ਰੇਸ਼ਨ ਕਾਨੂੰਨ ਨਾਲ ਨਜਿੱਠਣਾ ਜਟਿਲ ਅਤੇ ਸਮਾਂ ਖਾਣ ਵਾਲਾ ਹੋ ਸਕਦਾ ਹੈ। SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA ਵਿਖੇ, ਅਸੀਂ ਪੂਰੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਸਰਲ ਬਣਾਉਂਦੇ ਹਾਂ — ਇਟਲੀ ਵਿੱਚ ਤੁਹਾਡੇ ਪਹਿਲੇ ਪ੍ਰਵੇਸ਼ ਤੋਂ ਲੈ ਕੇ ਸਥਾਈ ਰਿਹਾਇਸ਼ ਜਾਂ ਨਾਗਰਿਕਤਾ ਪ੍ਰਾਪਤ ਕਰਨ ਤੱਕ। ਸਾਡੀ ਤਜਰਬੇਕਾਰ ਟੀਮ ਨਵੀਨਤਮ ਨਿਯਮਾਂ ਨਾਲ ਅੱਪ ਟੂ ਡੇਟ ਰਹਿੰਦੀ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਅਜਿਹਾ ਨਾ ਕਰਨਾ ਪਵੇ।",
+        "visualTitle": "SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA ਨੂੰ ਕਿਉਂ ਚੁਣੋ",
+        "checklist": [
+          "ਪ੍ਰਮਾਣਿਤ ਇਮੀਗ੍ਰੇਸ਼ਨ ਸਲਾਹਕਾਰ",
+          "ਸੰਪੂਰਨ ਦਸਤਾਵੇਜ਼ ਪ੍ਰਬੰਧਨ",
+          "ਬਹੁਭਾਸ਼ੀ ਸਹਾਇਤਾ ਟੀਮ",
+          "ਤੇਜ਼ ਅਤੇ ਪਾਰਦਰਸ਼ੀ ਪ੍ਰਕਿਰਿਆ",
+          "ਹਜ਼ਾਰਾਂ ਸਫਲ ਕੇਸ",
+          "ਪੂਰੇ ਇਟਲੀ ਵਿੱਚ ਦਫ਼ਤਰ"
+        ]
+      },
+      "section": {
+        "tag": "ਅਸੀਂ ਕੀ ਪੇਸ਼ ਕਰਦੇ ਹਾਂ",
+        "title": "ਸਾਡੀਆਂ ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ",
+        "desc": "ਪ੍ਰਕਿਰਿਆ, ਲੋੜਾਂ ਅਤੇ ਅਸੀਂ ਤੁਹਾਡੀ ਕਿਵੇਂ ਮਦਦ ਕਰ ਸਕਦੇ ਹਾਂ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਕਿਸੇ ਵੀ ਸੇਵਾ ਕਾਰਡ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।"
+      },
+      "cta": {
+        "title": "ਆਪਣੀ ਇਮੀਗ੍ਰੇਸ਼ਨ ਪ੍ਰਕਿਰਿਆ ਵਿੱਚ ਮਦਦ ਦੀ ਲੋੜ ਹੈ?",
+        "desc": "ਸਾਡੇ ਮਾਹਰ ਤੁਹਾਡੀ ਸਹਾਇਤਾ ਲਈ ਤਿਆਰ ਹਨ। ਅੱਜ ਹੀ ਇੱਕ ਮੁਫ਼ਤ ਸਲਾਹ-ਮਸ਼ਵਰਾ ਬੁੱਕ ਕਰੋ ਅਤੇ ਸਾਨੂੰ ਆਪਣੇ ਸਫ਼ਰ ਦੇ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਨ ਦਿਓ।",
+        "actions": {
+          "book": "ਸਲਾਹ-ਮਸ਼ਵਰਾ ਬੁੱਕ ਕਰੋ",
+          "call": "ਹੁਣੇ ਸਾਨੂੰ ਕਾਲ ਕਰੋ"
+        }
+      },
+      "card": {
+        "cta": "ਹੋਰ ਜਾਣੋ"
+      },
+      "modal": {
+        "listTitle": "ਕੀ ਸ਼ਾਮਲ ਹੈ",
+        "close": "ਬੰਦ ਕਰੋ"
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ",
+          "desc": "ਨਵੀਆਂ ਅਰਜ਼ੀਆਂ, ਨਵੀਨੀਕਰਨ ਅਤੇ ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ਾਂ ਲਈ ਸਹਾਇਤਾ।",
+          "modalDesc": "ਅਸੀਂ ਤੁਹਾਡੇ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਅਤੇ ਨਵੀਨੀਕਰਨ ਲਈ ਸੰਪੂਰਨ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ। ਸਾਡੇ ਮਾਹਰ ਪ੍ਰਕਿਰਿਆ ਦੇ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਦੇ ਹਨ, ਇਹ ਯਕੀਨੀ ਬਣਾਉਂਦੇ ਹੋਏ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ ਸਹੀ ਢੰਗ ਨਾਲ ਤਿਆਰ ਅਤੇ ਜਮ੍ਹਾਂ ਕੀਤੇ ਗਏ ਹਨ।",
+          "points": [
+            "ਕੰਮ, ਪਰਿਵਾਰ ਅਤੇ ਪੜ੍ਹਾਈ ਲਈ ਨਵੀਆਂ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ ਅਰਜ਼ੀਆਂ",
+            "ਮਿਆਦ ਪੁੱਗ ਰਹੇ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟਾਂ ਦਾ ਨਵੀਨੀਕਰਨ",
+            "ਦਸਤਾਵੇਜ਼ ਤਿਆਰੀ ਅਤੇ ਤਸਦੀਕ",
+            "ਇਮੀਗ੍ਰੇਸ਼ਨ ਦਫ਼ਤਰ ਨਾਲ ਮੁਲਾਕਾਤ ਬੁਕਿੰਗ",
+            "ਅਰਜ਼ੀ ਦੀ ਸਥਿਤੀ ਬਾਰੇ ਫਾਲੋ-ਅੱਪ"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "ਪਰਿਵਾਰਕ ਪੁਨਰਮਿਲਾਪ",
+          "desc": "ਜੀਵਨ ਸਾਥੀ, ਬੱਚਿਆਂ ਅਤੇ ਮਾਪਿਆਂ ਨੂੰ ਇਟਲੀ ਲਿਆਉਣ ਵਿੱਚ ਸਹਾਇਤਾ।",
+          "modalDesc": "ਸਾਡੀ ਟੀਮ ਅਧਿਕਾਰਤ ਪਰਿਵਾਰਕ ਪੁਨਰਮਿਲਾਪ ਪ੍ਰਕਿਰਿਆ ਰਾਹੀਂ ਤੁਹਾਡੇ ਯੋਗ ਪਰਿਵਾਰਕ ਮੈਂਬਰਾਂ ਨੂੰ ਇਟਲੀ ਲਿਆਉਣ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦੀ ਹੈ। ਅਸੀਂ ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ ਤਿਆਰ ਕਰਦੇ ਹਾਂ ਅਤੇ ਅਰਜ਼ੀ ਦੇ ਹਰ ਪੜਾਅ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਦੇ ਹਾਂ।",
+          "points": [
+            "ਪਰਿਵਾਰਕ ਪੁਨਰਮਿਲਾਪ ਲਈ ਯੋਗਤਾ ਮੁਲਾਂਕਣ",
+            "ਜੀਵਨ ਸਾਥੀ ਅਤੇ ਬੱਚਿਆਂ ਲਈ ਅਰਜ਼ੀ ਤਿਆਰੀ",
+            "ਆਮਦਨ ਅਤੇ ਰਿਹਾਇਸ਼ ਦੀਆਂ ਲੋੜਾਂ ਬਾਰੇ ਅਗਵਾਈ",
+            "ਕੰਮ ਅਧਿਕਾਰ ਸਰਟੀਫਿਕੇਟ ਅਰਜ਼ੀ ਸਹਾਇਤਾ",
+            "ਪਰਿਵਾਰਕ ਮੈਂਬਰਾਂ ਲਈ ਵੀਜ਼ਾ ਅਰਜ਼ੀ ਸਹਾਇਤਾ"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi (ਸਾਲਾਨਾ ਵਰਕ ਪਰਮਿਟ ਪ੍ਰੋਗਰਾਮ)",
+          "desc": "ਇਟਲੀ ਦੇ ਸਾਲਾਨਾ ਵਰਕ ਪਰਮਿਟ ਪ੍ਰੋਗਰਾਮ ਅਧੀਨ ਵਰਕ ਪਰਮਿਟ ਅਰਜ਼ੀਆਂ ਲਈ ਅਗਵਾਈ।",
+          "modalDesc": "Decreto Flussi ਇਟਲੀ ਦਾ ਸਾਲਾਨਾ ਪ੍ਰੋਗਰਾਮ ਹੈ ਜੋ ਗੈਰ-EU ਨਾਗਰਿਕਾਂ ਨੂੰ ਰੋਜ਼ਗਾਰ ਲਈ ਦੇਸ਼ ਵਿੱਚ ਦਾਖਲ ਹੋਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ। ਅਸੀਂ ਯੋਗਤਾ ਜਾਂਚ ਤੋਂ ਲੈ ਕੇ ਅੰਤਿਮ ਮਨਜ਼ੂਰੀ ਤੱਕ ਪੂਰੀ ਅਰਜ਼ੀ ਪ੍ਰਕਿਰਿਆ ਦੌਰਾਨ ਮਾਲਕਾਂ ਅਤੇ ਕਾਮਿਆਂ ਦੋਵਾਂ ਦੀ ਸਹਾਇਤਾ ਕਰਦੇ ਹਾਂ।",
+          "points": [
+            "ਮਾਲਕ ਅਤੇ ਕਾਮੇ ਦੀ ਯੋਗਤਾ ਮੁਲਾਂਕਣ",
+            "ਆਨਲਾਈਨ ਅਰਜ਼ੀ ਜਮ੍ਹਾਂ ਕਰਵਾਉਣਾ",
+            "ਦਸਤਾਵੇਜ਼ ਇਕੱਤਰੀਕਰਨ ਅਤੇ ਤਿਆਰੀ",
+            "ਕੰਮ ਅਧਿਕਾਰ ਅਤੇ ਵੀਜ਼ਾ ਤਾਲਮੇਲ",
+            "ਆਗਮਨ ਤੋਂ ਬਾਅਦ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ ਸਹਾਇਤਾ"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "ਇਟਲੀ ਵਿੱਚ ਪਹਿਲਾ ਪ੍ਰਵੇਸ਼",
+          "desc": "ਇਟਲੀ ਵਿੱਚ ਤੁਹਾਡੇ ਪਹਿਲੇ ਆਗਮਨ ਤੋਂ ਬਾਅਦ ਲੋੜੀਂਦੀਆਂ ਸਾਰੀਆਂ ਪ੍ਰਕਿਰਿਆਵਾਂ ਲਈ ਸਹਾਇਤਾ।",
+          "modalDesc": "ਪਹਿਲੀ ਵਾਰ ਇਟਲੀ ਜਾਣ ਵਿੱਚ ਕਈ ਮਹੱਤਵਪੂਰਨ ਪ੍ਰਸ਼ਾਸਕੀ ਪ੍ਰਕਿਰਿਆਵਾਂ ਸ਼ਾਮਲ ਹੁੰਦੀਆਂ ਹਨ। ਅਸੀਂ ਇੱਕ ਸੁਖਾਲੇ ਅਤੇ ਤਣਾਅ-ਮੁਕਤ ਤਬਦੀਲੀ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਦੇ ਹਾਂ।",
+          "points": [
+            "Dichiarazione di Presenza (ਮੌਜੂਦਗੀ ਦਾ ਐਲਾਨ) ਵਿੱਚ ਸਹਾਇਤਾ",
+            "ਟੈਕਸ ਪਛਾਣ ਨੰਬਰ ਅਰਜ਼ੀ",
+            "ਰਿਹਾਇਸ਼ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
+            "ਸਿਹਤ ਬੀਮਾ ਕਾਰਡ ਸਹਾਇਤਾ",
+            "ਸ਼ੁਰੂਆਤੀ ਦਸਤਾਵੇਜ਼ ਅਗਵਾਈ ਅਤੇ ਜਾਣ-ਪਛਾਣ"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "ਇਤਾਲਵੀ ਨਾਗਰਿਕਤਾ",
+          "desc": "ਇਤਾਲਵੀ ਨਾਗਰਿਕਤਾ ਅਰਜ਼ੀਆਂ ਲਈ ਪੇਸ਼ੇਵਰ ਸਹਾਇਤਾ।",
+          "modalDesc": "ਇਤਾਲਵੀ ਨਾਗਰਿਕਤਾ ਪ੍ਰਾਪਤ ਕਰਨਾ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਮੀਲ ਪੱਥਰ ਹੈ। ਸਾਡੇ ਮਾਹਰ ਰਿਹਾਇਸ਼, ਵਿਆਹ ਜਾਂ ਵੰਸ਼ ਰਾਹੀਂ ਨਾਗਰਿਕਤਾ ਲਈ ਸੰਪੂਰਨ ਅਰਜ਼ੀਆਂ ਤਿਆਰ ਕਰਨ ਅਤੇ ਜਮ੍ਹਾਂ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ।",
+          "points": [
+            "ਲੰਬੇ ਸਮੇਂ ਦੀ ਰਿਹਾਇਸ਼ ਰਾਹੀਂ ਨਾਗਰਿਕਤਾ",
+            "ਵਿਆਹ ਰਾਹੀਂ ਨਾਗਰਿਕਤਾ",
+            "ਵੰਸ਼ ਰਾਹੀਂ ਨਾਗਰਿਕਤਾ",
+            "ਦਸਤਾਵੇਜ਼ ਕਾਨੂੰਨੀਕਰਨ ਅਤੇ ਪ੍ਰਮਾਣਿਤ ਅਨੁਵਾਦ",
+            "ਅਰਜ਼ੀ ਜਮ੍ਹਾਂ ਕਰਨਾ ਅਤੇ ਪ੍ਰਗਤੀ ਟਰੈਕਿੰਗ"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "ਦਸਤਾਵੇਜ਼ ਤਿਆਰੀ",
+          "desc": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਪੇਸ਼ੇਵਰ ਤਿਆਰੀ, ਸਮੀਖਿਆ ਅਤੇ ਤਸਦੀਕ।",
+          "modalDesc": "ਸਫਲ ਇਮੀਗ੍ਰੇਸ਼ਨ ਪ੍ਰਕਿਰਿਆ ਲਈ ਸਹੀ ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਜ਼ਰੂਰੀ ਹੈ। ਸਾਡੀ ਟੀਮ ਇਹ ਯਕੀਨੀ ਬਣਾਉਂਦੀ ਹੈ ਕਿ ਤੁਹਾਡੇ ਫਾਰਮ ਅਤੇ ਸਹਾਇਕ ਦਸਤਾਵੇਜ਼ ਸੰਪੂਰਨ, ਸਹੀ ਅਤੇ ਜਮ੍ਹਾਂ ਕਰਨ ਲਈ ਤਿਆਰ ਹਨ।",
+          "points": [
+            "ਇਮੀਗ੍ਰੇਸ਼ਨ ਪ੍ਰਕਿਰਿਆਵਾਂ ਲਈ ਅਰਜ਼ੀ ਫਾਰਮ ਦੀ ਤਕਮੀਲ",
+            "ਦਸਤਾਵੇਜ਼ ਅਨੁਵਾਦ ਅਤੇ ਪ੍ਰਮਾਣੀਕਰਨ",
+            "ਦਸਤਾਵੇਜ਼ ਕਾਨੂੰਨੀਕਰਨ ਸਹਾਇਤਾ",
+            "ਸੰਪੂਰਨ ਦਸਤਾਵੇਜ਼ ਚੈੱਕਲਿਸਟ ਸਮੀਖਿਆ",
+            "ਸਬੰਧਤ ਅਧਿਕਾਰੀਆਂ ਕੋਲ ਜਮ੍ਹਾਂ ਕਰਨ ਦੀ ਸਹਾਇਤਾ"
+          ]
+        }
+      ]
+    }
+  },
+  "si": {
+    "immigration": {
+      "breadcrumbHome": "මුල් පිටුව",
+      "breadcrumbCurrent": "ආගමන සේවා",
+      "hero": {
+        "badge": "🌍 ආගමන සේවා",
+        "title": "ආගමන සේවා",
+        "desc": "ඉතාලියේ සහ යුරෝපයේ ජීවත් වීමට, වැඩ කිරීමට හෝ පදිංචි වීමට කැමති පුද්ගලයන් සහ පවුල් සඳහා අපි සම්පූර්ණ ආගමන සහාය ලබා දෙමු. අපගේ කණ්ඩායම සේවාදායකයින්ට නෛතික ලේඛන, අයදුම් ක්‍රියා පටිපාටි සහ රාජ්‍ය විධිමත්භාවයන් සුමට හා වෘත්තීය ආකාරයකින් උපකාර කරයි.",
+        "actions": {
+          "explore": "සේවා ගවේෂණය කරන්න",
+          "contact": "අප හා සම්බන්ධ වන්න"
+        },
+        "stats": [
+          {
+            "num": "5000+",
+            "label": "සැකසූ බලපත්‍ර"
+          },
+          {
+            "num": "20+",
+            "label": "වසර ගණනක පළපුරුද්ද"
+          },
+          {
+            "num": "98%",
+            "label": "සාර්ථකත්ව අනුපාතය"
+          },
+          {
+            "num": "8",
+            "label": "මූලික සේවා"
+          }
+        ]
+      },
+      "intro": {
+        "title": "සෑම ආගමන පියවරක් සඳහාම ඔබේ විශ්වාසනීය හවුල්කරු",
+        "body": "ඉතාලි ආගමන නීතිය හරහා යාම සංකීර්ණ හා කාලය ගත වන කාර්යයක් විය හැක. SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA හිදී, අපි සම්පූර්ණ ක්‍රියාවලිය සරල කරමු — ඉතාලියට ඔබේ පළමු පිවිසුමේ සිට ස්ථිර පදිංචිය හෝ පුරවැසිභාවය ලබා ගැනීම දක්වා. අපගේ පළපුරුදු කණ්ඩායම නවතම රෙගුලාසි සමඟ යාවත්කාලීනව සිටින බැවින් ඔබට එසේ කිරීමට අවශ්‍ය නොවේ.",
+        "visualTitle": "SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA තෝරා ගන්නේ ඇයි",
+        "checklist": [
+          "සහතික කළ ආගමන උපදේශකයින්",
+          "අන්තයේ සිට අන්තය දක්වා ලේඛන කළමනාකරණය",
+          "බහුභාෂා සහාය කණ්ඩායම",
+          "වේගවත් හා විනිවිද පෙනෙන ක්‍රියාවලිය",
+          "සාර්ථක නඩු දහස් ගණනක්",
+          "ඉතාලිය පුරා කාර්යාල"
+        ]
+      },
+      "section": {
+        "tag": "අප පිරිනමන දේ",
+        "title": "අපගේ ආගමන සේවා",
+        "desc": "ක්‍රියාවලිය, අවශ්‍යතා සහ අපට ඔබට උදව් කළ හැකි ආකාරය ගැන වැඩිදුර දැනගැනීමට ඕනෑම සේවා කාඩ්පතක් මත ක්ලික් කරන්න."
+      },
+      "cta": {
+        "title": "ඔබේ ආගමන ක්‍රියාවලිය සඳහා උදව් අවශ්‍යද?",
+        "desc": "අපගේ විශේෂඥයන් ඔබට සහාය වීමට සූදානම්. අද නොමිලේ උපදේශනයක් වෙන් කරවා ගෙන ඔබේ ගමනේ සෑම පියවරකදීම අපට ඔබට මඟ පෙන්වීමට ඉඩ දෙන්න.",
+        "actions": {
+          "book": "උපදේශනය වෙන් කරන්න",
+          "call": "දැන් අපට අමතන්න"
+        }
+      },
+      "card": {
+        "cta": "වැඩිදුර දැනගන්න"
+      },
+      "modal": {
+        "listTitle": "ඇතුළත් වන දේ",
+        "close": "වසන්න"
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "පදිංචි බලපත්‍රය",
+          "desc": "නව අයදුම්පත්, අලුත් කිරීම් සහ අවශ්‍ය ලේඛන සඳහා සහාය.",
+          "modalDesc": "ඔබේ පදිංචි බලපත්‍රය ලබා ගැනීම සහ අලුත් කිරීම සඳහා අපි සම්පූර්ණ සහාය ලබා දෙමු. අපගේ විශේෂඥයන් ක්‍රියාවලියේ සෑම පියවරකදීම ඔබට මඟ පෙන්වමින්, අවශ්‍ය සියලුම ලේඛන නිවැරදිව සකස් කර ඉදිරිපත් කර ඇති බව සහතික කරයි.",
+          "points": [
+            "රැකියා, පවුල් සහ අධ්‍යාපනය සඳහා නව පදිංචි බලපත්‍ර අයදුම්පත්",
+            "කල් ඉකුත් වන පදිංචි බලපත්‍ර අලුත් කිරීම",
+            "ලේඛන සකස් කිරීම සහ සත්‍යාපනය",
+            "ආගමන කාර්යාලය සමඟ හමුවීම් වෙන් කිරීම",
+            "අයදුම්පත් තත්ත්වය පිළිබඳ පසු විපරම"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "පවුල් නැවත එක්වීම",
+          "desc": "කලත්‍රයන්, දරුවන් සහ දෙමාපියන් ඉතාලියට ගෙන ඒම සඳහා සහාය.",
+          "modalDesc": "අපගේ කණ්ඩායම නිල පවුල් නැවත එක්වීමේ ක්‍රියාවලිය හරහා ඔබේ සුදුසුකම් ලත් පවුලේ සාමාජිකයන් ඉතාලියට ගෙන ඒමට උපකාර කරයි. අපි අවශ්‍ය ලේඛන සකස් කර අයදුම්පතේ සෑම අදියරකදීම ඔබට මඟ පෙන්වමු.",
+          "points": [
+            "පවුල් නැවත එක්වීම සඳහා සුදුසුකම් තක්සේරුව",
+            "කලත්‍රයන් සහ දරුවන් සඳහා අයදුම්පත් සකස් කිරීම",
+            "ආදායම් සහ නිවාස අවශ්‍යතා පිළිබඳ මඟපෙන්වීම",
+            "වැඩ අවසර සහතික අයදුම්පත් සහාය",
+            "පවුලේ සාමාජිකයන් සඳහා වීසා අයදුම්පත් සහාය"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi (වාර්ෂික වැඩ බලපත්‍ර වැඩසටහන)",
+          "desc": "ඉතාලියේ වාර්ෂික වැඩ බලපත්‍ර වැඩසටහන යටතේ වැඩ බලපත්‍ර අයදුම්පත් සඳහා මඟපෙන්වීම.",
+          "modalDesc": "Decreto Flussi යනු EU නොවන පුරවැසියන්ට රැකියා සඳහා රටට ඇතුළු වීමට ඉඩ සලසන ඉතාලියේ වාර්ෂික වැඩසටහනයි. අපි සුදුසුකම් පරීක්ෂාවේ සිට අවසාන අනුමැතිය දක්වා සම්පූර්ණ අයදුම් ක්‍රියාවලිය පුරාම සේවා යෝජකයන් සහ සේවකයන් යන දෙපිරිසටම සහාය වෙමු.",
+          "points": [
+            "සේවා යෝජක සහ සේවක සුදුසුකම් තක්සේරුව",
+            "මාර්ගගත අයදුම්පත් ඉදිරිපත් කිරීම",
+            "ලේඛන එකතු කිරීම සහ සකස් කිරීම",
+            "වැඩ අවසර සහ වීසා සම්බන්ධීකරණය",
+            "පැමිණීමෙන් පසු පදිංචි බලපත්‍ර සහාය"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "ඉතාලියට පළමු පිවිසුම",
+          "desc": "ඉතාලියට ඔබේ පළමු පැමිණීමෙන් පසු අවශ්‍ය සියලුම ක්‍රියා පටිපාටි සඳහා සහාය.",
+          "modalDesc": "පළමු වරට ඉතාලියට සංක්‍රමණය වීම වැදගත් පරිපාලන ක්‍රියා පටිපාටි කිහිපයක් ඇතුළත් වේ. සුමට හා ආතතියෙන් තොර සංක්‍රාන්තියක් සහතික කිරීමට අපි සෑම පියවරකදීම ඔබට මඟ පෙන්වමු.",
+          "points": [
+            "Dichiarazione di Presenza (පැමිණීමේ ප්‍රකාශය) සඳහා සහාය",
+            "බදු හඳුනාගැනීමේ අංකය සඳහා අයදුම්පත",
+            "පදිංචිය ලියාපදිංචි කිරීම",
+            "සෞඛ්‍ය රක්ෂණ කාඩ්පත සහාය",
+            "ආරම්භක ලේඛන මඟපෙන්වීම සහ දිශානතිය"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "ඉතාලි පුරවැසිභාවය",
+          "desc": "ඉතාලි පුරවැසිභාව අයදුම්පත් සඳහා වෘත්තීය සහාය.",
+          "modalDesc": "ඉතාලි පුරවැසිභාවය ලබා ගැනීම වැදගත් සන්ධිස්ථානයකි. අපගේ විශේෂඥයන් පදිංචිය, විවාහය හෝ පෙළපත හරහා පුරවැසිභාවය සඳහා සම්පූර්ණ අයදුම්පත් සකස් කර ඉදිරිපත් කිරීමට උපකාර කරයි.",
+          "points": [
+            "දිගු කාලීන පදිංචිය හරහා පුරවැසිභාවය",
+            "විවාහය හරහා පුරවැසිභාවය",
+            "පෙළපත හරහා පුරවැසිභාවය",
+            "ලේඛන නීතිගත කිරීම සහ සහතික කළ පරිවර්තනය",
+            "අයදුම්පත් ඉදිරිපත් කිරීම සහ ප්‍රගති ලුහුබැඳීම"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "ලේඛන සකස් කිරීම",
+          "desc": "ආගමන ලේඛන වෘත්තීය ලෙස සකස් කිරීම, සමාලෝචනය සහ සත්‍යාපනය.",
+          "modalDesc": "සාර්ථක ආගමන ක්‍රියාවලියක් සඳහා නිවැරදි ලේඛන අත්‍යවශ්‍ය වේ. අපගේ කණ්ඩායම ඔබේ පෝරම සහ සහායක ලේඛන සම්පූර්ණ, නිවැරදි සහ ඉදිරිපත් කිරීමට සූදානම් බව සහතික කරයි.",
+          "points": [
+            "ආගමන ක්‍රියා පටිපාටි සඳහා අයදුම් පත්‍රය සම්පූර්ණ කිරීම",
+            "ලේඛන පරිවර්තනය සහ සහතික කිරීම",
+            "ලේඛන නීතිගත කිරීමේ සහාය",
+            "සම්පූර්ණ ලේඛන පිරික්සුම් ලැයිස්තු සමාලෝචනය",
+            "අදාළ බලධාරීන් සමඟ ඉදිරිපත් කිරීමේ සහාය"
+          ]
+        }
+      ]
+    }
+  },
+  "ar": {
+    "immigration": {
+      "breadcrumbHome": "الرئيسية",
+      "breadcrumbCurrent": "خدمات الهجرة",
+      "hero": {
+        "badge": "🌍 خدمات الهجرة",
+        "title": "خدمات الهجرة",
+        "desc": "نقدّم مساعدة هجرة متكاملة للأفراد والعائلات الذين يرغبون في العيش أو العمل أو الاستقرار في إيطاليا وأوروبا. يساعد فريقنا العملاء في التوثيق القانوني وإجراءات التقديم والمعاملات الحكومية بطريقة سلسة ومهنية.",
+        "actions": {
+          "explore": "استكشف الخدمات",
+          "contact": "اتصل بنا"
+        },
+        "stats": [
+          {
+            "num": "5000+",
+            "label": "تصاريح تمت معالجتها"
+          },
+          {
+            "num": "20+",
+            "label": "سنوات من الخبرة"
+          },
+          {
+            "num": "98%",
+            "label": "معدل النجاح"
+          },
+          {
+            "num": "8",
+            "label": "الخدمات الأساسية"
+          }
+        ]
+      },
+      "intro": {
+        "title": "شريكك الموثوق في كل خطوة من خطوات الهجرة",
+        "body": "قد يكون التعامل مع قانون الهجرة الإيطالي معقدًا ويستغرق وقتًا طويلًا. في SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA، نبسّط العملية بأكملها — من دخولك الأول إلى إيطاليا حتى الحصول على الإقامة الدائمة أو الجنسية. يبقى فريقنا ذو الخبرة مواكبًا لأحدث اللوائح حتى لا تضطر أنت إلى ذلك.",
+        "visualTitle": "لماذا تختار SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA",
+        "checklist": [
+          "مستشارو هجرة معتمدون",
+          "إدارة متكاملة للوثائق",
+          "فريق دعم متعدد اللغات",
+          "عملية سريعة وشفافة",
+          "آلاف الحالات الناجحة",
+          "مكاتب في جميع أنحاء إيطاليا"
+        ]
+      },
+      "section": {
+        "tag": "ما نقدمه",
+        "title": "خدمات الهجرة لدينا",
+        "desc": "انقر على أي بطاقة خدمة لمعرفة المزيد عن العملية والمتطلبات وكيف يمكننا مساعدتك."
+      },
+      "cta": {
+        "title": "هل تحتاج إلى مساعدة في عملية الهجرة الخاصة بك؟",
+        "desc": "خبراؤنا جاهزون لمساعدتك. احجز استشارة مجانية اليوم ودعنا نرشدك في كل خطوة من رحلتك.",
+        "actions": {
+          "book": "احجز استشارة",
+          "call": "اتصل بنا الآن"
+        }
+      },
+      "card": {
+        "cta": "اعرف المزيد"
+      },
+      "modal": {
+        "listTitle": "ما هو مشمول",
+        "close": "إغلاق"
+      },
+      "services": [
+        {
+          "icon": "📋",
+          "title": "تصريح الإقامة",
+          "desc": "دعم للطلبات الجديدة والتجديدات والوثائق المطلوبة.",
+          "modalDesc": "نقدّم مساعدة متكاملة للحصول على تصريح إقامتك وتجديده. يرشدك خبراؤنا في كل خطوة من العملية، مع ضمان إعداد جميع الوثائق المطلوبة وتقديمها بدقة.",
+          "points": [
+            "طلبات تصريح إقامة جديدة للعمل والعائلة والدراسة",
+            "تجديد تصاريح الإقامة التي على وشك الانتهاء",
+            "إعداد الوثائق والتحقق منها",
+            "حجز موعد مع مكتب الهجرة",
+            "متابعة حالة الطلب"
+          ]
+        },
+        {
+          "icon": "🫂",
+          "title": "لمّ شمل العائلة",
+          "desc": "المساعدة في إحضار الأزواج والأطفال والوالدين إلى إيطاليا.",
+          "modalDesc": "يساعدك فريقنا في إحضار أفراد عائلتك المؤهلين إلى إيطاليا عبر الإجراء الرسمي للمّ شمل العائلة. نقوم بإعداد الوثائق المطلوبة ونرشدك في كل مرحلة من مراحل الطلب.",
+          "points": [
+            "تقييم الأهلية للمّ شمل العائلة",
+            "إعداد الطلب للأزواج والأطفال",
+            "إرشاد حول متطلبات الدخل والسكن",
+            "دعم طلب شهادة تصريح العمل",
+            "المساعدة في طلب التأشيرة لأفراد العائلة"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Decreto Flussi (برنامج تصاريح العمل السنوي)",
+          "desc": "إرشاد لطلبات تصاريح العمل ضمن برنامج تصاريح العمل السنوي في إيطاليا.",
+          "modalDesc": "Decreto Flussi هو البرنامج السنوي في إيطاليا الذي يسمح لمواطني الدول غير الأعضاء في الاتحاد الأوروبي بدخول البلاد للعمل. نساعد كلًا من أصحاب العمل والعمال طوال عملية التقديم بأكملها، من التحقق من الأهلية حتى الموافقة النهائية.",
+          "points": [
+            "تقييم أهلية صاحب العمل والعامل",
+            "تقديم الطلب عبر الإنترنت",
+            "جمع الوثائق وإعدادها",
+            "تنسيق تصريح العمل والتأشيرة",
+            "مساعدة تصريح الإقامة بعد الوصول"
+          ]
+        },
+        {
+          "icon": "✈️",
+          "title": "الدخول الأول إلى إيطاليا",
+          "desc": "دعم لجميع الإجراءات المطلوبة بعد وصولك الأول إلى إيطاليا.",
+          "modalDesc": "يتضمن الانتقال إلى إيطاليا لأول مرة عدة إجراءات إدارية مهمة. نرشدك في كل خطوة لضمان انتقال سلس وخالٍ من التوتر.",
+          "points": [
+            "المساعدة في Dichiarazione di Presenza (إعلان الحضور)",
+            "طلب رقم التعريف الضريبي",
+            "تسجيل الإقامة",
+            "المساعدة في بطاقة التأمين الصحي",
+            "الإرشاد والتوجيه الأولي بشأن الوثائق"
+          ]
+        },
+        {
+          "icon": "🇮🇹",
+          "title": "الجنسية الإيطالية",
+          "desc": "مساعدة مهنية في طلبات الجنسية الإيطالية.",
+          "modalDesc": "الحصول على الجنسية الإيطالية إنجاز مهم. يساعد اختصاصيونا في إعداد وتقديم طلبات كاملة للجنسية عبر الإقامة أو الزواج أو النسب.",
+          "points": [
+            "الجنسية عبر الإقامة طويلة الأمد",
+            "الجنسية عبر الزواج",
+            "الجنسية عبر النسب",
+            "توثيق الوثائق قانونيًا والترجمة المعتمدة",
+            "تقديم الطلب وتتبع التقدم"
+          ]
+        },
+        {
+          "icon": "📂",
+          "title": "إعداد الوثائق",
+          "desc": "إعداد ومراجعة والتحقق المهني من وثائق الهجرة.",
+          "modalDesc": "التوثيق الدقيق ضروري لعملية هجرة ناجحة. يضمن فريقنا أن تكون نماذجك ووثائقك الداعمة كاملة ودقيقة وجاهزة للتقديم.",
+          "points": [
+            "استكمال نموذج الطلب لإجراءات الهجرة",
+            "ترجمة الوثائق وتصديقها",
+            "المساعدة في التوثيق القانوني للوثائق",
+            "مراجعة قائمة التحقق الكاملة للوثائق",
+            "دعم التقديم لدى الجهات المختصة"
           ]
         }
       ]

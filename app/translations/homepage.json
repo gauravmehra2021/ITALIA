@@ -13,10 +13,22 @@
           "joinClass": "🎓 Unisciti alle lezioni"
         },
         "stats": [
-          { "num": "20+", "label": "Anni di esperienza" },
-          { "num": "5K+", "label": "Clienti assistiti" },
-          { "num": "98%", "label": "Tasso di successo" },
-          { "num": "8", "label": "Aree di servizio" }
+          {
+            "num": "20+",
+            "label": "Anni di esperienza"
+          },
+          {
+            "num": "5K+",
+            "label": "Clienti assistiti"
+          },
+          {
+            "num": "98%",
+            "label": "Tasso di successo"
+          },
+          {
+            "num": "8",
+            "label": "Aree di servizio"
+          }
         ]
       },
       "intro": {
@@ -41,22 +53,86 @@
         "desc": "Dall'immigrazione alle assicurazioni — clicca un servizio per scoprire come possiamo aiutarti."
       },
       "services": [
-        { "icon": "🌍", "title": "Servizi di immigrazione", "desc": "Permessi di soggiorno, ricongiungimento familiare, cittadinanza e altro.", "href": "/immigration" },
-        { "icon": "🏛️", "title": "CAF & Patronato", "desc": "Dichiarazioni dei redditi, ISEE, pensioni e assistenza sociale.", "href": "/caf" },
-        { "icon": "🎓", "title": "Formazione e corsi", "desc": "Corsi di lingua, qualifiche professionali e corsi sulla sicurezza.", "href": "/training" },
-        { "icon": "💼", "title": "Consulenza aziendale", "desc": "Apertura attività, documentazione DVR e supporto per la conformità.", "href": "/business" },
-        { "icon": "🛡️", "title": "Assicurazioni", "desc": "Assicurazioni sanitarie, vita, casa, veicoli e per aziende.", "href": "/insurance" },
-        { "icon": "🇮🇳", "title": "Consolato Indiano", "desc": "Passaporti, OCI, e-Visa e altri servizi consolari.", "href": "/indian-consulate" },
-        { "icon": "✈️", "title": "Visti internazionali", "desc": "Assistenza per visti turistici, lavoro, studio, famiglia e medico.", "href": "/visas" },
-        { "icon": "🌐", "title": "Altri servizi", "desc": "Traduzioni, creazione CV e servizi di interprete professionale.", "href": "/other" }
+        {
+          "icon": "🌍",
+          "title": "Servizi di immigrazione",
+          "desc": "Permessi di soggiorno, ricongiungimento familiare, cittadinanza e altro.",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "Dichiarazioni dei redditi, ISEE, pensioni e assistenza sociale.",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "Formazione e corsi",
+          "desc": "Corsi di lingua, qualifiche professionali e corsi sulla sicurezza.",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "Consulenza aziendale",
+          "desc": "Apertura attività, documentazione DVR e supporto per la conformità.",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Assicurazioni",
+          "desc": "Assicurazioni sanitarie, vita, casa, veicoli e per aziende.",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "Consolato Indiano",
+          "desc": "Passaporti, OCI, e-Visa e altri servizi consolari.",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "Visti internazionali",
+          "desc": "Assistenza per visti turistici, lavoro, studio, famiglia e medico.",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "Altri servizi",
+          "desc": "Traduzioni, creazione CV e servizi di interprete professionale.",
+          "href": "/other"
+        }
       ],
       "features": [
-        { "icon": "🏆", "title": "20+ anni di esperienza", "text": "Affidati a migliaia di clienti in tutta Italia e Europa." },
-        { "icon": "🌍", "title": "Team multilingue", "text": "Supporto in italiano e inglese." },
-        { "icon": "⚡", "title": "Elaborazione rapida", "text": "Tempi di risposta rapidi per tutte le pratiche e la documentazione." },
-        { "icon": "✅", "title": "98% tasso di successo", "text": "Storico di successo dimostrato in tutte le nostre categorie di servizio." },
-        { "icon": "🤝", "title": "Approccio orientato al cliente", "text": "Consulenza personalizzata su misura per la tua situazione." },
-        { "icon": "📋", "title": "Conformità completa", "text": "Sempre aggiornati con le ultime normative italiane ed europee." }
+        {
+          "icon": "🏆",
+          "title": "20+ anni di esperienza",
+          "text": "Affidati a migliaia di clienti in tutta Italia e Europa."
+        },
+        {
+          "icon": "🌍",
+          "title": "Team multilingue",
+          "text": "Supporto in italiano e inglese."
+        },
+        {
+          "icon": "⚡",
+          "title": "Elaborazione rapida",
+          "text": "Tempi di risposta rapidi per tutte le pratiche e la documentazione."
+        },
+        {
+          "icon": "✅",
+          "title": "98% tasso di successo",
+          "text": "Storico di successo dimostrato in tutte le nostre categorie di servizio."
+        },
+        {
+          "icon": "🤝",
+          "title": "Approccio orientato al cliente",
+          "text": "Consulenza personalizzata su misura per la tua situazione."
+        },
+        {
+          "icon": "📋",
+          "title": "Conformità completa",
+          "text": "Sempre aggiornati con le ultime normative italiane ed europee."
+        }
       ],
       "why": {
         "eyebrow": "Perché SS EUROPA",
@@ -67,7 +143,10 @@
       "cta": {
         "title": "Pronto a iniziare il tuo percorso in Italia?",
         "desc": "I nostri esperti sono pronti ad assisterti. Prenota una consulenza gratuita oggi e lasciati guidare in ogni passo — nella tua lingua.",
-        "actions": { "primary": "Inizia →", "secondary": "Scopri di più" }
+        "actions": {
+          "primary": "Inizia →",
+          "secondary": "Scopri di più"
+        }
       }
     }
   },
@@ -85,10 +164,22 @@
           "joinClass": "🎓 Join Classes"
         },
         "stats": [
-          { "num": "20+", "label": "Years Experience" },
-          { "num": "5K+", "label": "Clients Assisted" },
-          { "num": "98%", "label": "Success Rate" },
-          { "num": "8", "label": "Service Areas" }
+          {
+            "num": "20+",
+            "label": "Years Experience"
+          },
+          {
+            "num": "5K+",
+            "label": "Clients Assisted"
+          },
+          {
+            "num": "98%",
+            "label": "Success Rate"
+          },
+          {
+            "num": "8",
+            "label": "Service Areas"
+          }
         ]
       },
       "intro": {
@@ -96,7 +187,16 @@
         "title": "Your Trusted Partner for Life in Italy",
         "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — is a professional services organization dedicated to helping immigrants, families, and businesses navigate the complexities of Italian bureaucracy. With over 20 years of experience, we offer end-to-end support across immigration, tax, training, insurance, and more.",
         "p2": "Our multilingual team is committed to making your journey in Italy smooth, legal, and stress-free — from your first day to full integration.",
-        "learnMore": "Learn More About Us →"
+        "learnMore": "Learn More About Us →",
+        "visualTitle": "Why Clients Choose SS EUROPA",
+        "checklist": [
+          "Certified immigration consultants",
+          "CAF & Patronato authorized operators",
+          "Multilingual support in 6+ languages",
+          "Fast and transparent processes",
+          "Thousands of successful cases",
+          "Offices across Italy"
+        ]
       },
       "section": {
         "tag": "What We Offer",
@@ -104,27 +204,855 @@
         "desc": "From immigration to insurance — click any service to explore how we can help you."
       },
       "services": [
-        { "icon": "🌍", "title": "Immigration Services", "desc": "Residence permits, family reunification, citizenship, and more.", "href": "/immigration" },
-        { "icon": "🏛️", "title": "CAF & Patronato", "desc": "Tax returns, ISEE, pensions, and social welfare assistance.", "href": "/caf" },
-        { "icon": "🎓", "title": "Training & Courses", "desc": "Language courses, professional qualifications, and safety training.", "href": "/training" },
-        { "icon": "💼", "title": "Business Consultancy", "desc": "Business registration, DVR documentation, and compliance support.", "href": "/business" },
-        { "icon": "🛡️", "title": "Insurance", "desc": "Health, life, home, vehicle, and business insurance solutions.", "href": "/insurance" },
-        { "icon": "🇮🇳", "title": "Indian Consulate", "desc": "Passport, OCI card, e-Visa, and other consular services.", "href": "/indian-consulate" },
-        { "icon": "✈️", "title": "International Visas", "desc": "Tourist, work, student, family, and medical visa assistance.", "href": "/visas" },
-        { "icon": "🌐", "title": "Other Services", "desc": "Translations, CV creation, and professional interpreter services.", "href": "/other" }
+        {
+          "icon": "🌍",
+          "title": "Immigration Services",
+          "desc": "Residence permits, family reunification, citizenship, and more.",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "Tax returns, ISEE, pensions, and social welfare assistance.",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "Training & Courses",
+          "desc": "Language courses, professional qualifications, and safety training.",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "Business Consultancy",
+          "desc": "Business registration, DVR documentation, and compliance support.",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Insurance",
+          "desc": "Health, life, home, vehicle, and business insurance solutions.",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "Indian Consulate",
+          "desc": "Passport, OCI card, e-Visa, and other consular services.",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "International Visas",
+          "desc": "Tourist, work, student, family, and medical visa assistance.",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "Other Services",
+          "desc": "Translations, CV creation, and professional interpreter services.",
+          "href": "/other"
+        }
       ],
       "features": [
-        { "icon": "🏆", "title": "20+ Years Experience", "text": "Trusted by thousands of clients across Italy and Europe." },
-        { "icon": "🌍", "title": "Multilingual Team", "text": "Support in Italian and English." },
-        { "icon": "⚡", "title": "Fast Processing", "text": "Quick turnaround on all applications and documentation." },
-        { "icon": "✅", "title": "98% Success Rate", "text": "Proven track record across all our service categories." },
-        { "icon": "🤝", "title": "Client-First Approach", "text": "Personalized guidance tailored to your specific situation." },
-        { "icon": "📋", "title": "Full Compliance", "text": "Always up to date with the latest Italian and EU regulations." }
+        {
+          "icon": "🏆",
+          "title": "20+ Years Experience",
+          "text": "Trusted by thousands of clients across Italy and Europe."
+        },
+        {
+          "icon": "🌍",
+          "title": "Multilingual Team",
+          "text": "Support in Italian and English."
+        },
+        {
+          "icon": "⚡",
+          "title": "Fast Processing",
+          "text": "Quick turnaround on all applications and documentation."
+        },
+        {
+          "icon": "✅",
+          "title": "98% Success Rate",
+          "text": "Proven track record across all our service categories."
+        },
+        {
+          "icon": "🤝",
+          "title": "Client-First Approach",
+          "text": "Personalized guidance tailored to your specific situation."
+        },
+        {
+          "icon": "📋",
+          "title": "Full Compliance",
+          "text": "Always up to date with the latest Italian and EU regulations."
+        }
       ],
+      "why": {
+        "eyebrow": "Why SS EUROPA",
+        "title": "The Expertise & Care You Deserve",
+        "desc": "We don't just process paperwork — we build lasting relationships with our clients. Our team of certified professionals is dedicated to delivering results with transparency, speed, and genuine care for your wellbeing.",
+        "cta": "Discover Our Story"
+      },
       "cta": {
         "title": "Ready to Start Your Journey in Italy?",
         "desc": "Our experts are ready to assist you. Book a free consultation today and let us guide you through every step — in your language.",
-        "actions": { "primary": "Get Started →", "secondary": "Learn More" }
+        "actions": {
+          "primary": "Get Started →",
+          "secondary": "Learn More"
+        }
+      }
+    }
+  },
+  "ur": {
+    "home": {
+      "hero": {
+        "badge": "SS EUROPA — Sostegno e Soluzioni per l'Europa ",
+        "titleLine1": "ہم آپ کی مدد کرتے ہیں",
+        "titleLine2": "رہنے، کام کرنے",
+        "titleLine3": "اور اٹلی میں ترقی کرنے میں",
+        "desc": "افراد، خاندانوں اور کاروباروں کے لیے مکمل امیگریشن، انتظامی اور پیشہ ورانہ خدمات۔ ہماری تصدیق شدہ ٹیم ہر قدم پر آپ کی رہنمائی کرتی ہے — آپ کی اپنی زبان میں۔",
+        "actions": {
+          "explore": "خدمات دریافت کریں →",
+          "who": "ہم کون ہیں",
+          "joinClass": "🎓 کلاسز میں شامل ہوں"
+        },
+        "stats": [
+          {
+            "num": "20+",
+            "label": "سالوں کا تجربہ"
+          },
+          {
+            "num": "5K+",
+            "label": "معاونت یافتہ کلائنٹس"
+          },
+          {
+            "num": "98%",
+            "label": "کامیابی کی شرح"
+          },
+          {
+            "num": "8",
+            "label": "خدمات کے شعبے"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "SS EUROPA کے بارے میں",
+        "title": "اٹلی میں زندگی کے لیے آپ کا قابلِ اعتماد ساتھی",
+        "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — ایک پیشہ ورانہ خدمات کی تنظیم ہے جو تارکینِ وطن، خاندانوں اور کاروباروں کو اطالوی سرکاری نظام کی پیچیدگیوں سے نمٹنے میں مدد فراہم کرنے کے لیے وقف ہے۔ 20 سال سے زائد کے تجربے کے ساتھ، ہم امیگریشن، ٹیکس، تربیت، انشورنس اور اس سے آگے مکمل معاونت فراہم کرتے ہیں۔",
+        "p2": "ہماری کثیر لسانی ٹیم اٹلی میں آپ کے سفر کو آسان، قانونی اور بے فکر بنانے کے لیے پُرعزم ہے — آپ کے پہلے دن سے لے کر مکمل انضمام تک۔",
+        "learnMore": "ہمارے بارے میں مزید جانیں →",
+        "visualTitle": "یہ کیوں ہے کہ کلائنٹس SS EUROPA کو منتخب کرتے ہیں",
+        "checklist": [
+          "مصدقہ امیگریشن مشیر",
+          "CAF & Patronato کے مجاز آپریٹر",
+          "6+ زبانوں میں کثیر لسانی معاونت",
+          "تیز اور شفاف عمل",
+          "ہزاروں کامیاب کیسز",
+          "اٹلی بھر میں دفاتر"
+        ]
+      },
+      "section": {
+        "tag": "ہم کیا پیش کرتے ہیں",
+        "title": "ہماری مکمل خدمات کی رینج",
+        "desc": "امیگریشن سے لے کر انشورنس تک — یہ جاننے کے لیے کسی بھی خدمت پر کلک کریں کہ ہم آپ کی کیسے مدد کر سکتے ہیں۔"
+      },
+      "services": [
+        {
+          "icon": "🌍",
+          "title": "امیگریشن خدمات",
+          "desc": "رہائشی اجازت نامے، خاندانی اتحاد، شہریت اور مزید۔",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "ٹیکس ریٹرن، ISEE، پنشن اور سماجی بہبود کی معاونت۔",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "تربیت اور کورسز",
+          "desc": "زبان کے کورسز، پیشہ ورانہ اہلیت اور حفاظتی تربیت۔",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "کاروباری مشاورت",
+          "desc": "کاروباری رجسٹریشن، DVR دستاویزات اور تعمیل کی معاونت۔",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "انشورنس",
+          "desc": "صحت، زندگی، گھر، گاڑی اور کاروبار کے انشورنس حل۔",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "بھارتی قونصل خانہ",
+          "desc": "پاسپورٹ، OCI کارڈ، ای ویزا اور دیگر قونصلی خدمات۔",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "بین الاقوامی ویزے",
+          "desc": "سیاحتی، ملازمت، طالب علم، خاندانی اور طبی ویزا کی معاونت۔",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "دیگر خدمات",
+          "desc": "تراجم، سی وی کی تیاری اور پیشہ ور مترجم کی خدمات۔",
+          "href": "/other"
+        }
+      ],
+      "features": [
+        {
+          "icon": "🏆",
+          "title": "20+ سالوں کا تجربہ",
+          "text": "پورے اٹلی اور یورپ میں ہزاروں کلائنٹس کا اعتماد۔"
+        },
+        {
+          "icon": "🌍",
+          "title": "کثیر لسانی ٹیم",
+          "text": "اطالوی اور انگریزی میں معاونت۔"
+        },
+        {
+          "icon": "⚡",
+          "title": "تیز کارروائی",
+          "text": "تمام درخواستوں اور دستاویزات کے لیے فوری نمٹائی۔"
+        },
+        {
+          "icon": "✅",
+          "title": "98% کامیابی کی شرح",
+          "text": "ہماری تمام خدماتی اقسام میں ثابت شدہ کارکردگی کا ریکارڈ۔"
+        },
+        {
+          "icon": "🤝",
+          "title": "کلائنٹ کو ترجیح دینے والا انداز",
+          "text": "آپ کی مخصوص صورتحال کے مطابق ذاتی نوعیت کی رہنمائی۔"
+        },
+        {
+          "icon": "📋",
+          "title": "مکمل تعمیل",
+          "text": "ہمیشہ تازہ ترین اطالوی اور یورپی ضوابط سے ہم آہنگ۔"
+        }
+      ],
+      "why": {
+        "eyebrow": "SS EUROPA کیوں؟",
+        "title": "آپ کے مستحق مہارت اور دیکھ بھال",
+        "desc": "ہم صرف کاغذی کارروائی نہیں کرتے: ہم اپنے مؤکلوں کے ساتھ طویل مدتی تعلقات بھی تعمیر کرتے ہیں۔ ہماری تصدیق شدہ پیشہ ور افراد کی ٹیم شفافیت، تیزی اور آپ کے بہبود کے لیے سچی فکر کے ساتھ نتائج حاصل کرنے کے لیے وقف ہے۔",
+        "cta": "ہماری کہانی دریافت کریں"
+      },
+      "cta": {
+        "title": "اٹلی میں اپنا سفر شروع کرنے کے لیے تیار ہیں؟",
+        "desc": "ہمارے ماہرین آپ کی مدد کے لیے تیار ہیں۔ آج ہی مفت مشاورت بک کریں اور ہر قدم پر ہماری رہنمائی حاصل کریں — آپ کی اپنی زبان میں۔",
+        "actions": {
+          "primary": "شروع کریں →",
+          "secondary": "مزید جانیں"
+        }
+      }
+    }
+  },
+  "bn": {
+    "home": {
+      "hero": {
+        "badge": "SS EUROPA — Sostegno e Soluzioni per l'Europa ",
+        "titleLine1": "আমরা আপনাকে সাহায্য করি",
+        "titleLine2": "বসবাস, কাজ",
+        "titleLine3": "এবং ইতালিতে উন্নতি করতে",
+        "desc": "ব্যক্তি, পরিবার এবং ব্যবসার জন্য সম্পূর্ণ অভিবাসন, প্রশাসনিক এবং পেশাদার পরিষেবা। আমাদের সার্টিফায়েড দল প্রতিটি ধাপে আপনাকে পথ দেখায় — আপনার নিজের ভাষায়।",
+        "actions": {
+          "explore": "পরিষেবাগুলি অন্বেষণ করুন →",
+          "who": "আমরা কারা",
+          "joinClass": "🎓 ক্লাসে যোগ দিন"
+        },
+        "stats": [
+          {
+            "num": "20+",
+            "label": "বছরের অভিজ্ঞতা"
+          },
+          {
+            "num": "5K+",
+            "label": "সহায়তাপ্রাপ্ত ক্লায়েন্ট"
+          },
+          {
+            "num": "98%",
+            "label": "সাফল্যের হার"
+          },
+          {
+            "num": "8",
+            "label": "পরিষেবা ক্ষেত্র"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "SS EUROPA সম্পর্কে",
+        "title": "ইতালিতে জীবনযাপনের জন্য আপনার বিশ্বস্ত সঙ্গী",
+        "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — একটি পেশাদার পরিষেবা প্রতিষ্ঠান যা অভিবাসী, পরিবার এবং ব্যবসাগুলিকে ইতালীয় আমলাতন্ত্রের জটিলতা মোকাবেলায় সাহায্য করার জন্য নিবেদিত। 20 বছরেরও বেশি অভিজ্ঞতা নিয়ে, আমরা অভিবাসন, কর, প্রশিক্ষণ, বীমা এবং আরও অনেক ক্ষেত্রে প্রান্ত থেকে প্রান্ত সহায়তা প্রদান করি।",
+        "p2": "আমাদের বহুভাষিক দল ইতালিতে আপনার যাত্রা সহজ, বৈধ এবং চাপমুক্ত করতে প্রতিশ্রুতিবদ্ধ — আপনার প্রথম দিন থেকে পূর্ণ একীভূতকরণ পর্যন্ত।",
+        "learnMore": "আমাদের সম্পর্কে আরও জানুন →",
+        "visualTitle": "কেন ক্লায়েন্টরা SS EUROPA বেছে নেয়",
+        "checklist": [
+          "সার্টিফায়েড অভিবাসন উপদেষ্টা",
+          "CAF & Patronato অনুমোদিত অপারেটর",
+          "6+ ভাষায় বহুভাষিক সহায়তা",
+          "দ্রুত এবং স্বচ্ছ প্রক্রিয়া",
+          "হাজার হাজার সফল মামলা",
+          "সারা ইতালিতে অফিস"
+        ]
+      },
+      "section": {
+        "tag": "আমরা যা অফার করি",
+        "title": "আমাদের সম্পূর্ণ পরিষেবার পরিসর",
+        "desc": "অভিবাসন থেকে বীমা পর্যন্ত — আমরা কীভাবে আপনাকে সাহায্য করতে পারি তা জানতে যেকোনো পরিষেবায় ক্লিক করুন।"
+      },
+      "services": [
+        {
+          "icon": "🌍",
+          "title": "অভিবাসন পরিষেবা",
+          "desc": "রেসিডেন্স পারমিট, পারিবারিক পুনর্মিলন, নাগরিকত্ব এবং আরও অনেক কিছু।",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "কর রিটার্ন, ISEE, পেনশন এবং সামাজিক কল্যাণ সহায়তা।",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "প্রশিক্ষণ ও কোর্স",
+          "desc": "ভাষা কোর্স, পেশাদার যোগ্যতা এবং নিরাপত্তা প্রশিক্ষণ।",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "ব্যবসায়িক পরামর্শ",
+          "desc": "ব্যবসা নিবন্ধন, DVR ডকুমেন্টেশন এবং সম্মতি সহায়তা।",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "বীমা",
+          "desc": "স্বাস্থ্য, জীবন, বাড়ি, যানবাহন এবং ব্যবসায়িক বীমা সমাধান।",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "ভারতীয় কনস্যুলেট",
+          "desc": "পাসপোর্ট, OCI কার্ড, ই-ভিসা এবং অন্যান্য কনস্যুলার পরিষেবা।",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "আন্তর্জাতিক ভিসা",
+          "desc": "পর্যটন, কাজ, ছাত্র, পারিবারিক এবং চিকিৎসা ভিসা সহায়তা।",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "অন্যান্য পরিষেবা",
+          "desc": "অনুবাদ, সিভি তৈরি এবং পেশাদার দোভাষী পরিষেবা।",
+          "href": "/other"
+        }
+      ],
+      "features": [
+        {
+          "icon": "🏆",
+          "title": "20+ বছরের অভিজ্ঞতা",
+          "text": "সমগ্র ইতালি ও ইউরোপ জুড়ে হাজার হাজার ক্লায়েন্টের আস্থা।"
+        },
+        {
+          "icon": "🌍",
+          "title": "বহুভাষিক দল",
+          "text": "ইতালীয় ও ইংরেজিতে সহায়তা।"
+        },
+        {
+          "icon": "⚡",
+          "title": "দ্রুত প্রক্রিয়াকরণ",
+          "text": "সমস্ত আবেদন ও ডকুমেন্টেশনের দ্রুত নিষ্পত্তি।"
+        },
+        {
+          "icon": "✅",
+          "title": "98% সাফল্যের হার",
+          "text": "আমাদের সমস্ত পরিষেবা বিভাগে প্রমাণিত সাফল্যের রেকর্ড।"
+        },
+        {
+          "icon": "🤝",
+          "title": "ক্লায়েন্ট-প্রথম পদ্ধতি",
+          "text": "আপনার নির্দিষ্ট পরিস্থিতির জন্য উপযোগী ব্যক্তিগত নির্দেশনা।"
+        },
+        {
+          "icon": "📋",
+          "title": "সম্পূর্ণ সম্মতি",
+          "text": "সর্বদা সর্বশেষ ইতালীয় ও ইইউ প্রবিধানের সাথে হালনাগাদ।"
+        }
+      ],
+      "why": {
+        "eyebrow": "SS EUROPA কেন?",
+        "title": "আপনার প্রাপ্য অভিজ্ঞতা এবং যত্ন",
+        "desc": "আমরা শুধু কাগজপত্র প্রক্রিয়া করি না — আমরা আমাদের ক্লায়েন্টদের সাথে দীর্ঘমেয়াদী সম্পর্ক তৈরি করি। আমাদের সার্টিফায়েড পেশাদারদের দল স্বচ্ছতা, গতি এবং আপনার সুস্থতার প্রতি সত্যিকারের যত্নের সাথে ফলাফল প্রদানের জন্য নিবেদিত।",
+        "cta": "আমাদের গল্প আবিষ্কার করুন"
+      },
+      "cta": {
+        "title": "ইতালিতে আপনার যাত্রা শুরু করতে প্রস্তুত?",
+        "desc": "আমাদের বিশেষজ্ঞরা আপনাকে সহায়তা করতে প্রস্তুত। আজই একটি বিনামূল্যের পরামর্শ বুক করুন এবং প্রতিটি ধাপে আমাদের নির্দেশনা নিন — আপনার নিজের ভাষায়।",
+        "actions": {
+          "primary": "শুরু করুন →",
+          "secondary": "আরও জানুন"
+        }
+      }
+    }
+  },
+  "pa": {
+    "home": {
+      "hero": {
+        "badge": "SS EUROPA — Sostegno e Soluzioni per l'Europa ",
+        "titleLine1": "ਅਸੀਂ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦੇ ਹਾਂ",
+        "titleLine2": "ਰਹਿਣ, ਕੰਮ ਕਰਨ",
+        "titleLine3": "ਅਤੇ ਇਟਲੀ ਵਿੱਚ ਤਰੱਕੀ ਕਰਨ ਵਿੱਚ",
+        "desc": "ਵਿਅਕਤੀਆਂ, ਪਰਿਵਾਰਾਂ ਅਤੇ ਕਾਰੋਬਾਰਾਂ ਲਈ ਸੰਪੂਰਨ ਇਮੀਗ੍ਰੇਸ਼ਨ, ਪ੍ਰਸ਼ਾਸਕੀ ਅਤੇ ਪੇਸ਼ੇਵਰ ਸੇਵਾਵਾਂ। ਸਾਡੀ ਪ੍ਰਮਾਣਿਤ ਟੀਮ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਦੀ ਹੈ — ਤੁਹਾਡੀ ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ।",
+        "actions": {
+          "explore": "ਸੇਵਾਵਾਂ ਦੀ ਪੜਚੋਲ ਕਰੋ →",
+          "who": "ਅਸੀਂ ਕੌਣ ਹਾਂ",
+          "joinClass": "🎓 ਕਲਾਸਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ"
+        },
+        "stats": [
+          {
+            "num": "20+",
+            "label": "ਸਾਲਾਂ ਦਾ ਤਜਰਬਾ"
+          },
+          {
+            "num": "5K+",
+            "label": "ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਗਾਹਕ"
+          },
+          {
+            "num": "98%",
+            "label": "ਸਫਲਤਾ ਦਰ"
+          },
+          {
+            "num": "8",
+            "label": "ਸੇਵਾ ਖੇਤਰ"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "SS EUROPA ਬਾਰੇ",
+        "title": "ਇਟਲੀ ਵਿੱਚ ਜੀਵਨ ਲਈ ਤੁਹਾਡਾ ਭਰੋਸੇਯੋਗ ਸਾਥੀ",
+        "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — ਇੱਕ ਪੇਸ਼ੇਵਰ ਸੇਵਾ ਸੰਸਥਾ ਹੈ ਜੋ ਪ੍ਰਵਾਸੀਆਂ, ਪਰਿਵਾਰਾਂ ਅਤੇ ਕਾਰੋਬਾਰਾਂ ਨੂੰ ਇਤਾਲਵੀ ਨੌਕਰਸ਼ਾਹੀ ਦੀਆਂ ਜਟਿਲਤਾਵਾਂ ਨਾਲ ਨਜਿੱਠਣ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹੈ। 20 ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਦੇ ਤਜਰਬੇ ਨਾਲ, ਅਸੀਂ ਇਮੀਗ੍ਰੇਸ਼ਨ, ਟੈਕਸ, ਸਿਖਲਾਈ, ਬੀਮਾ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਵਿੱਚ ਸੰਪੂਰਨ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।",
+        "p2": "ਸਾਡੀ ਬਹੁਭਾਸ਼ੀ ਟੀਮ ਤੁਹਾਡੇ ਇਟਲੀ ਦੇ ਸਫ਼ਰ ਨੂੰ ਸੁਖਾਲਾ, ਕਾਨੂੰਨੀ ਅਤੇ ਤਣਾਅ-ਮੁਕਤ ਬਣਾਉਣ ਲਈ ਵਚਨਬੱਧ ਹੈ — ਤੁਹਾਡੇ ਪਹਿਲੇ ਦਿਨ ਤੋਂ ਲੈ ਕੇ ਪੂਰੇ ਏਕੀਕਰਨ ਤੱਕ।",
+        "learnMore": "ਸਾਡੇ ਬਾਰੇ ਹੋਰ ਜਾਣੋ →",
+        "visualTitle": "ਕਿਉਂ ਗਾਹਕ SS EUROPA ਨੂੰ ਚੁਣਦੇ ਹਨ",
+        "checklist": [
+          "ਪ੍ਰਮਾਣਿਤ ਇਮੀਗ੍ਰੇਸ਼ਨ ਸਲਾਹਕਾਰ",
+          "CAF & Patronato ਅਧਿਕਾਰਤ ਓਪਰੇਟਰ",
+          "6+ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਬਹੁਭਾਸ਼ੀ ਸਹਾਇਤਾ",
+          "ਤੇਜ਼ ਅਤੇ ਪਾਰਦਰਸ਼ੀ ਪ੍ਰਕਿਰਿਆ",
+          "ਹਜ਼ਾਰਾਂ ਸਫਲ ਮਾਮਲੇ",
+          "ਸਾਰੀ ਇਟਲੀ ਵਿੱਚ ਦਫਤਰ"
+        ]
+      },
+      "section": {
+        "tag": "ਅਸੀਂ ਕੀ ਪੇਸ਼ ਕਰਦੇ ਹਾਂ",
+        "title": "ਸਾਡੀ ਸੰਪੂਰਨ ਸੇਵਾ ਸ਼੍ਰੇਣੀ",
+        "desc": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਤੋਂ ਲੈ ਕੇ ਬੀਮੇ ਤੱਕ — ਇਹ ਜਾਣਨ ਲਈ ਕਿਸੇ ਵੀ ਸੇਵਾ 'ਤੇ ਕਲਿੱਕ ਕਰੋ ਕਿ ਅਸੀਂ ਤੁਹਾਡੀ ਕਿਵੇਂ ਮਦਦ ਕਰ ਸਕਦੇ ਹਾਂ।"
+      },
+      "services": [
+        {
+          "icon": "🌍",
+          "title": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ",
+          "desc": "ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ, ਪਰਿਵਾਰਕ ਪੁਨਰਮਿਲਾਪ, ਨਾਗਰਿਕਤਾ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ।",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "ਟੈਕਸ ਰਿਟਰਨ, ISEE, ਪੈਨਸ਼ਨਾਂ ਅਤੇ ਸਮਾਜਿਕ ਭਲਾਈ ਸਹਾਇਤਾ।",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "ਸਿਖਲਾਈ ਅਤੇ ਕੋਰਸ",
+          "desc": "ਭਾਸ਼ਾ ਕੋਰਸ, ਪੇਸ਼ੇਵਰ ਯੋਗਤਾਵਾਂ ਅਤੇ ਸੁਰੱਖਿਆ ਸਿਖਲਾਈ।",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "ਕਾਰੋਬਾਰੀ ਸਲਾਹਕਾਰੀ",
+          "desc": "ਕਾਰੋਬਾਰ ਰਜਿਸਟ੍ਰੇਸ਼ਨ, DVR ਦਸਤਾਵੇਜ਼ ਅਤੇ ਪਾਲਣਾ ਸਹਾਇਤਾ।",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "ਬੀਮਾ",
+          "desc": "ਸਿਹਤ, ਜੀਵਨ, ਘਰ, ਵਾਹਨ ਅਤੇ ਕਾਰੋਬਾਰੀ ਬੀਮਾ ਹੱਲ।",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "ਭਾਰਤੀ ਕੌਂਸਲੇਟ",
+          "desc": "ਪਾਸਪੋਰਟ, OCI ਕਾਰਡ, ਈ-ਵੀਜ਼ਾ ਅਤੇ ਹੋਰ ਕੌਂਸਲਰ ਸੇਵਾਵਾਂ।",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "ਅੰਤਰਰਾਸ਼ਟਰੀ ਵੀਜ਼ੇ",
+          "desc": "ਸੈਰ-ਸਪਾਟਾ, ਕੰਮ, ਵਿਦਿਆਰਥੀ, ਪਰਿਵਾਰਕ ਅਤੇ ਮੈਡੀਕਲ ਵੀਜ਼ਾ ਸਹਾਇਤਾ।",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "ਹੋਰ ਸੇਵਾਵਾਂ",
+          "desc": "ਅਨੁਵਾਦ, CV ਤਿਆਰੀ ਅਤੇ ਪੇਸ਼ੇਵਰ ਦੁਭਾਸ਼ੀਏ ਸੇਵਾਵਾਂ।",
+          "href": "/other"
+        }
+      ],
+      "features": [
+        {
+          "icon": "🏆",
+          "title": "20+ ਸਾਲਾਂ ਦਾ ਤਜਰਬਾ",
+          "text": "ਪੂਰੇ ਇਟਲੀ ਅਤੇ ਯੂਰਪ ਵਿੱਚ ਹਜ਼ਾਰਾਂ ਗਾਹਕਾਂ ਦਾ ਭਰੋਸਾ।"
+        },
+        {
+          "icon": "🌍",
+          "title": "ਬਹੁਭਾਸ਼ੀ ਟੀਮ",
+          "text": "ਇਤਾਲਵੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਸਹਾਇਤਾ।"
+        },
+        {
+          "icon": "⚡",
+          "title": "ਤੇਜ਼ ਕਾਰਵਾਈ",
+          "text": "ਸਾਰੀਆਂ ਅਰਜ਼ੀਆਂ ਅਤੇ ਦਸਤਾਵੇਜ਼ਾਂ 'ਤੇ ਤੇਜ਼ ਨਿਪਟਾਰਾ।"
+        },
+        {
+          "icon": "✅",
+          "title": "98% ਸਫਲਤਾ ਦਰ",
+          "text": "ਸਾਡੀਆਂ ਸਾਰੀਆਂ ਸੇਵਾ ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਸਾਬਤ ਹੋਇਆ ਪ੍ਰਦਰਸ਼ਨ ਰਿਕਾਰਡ।"
+        },
+        {
+          "icon": "🤝",
+          "title": "ਗਾਹਕ-ਪਹਿਲ ਪਹੁੰਚ",
+          "text": "ਤੁਹਾਡੀ ਖਾਸ ਸਥਿਤੀ ਅਨੁਸਾਰ ਵਿਅਕਤੀਗਤ ਅਗਵਾਈ।"
+        },
+        {
+          "icon": "📋",
+          "title": "ਪੂਰੀ ਪਾਲਣਾ",
+          "text": "ਹਮੇਸ਼ਾ ਨਵੀਨਤਮ ਇਤਾਲਵੀ ਅਤੇ EU ਨਿਯਮਾਂ ਨਾਲ ਅੱਪ ਟੂ ਡੇਟ।"
+        }
+      ],
+      "why": {
+        "eyebrow": "SS EUROPA ਕਿਉਂ?",
+        "title": "ਤੁਹਾਡੀ ਅਨੁਭਵ ਅਤੇ ਦਿਲਚਸਪੀ",
+        "desc": "ਅਸੀਂ ਸਿਰਫ਼ ਕਾਗਜ਼ੀ ਕਾਰਵਾਈਆਂ ਨਹੀਂ ਕਰਦੇ — ਅਸੀਂ ਆਪਣੇ ਗਾਹਕਾਂ ਨਾਲ ਲੰਬੇ ਸਮੇਂ ਦੇ ਸਬੰਧ ਬਣਾਉਂਦੇ ਹਾਂ। ਸਾਡੀ ਪ੍ਰਮਾਣਿਤ ਪੇਸ਼ੇਵਰ ਟੀਮ ਪਾਰਦਰਸ਼ੀਤਾ, ਗਤੀ ਅਤੇ ਤੁਹਾਡੇ ਖੁਸ਼ਹਾਲੀ ਲਈ ਸੱਚੀ ਫਿਕਰ ਨਾਲ ਨਤੀਜੇ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਅਨੁਜੇਬੀ ਹੈ।",
+        "cta": "ਸਾਡੀ ਕਹਾਣੀ ਖੋਜੋ"
+      },
+      "cta": {
+        "title": "ਇਟਲੀ ਵਿੱਚ ਆਪਣਾ ਸਫ਼ਰ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਤਿਆਰ ਹੋ?",
+        "desc": "ਸਾਡੇ ਮਾਹਰ ਤੁਹਾਡੀ ਸਹਾਇਤਾ ਲਈ ਤਿਆਰ ਹਨ। ਅੱਜ ਹੀ ਇੱਕ ਮੁਫ਼ਤ ਸਲਾਹ-ਮਸ਼ਵਰਾ ਬੁੱਕ ਕਰੋ ਅਤੇ ਸਾਨੂੰ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਨ ਦਿਓ — ਤੁਹਾਡੀ ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ।",
+        "actions": {
+          "primary": "ਸ਼ੁਰੂ ਕਰੋ →",
+          "secondary": "ਹੋਰ ਜਾਣੋ"
+        }
+      }
+    }
+  },
+  "si": {
+    "home": {
+      "hero": {
+        "badge": "SS EUROPA — Sostegno e Soluzioni per l'Europa ",
+        "titleLine1": "අපි ඔබට උදව් කරමු",
+        "titleLine2": "ජීවත් වීමට, වැඩ කිරීමට",
+        "titleLine3": "සහ ඉතාලියේ සමෘද්ධිමත් වීමට",
+        "desc": "පුද්ගලයන්, පවුල් සහ ව්‍යාපාර සඳහා සම්පූර්ණ ආගමන, පරිපාලන සහ වෘත්තීය සේවා. අපගේ සහතික කළ කණ්ඩායම සෑම පියවරකදීම ඔබට මඟ පෙන්වයි — ඔබේම භාෂාවෙන්.",
+        "actions": {
+          "explore": "සේවා ගවේෂණය කරන්න →",
+          "who": "අප කවුරුන්ද",
+          "joinClass": "🎓 පන්තිවලට එක්වන්න"
+        },
+        "stats": [
+          {
+            "num": "20+",
+            "label": "වසර ගණනක පළපුරුද්ද"
+          },
+          {
+            "num": "5K+",
+            "label": "සහාය දුන් සේවාදායකයින්"
+          },
+          {
+            "num": "98%",
+            "label": "සාර්ථකත්ව අනුපාතය"
+          },
+          {
+            "num": "8",
+            "label": "සේවා ක්ෂේත්‍ර"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "SS EUROPA ගැන",
+        "title": "ඉතාලියේ ජීවිතය සඳහා ඔබේ විශ්වාසනීය හවුල්කරු",
+        "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — යනු සංක්‍රමණිකයන්ට, පවුල්වලට සහ ව්‍යාපාරවලට ඉතාලි නිලධරවාදයේ සංකීර්ණතා හරහා යාමට උපකාර කිරීම සඳහා කැපවූ වෘත්තීය සේවා සංවිධානයකි. වසර 20 කට වැඩි පළපුරුද්දක් සමඟ, අපි ආගමන, බදු, පුහුණුව, රක්ෂණය සහ තවත් බොහෝ දේ පුරා අන්තයේ සිට අන්තය දක්වා සහාය ලබා දෙමු.",
+        "p2": "අපගේ බහුභාෂා කණ්ඩායම ඔබේ පළමු දිනයේ සිට සම්පූර්ණ ඒකාබද්ධ වීම දක්වා — ඉතාලියේ ඔබේ ගමන සුමට, නෛතික සහ ආතතියෙන් තොර කිරීමට කැපවී සිටී.",
+        "learnMore": "අප ගැන වැඩිදුර දැනගන්න →",
+        "visualTitle": "අපි නිර්ණය කරන්නේ ඇයි SS EUROPA තෝරා ගන්නේද",
+        "checklist": [
+          "සහතික කළ ආගමන උපදේශකයින්",
+          "CAF & Patronato අනුමත ක්‍රියාකරුවන්",
+          "6+ භාෂාවල බහුභාෂා සහාය",
+          "ඉක්මන් හා පැහැදිලි ක්‍රියාවලීන්",
+          "දහස් ගණනක් සාර්ථක නඩු",
+          "පූර්ණ ඉතාලිය පුරා කාර්යාල"
+        ]
+      },
+      "section": {
+        "tag": "අප පිරිනමන දේ",
+        "title": "අපගේ සම්පූර්ණ සේවා පරාසය",
+        "desc": "ආගමනයේ සිට රක්ෂණය දක්වා — අපට ඔබට උදව් කළ හැකි ආකාරය ගවේෂණය කිරීමට ඕනෑම සේවාවක් මත ක්ලික් කරන්න."
+      },
+      "services": [
+        {
+          "icon": "🌍",
+          "title": "ආගමන සේවා",
+          "desc": "පදිංචි බලපත්‍ර, පවුල් නැවත එක්වීම, පුරවැසිභාවය සහ තවත්.",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "බදු ප්‍රතිලාභ, ISEE, විශ්‍රාම වැටුප් සහ සමාජ සුබසාධන සහාය.",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "පුහුණුව සහ පාඨමාලා",
+          "desc": "භාෂා පාඨමාලා, වෘත්තීය සුදුසුකම් සහ ආරක්ෂක පුහුණුව.",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "ව්‍යාපාර උපදේශනය",
+          "desc": "ව්‍යාපාර ලියාපදිංචිය, DVR ලේඛන සහ අනුකූලතා සහාය.",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "රක්ෂණය",
+          "desc": "සෞඛ්‍ය, ජීවිත, නිවාස, වාහන සහ ව්‍යාපාර රක්ෂණ විසඳුම්.",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "ඉන්දියානු කොන්සල් කාර්යාලය",
+          "desc": "විදේශ ගමන් බලපත්‍රය, OCI කාඩ්පත, ඊ-වීසා සහ අනෙකුත් කොන්සල් සේවා.",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "ජාත්‍යන්තර වීසා",
+          "desc": "සංචාරක, රැකියා, ශිෂ්‍ය, පවුල් සහ වෛද්‍ය වීසා සහාය.",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "වෙනත් සේවා",
+          "desc": "පරිවර්තන, CV සෑදීම සහ වෘත්තීය පරිවර්තක සේවා.",
+          "href": "/other"
+        }
+      ],
+      "features": [
+        {
+          "icon": "🏆",
+          "title": "වසර 20+ ක පළපුරුද්ද",
+          "text": "ඉතාලිය සහ යුරෝපය පුරා දහස් ගණන් සේවාදායකයින් විසින් විශ්වාස කරනු ලැබේ."
+        },
+        {
+          "icon": "🌍",
+          "title": "බහුභාෂා කණ්ඩායම",
+          "text": "ඉතාලි සහ ඉංග්‍රීසි භාෂාවෙන් සහාය."
+        },
+        {
+          "icon": "⚡",
+          "title": "වේගවත් සැකසුම",
+          "text": "සියලුම අයදුම්පත් සහ ලේඛන සඳහා ඉක්මන් සම්පූර්ණ කිරීම."
+        },
+        {
+          "icon": "✅",
+          "title": "98% සාර්ථකත්ව අනුපාතය",
+          "text": "අපගේ සියලුම සේවා කාණ්ඩ පුරා ඔප්පු කළ ලුහුබැඳීමේ වාර්තාවක්."
+        },
+        {
+          "icon": "🤝",
+          "title": "සේවාදායක-ප්‍රමුඛ ප්‍රවේශය",
+          "text": "ඔබේ නිශ්චිත තත්ත්වයට ගැලපෙන පුද්ගලීකරණය කළ මඟපෙන්වීම."
+        },
+        {
+          "icon": "📋",
+          "title": "සම්පූර්ණ අනුකූලතාව",
+          "text": "සැම විටම නවතම ඉතාලි සහ EU රෙගුලාසි සමඟ යාවත්කාලීනව."
+        }
+      ],
+      "why": {
+        "eyebrow": "SS EUROPA ඇයි?",
+        "title": "ඔබට හිමිවන නිරුපකාරත්වය සහ සැලකිල්ල",
+        "desc": "අපි සරල පත්‍රිකා පමණක් සකසන්නේ නැත — අපි අපගේ සේවාදායකයින් සමඟ දිගුකාලීන සම්බන්ධතා ගොඩනඟමු. අපගේ සහතික කළ වෘත්තීය කණ්ඩායම සාවද්‍යතාව, වේගය සහ ඔබේ සුවය සඳහා සත්‍ය හිතවත්වය සමඟ ප්‍රතිඵල සැපයීමට කැපවී සිටී.",
+        "cta": "අපගේ කතාව සොයා ගන්න"
+      },
+      "cta": {
+        "title": "ඉතාලියේ ඔබේ ගමන ආරම්භ කිරීමට සූදානම්ද?",
+        "desc": "අපගේ විශේෂඥයන් ඔබට සහාය වීමට සූදානම්. අද නොමිලේ උපදේශනයක් වෙන් කරවා ගෙන සෑම පියවරකදීම අපට ඔබට මඟ පෙන්වීමට ඉඩ දෙන්න — ඔබේම භාෂාවෙන්.",
+        "actions": {
+          "primary": "ආරම්භ කරන්න →",
+          "secondary": "වැඩිදුර දැනගන්න"
+        }
+      }
+    }
+  },
+  "ar": {
+    "home": {
+      "hero": {
+        "badge": "SS EUROPA — Sostegno e Soluzioni per l'Europa ",
+        "titleLine1": "نحن نساعدك",
+        "titleLine2": "على العيش والعمل",
+        "titleLine3": "والازدهار في إيطاليا",
+        "desc": "خدمات هجرة وإدارية ومهنية متكاملة للأفراد والعائلات والشركات. يرشدك فريقنا المعتمد في كل خطوة — بلغتك.",
+        "actions": {
+          "explore": "استكشف الخدمات →",
+          "who": "من نحن",
+          "joinClass": "🎓 انضم إلى الصفوف"
+        },
+        "stats": [
+          {
+            "num": "20+",
+            "label": "سنوات من الخبرة"
+          },
+          {
+            "num": "5K+",
+            "label": "عملاء تمت مساعدتهم"
+          },
+          {
+            "num": "98%",
+            "label": "معدل النجاح"
+          },
+          {
+            "num": "8",
+            "label": "مجالات الخدمة"
+          }
+        ]
+      },
+      "intro": {
+        "eyebrow": "حول SS EUROPA",
+        "title": "شريكك الموثوق للحياة في إيطاليا",
+        "p1": "SS EUROPA {Sostegno e Soluzioni per l'Europa} — هي مؤسسة خدمات مهنية مكرّسة لمساعدة المهاجرين والعائلات والشركات على التعامل مع تعقيدات البيروقراطية الإيطالية. بخبرة تزيد عن 20 عامًا، نقدّم دعمًا متكاملًا يشمل الهجرة والضرائب والتدريب والتأمين والمزيد.",
+        "p2": "يلتزم فريقنا متعدد اللغات بجعل رحلتك في إيطاليا سلسة وقانونية وخالية من التوتر — من يومك الأول حتى الاندماج الكامل.",
+        "learnMore": "اعرف المزيد عنا →",
+        "visualTitle": "لماذا يختار العملاء SS EUROPA",
+        "checklist": [
+          "مستشارو هجرة معتمدون",
+          "مشغلون معتمدون في CAF & Patronato",
+          "دعم متعدد اللغات في أكثر من 6 لغات",
+          "عمليات سريعة وشفافة",
+          "آلاف الحالات الناجحة",
+          "مكاتب في جميع أنحاء إيطاليا"
+        ]
+      },
+      "section": {
+        "tag": "ما نقدمه",
+        "title": "مجموعة خدماتنا الكاملة",
+        "desc": "من الهجرة إلى التأمين — انقر على أي خدمة لاستكشاف كيف يمكننا مساعدتك."
+      },
+      "services": [
+        {
+          "icon": "🌍",
+          "title": "خدمات الهجرة",
+          "desc": "تصاريح الإقامة، ولمّ شمل العائلة، والجنسية، والمزيد.",
+          "href": "/immigration"
+        },
+        {
+          "icon": "🏛️",
+          "title": "CAF & Patronato",
+          "desc": "الإقرارات الضريبية، وISEE، والمعاشات، والمساعدة في الرعاية الاجتماعية.",
+          "href": "/caf"
+        },
+        {
+          "icon": "🎓",
+          "title": "التدريب والدورات",
+          "desc": "دورات اللغة، والمؤهلات المهنية، والتدريب على السلامة.",
+          "href": "/training"
+        },
+        {
+          "icon": "💼",
+          "title": "الاستشارات التجارية",
+          "desc": "تسجيل الأعمال، ووثائق DVR، ودعم الامتثال.",
+          "href": "/business"
+        },
+        {
+          "icon": "🛡️",
+          "title": "التأمين",
+          "desc": "حلول التأمين الصحي والحياة والمنزل والمركبات والأعمال.",
+          "href": "/insurance"
+        },
+        {
+          "icon": "🇮🇳",
+          "title": "القنصلية الهندية",
+          "desc": "جواز السفر، وبطاقة OCI، والتأشيرة الإلكترونية، وخدمات قنصلية أخرى.",
+          "href": "/indian-consulate"
+        },
+        {
+          "icon": "✈️",
+          "title": "التأشيرات الدولية",
+          "desc": "المساعدة في تأشيرات السياحة والعمل والدراسة والعائلة والعلاج الطبي.",
+          "href": "/visas"
+        },
+        {
+          "icon": "🌐",
+          "title": "خدمات أخرى",
+          "desc": "الترجمات، وإعداد السيرة الذاتية، وخدمات الترجمة الفورية المهنية.",
+          "href": "/other"
+        }
+      ],
+      "features": [
+        {
+          "icon": "🏆",
+          "title": "خبرة تزيد عن 20 عامًا",
+          "text": "موثوق به من قبل آلاف العملاء في جميع أنحاء إيطاليا وأوروبا."
+        },
+        {
+          "icon": "🌍",
+          "title": "فريق متعدد اللغات",
+          "text": "الدعم باللغتين الإيطالية والإنجليزية."
+        },
+        {
+          "icon": "⚡",
+          "title": "معالجة سريعة",
+          "text": "إنجاز سريع لجميع الطلبات والوثائق."
+        },
+        {
+          "icon": "✅",
+          "title": "معدل نجاح 98%",
+          "text": "سجل حافل مثبت في جميع فئات خدماتنا."
+        },
+        {
+          "icon": "🤝",
+          "title": "نهج يضع العميل أولاً",
+          "text": "إرشاد مخصص يناسب وضعك المحدد."
+        },
+        {
+          "icon": "📋",
+          "title": "امتثال كامل",
+          "text": "مواكبة دائمة لأحدث اللوائح الإيطالية والأوروبية."
+        }
+      ],
+      "why": {
+        "eyebrow": "لماذا SS EUROPA؟",
+        "title": "الخبرة والعناية التي تستحقها",
+        "desc": "نحن لا نأخذ فقط الوثائق — بل نبني علاقات طويلة الأمد مع عملائنا. فريقنا من المهنيين المعتمدين مكرّس لتحقيق النتائج بوضوح وسرعة واهتمام حقيقي برفاهيتك.",
+        "cta": "اكتشف قصتنا"
+      },
+      "cta": {
+        "title": "هل أنت مستعد لبدء رحلتك في إيطاليا؟",
+        "desc": "خبراؤنا جاهزون لمساعدتك. احجز استشارة مجانية اليوم ودعنا نرشدك في كل خطوة — بلغتك.",
+        "actions": {
+          "primary": "ابدأ الآن →",
+          "secondary": "اعرف المزيد"
+        }
       }
     }
   }

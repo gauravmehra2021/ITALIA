@@ -3,6 +3,7 @@
 import {
   createContext,
   useContext,
+  useEffect,
   useState,
   ReactNode,
 } from "react";
@@ -19,7 +20,7 @@ import visasTranslations from "../translations/visas.json";
 import otherTranslations from "../translations/other.json";
 import contactTranslations from "../translations/contact.json";
 
-type Language = "it" | "en";
+type Language = "it" | "en" | "ur" | "bn" | "pa" | "si" | "ar";
 
 interface LanguageContextType {
   language: Language;
@@ -36,8 +37,49 @@ export const LanguageProvider = ({
 }: {
   children: ReactNode;
 }) => {
-  const [language, setLanguage] =
-    useState<Language>("it");
+  const [language, setLanguageState] = useState<Language>(() => {
+    if (typeof window === "undefined") {
+      return "it";
+    }
+
+    const savedLanguage = window.localStorage.getItem("selectedLanguage");
+    if (
+      savedLanguage === "it" ||
+      savedLanguage === "en" ||
+      savedLanguage === "ur" ||
+      savedLanguage === "bn" ||
+      savedLanguage === "pa" ||
+      savedLanguage === "si" ||
+      savedLanguage === "ar"
+    ) {
+      return savedLanguage as Language;
+    }
+
+    const browserLanguage = window.navigator.language.toLowerCase();
+    if (browserLanguage.startsWith("ur")) return "ur";
+    if (browserLanguage.startsWith("bn")) return "bn";
+    if (browserLanguage.startsWith("pa")) return "pa";
+    if (browserLanguage.startsWith("si")) return "si";
+    if (browserLanguage.startsWith("ar")) return "ar";
+    if (browserLanguage.startsWith("en")) return "en";
+
+    return "it";
+  });
+
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("selectedLanguage", lang);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === "ur" || language === "ar" ? "rtl" : "ltr";
+    }
+  }, [language]);
 
   const mergedTranslations = (() => {
     const merge = (a: any = {}, b: any = {}) => {
