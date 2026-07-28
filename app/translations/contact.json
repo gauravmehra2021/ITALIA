@@ -71,7 +71,7 @@
         "contactItems": [
           { "icon": "📞", "label": "Telefono", "value": "+39 0376 148 7097" },
           { "icon": "📱", "label": "Mobile",   "value": "+39 3520716656" },
-          { "icon": "📧", "label": "Email",    "value": "sseuropa@yahoo.com" },
+          { "icon": "📧", "label": "Email",    "value": "Info@sseuropa.com" },
           { "icon": "📍", "label": "Ufficio",  "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia" }
         ],
         "hoursTitle": "Orari di apertura",
@@ -162,7 +162,7 @@
         "contactItems": [
           { "icon": "📞", "label": "Phone",  "value": "+39 0376 148 7097" },
           { "icon": "📱", "label": "Mobile", "value": "+39 3520716656" },
-          { "icon": "📧", "label": "Email",  "value": "sseuropa@yahoo.com" },
+          { "icon": "📧", "label": "Email",  "value": "Info@sseuropa.com" },
           { "icon": "📍", "label": "Office", "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia" }
         ],
         "hoursTitle": "Office Hours",

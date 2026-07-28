@@ -87,7 +87,7 @@ const Footer = () => {
                   <div className="footer-contact-body">
                     <div className="footer-contact-label">{t('footer.emailLabel') || 'Email'}</div>
                     <div className="footer-contact-value">
-                      <a href="mailto:sseuropa@yahoo.com">sseuropa@yahoo.com</a>
+                      <a href="mailto:Info@sseuropa.com">Info@sseuropa.com</a>
                     </div>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 style={{ color: '#f37021', fontWeight: 600, textDecoration: 'none' }}
               >
-                AM
+                AM.
               </a>
             </div>
           </div>

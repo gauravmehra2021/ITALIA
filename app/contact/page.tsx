@@ -83,7 +83,7 @@ export default function ContactPage() {
     ? (rawContactItems as ContactItem[])
     : [
         { icon: '📱', label: 'Mobile', value: '+39 3520716656' },
-        { icon: '📧', label: 'Email',  value: 'sseuropa@yahoo.com' },
+        { icon: '📧', label: 'Email',  value: 'Info@sseuropa.com' },
         { icon: '📍', label: 'Office', value: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia' },
       ]
 
