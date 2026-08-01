@@ -123,7 +123,7 @@ const Header = () => {
             <div className="hidden items-center gap-2 sm:flex">
               <span className="h-[5px] w-[5px] rounded-full bg-[#f37021] opacity-90" />
               <span className="text-[11px] font-medium tracking-wide text-white/75">
-              Start your business with us and write your story.
+            
                 {t('topBar.story')}
               </span>
             </div>
