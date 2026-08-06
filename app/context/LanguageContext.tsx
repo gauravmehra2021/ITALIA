@@ -37,34 +37,22 @@ export const LanguageProvider = ({
 }: {
   children: ReactNode;
 }) => {
-  const [language, setLanguageState] = useState<Language>(() => {
-    if (typeof window === "undefined") {
-      return "it";
+  const [language, setLanguageState] = useState<Language>("it");
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+    if (["it", "en", "ur", "bn", "pa", "si", "ar"].includes(savedLanguage!)) {
+      setLanguageState(savedLanguage as Language);
+      return;
     }
-
-    const savedLanguage = window.localStorage.getItem("selectedLanguage");
-    if (
-      savedLanguage === "it" ||
-      savedLanguage === "en" ||
-      savedLanguage === "ur" ||
-      savedLanguage === "bn" ||
-      savedLanguage === "pa" ||
-      savedLanguage === "si" ||
-      savedLanguage === "ar"
-    ) {
-      return savedLanguage as Language;
-    }
-
-    const browserLanguage = window.navigator.language.toLowerCase();
-    if (browserLanguage.startsWith("ur")) return "ur";
-    if (browserLanguage.startsWith("bn")) return "bn";
-    if (browserLanguage.startsWith("pa")) return "pa";
-    if (browserLanguage.startsWith("si")) return "si";
-    if (browserLanguage.startsWith("ar")) return "ar";
-    if (browserLanguage.startsWith("en")) return "en";
-
-    return "it";
-  });
+    const browserLanguage = navigator.language.toLowerCase();
+    if (browserLanguage.startsWith("ur")) setLanguageState("ur");
+    else if (browserLanguage.startsWith("bn")) setLanguageState("bn");
+    else if (browserLanguage.startsWith("pa")) setLanguageState("pa");
+    else if (browserLanguage.startsWith("si")) setLanguageState("si");
+    else if (browserLanguage.startsWith("ar")) setLanguageState("ar");
+    else if (browserLanguage.startsWith("en")) setLanguageState("en");
+  }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
