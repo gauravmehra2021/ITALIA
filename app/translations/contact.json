@@ -72,7 +72,7 @@
           { "icon": "📞", "label": "Telefono", "value": "+39 0376 148 7097" },
           { "icon": "📱", "label": "Mobile",   "value": "+39 3520716656" },
           { "icon": "📧", "label": "Email",    "value": "Info@sseuropa.com" },
-          { "icon": "📍", "label": "Ufficio",  "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia" }
+          { "icon": "📍", "label": "Ufficio",  "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia" }
         ],
         "hoursTitle": "Orari di apertura",
         "hours": [
@@ -187,7 +187,7 @@
           { "icon": "📞", "label": "Phone",  "value": "+39 0376 148 7097" },
           { "icon": "📱", "label": "Mobile", "value": "+39 3520716656" },
           { "icon": "📧", "label": "Email",  "value": "Info@sseuropa.com" },
-          { "icon": "📍", "label": "Office", "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia" }
+          { "icon": "📍", "label": "Office", "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia" }
         ],
         "hoursTitle": "Office Hours",
         "hours": [
@@ -317,7 +317,7 @@
           {
             "icon": "📍",
             "label": "دفتر",
-            "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia"
+            "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia"
           }
         ],
         "hoursTitle": "کھلنے کے اوقات",
@@ -448,7 +448,7 @@
           {
             "icon": "📍",
             "label": "অফিস",
-            "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia"
+            "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia"
           }
         ],
         "hoursTitle": "অফিস সময়",
@@ -579,7 +579,7 @@
           {
             "icon": "📍",
             "label": "ਦਫ਼ਤਰ",
-            "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia"
+            "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia"
           }
         ],
         "hoursTitle": "ਖੁੱਲ੍ਹਣ ਦੇ ਸਮੇਂ",
@@ -710,7 +710,7 @@
           {
             "icon": "📍",
             "label": "කාර්යාලය",
-            "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia"
+            "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia"
           }
         ],
         "hoursTitle": "විවෘත වේලාවන්",
@@ -841,7 +841,7 @@
           {
             "icon": "📍",
             "label": "المكتب",
-            "value": "Via Saverio Battinelli No. 8/10\nMantova 46100, Italia"
+            "value": "Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia"
           }
         ],
         "hoursTitle": "ساعات العمل",

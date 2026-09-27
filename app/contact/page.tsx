@@ -84,7 +84,7 @@ export default function ContactPage() {
     : [
         { icon: '📱', label: 'Mobile', value: '+39 3520716656' },
         { icon: '📧', label: 'Email',  value: 'Info@sseuropa.com' },
-        { icon: '📍', label: 'Office', value: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia' },
+        { icon: '📍', label: 'Office', value: 'Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia' },
       ]
 
   useEffect(() => {

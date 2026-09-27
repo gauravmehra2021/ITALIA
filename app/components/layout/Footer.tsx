@@ -7,7 +7,7 @@ import './Footer.css'
 const offices = [
   {
     name: 'SS Europa — Mantova',
-    address: 'Via Saverio Battinelli No. 8/10\nMantova 46100, Italia',
+    address: 'Via Saverio Bettinelli No. 8/10\nMantova 46100, Italia',
     phone: '+39 3520716656',
   },
 ]
@@ -53,7 +53,7 @@ const Footer = () => {
             {/* Col 1 — About */}
             <div className="footer-col footer-col-about">
               <Link href="/" className="footer-about-logo">
-                <img src="/images/new logo.png" alt="SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA Logo" />
+                <img src="/images/updated-logo.png" alt="SS EUROPA SOSTEGNO E SOLUZIONI PER L'EUROPA Logo" />
               </Link>
           <p className="footer-about-desc">
   {t('footer.aboutDesc') || "SS EUROPA {Sostegno e Soluzioni per l'Europa} is your professional partner for immigration, tax, welfare, and administrative services in Italy."}

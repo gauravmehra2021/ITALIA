@@ -165,7 +165,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center">
             <img
-              src="/images/logo.png"
+              src="/images/updated-logo.png"
               alt="AMEI Logo"
               className="h-[44px] w-auto object-contain sm:h-[52px] lg:h-[60px]"
             />
