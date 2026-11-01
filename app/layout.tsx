@@ -41,7 +41,13 @@ export const metadata: Metadata = {
   description: "Scopri la bellezza senza tempo, l'artigianato sofisticato e il lusso del design, della cultura e dello stile di vita italiano.",
   keywords: ["Italia", "lusso", "design", "stile di vita", "Costa Amalfitana", "arte italiana", "Mediterraneo"],
   icons: {
-    icon: "/vite.svg", // Note: Ensure this file is placed in your /public folder
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
