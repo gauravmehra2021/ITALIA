@@ -1,4 +1,5 @@
-const BASE_URL = (process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5057').replace(/\/+$/, '')
+const rawBase = (process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5057').trim().replace(/\/+$/, '')
+const BASE_URL = rawBase.endsWith('/api') ? rawBase.slice(0, -4) : rawBase
 
 interface ApiOptions {
   method?: string
