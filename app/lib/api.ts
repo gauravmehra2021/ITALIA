@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.sseuropa.com'
+const BASE_URL = (process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5057').replace(/\/+$/, '')
 
 interface ApiOptions {
   method?: string
@@ -14,10 +14,18 @@ export async function apiRequest<T>(endpoint: string, options: ApiOptions = {}):
     ...(body ? { body: JSON.stringify(body) } : {}),
   })
 
-  const data = await res.json()
+  let data: { message?: string; errors?: Record<string, string[]> } | null = null
+  try {
+    data = await res.json()
+  } catch {
+    data = null
+  }
 
   if (!res.ok) {
-    throw new Error(data?.message || 'Something went wrong')
+    const firstFieldError = data?.errors
+      ? Object.values(data.errors).flat().find((msg): msg is string => typeof msg === 'string')
+      : undefined
+    throw new Error(firstFieldError || data?.message || `Request failed (${res.status})`)
   }
 
   return data as T

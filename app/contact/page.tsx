@@ -29,7 +29,7 @@ const COUNTRIES = [
 ].map(c => ({ value: c, label: c }))
 
 export default function ContactPage() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   const [form, setForm] = useState({
     firstName: '',
@@ -111,8 +111,16 @@ export default function ContactPage() {
     setLoading(true)
     setError(null)
     try {
+      const subjectIndex = subjectOptions.indexOf(form.subject)
+      const serviceIndices = form.services
+        .map((service) => serviceOptions.indexOf(service))
+        .filter((idx) => idx >= 0)
+
       await submitContactForm({
         ...form,
+        subjectIndex: subjectIndex >= 0 ? subjectIndex : undefined,
+        serviceIndices,
+        language,
         consentContact,
         consentAdvertising,
         consentThirdParty,
